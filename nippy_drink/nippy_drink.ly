@@ -12,31 +12,31 @@ global = {
 
 harmonies = \chordmode {
   \germanChords
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e~ }
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e~ }
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8~
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8~
 
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e~ }
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e~ }
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8~
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8~
 
   e1 gis:m a2 gis:m fis:m b
   e1 gis:m a2 gis:m fis:m b
 
   e1 d a2 gis:7 cis:m b
-  e1 d a1. \times 2/3 { cis4:m b e~ }
+  e1 d a1. cis8.:m b8. e8~
 
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e~ }
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e~ }
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8~
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8~
 
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e~ }
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e~ }
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8~
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8~
 
   e1 e:maj7 e:7 a
   a:m e/gis fis:m7 b
@@ -48,53 +48,70 @@ harmonies = \chordmode {
   a2 gis:7 cis:m b
   a2 gis:7 cis:m b
 
-  e1 d a1.:7 \times 2/3 { cis4:m b e~ }
+  e1 d a1.:7 cis8.:m b8. e8~
 
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e~ }
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e~ }
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8~
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8~
 
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e~ }
-  e2 \times 2/3 { fis4:m gis:m a~ }
-  a2 \times 2/3 { cis4:m b e }
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8~
+  e2 fis8.:m gis8.:m a8~
+  a2 cis8.:m b8. e8
 }
 
 violinMusic = \relative c''' {
-  r8 e16( dis) b8-. e,-. \times 2/3 { a4 gis e~ }
-  e8 cis r b16 b \times 2/3 { e4-. fis-. gis-. }
-  r8 e'16( dis) b8-. e,-. \times 2/3 { a4 gis e~ }
-  e8 cis r b16 b \times 2/3 { cis4-. dis-. e-. }
+  r8 e16( dis) b8-. e,-. a8. gis8. e8~
+  e8 cis r b16 b e8.-. fis8.-. gis8-.
+  r8 e'16( dis) b8-. e,-. a8. gis8. e8~
+  e8 cis r b16 b cis8.-. dis8.-. e8-.
 
-  r8 e'16( dis) b8-. e,-. \times 2/3 { a4 gis e~ }
-  e8 cis r b16 b \times 2/3 { e4-. fis-. gis-. }
-  r8 e'16( dis) b8-. e,-. \times 2/3 { a4 gis e~ }
-  e8 cis r b16 b \times 2/3 { cis4-. dis-. e-. }
+  r8 e'16( dis) b8-. e,-. a8. gis8. e8~
+  e8 cis r b16 b e8.-. fis8.-. gis8-.
+  r8 e'16( dis) b8-. e,-. a8. gis8. e8~
+  e8 cis r b16 b cis8.-. dis8.-. e8-.
 
   R1*16
 
-  r8 e'16( dis) b8-. e,-. \times 2/3 { a4 gis e~ }
-  e8 cis r b16 b \times 2/3 { e4-. fis-. gis-. }
-  r8 e'16( dis) b8-. e,-. \times 2/3 { a4 gis e~ }
-  e8 cis r b16 b \times 2/3 { cis4-. dis-. e-. }
+  r8 e'16( dis) b8-. e,-. a8. gis8. e8~
+  e8 cis r b16 b e8.-. fis8.-. gis8-.
+  r8 e'16( dis) b8-. e,-. a8. gis8. e8~
+  e8 cis r b16 b cis8.-. dis8.-. e8-.
 
-  r8 e'16( dis) b8-. e,-. \times 2/3 { a4 gis e~ }
-  e8 cis r b16 b \times 2/3 { e4-. fis-. gis-. }
-  r8 e'16( dis) b8-. e,-. \times 2/3 { a4 gis e }
+  r8 e'16( dis) b8-. e,-. a8. gis8. e8~
+  e8 cis r b16 b e8.-. fis8.-. gis8-.
+  r8 e'16( dis) b8-. e,-. a8. gis8. e8
   e8 cis r2.
 
   R1*26
 
-  r8 e'16( dis) b8-. e,-. \times 2/3 { a4 gis e~ }
-  e8 cis r b16 b \times 2/3 { e4-. fis-. gis-. }
-  r8 e'16( dis) b8-. e,-. \times 2/3 { a4 gis e~ }
-  e8 cis r b16 b \times 2/3 { cis4-. dis-. e-. }
+  r8 e'16( dis) b8-. e,-. a8. gis8. e8~
+  e8 cis r b16 b e8.-. fis8.-. gis8-.
+  r8 e'16( dis) b8-. e,-. a8. gis8. e8~
+  e8 cis r b16 b cis8.-. dis8.-. e8-.
 
-  r8 e'16( dis) b8-. e,-. \times 2/3 { a4 gis e~ }
-  e8 cis r b16 b \times 2/3 { e4-. fis-. gis-. }
-  r8 e'16( dis) b8-. e,-. \times 2/3 { a4 gis e~ }
-  e8 cis r b16 b \times 2/3 { cis4-. dis-. e-. }
+  r8 e'16( dis) b8-. e,-. a8. gis8. e8~
+  e8 cis r b16 b e8.-. fis8.-. gis8-.
+  r8 e'16( dis) b8-. e,-. a8. gis8. e8~
+  e8 cis r b16 b cis8.-. dis8.-. e8-.
+}
+
+djembeMusic = \new DrumStaff {
+  \drummode {
+    \repeat unfold 8 { bd4 sn bd8 ss16 bd8 ss16 bd8 }
+    \repeat unfold 6 { bd8 ss bd ss bd ss bd ss }
+    \repeat unfold 2 { bd8 bd16 ss bd8 ss bd8 bd16 ss bd8 ss }
+    \repeat unfold 2 { bd8 bd r2. }
+    \repeat unfold 2 { bd8 bd16 ss bd8 ss bd8 bd16 ss bd8 ss }
+    \repeat unfold 3 { bd8 ss bd ss bd ss bd ss }
+    \repeat unfold 9 { bd4 sn bd8 ss16 bd8 ss16 bd8 }
+    \repeat unfold 12 { bd8 ss bd ss bd ss bd ss }
+    \repeat unfold 2 { bd8 bd r2. }
+    \repeat unfold 8 { bd8 bd16 ss bd8 ss bd8 bd16 ss bd8 ss }
+    \repeat unfold 3 { bd8 ss bd ss bd ss bd ss }
+    \repeat unfold 9 { bd4 sn bd8 ss16 bd8 ss16 bd8 }
+  }
 }
 
 leadMusic = \relative c'' {
@@ -120,15 +137,15 @@ leadMusic = \relative c'' {
   r4 gis,8 gis gis16 gis8. gis8 gis
   a16 a8 a16~ a4 r a8 gis
   e e e fis~ fis2
-  r2 \times 2/3 { cis4 dis e }
+  r2 cis8. dis8. e8 
 
   r1
-  r2 \times 2/3 { e4 fis gis }
+  r2 e8. fis8. gis8
   r1
-  r2 \times 2/3 { cis,4 dis e }
+  r2 cis,8. dis8. e8 
 
   r1
-  r2 \times 2/3 { e4 fis gis }
+  r2 e8. fis8. gis8 
   r1
   r1
 
@@ -163,17 +180,17 @@ leadMusic = \relative c'' {
   r4 gis'8 gis gis16 gis8. gis8 gis
   a16 a8 a16~ a4 r a8 gis
   e e e g~ g2
-  r2 \times 2/3 { cis,4 dis e }
+  r2 cis,8. dis8. e8
 
   r1
-  r2 \times 2/3 { e4 fis gis }
+  r2 e8. fis8. gis8
   r1
-  r2 \times 2/3 { cis,4 dis e }
+  r2 cis,8. dis8. e8
 
   r1
-  r2 \times 2/3 { e4 fis gis }
+  r2 e8. fis8. gis8
   r1
-  r2 \times 2/3 { cis4 dis e }
+  r2 cis8. dis8. e8 
 
   \bar "|."
 
@@ -366,6 +383,12 @@ backingTwoWords = \lyricmode {
       \set Staff.instrumentName = #"Violin"
       \transpose c c { \global \violinMusic }
     }
+    
+    \new Staff = "Staff_djembe" {
+      \set Staff.instrumentName = #"Djembe"
+      \global \djembeMusic
+    }
+    
     \new StaffGroup <<
       \new Staff = "lead" <<
 	\set Staff.instrumentName = #"Lead"
