@@ -61,7 +61,7 @@ harmonies = \chordmode {
   a2 cis8.:m b8. e8
 }
 
-violinMusic = \relative c''' {
+violinMusic = \relative c'' {
   r8 e16( dis) b8-. e,-. a8. gis8. e8~
   e8 cis r b16 b e8.-. fis8.-. gis8-.
   r8 e'16( dis) b8-. e,-. a8. gis8. e8~
