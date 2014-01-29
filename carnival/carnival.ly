@@ -50,7 +50,6 @@ violinMusic = \relative c' {
 }
 
 leadMusic = \relative c'' {
-  \bar "|:"
   R1*8
 
   e4 e8 e~ e4 e
@@ -124,7 +123,7 @@ leadMusic = \relative c'' {
   e2 e4 d~
   d r2.
   
-  \bar ":|"
+  \bar "|."
 }
 leadWords = \lyricmode {
   \set stanza = "1." 
@@ -148,6 +147,16 @@ leadWords = \lyricmode {
 }
 leadWordsTwo = \lyricmode {
   \set stanza = "2." 
+  _ high stri -- ker's ten yards high and hard to beat
+  with an arm like yours you'll reach _ six feet
+  we will se -- pe -- rate the _ boys _ from the men
+  just give your best, you fail time and a -- gain
+
+  Come on clo -- ser friend and please don't be so shy
+
+  We can tell your future by~loo -- king in your eye
+  as long as we com -- mand you will dance like a~duck
+  the au -- di -- ence screams “yeah you rule” “yeah you rule” “yeah you rule”
 }
   
 leadWordsThree = \lyricmode {
