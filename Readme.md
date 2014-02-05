@@ -55,7 +55,7 @@ Alles gut. Ihr solltet mir jetzt noch ein *Pull-Request* schicken, dass Eure Än
 
 Per Konvention ist jeder Song in seinem eigenen Verzeichnis. Also: Verzeichnis, benamst wie der Song (Konvention: Kleinbuchstaben, Leerzeichen als *_*) erstellen, <songtitle>.ly-Datei erstellen, lilypond das pdf erstellen lassen, rinse and repeat, solange bis der Song fertig ist. Dann (wir befinden uns im *backwash_babies*-Verzeichnis)
 
-$ git add <verzeichnis-vom-song>
+$ git add *<verzeichnis-vom-song>*
 
 tippen. Der Rest ist wie bei Änderungen machen.
 
