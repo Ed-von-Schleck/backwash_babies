@@ -23,7 +23,7 @@ How to start contributing:
 
 4. euren Fork *klonen*:
 
-  $ git clone git@github.com:<username>/backwash_babies.git
+  $ git clone git@github.com:&lt;username&gt;/backwash_babies.git
 
   wobei <username> Euer neu angeleger User auf github ist.
 
