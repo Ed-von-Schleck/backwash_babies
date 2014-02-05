@@ -2,33 +2,36 @@ How to start contributing:
 
 ## git einrichten ##
 
-1. *git* installieren. Unter Linux
+1. *git* installieren. Unter Linux (Fedora)
 
-(Fedora)
-$ yum install git
-oder (Ubuntu)
-$apt-get install git
+  $ yum install git
 
-Windows-User gucken hier: http://git-scm.com/downloads
+  oder (Ubuntu)
+
+  $apt-get install git
+
+  Windows-User gucken hier: http://git-scm.com/downloads
 
 2. einen *github*-Account erstellen:
-auf https://github.com/
-und den Anleitungen folgen wg. ssh RSA keys erstellen, git einrichten (git config …) und so.
+
+  auf https://github.com/
+  und den Anleitungen folgen wg. ssh RSA keys erstellen, git einrichten (git config …) und so.
 
 3. das _backwash-babies_-Repo *forken*:
-auf https://github.com/Ed-von-Schleck/backwash_babies und auf den Button *fork* (rechts oben) klicken
+
+  auf https://github.com/Ed-von-Schleck/backwash_babies und auf den Button *fork* (rechts oben) klicken
 
 4. euren Fork *klonen*:
 
-$ git clone git@github.com:<username>/backwash_babies.git
+  $ git clone git@github.com:<username>/backwash_babies.git
 
-wobei <username> Euer neu angeleger User auf github ist.
+  wobei <username> Euer neu angeleger User auf github ist.
 
 5. *upstream* einrichten
 
-Ihr wollt nun noch mein Repo als *upstream* einrichten (das ist nur Konvention und besagt, dass mein Repo das Referenz-repo ist):
+  Ihr wollt nun noch mein Repo als *upstream* einrichten (das ist nur Konvention und besagt, dass mein Repo das Referenz-repo ist):
 
-$ git remote add uptream git@github.com:Ed-von-Schleck/backwash_babies.git
+  $ git remote add uptream git@github.com:Ed-von-Schleck/backwash_babies.git
 
 ## aktualisieren ##
 
