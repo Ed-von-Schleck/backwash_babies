@@ -53,7 +53,7 @@ Alles gut. Ihr solltet mir jetzt noch ein *Pull-Request* schicken, dass Eure Än
 
 ## neuen Song dazufügen ##
 
-Per Konvention ist jeder Song in seinem eigenen Verzeichnis. Also: Verzeichnis, benamst wie der Song (Konvention: Kleinbuchstaben, Leerzeichen als *_*) erstellen, <songtitle>.ly-Datei erstellen, lilypond das pdf erstellen lassen, rinse and repeat, solange bis der Song fertig ist. Dann (wir befinden uns im _backwash_babies_-Verzeichnis)
+Per Konvention ist jeder Song in seinem eigenen Verzeichnis. Also: Verzeichnis, benamst wie der Song (Konvention: Kleinbuchstaben, Leerzeichen als *_*) erstellen, <songtitle>.ly-Datei erstellen, lilypond das pdf erstellen lassen, rinse and repeat, solange bis der Song fertig ist. Dann (wir befinden uns im *backwash_babies*-Verzeichnis)
 
 $ git add <verzeichnis-vom-song>
 
