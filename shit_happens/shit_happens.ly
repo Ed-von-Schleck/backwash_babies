@@ -12,70 +12,73 @@ global = {
 
 harmonies = \chordmode {
   \germanChords
-  e2:m~ e8:m g4 a8~ a1 d2~ d8 g4 e8:m~ e1:m
-  e2:m~ e8:m g4 a8~ a1 d2~ d8 g4 e8:m~ e1:m
+  e2~ e8 g4 a8~ a1 d2~ d8 g4 e8~ e1
+  e2~ e8 g4 a8~ a1 d2~ d8 g4 e8~ e1
 
   g1 e g1 e
-  a:m7 d a:m7 d
+  c a c a
   g1 e g1 e
-  a:m7 d a:m7 d
+  c a c a
 
-  e2:m~ e8:m g4 a8~ a1 d2~ d8 g4 e8:m~ e1:m
-  e2:m~ e8:m g4 a8~ a1 d2~ d8 g4 e8:m~ e1:m
+  e2~ e8 g4 a8~ a1 d2~ d8 g4 e8~ e1
+  e2~ e8 g4 a8~ a1 d2~ d8 g4 e8~ e1
 
   g1 e g1 e
-  a:m7 d a:m7 d
-  g1 b:7 e:m d
-  c g b1*2:7
+  c a c a
 
+  g1*2 e:m
+  b b:7
 
-  a1:m d a c
+  e1:m d a c
   g b e:m b
-  a1:m d a c
+  e1:m d a c
   g b e:m b
 }
 
 violinMusic = \relative c' {
   R1*12
 
-  r2 e8 g4 a8~
-  a fis4 e8~ e d4 e8~
-  e4 r e8 g4 a8~
-  a fis4 e8~ e d4.
+  r2 r8 e g a~
+  a4 e8 g bes( a) g a
+  g e4. r8 e8 g a8~
+  a4 e8 g bes( a) g e~
 
-  R1*4
+  e4 r2.
+  R1*3
 
-  r2 e8 g4 a8~
-  a fis4 e8~ e d4 e8~
-  e4 r e8 g4 a8~
-  a fis4 e8~ e d4.
+  r2 r8 e g a~
+  a4 e8 g bes( a) g a
+  g e4. r8 e8 g a8~
+  a4 e8 g bes( a) g e~
 
-  R1*12
+  e4 r2.
+  R1*11
 
-  r2 e8 g4 a8~
-  a fis4 e8~ e d4 e8~
-  e4 r e8 g4 a8~
-  a fis4 e8~ e d4.
+  r2 r8 e g a~
+  a4 e8 g bes( a) g a
+  g e4. r8 e8 g a8~
+  a4 e8 g bes( a) g e~
 
-  R1*12
+  e4 r2.
+  R1*11
 }
 
 leadMusic = \relative c'' {
   R1*7
-  r2.. b8^"shuffled"
+  r2.. b8
 
-  b16 b b8 b b~ b8 b b b
-  b4 b8 b~ b4 r
-  b16 b b8 b b~ b b b b
+  b bes b bes b bes b bes
+  b( a) gis8 b~ b4 r
+  b8 bes b bes b bes b bes
   b4 e, e8 e( d) e~
 
   e4 r2.
   R1*2
   r2.. b'8
 
-  b16 b b8 b b~ b8 b b b
-  b4 b8 b~ b4 r8. b16
-  b16 b b8 b b~ b b b b
+  b bes b bes b bes b bes
+  b( a) gis8 b~ b4 r8 b
+  b bes b bes b bes b bes
   b4 e, e8 e( d) e~
 
   e4 r2.
@@ -83,35 +86,41 @@ leadMusic = \relative c'' {
   
   R1*8
 
-  b'16 b b8 b b~ b8 b b b~
-  b b b16 b b8~ b4 r8. b16
-  b16 b b8 b b~ b b b b
+  b'8 bes b bes b bes b b~
+  b a gis8 a b4 r8 b
+  b bes b bes b bes b bes
   b4 e, e8 e( d) e~
 
   e4 r2.
   R1*2
   r2.. d8
 
-  d8 d4 d8~ d d4 dis8~
-  dis2 r8 dis4 e8~
-  e e4 e8~ e e4 fis8~
-  fis2 r2
+  d8 d4 d8~ d d4 d8~
+  d2 r8 d4 e8~
+  e e4 e8~ e e4 e8~
+  e2 r2
 
-  g8 g4 g8~ g a4 b8~
-  b4 g8 b~ b g4.
-  b8 b4 b8~ b b4 b8~
+  fis8 fis4 fis8~ fis g4 a8~
+  a4 a8 a~ a a4.
+  b4 b b8 b4 b8~
   b4 r8 e e e( dis) e~
 
   e2 r
   r8 g,4 b8~ b b4 a16( g
   e2) r
-  r8 b'4 b8~ b b4 b~
+  r8 b'4 b8~ b b4 b8~
 
   b4 r2.
   r1
   r1
-  r1
+  r4. e8 e e( dis) e~
 
+  e2 r
+  r8 g,4 b8~ b b4 a16( g
+  e2) r
+  r8 b'4 b8~ b b4 b8~
+
+  b4 r2.
   \bar ":|"
 }
 leadWords = \lyricmode {
@@ -140,6 +149,10 @@ leadWords = \lyricmode {
   I walked her home
   I blew her mind
   I turned her on
+
+  I got so drunk
+  I fell a -- sleep
+  I did black out
 }
 leadWordsTwo = \lyricmode {
   \set stanza = "2." 
