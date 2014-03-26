@@ -35,7 +35,7 @@ How to start contributing:
 
 ## aktualisieren ##
 
-Damit habt Ihr das Repo auf der Platte und könnt nach Belieben Dateien verändern, dazufügen, löschen usw. Um das Repo mit dem upstream abzugleichen, macht
+Damit habt Ihr das Repo auf der Platte und könnt nach belieben Dateien verändern, dazufügen, löschen usw. Um das Repo mit dem upstream abzugleichen, macht
 
 $ git pull upstream master && git push origin master
 
