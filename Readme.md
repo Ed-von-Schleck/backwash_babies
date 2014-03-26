@@ -25,7 +25,7 @@ How to start contributing:
 
   $ git clone git@github.com:&lt;username&gt;/backwash_babies.git
 
-  wobei <username> Euer neu angeleger User auf github ist.
+  wobei &lt;username&gt; Euer neu angeleger User auf github ist.
 
 5. *upstream* einrichten
 
