@@ -12,45 +12,26 @@ global = {
 
 harmonies = \chordmode {
   \germanChords
-<<<<<<< HEAD
   e2 g4~ g8 a8~
   \repeat volta 2 {
   a1 d2 g4~ g8 e8~ e1
   e2 g4~ g8 a8~ a1 d2 g4~ g8 e8~ e1
-=======
-  e2~ e8 g4 a8~ a1 d2~ d8 g4 e8~ e1
-  e2~ e8 g4 a8~ a1 d2~ d8 g4 e8~ e1
->>>>>>> efb4b9e2e8b7f6c9efa84c8ea8cb328eeae6835b
 
   g1 e g1 e
   c a c a
   g1 e g1 e
   c a c a
 
-<<<<<<< HEAD
   e2 g4~ g8 a8~ a1 d2 g4~ g8 e8~ e1
   e2 g4~ g8 a8~ a1 d2 g4~ g8 e8~ e1
-=======
-  e2~ e8 g4 a8~ a1 d2~ d8 g4 e8~ e1
-  e2~ e8 g4 a8~ a1 d2~ d8 g4 e8~ e1
->>>>>>> efb4b9e2e8b7f6c9efa84c8ea8cb328eeae6835b
 
   g1 e g1 e
   c a c a
 
-<<<<<<< HEAD
   g1*2 e
   b b:7
 
   e1:m d a c
-=======
-  g1*2 e:m
-  b b:7
-
-  e1:m d a c
-  g b e:m b
-  e1:m d a c
->>>>>>> efb4b9e2e8b7f6c9efa84c8ea8cb328eeae6835b
   g b e:m b
   e1:m d a c
   g b e:m e:m
@@ -91,13 +72,9 @@ violinMusic = \relative c' {
 }
 
 leadMusic = \relative c'' {
-<<<<<<< HEAD
   R1
   \repeat volta 2 {
   R1*6
-=======
-  R1*7
->>>>>>> efb4b9e2e8b7f6c9efa84c8ea8cb328eeae6835b
   r2.. b8
 
   b bes b bes b bes b bes
@@ -153,7 +130,6 @@ leadMusic = \relative c'' {
   e2) r
   r8 b'4 b8~ b b4 b8~
 
-<<<<<<< HEAD
   b4 r2. R1*2 
 
   r2. r8 fis8
@@ -166,10 +142,6 @@ leadMusic = \relative c'' {
                   {b8 a8 g8 fis8 e8 r4.}}
   
   
-=======
-  b4 r2.
-  \bar ":|"
->>>>>>> efb4b9e2e8b7f6c9efa84c8ea8cb328eeae6835b
 }
 leadWords = \lyricmode {
   \set stanza = "1." 
@@ -201,14 +173,11 @@ leadWords = \lyricmode {
   I got so drunk
   I fell a -- sleep
   I did black out
-<<<<<<< HEAD
   
   My game did get quite lost to -- night
   My charme got burped aw -- ay
   She held her drink like lem -- my does
   „Shit hap -- pens“, as__ _ we say 
-=======
->>>>>>> efb4b9e2e8b7f6c9efa84c8ea8cb328eeae6835b
 }
 
 leadWordsTwo =\lyricmode {
