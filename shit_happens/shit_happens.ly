@@ -1,4 +1,4 @@
-\version "2.16.2"
+\version "2.14.2"
 
 \header {
   title = "Shit Happens"
@@ -7,75 +7,88 @@
 global = {
   \key g \major
   \time 4/4
-  \tempo 4 = 110
+  \tempo 4 = 124
 }
 
 harmonies = \chordmode {
   \germanChords
-  e2:m~ e8:m g4 a8~ a1 d2~ d8 g4 e8:m~ e1:m
-  e2:m~ e8:m g4 a8~ a1 d2~ d8 g4 e8:m~ e1:m
+  e2 g4~ g8 a8~
+  \repeat volta 2 {
+  a1 d2 g4~ g8 e8~ e1
+  e2 g4~ g8 a8~ a1 d2 g4~ g8 e8~ e1
 
   g1 e g1 e
-  a:m7 d a:m7 d
+  c a c a
   g1 e g1 e
-  a:m7 d a:m7 d
+  c a c a
 
-  e2:m~ e8:m g4 a8~ a1 d2~ d8 g4 e8:m~ e1:m
-  e2:m~ e8:m g4 a8~ a1 d2~ d8 g4 e8:m~ e1:m
+  e2 g4~ g8 a8~ a1 d2 g4~ g8 e8~ e1
+  e2 g4~ g8 a8~ a1 d2 g4~ g8 e8~ e1
 
   g1 e g1 e
-  a:m7 d a:m7 d
-  g1 b:7 e:m d
-  c g b1*2:7
+  c a c a
 
+  g1*2 e
+  b b:7
 
-  a1:m d a c
+  e1:m d a c
   g b e:m b
-  a1:m d a c
-  g b e:m b
+  e1:m d a c
+  g b e:m e:m
+  b1:7 e1:m d1 
+  } \alternative {
+    {g2 b4 b4:7 b1 e2 g4~ g8 a8~}{g4 b4:7 e2:m}
+  
+  }
+  
 }
 
 violinMusic = \relative c' {
-  R1*12
+  e1 R1*11
 
-  r2 e8 g4 a8~
-  a fis4 e8~ e d4 e8~
-  e4 r e8 g4 a8~
-  a fis4 e8~ e d4.
+  r2 r8 e g a~
+  a4 e8 g bes( a) g a
+  g e4. r8 e8 g a8~
+  a4 e8 g bes( a) g e~
 
-  R1*4
+  e4 r2.
+  R1*3
 
-  r2 e8 g4 a8~
-  a fis4 e8~ e d4 e8~
-  e4 r e8 g4 a8~
-  a fis4 e8~ e d4.
+  r2 r8 e g a~
+  a4 e8 g bes( a) g a
+  g e4. r8 e8 g a8~
+  a4 e8 g bes( a) g e~
 
-  R1*12
+  e4 r2.
+  R1*11
 
-  r2 e8 g4 a8~
-  a fis4 e8~ e d4 e8~
-  e4 r e8 g4 a8~
-  a fis4 e8~ e d4.
+  r2 r8 e g a~
+  a4 e8 g bes( a) g a
+  g e4. r8 e8 g a8~
+  a4 e8 g bes( a) g e~
 
-  R1*12
+  e4 r2.
+  R1*11
 }
 
 leadMusic = \relative c'' {
-  R1*7
-  r2.. b8^"shuffled"
+  R1
+  \repeat volta 2 {
+  R1*6
+  r2.. b8
 
-  b16 b b8 b b~ b8 b b b
-  b4 b8 b~ b4 r
-  b16 b b8 b b~ b b b b
+  b bes b bes b bes b bes
+  b( a) gis8 b~ b4 r
+  b8 bes b bes b bes b bes
   b4 e, e8 e( d) e~
 
   e4 r2.
   R1*2
   r2.. b'8
 
-  b16 b b8 b b~ b8 b b b
-  b4 b8 b~ b4 r8. b16
-  b16 b b8 b b~ b b b b
+  b bes b bes b bes b bes
+  b( a) gis8 b~ b4 r8 b
+  b bes b bes b bes b bes
   b4 e, e8 e( d) e~
 
   e4 r2.
@@ -83,40 +96,56 @@ leadMusic = \relative c'' {
   
   R1*8
 
-  b'16 b b8 b b~ b8 b b b~
-  b b b16 b b8~ b4 r8. b16
-  b16 b b8 b b~ b b b b
+  b'8 bes b bes b bes b b~
+  b a gis8 a b4 r8 b
+  b bes b bes b bes b bes
   b4 e, e8 e( d) e~
 
   e4 r2.
   R1*2
   r2.. d8
 
-  d8 d4 d8~ d d4 dis8~
-  dis2 r8 dis4 e8~
-  e e4 e8~ e e4 fis8~
-  fis2 r2
+  d8 d4 d8~ d d4 d8~
+  d2 r8 d4 e8~
+  e e4 e8~ e e4 e8~
+  e2 r2
 
-  g8 g4 g8~ g a4 b8~
-  b4 g8 b~ b g4.
-  b8 b4 b8~ b b4 b8~
+  fis8 fis4 fis8~ fis g4 a8~
+  a4 a8 a~ a a4.
+  b4 b b8 b4 b8~
   b4 r8 e e e( dis) e~
 
   e2 r
   r8 g,4 b8~ b b4 a16( g
   e2) r
-  r8 b'4 b8~ b b4 b~
+  r8 b'4 b8~ b b4 b8~
 
   b4 r2.
   r1
   r1
-  r1
+  r4. e8 e e( dis) e~
 
-  \bar ":|"
+  e2 r
+  r8 g,4 b8~ b b4 a16( g
+  e2) r
+  r8 b'4 b8~ b b4 b8~
+
+  b4 r2. R1*2 
+
+  r2. r8 fis8
+  dis8 dis8 dis8 dis8 
+  e8 dis16 e16~e8 fis4
+  e8 e8 e8 fis16 e16~e4 e8
+  fis8 fis8 fis8 fis8
+  g16 fis8 g16~ g8 a8 
+  } \alternative {{b8 b8 b16 a16 g8 fis4(a4) b2 r2 r1}
+                  {b8 a8 g8 fis8 e8 r4.}}
+  
+  
 }
 leadWords = \lyricmode {
   \set stanza = "1." 
-  It's gon -- na be the eve'
+  It's gon -- na be the day
   it's gon -- na be the night
   no -- thing's in my way
   my breath is fresh, my look is tight
@@ -140,44 +169,112 @@ leadWords = \lyricmode {
   I walked her home
   I blew her mind
   I turned her on
+
+  I got so drunk
+  I fell a -- sleep
+  I did black out
+  
+  My game did get quite lost to -- night
+  My charme got burped aw -- ay
+  She held her drink like lem -- my does
+  „Shit hap -- pens“, as__ _ we say 
 }
-leadWordsTwo = \lyricmode {
+
+leadWordsTwo =\lyricmode {
   \set stanza = "2." 
+That wasn't how it's plan -- ned
+That is not how it's done
+Voi -- ces in my head
+“You bet -- ter run boy, bet -- ter run“
+
+Get your shit to -- geth -- er
+Her bo -- som starts to blur
+_ Short -- ly pinch my eyes
+Oh great now there is two of her
+
+Her words just sound like buzz
+My stom -- ache sounds the same
+_ „Boy please don't throw up!“
+That is the new name of the game
+
+Now fin -- ish what you start
+Now get your -- self some fun
+Last sip of her drink
+My god she gets an -- oth -- er one
+
+
+
+  
 }
+
   
 
 backingOneMusic = \relative c'' {
-  R1*48
+  R1 
+  \repeat volta 2 {
+  R1*47
 
-  b2~ b8 b4 a8~
-  a2 r2
-  g2~ g8 g4 g8~
-  g2 r2
+  r4 b8 b8~ b2 r1
+  r4 g8 g8~ g2 r1
 
   r8 d'4 d8~ d b b dis~
   dis b4 a8~ a b4 a8(
   g1)
 
+  r1
+  r4 b8 b8~ b2 r1
+  r4 g8 g8~ g2 r1
   
+  r8 d'4 d8~ d b b dis~
+  dis b4 a8~ a b4 a8(
+  g1)
+  
+  %r2 d'8 e4 e8~e2 r2
+  R1*3
+  r2. r8 a8
+} \alternative{{fis8 fis8 fis16 g16 a8 fis2~fis2 d'8 e4 e8~e2 r2}{b8 a8 g8 fis8 e8 r4.}}
 }
 
 backingOneWords = \lyricmode {
-  uh not bad
-  uh not bad
+  not bad
+  not bad
   too bad it was all in -- side you head
+  
+  how sad
+  how sad
+  too bad you got head __ _ -_ache in -- stead
+  
+  %tell us more
+  „Shit hap -- pens“, as__ _ we say 
+  tell us more
+ 
 }
 
 backingTwoMusic = \relative c'' {
-  R1*48
+   R1 
+  \repeat volta 2 {
+  R1*47
 
-  g2~ g8 g4 fis8~
-  fis2 r2
-  e2~ e8 e4 e8~
-  e2 r2
+  r4 g8 g8~ g2 r1
+  r4 e8 e8~ e2 r1
 
   r8 g4 g8~ g g g fis~
   fis fis4 fis8~ fis fis4 e8~
   e1
+  
+  r1
+  
+  r4 g8 g8~ g2 r1
+  r4 e8 e8~ e2 r1
+
+  r8 g4 g8~ g g g fis~
+  fis fis4 fis8~ fis fis4 e8~
+  e1
+
+  %r2 e8 d4 b8~b2 r2
+  R1*3
+  R2. r8 a8
+  } \alternative{{fis8 fis8 fis16 e16 c8 b2~b2 e8 d4 b8~b2 r2}{b'8 a8 g8 fis8 e8 r4. \bar "|."}}
 
 
 }
