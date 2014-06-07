@@ -25,7 +25,7 @@ How to start contributing:
 
   $ git clone git@github.com:&lt;username&gt;/backwash_babies.git
 
-  wobei <username> Euer neu angeleger User auf github ist.
+  wobei &lt;username&gt; Euer neu angeleger User auf github ist.
 
 5. *upstream* einrichten
 
@@ -35,7 +35,7 @@ How to start contributing:
 
 ## aktualisieren ##
 
-Damit habt Ihr das Repo auf der Platte und könnt nach Belieben Dateien verändern, dazufügen, löschen usw. Um das Repo mit dem upstream abzugleichen, macht
+Damit habt Ihr das Repo auf der Platte und könnt nach belieben Dateien verändern, dazufügen, löschen usw. Um das Repo mit dem upstream abzugleichen, macht
 
 $ git pull upstream master && git push origin master
 
