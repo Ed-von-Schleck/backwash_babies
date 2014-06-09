@@ -31,7 +31,7 @@ How to start contributing:
 
   Ihr wollt nun noch mein Repo als *upstream* einrichten (das ist nur Konvention und besagt, dass mein Repo das Referenz-repo ist):
 
-  $ git remote add uptream git@github.com:Ed-von-Schleck/backwash_babies.git
+  $ git remote add upstream git@github.com:Ed-von-Schleck/backwash_babies.git
 
 ## aktualisieren ##
 
