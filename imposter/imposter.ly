@@ -315,8 +315,8 @@ backingTwoWords = \lyricmode {
   }
 }
 
-#(set-global-staff-size 21)
+#(set-global-staff-size 18)
 
 \paper {
-  %page-count = #1
+  page-count = #1
 }
