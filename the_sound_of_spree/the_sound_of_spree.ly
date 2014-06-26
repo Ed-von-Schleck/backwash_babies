@@ -112,9 +112,14 @@ leadWordsTwo = \lyricmode {
   you tried to chase me to the sun -- set
   as you were sing -- ing old show themes
 }
-
 leadWordsThree = \lyricmode {
+  \set stanza = "3." 
+  im -- pres -- sions las -- ted o -- ver sea -- sons
+  not to be told but to re -- call
+  the songs we sang were ne -- ver sound -- er
+  we stood a -- lone and we stood tall
 }
+
 
 backingOneMusic = \relative c' {
   R1*20
@@ -207,6 +212,8 @@ backingTwoWordsTwo = \lyricmode {
         \new Voice = "lead" { << \transpose c c { \global \leadMusic } >> }
       >>
       \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "lead" \leadWordsThree
+      \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "lead" \leadWordsTwo
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "lead" \leadWords
@@ -244,7 +251,7 @@ backingTwoWordsTwo = \lyricmode {
 #(set-global-staff-size 19)
 
 \paper {
-  %page-count = #1
-  ragged-last-bottom = ##t
+  page-count = #1
+  ragged-last-bottom = ##f
   ragged-bottom = ##f
 }
