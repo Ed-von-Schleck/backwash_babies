@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.16.2"
 
 \header {
   title = "Shit Happens"
@@ -32,12 +32,12 @@ harmonies = \chordmode {
   b b:7
 
   e1:m d a c
-  g b e:m b
+  g b e:m e4:m c4 b2
   e1:m d a c
-  g b e:m e:m
-  b1:7 e1:m d1 
+  g b e:m e4:m c4 b2
+  b1:7 b1:7 e1:m e1:m d1 d1 
   } \alternative {
-    {g2 b4 b4:7 b1 e2 g4~ g8 a8~}{g4 b4:7 e2:m}
+    {g1 b1:7 b1 e2 g4~ g8 a8~}{g2 b2:7 e1:m}
   
   }
   
@@ -132,14 +132,14 @@ leadMusic = \relative c'' {
 
   b4 r2. R1*2 
 
-  r2. r8 fis8
-  dis8 dis8 dis8 dis8 
-  e8 dis16 e16~e8 fis4
-  e8 e8 e8 fis16 e16~e4 e8
-  fis8 fis8 fis8 fis8
-  g16 fis8 g16~ g8 a8 
-  } \alternative {{b8 b8 b16 a16 g8 fis4(a4) b2 r2 r1}
-                  {b8 a8 g8 fis8 e8 r4.}}
+  r2. r8 g8
+  fis4 fis4 fis8 fis4~fis8
+  g4 fis8 g8~g4 a4
+  g4 g4 g4 a8 g8~g2. g4
+  a4 a4 a4 a4
+  b8 a4 g8~ g4 a4 
+  } \alternative {{b4 b4 b8 a8 g4 fis2(a2) b2 r2 r1}
+                  {b4 a4 g4 fis4 e4 r2.}}
   
   
 }
@@ -230,9 +230,12 @@ backingOneMusic = \relative c'' {
   g1)
   
   %r2 d'8 e4 e8~e2 r2
-  R1*3
-  r2. r8 a8
-} \alternative{{fis8 fis8 fis16 g16 a8 fis2~fis2 d'8 e4 e8~e2 r2}{b8 a8 g8 fis8 e8 r4.}}
+  R1*6
+  r2. a4
+  } \alternative{
+    {g4 g4 g8 a8 b4 fis1~
+     fis2 d'8 e4 e8~e2 r2}
+    {b4 a4 g4 fis4 e4 r2.}}
 }
 
 backingOneWords = \lyricmode {
@@ -272,9 +275,9 @@ backingTwoMusic = \relative c'' {
   e1
 
   %r2 e8 d4 b8~b2 r2
-  R1*3
-  R2. r8 a8
-  } \alternative{{fis8 fis8 fis16 e16 c8 b2~b2 e8 d4 b8~b2 r2}{b'8 a8 g8 fis8 e8 r4. \bar "|."}}
+  R1*6
+  R2. a4
+  } \alternative{{g4 g4 g8 fis8 e4 dis1~dis2 e8 d4 b8~b2 r2}{b'4 a4 g4 fis4 e4 r2. \bar "|."}}
 
 
 }
