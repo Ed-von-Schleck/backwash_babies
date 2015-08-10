@@ -6,7 +6,7 @@
 
 global = {
   \key cis \minor
-  \tempo 4 = 150
+  \tempo 4 = 160
   \time 4/4
 }
 
@@ -126,7 +126,7 @@ leadMusic = \relative c' {
   gis gis gis8 gis4 fis8~
   
   fis4 r gis a
-  gis8 fis4 e8~ e4 dis
+  gis4 fis8 e8~ e4 dis
   cis2 r
   r1
   \bar "|."
@@ -158,7 +158,7 @@ backingOneMusic = \relative c' {
   e e e8 e4 e8~
   
   e4 r e e
-  dis8 dis4 e8~ e4 dis
+  dis4 dis8 e8~ e4 dis
   cis2 r
   r1
 
@@ -179,7 +179,7 @@ backingTwoMusic = \relative c' {
   b b b b
   
   cis cis cis cis
-  dis8 dis4 e8~ e4 dis
+  bis8 bis4 bis8~ bis4 bis
   cis4 r cis2
   cis cis
   
@@ -189,7 +189,7 @@ backingTwoMusic = \relative c' {
   b b b8 b4 cis8~
   
   cis4 r cis cis
-  dis8 dis4 e8~ e4 dis
+  bis4 bis8 bis8~ bis4 bis
   cis2 r
   r1
 }
