@@ -136,7 +136,7 @@ leadWords = \lyricmode {
   \chorus
 }
 
-backingOneMusic = \relative c' {
+backingTwoMusic = \relative c' {
   R1*38
   
   r2 e2
@@ -144,7 +144,7 @@ backingOneMusic = \relative c' {
   
   fis2 r4 fis
   fis gis8 a~ a4 fis8 fis8~
-  fis4 gis r gis
+  fis4 gis r e
   e e e e
   
   e e e e
@@ -154,7 +154,7 @@ backingOneMusic = \relative c' {
   
   fis2 r4 fis
   fis gis8 a~ a4 fis8 fis8~
-  fis4 gis gis gis
+  fis4 gis gis e
   e e e8 e4 e8~
   
   e4 r e e
@@ -167,14 +167,14 @@ backingOneWords = \lyricmode {
   
 }
 
-backingTwoMusic = \relative c' {
+backingOneMusic = \relative c'' {
   R1*38
   
   r2 cis2
   cis cis
   
   cis r4 cis
-  dis4 dis8 dis~ dis4 dis8 dis~
+  b4 b8 cis~ cis4 dis8 dis~
   dis4 dis r dis
   b b b b
   
@@ -184,7 +184,7 @@ backingTwoMusic = \relative c' {
   cis cis
   
   cis r4 cis
-  dis4 dis8 dis~ dis4 dis8 dis~
+  b4 b8 cis~ cis4 dis8 dis~
   dis4 dis dis dis
   b b b8 b4 cis8~
   
@@ -201,17 +201,17 @@ backingTwoWords = \lyricmode {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \transpose c c { \global \harmonies }
+      \transpose e f { \global \harmonies }
     }
 
     \new Staff = "Staff_violin" {
       \set Staff.instrumentName = #"Violin"
-      \transpose c c { \global \violinMusic }
+      \transpose e f { \global \violinMusic }
     }
     \new StaffGroup <<
       \new Staff = "lead" <<
 	\set Staff.instrumentName = #"Lead"
-	\new Voice = "lead" { << \transpose c c { \global \leadMusic } >> }
+	\new Voice = "lead" { << \transpose e f { \global \leadMusic } >> }
       >>
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "lead" \leadWords
@@ -222,8 +222,8 @@ backingTwoWords = \lyricmode {
       \new Staff = "backing" <<
 	%  \clef backingTwo
 	\set Staff.instrumentName = #"Backing"
-	\new Voice = "backingOnes" { \voiceOne << \transpose c c { \global \backingOneMusic } >> }
-	\new Voice = "backingTwoes" { \voiceTwo << \transpose c c { \global \backingTwoMusic } >> }
+	\new Voice = "backingOnes" { \voiceOne << \transpose e f { \global \backingOneMusic } >> }
+	\new Voice = "backingTwoes" { \voiceTwo << \transpose e f { \global \backingTwoMusic } >> }
       >>
       \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOnes" \backingOneWords
