@@ -1,4 +1,4 @@
-\version "2.19.33"
+\version "2.16.2"
 
 \header {
   title = "Falling In Love With A Princess"
@@ -95,7 +95,28 @@ guitar = \relative c'' {
 
 backing_I = \relative c' {
   \global
-  R1*32
+  R1*16
+  
+  r2 c'4 c
+  f4 f8 e( f4) e
+  d8 c4 b8~ b2
+  r2 c4 d4
+  
+  e4. d8~ d4 c
+  d8 d4 d8~ d4 a4
+  b1
+  r1
+  
+  r2 c4 c4
+  f4 f4 e4 f8 d8~
+  d8 c8 b2.
+  r2 c4 d4
+  
+  e4 e4 d8 c4.
+  d8 d8~ d4 d4 a8 b~
+  b1
+  R1
+  
   
   \break
   r2 f4 f
@@ -178,7 +199,7 @@ lead = \relative c'' {
   f f e c8 a~
   a g g2.
   r2 a4 b
-  c c d e
+  c c d8 e4.
   a,8 a~ a4 g f8 d~
   d1
   r
@@ -307,6 +328,6 @@ choirPart = \new ChoirStaff <<
     }
   }
   \midi {
-    \tempo 4=130
+    \tempo 4=135
   }
 }
