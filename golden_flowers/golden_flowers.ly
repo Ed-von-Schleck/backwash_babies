@@ -10,6 +10,9 @@ global = {
   \time 3/4
 }
 
+%Größe der Partitur
+#(set-global-staff-size 18)
+
 chordNames = \chordmode {
   \global
   \germanChords
@@ -150,7 +153,7 @@ lead = \relative c' {
   
   r4 b' b
   a fis8 d4.
-  e4 d e8 fis~
+  e4 d e8 fis~ \break
   fis r g a4.
   
   b2.
