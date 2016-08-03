@@ -1,4 +1,4 @@
-\version "2.19.2"
+\version "2.18.2"
 
 \header {
   title = "Golden Flowers"
@@ -92,13 +92,24 @@ guitar = \relative c'' {
 
 backing_I = \relative c' {
   \global
-  R2.*31
-  r4 e8 fis4.
+R2.*18
+  e4 fis4 g8 a~
+  a4 a8 a4.
+  R2.*2
+  e4 d4 cis8 d~
+  d2.
+  R2.*2
+  e4 fis4 g8 a~
+  a4 a8 a4.
+  R2.*2
+  e4 d4 cis8 d~
+  d8 r8 e8 fis4.
   
   g2.
   g
   fis
   R2.*9
+  
   
 }
 
