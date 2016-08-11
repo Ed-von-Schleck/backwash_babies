@@ -95,7 +95,7 @@ backing_I = \relative c' {
   R2.*17
   d'8 a4 a4.
   cis4 cis4 cis8 d~
-  d4 d8 d4.
+  d4 d4 d4
   R2.
   d2 a4
   cis4 cis4 cis8 d~
@@ -107,7 +107,7 @@ backing_I = \relative c' {
   R2.
   d4 a8 a4.
   cis4 cis4 cis8 d~
-  d8 r8 fis,8 fis4.  
+  d4 r4 fis,8 fis8  
   g2.
   g2.
   fis2.
@@ -116,9 +116,7 @@ backing_I = \relative c' {
   fis2.
   g4 g8 g4.
   a4 b8 a4.
-  g2.
-  
-  
+  g2.  
   
 }
 
@@ -174,7 +172,7 @@ lead = \relative c' {
   r4 b' b
   a fis8 d4.
   e4 d e8 fis~ \break
-  fis r g a4.
+  fis4 r4 g8 a8
   
   b2.
   d
