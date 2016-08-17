@@ -167,7 +167,7 @@ lead = \relative c' {
   r4 b b
   a fis d
   e8 d4 e4.
-  fis4 a4 d,4
+  fis4 a8 d,4.
   
   r4 b' b
   a fis8 d4.
