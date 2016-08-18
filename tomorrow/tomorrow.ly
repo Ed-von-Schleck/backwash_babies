@@ -23,10 +23,12 @@ chordNames = \chordmode {
   \time 2/4 \key d\minor
   r2*2
   
+  \repeat volta 2{
   e2:7 a2:m
   e2:7 a2:m
   e2:7 a2:m
-  e2:7 a2:m
+  }
+  \alternative{{e2:7 a2:m}{f4 d4:m7 e2}}
   
 }
 
@@ -76,16 +78,18 @@ lead = \relative c'' {
   
   e8\staccato b'8\staccato a8\staccato g8\staccato
   a8\staccato g8\staccato e8\staccato r8\staccato
-  d8\staccato d8\staccato e8\staccato d8\staccato
-  a'8\staccato g8\staccato e8\staccato r8\staccato
+%d8\staccato d8\staccato e8\staccato d8\staccato
+%  a'8\staccato g8\staccato e8\staccato r8\staccato
  
   }
+  \alternative {{d8\staccato d8\staccato e8\staccato d8\staccato
+  a'8\staccato g8\staccato e8\staccato r8\staccato}{f8\staccato f8\staccato a8\staccato f8\staccato e8\staccato f8\staccato e8\staccato r8}}
   
   
 }
 
-backing = \relative c''{
-  \global
+backing_one= \relative c''{
+  \voiceOne
   \set Staff.midiInstrument = #"voice oohs"
   R2*16
   
@@ -110,9 +114,47 @@ backing = \relative c''{
   r4 c,4-- d4-- e8\staccato r8
   r4 b4-- c4-- a8\staccato r8
   r4 c4-- d4-- e8\staccato r8
-  r4 b4-- c4-- a8\staccato r8
+%  r4 b4-- c4-- a8\staccato r8
   
   }
+  
+  \alternative {{r4 b4-- c4-- a8\staccato r8}{r4 c4-- b4-- b8\staccato r8}}
+
+  
+}
+
+backing_two= \relative c''{
+  \voiceTwo
+  \set Staff.midiInstrument = #"voice oohs"
+  R2*16
+  
+  \break \numericTimeSignature \time 4/4 \key d \minor
+  
+  \repeat volta 2 {
+  r4 r d,8 d4 d8 
+  d4 r d8 d4 e8 
+  e4 r e8 e4 g8~
+  g8 g4  g4 g4 f8~
+  f8 r8 r2. 
+  r2 g8 g g g( 
+  g8) r8 r2.
+  R1
+  }
+
+  \break \numericTimeSignature \time 2/4 \key a \minor
+   R2*2
+
+  \repeat volta 2{
+  
+  r4 c,4-- d4-- e8\staccato r8
+  r4 b4-- c4-- a8\staccato r8
+  r4 c4-- d4-- e8\staccato r8
+%  r4 b4-- c4-- a8\staccato r8
+  
+  }
+  
+  \alternative {{r4 b4-- c4-- a8\staccato r8}{r4 c4-- b4-- b8\staccato r8}}
+
   
 }
 
@@ -136,11 +178,14 @@ to -- mor -- row
 life must be re -- paid
 
   \set stanza = "Bridge"
-
+  
+\repeat volta 2{
 Lis -- ten to what ma -- ma said
 bet -- ter days will be a -- head
 lis -- ten to what pa -- pa said
-look -- ing  back will make you mad
+}
+\alternative{{look -- ing  back will make you mad }{look -- ing  back will make you mad }}
+
 }
 
 lead_lyrics_two = \lyricmode {
@@ -164,10 +209,13 @@ that the best is still to come
 sor -- rows will fade
   
   \set stanza = "Bridge"
+
+\repeat volta 2{
 so lis -- ten
 just lis -- ten
 don't look back
-you'll be mad
+}
+\alternative{{you'll be mad }{ you'll be mad }}
 
 }
 
@@ -185,14 +233,21 @@ choirPart = \new ChoirStaff <<
   \new Lyrics \lyricsto "Lead" \lead_lyrics_two
   \new Lyrics \lyricsto "Lead" \lead_lyrics_three
   
-  \new Staff \with {
-    instrumentName = "Backing 1"
-    shortInstrumentName = "B1"
-  } {
-    \new Voice = "Backing 1" \backing
-  }
+  \new Staff <<
+    
+    
+    \set Staff.instrumentName = #"Backing"
+    \set Staff.shortInstrumentName = #"B"
+
+
+   
+    \new Voice = "Backing 1" { \voiceOne << \global \backing_one >> }
+    \new Voice = "Backing 2" { \voiceTwo << \global \backing_two >> }
+
+  
   \new Lyrics \lyricsto "Backing 1" \backing_lyrics
 
+  >>
 
 
 >>
