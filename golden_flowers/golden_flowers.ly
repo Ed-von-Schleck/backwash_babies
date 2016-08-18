@@ -92,31 +92,38 @@ guitar = \relative c'' {
 
 backing_I = \relative c' {
   \global
-R2.*18
-  e4 fis4 g8 a~
-  a4 a8 a4.
-  R2.*2
-  e4 d4 cis8 d~
+  R2.*17
+  d'8 a4 a4.
+  cis4 cis4 cis8 d~
+  d4 d4 d4
+  R2.
+  d2 a4
+  cis4 cis4 cis8 d~
   d2.
-  R2.*2
-  e4 fis4 g8 a~
-  a4 a8 a4.
-  R2.*2
-  e4 d4 cis8 d~
-  d8 r8 e8 fis4.
-  
+  R2.
+  d4 a4 a4
+  cis8 cis4 cis4.
+  d4 d8 d4.
+  R2.
+  d4 a8 a4.
+  cis4 cis4 cis8 d~
+  d4 r4 g,8 fis8  
   g2.
-  g
-  fis
-  R2.*9
-  
+  g2.
+  fis2.
+  r2 fis8 e8
+  fis2.
+  fis2.
+  g4 g8 g4.
+  a4 b8 a4.
+  g2.  
   
 }
 
 backing_II = \relative c' {
   \global
   R2.*31
-  r4 e8 d4.
+  r2 e8 d8
   
   d2.
   d
@@ -150,7 +157,7 @@ lead = \relative c' {
   r4 b' b
   a8 fis4 d4.
   e4 d e8 fis~
-  fis4 a8 d,4.
+  fis4 a4 d,4
   
   r4 b' b
   a2 d,4
@@ -165,7 +172,7 @@ lead = \relative c' {
   r4 b' b
   a fis8 d4.
   e4 d e8 fis~ \break
-  fis r g a4.
+  fis4 r4 g8 a8
   
   b2.
   d
