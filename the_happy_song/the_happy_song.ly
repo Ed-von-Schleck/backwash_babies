@@ -1,4 +1,4 @@
-\version "2.19.2"
+\version "2.18.2"
 
 \header {
   title = "A Signal In The Noise"
@@ -48,9 +48,21 @@ violin = \relative c''' {
   R1*7
 }
 
+
 guitar = \relative c'' {
   \global
+  R1*24
   
+  r4 b8 a8~ a8 g4 c8~
+  c4 c8( bes8) c8( bes8) r8 c8~
+  c4 c8( bes8) c8( bes8) r8 d8~
+  d8 r8 e,8 f4 f4 g8~
+  g4 b8 a8~ a8 g4 f8~
+  f4 f8( d8) f8( g8) r8 c,8~
+  c8 r8 e8 f4 f4 d8~
+  d4 d8 e8 f8 e8 d8 c8
+  d2 r
+  R1*7
 }
 
 backing_I = \relative c'' {
@@ -68,16 +80,17 @@ backing_I = \relative c'' {
   g8 g g g g4 r
   
   R1*8
-  
+    
   r2 r8 b8 b cis~
-  cis2 r
-  r1
-  r1
+  cis2  r4. g8
+  g4 g8 a~ a b4 b8~
+  b dis4 r8 dis4 dis8 e~
   
-  r2 r8 b8 b cis~
-  cis2
-  r1
-  r1
+  e2 r8 b8 b cis~
+  cis2 r4. g8
+  g8 g4 a~ a b4 d8~
+  d2 r
+
 }
 
 backing_II = \relative c'' {
@@ -104,7 +117,8 @@ backing_II = \relative c'' {
   r2 r8 g g e~
   e2 r
   r1
-  r1
+  r
+  \bar "|."
 }
 
 lead = \relative c'' {
@@ -151,7 +165,7 @@ lead = \relative c'' {
   
   e2) r8 g' g g~
   g2 r4. g,8
-  g4 g8 a~ a b4 fis8~
+  g8 g4 a~ a b4 fis8~
   fis2 r
   \bar "|."
   
@@ -210,7 +224,7 @@ violinPart = \new Staff \with {
 
 guitarPart = \new Staff \with {
   instrumentName = "Guitar"
-  midiInstrument = "guitar"
+  midiInstrument = "overdriven guitar"
   shortInstrumentName = "Gtr."
 } \guitar
 
