@@ -329,7 +329,7 @@ backingTwoWords = \lyricmode {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \transpose c c { \global \harmonies }
+      \transpose c f, { \global \harmonies }
     }
 
     \new Staff = "Staff_violin" {
