@@ -28,7 +28,7 @@ harmonies = \chordmode {
     a1:m e1 f1 c1
     a1:m e1 f1 c1
     bes1 bes1 f1 c1
-    bes1 bes1 f1  g1
+    bes1 bes1 f1  g1:7
     
     c1 g1 a1:m e1
     d1:m e1 a1:m gis1:dim
@@ -55,8 +55,8 @@ leadMusic = \relative c''
   r1
   
   e4 e8 e8~e4 c4
-  f4 r8 e8 f8 c4 c8(
-  c4) r2.
+  f4 r8 e8 f8 c4 c8~
+  c4 r2.
   r1
   
   e8 e8~e8 e8~e4 c4
@@ -71,11 +71,11 @@ leadMusic = \relative c''
   
   r2 c4 c4
   b4. c8~c4 d4
-  r2 f4 e8 b8(
-  b2) r2
-  r4 a8 a8 a4 c8 b8(
-  b4) b4 c4 d8 e8(
-  e2. e8 d8
+  r2 f4 e8 b8~
+  b2 r2
+  r4 a8 a8 a4 c8 b8~
+  b4 b4 c4 d8 e8(~
+  e2.~e8 d8
   d2) r2
 
   r2 c4 c4
@@ -123,8 +123,8 @@ leadMusic = \relative c''
 
   r2 c4 c4
   b4. c8~c4 d4
-  r2 f4 e8 b8(
-  b2) r2
+  r2 f4 e8 b8~
+  b2 r2
   r2. r8 f'8
   f8 f8 f4 e4 d8 e8~
   e1~
@@ -138,8 +138,8 @@ leadMusic = \relative c''
   e4 d8 e4. r4
   r1
   e4 e8 e4. c4
-  f4 r8 e8 f8 c4 c8(
-  c4) r2.
+  f4 r8 e8 f8 c4 c8~
+  c4 r2.
   \bar "|."
 
 
@@ -206,8 +206,8 @@ make it look all sad and yet so cute
 
 backingOneMusic = \relative c'' {
  R1*22
- r2 f4 g8 e8(
- e2) r2
+ r2 f4 g8 e8~
+ e2 r2
  r4 d8 d8 f4 g8 e8~
  e4 e4 a4 g8 a8(~
  a2.~a8 gis8~
@@ -242,7 +242,7 @@ backingOneMusic = \relative c'' {
  bes8 bes8~bes8 bes8~bes8 bes8~bes8 bes8~
  bes8 a8~a8 bes8~bes4 r8 c8
  a8 a8~a a8~a8 a8~a8 a8~
- a4. c8~c2 
+ a4. b8~b2 
  
  g1(
  g1)
@@ -253,8 +253,8 @@ backingOneMusic = \relative c'' {
  a2.~a8 gis8~
  gis2) r2
  R1*2
- r2 f4 g8 e8(
- e2) r2
+ r2 f4 g8 e8~
+ e2 r2
  r2. r8 a8
  a8 a8 a4 b4 a8 gis8~
  gis1~
@@ -266,11 +266,11 @@ backingOneWords = \lyricmode {
 backingTwoMusic = \relative c'' {
   R1*21
   b4. a8~a4 g4
-  r2 a4 b8 gis8(
-  gis2) r2
+  r2 a4 b8 gis8~
+  gis2 r2
   r4 f8 f8 f4 f8 gis8~
-  gis4 gis4 gis4 d'8 c8(
-  c2. c8 b8~
+  gis4 gis4 gis4 d'8 c8(~
+  c2.~ c8 b8~
   b2) r2
   R1
   b4. a8~a4 g4
@@ -300,10 +300,10 @@ backingTwoMusic = \relative c'' {
   d2. r8 e8
   c8 c8~c8 c8~c8 c8~c8 c8~
   c2. r8 c8
-  d8 d8~d8 d8~d8 d8~d8 d8~
-  d8 c8~c8 c8~c4 r8 e8
+  d8 c8~c8 d8~d8 d8~d8 d8~
+  d8 d8~d8 d8~d4 r8 e8
   c8 c8~c8 c8~c8 c8~c8 b8~
-  b4. c8~c2
+  b4. b8~b2
   
   c1~
   c1
@@ -315,8 +315,8 @@ backingTwoMusic = \relative c'' {
   b2) r2
   R1
   b4. a8~a4 g4
-  r2 a4 b8 gis8(
-  gis2) r2
+  r2 a4 b8 gis8~
+  gis2 r2
   r2. r8 c8
   d8 d8 d4 c4 d8 b8~
   b1~
@@ -329,12 +329,12 @@ backingTwoWords = \lyricmode {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \transpose c f, { \global \harmonies }
+      \transpose c c { \global \harmonies }
     }
 
     \new Staff = "Staff_violin" {
       \set Staff.instrumentName = #"Violin"
-      \transpose c c { \global \violinMusic }
+      \transpose c f, { \global \violinMusic }
     }
     \new StaffGroup <<
       \new Staff = "lead" <<
