@@ -42,7 +42,28 @@ harmonies = \chordmode {
  
 }
 
-violinMusic = \relative c' {
+violinMusic = \relative c''' {
+  R1*4
+  R1%g4(~g8 e8~e4 g4)
+  a2. g4%(b8 a8~a4 g4)
+  g2 r4 g,4
+  f'4( g8 f8~f8 e8 d4)
+  c2 r2%g4(~g8 e8~e4 g4)
+  b'4(c8 b8~b4 d4)
+  c2. r4
+  R1%g,4(~g8 b8~b4 d4)
+  R1%g4(~g8 e8~e4 g4)
+  a2. g4%(b8 a8~a4 g4)
+  g2 r4 g,4  
+  f'4( g8 f8~f8 e8 d4)
+  c2 r2%g4(~g8 e8~e4 g4)
+  a'4(~a8 b8~b4 c4)
+  g4 r2.
+  R1*8
+  r8 gis,8 b8 d8 \tuplet 3/4 {f e d}
+  R1*6
+  r2. r8 e8 
+  gis4~gis8 a8~a4 b4
 }
 
 leadMusic = \relative c''
