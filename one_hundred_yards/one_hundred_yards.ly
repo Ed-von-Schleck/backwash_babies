@@ -13,12 +13,12 @@ global = {
 harmonies = \chordmode {
   \germanChords
   d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 g4:7 g4:6
-  d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 c4 g4
+  d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 g4:sus4 g4
   
   d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 g4:7 g4:6
-  d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 c4 g4
+  d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 g4:sus4 g4
   d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 g4:7 g4:6
-  d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 c4 g4 
+  d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 g4:sus4 g4 
  
   a1:m e1 d1:m g1
   a1:m e1 d1:m gis1:dim
@@ -38,10 +38,10 @@ violinMusic = \relative c'' {
  d4 r4 d8 g8 bes8 a8~
  a2~a8 d8 a8 g8~
  g2~g8 f8 e4
- g4 g4 f4 e8 d8~
- d4 r2.
+ g4 g4 g4 bes8 a8~
+ a4 r2.
  R1*16
- r8 b'8 e8 d8~d2~
+ r8 b8 e8 d8~d2~
  d4 r2.
  R1*2
  r8 d8 c8 b8~b2~
@@ -94,17 +94,17 @@ leadMusic = \relative c' {
  g8 a8~a8 r8 r8 f8 f8 e8~
  e8 c8~c8 r8 r4 e8 c8
  d8 d8 d8 d8 g8 f8 e8 d8~
- d8 r8 d8 d8 a'8 g8 f8 g8~
- g8 a8~a8 r8 r8 f8 f8 e8~
+ d8 r8 d8 d8 a'8 g8 f8 g8(~
+ g8 a8~a8) r8 r8 f8 f8 e8~
  e4 e8 d8 e8 c8 c8 c8
  d8 d8 d8 d8 g8 f8 e8 d8~
  d8 r8 r8 d8 d8 d8 a'8 d8~
  d8 a8~a8 r8 r8 d8 a8 c8~
  c8 g8~g8 r8 r4 c8 c8
  b8 b8 b8 b8 d8 c8 b8 a8~
- a8 r8 d,8 d8 d8 d8 a'8 d8~
+ a8 r8 r8 d,8 d8 d8 a'8 d8~
  d8 a8~a8 r8 r8 d8 a8 c8~
- c8 g8~g8 r8 r4 c8 c8
+ c8 g8~g8 r8 r4 r8 c8
  b8 b8 b8 b8 d8 c8 b8 a8~
  a8 r8 r8 e8 a8 c8~c8 e8~
  e2. d8(e8)
@@ -137,11 +137,11 @@ leadWords = \lyricmode {
 
 
 
-\set stanza ="Verse 1"
+\set stanza ="1."
 The first time I saw you, you were hid -- ing from the bul -- lies in your neigh _ -- bourg -- hood.
-In your white sum -- mer dress _ you were fair like a la -- dy and you bo -- dy was _ look -- ing so good.
+In your white sum -- mer dress __ you were fair like a la -- dy and you bo -- dy was _ look -- ing so good.
 I tried to get clo -- ser to a -- dore you and to tell you what you do to my heart.
-\skip 1 And I was just ho -- ping not to screw up \skip 1 be -- fore our love did not ev -- en start.
+And I was just ho -- ping not to screw up be -- fore our love did not ev -- en start.
 
 
 
@@ -152,7 +152,7 @@ I asked you out, but you just walked a -- way.
 
 \set stanza = "Refrain" 
 Why does the path -- way to your heart seem so ve -- ry hard
-it is the end of a long way, these one hund -- red yards
+it is the end of a long way, these one hun -- dred yards
 when -- ev -- er I try to get close,  you're slip -- ping a -- way  
 but we will be back to -- ge -- ther one bright sun -- ny day
 
@@ -162,7 +162,11 @@ but we will be back to -- ge -- ther one bright sun -- ny day
 
 }
 leadWordsTwo = \lyricmode {
-
+\set stanza ="2."
+The last time I saw you, you were wai -- ting in the rail -- way sta -- tion  rea -- dy to leave.
+I ap -- proached from be -- hind __ kissed your neck and your shou -- lder. You were shi -- ver -- ing and stop -- ped to breave.
+You could have been mine __ _  my __ _ prin -- cess and the queen of our __ _ lit -- tle em -- pire. 
+And we would be hap -- py and __ _ grow old, if there was not this re -- strai -- ning order.
 }
 
 leadWordsThree = \lyricmode {
