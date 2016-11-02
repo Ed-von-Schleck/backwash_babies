@@ -2,6 +2,8 @@
 
 \header {
   title = "One Hundred Yards"
+  composer = "skudella (The Royal Backwash)"
+
 }
 
 global = {
@@ -13,7 +15,7 @@ global = {
 harmonies = \chordmode {
   \germanChords
   d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 g4:7 g4:6
-  d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 g4:sus4 g4
+  d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 c4 g4
   
   d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 g4:7 g4:6
   d2..:m d4:sus4 d4:m d4:sus2 d4.:m c1 g2 g4:sus4 g4
@@ -38,10 +40,10 @@ violinMusic = \relative c'' {
  d4 r4 d8 g8 bes8 a8~
  a2~a8 d8 a8 g8~
  g2~g8 f8 e4
- g4 g4 g4 bes8 a8~
- a4 r2.
+ g4 g4 f4 e8 d8~
+ d4 r2.
  R1*16
- r8 b8 e8 d8~d2~
+ r8 b'8 e8 d8~d2~
  d4 r2.
  R1*2
  r8 d8 c8 b8~b2~
@@ -64,7 +66,7 @@ violinMusic = \relative c'' {
   r4 c8 a8 e8 a8 d8 b8~
  b2~b8 d8 e8 c8~
  c1
- R1
+ R1*2
 
 }
 
@@ -86,7 +88,7 @@ leadGuitar = \relative c'' {
  r4 a,8 b8 c8 a8 g'8 fis8~
  fis2~fis8 a,8 a'8 g8~
  g1
- R1
+ R1*2
 }
 leadMusic = \relative c' {
  R1*8
@@ -130,6 +132,7 @@ leadMusic = \relative c' {
  r8 e,8 a8 b8 g8. g16~g8 b8
  g8. g16~g8 g8 \tuplet 3/2 {c4 b c}
  d4 r2.
+  \bar "|."
 
 }
 
@@ -163,7 +166,7 @@ but we will be back to -- ge -- ther one bright sun -- ny day
 }
 leadWordsTwo = \lyricmode {
 \set stanza ="2."
-The last time I saw you, you were wai -- ting in the rail -- way sta -- tion  rea -- dy to leave.
+The next time I saw you, you were wai -- ting in the rail -- way sta -- tion  rea -- dy to leave.
 I ap -- proached from be -- hind __ kissed your neck and your shou -- lder. You were shi -- ver -- ing and stop -- ped to breave.
 You could have been mine __ _  my __ _ prin -- cess and the queen of our __ _ lit -- tle em -- pire. 
 And we would be hap -- py and __ _ grow old, if there was not this re -- strai -- ning order.
