@@ -14,18 +14,24 @@ global = {
 
 harmonies = \chordmode {
   \germanChords
-  c1 c1:/b a1:m7 a1:m7/g
+  c1 e1:m/b a1:m7 a1:m7/g
   d1:m d1:m g2 g2:/b g2:/c g2:/d
-  c1 c1:/b a1:m7 a1:m7/g
-  d1:m d1:m g2 g2:/b g2:/c g2:/b
-  f1 g1 e1 a1:m
-  f1 g1 c1 c1
-  f1 g1 e1 a1:m
-  f1 f1 g1 g1
+  c1 e1:m/b a1:m7 a1:m7/g
+  d1:m d1:m g2 g2:/b g2:/c g2:/d
+  bes8 bes8 bes8 bes8 bes2 bes8 bes8 bes8 bes8 bes2 f8 f8 f8 f8 f2 f8 f8 f8 f8 f2
+  bes8 bes8 bes8 bes8 bes2 bes8 bes8 bes8 bes8 bes2 f8 f8 f8 f8 f2 f8 f8 f8 f8 f2
+  bes1 f1 e2 e2:7 a1:m
+  bes1 d1:m a1 a1
+  bes1 f1 e2 e2:7 a1:m
+  bes1 d1:m g1 g1:/f
   d1:m g1 c1 f1
   d1:m g1 c1 c1
   d1:m g1 c2 g2 f1
   d1:m g1 c1 c1
+  f1 g1 e1 a1:m
+  f1 g1 c1 c1
+  f1 g1 e1 a1:m
+  f1 f1 g1 g1
 }
 
 violinMusic = \relative c'' {
@@ -46,7 +52,7 @@ violinMusic = \relative c'' {
  g,2 b4( c4)
  c4( d4) b4( d4)
  c2 r2
- R1*15
+ R1*23
  r2 f2
  f2 g2 
  e2 g2
@@ -79,20 +85,21 @@ leadMusic = \relative c''
  c4 a8 e'8~e8 a,8~a8 g8~
  g1
  r1
- r2 c4 c4
- d4. e8~e4 f4
+ R1*8
+ r2 d'4 d4
+ c4. f8~f4 f4
  e2( d4.) c8~
  c2 r2
- r2 c4 f4
- d2 c4 d8 e8~
+ r2 d4 f4
+ f2 c4 c8 e8~
  e1
  r1
- r2 c4 c4
- d4. c8~c4 b4
- r4 e,4 gis4 b8 c8~
+ r2 d4 d4
+ c4. c8~c4 c4
+ r4 e,4 gis4 d'8 c8~
  c1
- r2 a4 f'4
- c8 c8~c4 e4 f8 d8~
+ r2 bes4 c4
+ d8 d8~d4 e4 f8 d8~
  d1
  r1
  r4. a8 a4 a4
@@ -165,21 +172,21 @@ I do not care if you die
 
 
 backingOneMusic = \relative c'' {
-R1*16
+R1*24
 r1*2
-r4 b4 gis4 b8 a8~
+r4 b4 gis4 f8 a8~
 a2 b4 c4 
-a1
+bes1
 r1
-r4 g4 b4 c4
-d4 c4 b4 c4
-a1
+r4 a4 g4 a4
+bes4 a4 g4 c4
+bes1
 r1
 %r4 e4 gis4 gis8 a8~
 %a1
 r1
 r4 a4 e'4 d4
-c2 r2
+d2 r2
 a8 a8~a4 a4 c8 b8~
 b1
 r1
@@ -192,14 +199,14 @@ backingOneWords = \lyricmode {
 }
 
 backingTwoMusic = \relative c'' {
-R1*16
+R1*24
 r1*2
-r4 d,4 e4 f8 e8~
+r4 d,4 e4 d8 e8~
 e2 d4 e4 
 f1
 r1
-r4 e4 e4 g4
-f4 f4 d4 g4
+r4 e4 e4 e4
+e4 e4 e4 e4
 f1
 r1
 r1
