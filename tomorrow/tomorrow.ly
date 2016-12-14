@@ -111,14 +111,15 @@ backing_one= \relative c''{
 
   \repeat volta 2{
   
-  r4 c,4-- d4-- e8\staccato r8
-  r4 b4-- c4-- a8\staccato r8
-  r4 c4-- d4-- e8\staccato r8
-%  r4 b4-- c4-- a8\staccato r8
-  
+  r4 d4(
+  d8) d4 e8(
+  e8) r4.
+  r2
+  r4 d4(
+  d8) d4 e8(
   }
   
-  \alternative {{r4 b4-- c4-- a8\staccato r8}{r4 c4-- b4-- b8\staccato r8}}
+  \alternative {{ e8) r4. r2}{ e8 r4. r2}}
 
   
 }
@@ -200,7 +201,7 @@ lead_lyrics_three = \lyricmode {
   
 }
 
-backing_lyrics = \lyricmode {
+backing_two_lyrics = \lyricmode {
   \set stanza = "chorus"
 it's not the end
 got -- ta pre -- tend
@@ -218,6 +219,26 @@ don't look back
 \alternative{{you'll be mad }{ you'll be mad }}
 
 }
+
+backing_one_lyrics = \lyricmode {
+  \set stanza = "chorus"
+it's not the end
+got -- ta pre -- tend
+that the best is still to come
+
+sor -- rows will fade
+  
+  \set stanza = "Bridge"
+
+\repeat volta 2{
+To -- mor -- row
+To -- mor -- 
+
+}
+\alternative{{row}{row}}
+
+}
+
 
 chordsPart = \new ChordNames \chordNames
 
@@ -245,7 +266,8 @@ choirPart = \new ChoirStaff <<
     \new Voice = "Backing 2" { \voiceTwo << \global \backing_two >> }
 
   
-  \new Lyrics \lyricsto "Backing 1" \backing_lyrics
+  \new Lyrics \lyricsto "Backing 1" \backing_one_lyrics
+  \new Lyrics \lyricsto "Backing 2" \backing_two_lyrics
 
   >>
 
