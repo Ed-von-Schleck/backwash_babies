@@ -115,14 +115,14 @@ leadMusic = \relative c''
 
 leadWords = \lyricmode { 
 \set stanza = "1." 
-She's got the bo -- dy of a god -- dess in a cage
-Her eyes have fi -- re co -- ming from an o -- ther age 
-She keeps on lur -- king in the twi -- light at the bar
-wait -- ing to crush ever -- ry man like a fal -- ling star
+My eyes are blin -- ded by the beau -- ty in its bloom
+com -- pared to her all o -- ther thing are just blurred gloom
+her eve -- ry move is like the twink -- le of a star
+as she is lur -- king in the twi -- light of the bar
 
 \set stanza = "Prechorus" 
-I want to be, have to be, the _ one to set her free, have to be with her.  
-Why is -- she not kis -- sing me with a si -- lent sound of spree? Tell me, why is she
+I want to be, have to be, must be me to set her free, have to be with her.  
+Why is -- n't she kis -- sing me got -- ta see what we could be? Tell me, why is she
 
 \set stanza = "Chorus" 
 danc -- ing with an oth -- er man.
@@ -139,15 +139,19 @@ She keeps danc -- ing with an oth -- er man.
 }
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
-She's look -- ing ov -- er, smiling as she bites her lip
-I just re -- turn it as I take an -- oth -- er sip
-Her hands move threw her hair and fol -- low down her neck
+I have been wai -- ting for the ta -- bles to be turned
+I had my fin -- gers crossed and sure -- ly had them burned
+And clear -- ly this time life is play -- ing the same song 
+my fate is lone -- ly and i'll ne -- ver get it on
 
 }
 
 leadWordsThree = \lyricmode {
 \set stanza = "3." 
-
+Is it just me or are there spar -- kles in the air
+the way your fin -- gers keep on cur -- ling up your hair
+i want to be with you for -- e -- ver and a day
+but what you do to me is sim -- ply not o -- kay
 
 }
 
