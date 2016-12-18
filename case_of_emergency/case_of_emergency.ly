@@ -35,16 +35,63 @@ harmonies = \chordmode {
  f1:m f2:m7 f2:6 as1 g1
 }
 
-violinMusic = \relative c'' {
-  R1
+leadGuitarMusic= \relative c'''{
+   R1
   %d8 d8 f8 d8 f8 bes8 f8 d8 
   %r8 bes'8 f8 d8 r8 g8g es8 c8 
   %g8 g8 c8 g8 bes8 as8 f8 as8
   %r8 bes8 ges8 f8 r8 c8 d8 es8
-  
-  
+  c8 c8 d8 c8 es8 f8 es8 d8 
+  r8 g,8 b8 d8 r8 g,8 b8 d8
+  e8 c8 c8 c8 es8 f8 es8 d8
+  r8 es8 d8 c8 r8 d8 c8 b8
+  c8 c8 d8 c8 es8 f8 es8 d8 
+  r8 g,8 b8 d8 r8 g,8 b8 d8
+  e8 c8 c8 c8 es8 f8 es8 d8
+  r1
+  c8 c8 d8 c8 es8 f8 es8 d8 
+  r8 g,8 b8 d8 r8 g,8 b8 d8
+  e8 c8 c8 c8 es8 f8 es8 d8
+  r8 es8 d8 c8 r8 d8 c8 b8
+  c8 c8 d8 c8 es8 f8 es8 d8 
+  r8 g,8 b8 d8 r8 g,8 b8 d8
+  e8 c8 c8 c8 es8 f8 es8 d8
+  R1*17
+  b2. b4 
+  d4. c8~c4 b4 
+  c4 a8 f8~f2~
+  f1
+  c'2. c4 
+  es4. d8~d4 c4
+  es1
+  d1
+\bar ":|."
+}
 
-
+violinMusic = \relative c'' {
+ R1*17
+ e2 c2
+ g4 c4 d2
+ e1
+ g1 
+ e2 d2
+ b4 b4 e4 d4
+ a1
+ b1
+ e2 c2
+ g4 c4 d2
+ e1
+ g1 
+ b2. a4
+ gis4. a8~a4 b4
+ c4. d8~d4 e4
+ <d g>1
+ R1*4
+ as2. as4
+ c4. b8~b4 as4
+ as4. bes8~bes4 as4
+ b1
+\bar ":|."
 }
 
 leadMusic = \relative c''
@@ -57,7 +104,7 @@ leadMusic = \relative c''
  es4 c8 c8 g8 c8 c8 d8~
  d2 c8 d8 c8 f8
  es4 c8 c8 es8 f8 es4
- d4 r4 r8 es8 d8 es8
+ d8  r8r4 r8 es8 d8 es8
  es4 c8 c8 g8 c8 c8 d8~
  d2 r8 d8 c8 d8
  c4 c8 c8 d8 c8 f8 es8~
@@ -65,7 +112,9 @@ leadMusic = \relative c''
  es4 c8 c8 g8 c8 c8 d8~
  d2 c8 d8 c8 f8
  es4 c8 c8 es8 f8 es4
- d4 c4 c4 d4
+ %d2 r2
+ %r4 c4 c4 d4
+ d8 r8 c4 c4 d4
  r4 c4 c4 d8 c8~
  c4 g4 a4 c4
  e2. d4
@@ -98,6 +147,7 @@ it is o -- kay if you just want to stay
 it is a bliss if you don't care a foul
 an ease in the head and for sure a sweet med
 
+\set stanza = "chorus" 
 so you get
 up in a case of an em -- erg -- en -- cy
 you use the
@@ -106,6 +156,7 @@ dance with me
 and we will stand in to flames up -- on this 
 i -- ro -- ny and we will 
 burn all this grief with this plain me -- lo -- dy
+
 
 }
 leadWordsTwo = \lyricmode { 
@@ -136,7 +187,7 @@ r2 r8  c8 b8 b8
 c4 r4 r2
 r2 g8 g8 g8 b8
 as4 r4 r2
-b4 r4 r8 c8 b8 b8
+b8 r8 r4 r8 c8 b8 b8
 c4 r4 r2
 r2 r8 b8 a8 b8
 as4 r4 r2
@@ -144,11 +195,13 @@ r2 r8  c8 b8 b8
 c4 r4 r2
 r2 g8 g8 g8 b8
 as4 r4 r2
-b2 r2
+%b2 r2
+%R1
+b1 
 R1
 R1
 c2. b4
-b2. r4
+b1
 R1
 R1
 a2. a4
@@ -156,11 +209,11 @@ b2. r4
 R1
 R1
 c2. b4
-b2. r4
+b1
 R1
 R1
 a2. a4
-b2. r4
+b1
 }
 
 backingOneWords = \lyricmode {
@@ -176,7 +229,7 @@ r2 r8 f8 f8 f8
 g4 r4 r2
 r2 d8 d8 d8 es8
 f4 r4 r2
-g4 r4 r8 f8 f8 f8 
+g8  r8 r4 r8 f8 f8 f8 
 g4 r4 r2
 r2 r8 g8 g8 as8
 f4 r4 r2
@@ -184,11 +237,13 @@ r2 r8 f8 f8 f8
 g4 r4 r2
 r2 d8 d8 d8 es8
 f4 r4 r2
-g2 r2
+%g2 r2
+%R1
+g1
 R1
 R1
 a2. g4 
-g2. r4
+g1
 R1
 R1
 f2. f4
@@ -196,11 +251,11 @@ g2. r4
 R1
 R1
 a2. g4 
-g2. r4
+g1
 R1
 R1
 f2. f4
-g2. r4
+g1
 }
 backingTwoWords = \lyricmode {
 
@@ -209,22 +264,22 @@ backingTwoWords = \lyricmode {
 derbass = \relative c {
   \clef bass
   r1
-  c4 c4 g8 c8 c8 d8
+  c4 c4 g8 c8 c8 d8~
   d2 g,2
   c4 c8 c8 d8 c8 c8 d8
   es2 d2
-  c4 c4 g8 c8 c8 d8
+  c4 c4 g8 c8 c8 d8~
   d2 g,2
-  c4 c8 c8 d8 c8 c8 d8
-  d2 g,2
-  c4 c4 g8 c8 c8 d8
+  c4 c8 c8 d8 c8 c4
+  d8 r8 r4 g,2
+  c4 c4 g8 c8 c8 d8~
   d2 g,2
   c4 c8 c8 d8 c8 c8 d8
   es2 d2
-  c4 c4 g8 c8 c8 d8
+  c4 c4 g8 c8 c8 d8~
   d2 g,2
-  c4 c8 c8 d8 c8 c8 d8
-  g,2 r2
+  c4 c8 c8 d8 c8 c4
+  g2 r2
 }
 
 \score {
@@ -233,11 +288,17 @@ derbass = \relative c {
       \set chordChanges = ##t
       \transpose c c { \global \harmonies }
     }
-
-    \new Staff = "Staff_Guitar" {
-      \set Staff.instrumentName = #"Guitar"
-      \transpose c c { \global \violinMusic }
+    \new StaffGroup <<
+      \new Staff = "Guitar" {
+        \set Staff.instrumentName = #"Guitar"
+        \transpose c c { \global \leadGuitarMusic }
+      }
+    
+      \new Staff = "Violin" {
+        \set Staff.instrumentName = #"Violin"
+        \transpose c c { \global \violinMusic }
     }
+    >>
     \new StaffGroup <<
       \new Staff = "lead" <<
 	\set Staff.instrumentName = #"Lead"
@@ -289,5 +350,5 @@ derbass = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
 }
