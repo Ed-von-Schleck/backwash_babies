@@ -253,7 +253,7 @@ backingTwoChorusWords = \lyricmode {
  What do you want? 
  Do you pre -- fer?
  Is it o -- kay?
- Are you just fine?
+ Is it just fine?
  
  
  
