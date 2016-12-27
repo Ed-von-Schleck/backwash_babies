@@ -1,78 +1,65 @@
 \version "2.16.2"
 
 \header {
-  title = "Polka"
-  composer = "skudella (The Royal Backwash)"
+  title = "working title"
+  composer = "skudella for Fördergruppe Tanzmusik"
 
 }
 
 global = {
   \key c \major
   \time 4/4
-  \tempo 4 = 98
+  \tempo 4 = 150
 }
 
 harmonies = \chordmode {
   \germanChords
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-c4/c c4/c d4/d d8/d d8/g
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-c4/c c4/c d4/d d8/d d8/g
+ f2 g2 a1:m  
+ f2 g2 e1
+ f2 g2 a1:m
+ f2 e2 d1
+ f2 g2 a1:m 
+ f2 g2 e1
+ f2 g2 a1:m
+ f2 e2 d1
+ a2 
 
-a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m c16 c16 c16 c16 b16:m b16:m b16:m b16:m
-a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m g16 g16 g16 g16  d16 d16 d16 d16
-a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m c16 c16 c16 c16 b16:m b16:m b16:m b16:m
-a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m g16 g16 g16 g16  d16 d16 d16 d16
-
-d4:m d4:m d4:m d4:m
-f4 f4 e4 e4
-d4:m d4:m  c4 c4  
-g4 g4 a4 a4
-
-d4:m d4:m d4:m d4:m
-f4 f4 e4 e4
-d4:m d4:m  c4 c4  
-g4 g4 e2
 }
 
-violinMusic = \relative c''' {
-r2 r8 a8 c8 a8
-r2 r8 c16 c16 d8 e8
-r2 r8 a,8 c8 a8
-c8 c8 c8 a16 a16 c8 c8 d8 e8
-r2 r8 a,8 c8 a8
-r2 r8 c16 c16 d8 e8
-r2 r8 a,8 c8 a8
-c8 c8 c8 a16 a16 c8 c8 d8 e8
-
-g,,32 a32 a16 a16 a16 c16 a16 g16 a16 e'16 d16 c16 a16 d16 c16 b16 c16
-g32 a32 a16 a16 a16 c16 a16 g16 a16 <d g,>16 <d g,>16 r8 <d a'>16 <d a'>16 r8
-g,32 a32 a16 a16 a16 c16 a16 g16 a16 e'16 d16 c16 a16 d16 c16 b16 c16
-g32 a32 a16 a16 a16 c16 a16 g16 a16 <d g,>16 <d g,>16 r8 <d a'>16 <d a'>16 r8
+violinMusic = \relative c'' {
+ c8 a8 c8 d8~d8 c8 d8 e8~
+ e1
+ c8 b8 c8 b8~b8 a8 b8 gis8~
+ gis1
+ c8 a8 c8 d8~d8 c8 d8 e8~
+ e4( d4 c4 b4)
+ c8 b8 c8 b8~b8 a8 g8 a8~
+ a1
+ c8 a8 c8 d8~d8 c8 d8 e8~
+ e1
+ c8 b8 c8 b8~b8 a8 b8 gis8~
+ gis1
+ c8 a8 c8 d8~d8 c8 d8 e8~
+ e4( d4 c4 b4)
+ c8 b8 c8 b8~b8 a8 g8 a8~
+ a1
 }
 
 leadMusic = \relative c''
 {
+ 
+
 }
 
 leadWords = \lyricmode { 
 \set stanza = "1." 
 
 
-\set stanza = "Chorus" 
 
-
-\set stanza = "Bridge" 
-y
 
 
 }
-leadWordsTwo = \lyricmode {
-  
+leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
 
 
@@ -92,13 +79,21 @@ leadWordsFour = \lyricmode {
 
 
 backingOneMusic = \relative c'' {
-
+  r1
+  r8 a8 c8 d8 e8~e16 d16~d8 d8
+  r1
+  r8 gis,8 b8 c8 e8~e16 d16~d8 b8
 }
+
 backingOneWords = \lyricmode {
 
 }
 
 backingTwoMusic = \relative c'' {
+  r1
+  r8 a8 c8 b8 c8~c16 b16~b8 b8
+  r1
+  r8 gis8 b8 c8 gis8~gis16 gis16~gis8 gis8
 
 }
 backingTwoWords = \lyricmode {
