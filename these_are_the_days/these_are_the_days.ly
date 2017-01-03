@@ -21,38 +21,40 @@ harmonies = \chordmode {
   bes8 bes8 bes8 bes8 bes2 bes8 bes8 bes8 bes8 bes2 f8 f8 f8 f8 f2 f8 f8 f8 f8 f2
   bes8 bes8 bes8 bes8 bes2 bes8 bes8 bes8 bes8 bes2 f8 f8 f8 f8 f2 f8 f8 f8 f8 f2
   bes1 f1 e2 e2:7 a1:m
-  bes1 d1:m a1 a1
+  bes1 bes1 a1 a1
   bes1 f1 e2 e2:7 a1:m
   bes1 d1:m g1 g1:/f
-  d1:m g1 c1 f1
-  d1:m g1 c1 c1
-  d1:m g1 c2 g2 f1
-  d1:m g1 c1 c1
   f1 g1 e1 a1:m
   f1 g1 c1 c1
   f1 g1 e1 a1:m
   f1 f1 g1 g1
+  d1:m g1 c1 f1
+  d1:m g1 c1 c1
+  d1:m g1 c2 g2 f1
+  d1:m g1 c1 c1
+
 }
 
 violinMusic = \relative c'' {
  c2 e4( c4)
  b2 e4( b4)
- a2 e'4( a,4)
+ c2 e4( a,4)
  g4 e'4( f4 e4)
  d2 d4( c4)
  e4( d4) c4( d4) 
- g,2 b4( c4)
+ b2 b4( c4)
  c4( d4) b4( d4)
  c2 e4( c4)
  b2 e4( b4)
- a2 e'4( a,4)
+ c2 e4( a,4)
  g4 e'4( f4 e4)
  d2 d4( c4)
  e4( d4) c4( d4) 
- g,2 b4( c4)
+ b2 b4( c4)
  c4( d4) b4( d4)
  c2 r2
  R1*23
+ R1*16
  r2 f2
  f2 g2 
  e2 g2
@@ -102,6 +104,7 @@ leadMusic = \relative c''
  d8 d8~d4 e4 f8 d8~
  d1
  r1
+ R1*16
  r4. a8 a4 a4
  b8 b8~b8 c8~c4 d4
  c4 g4 e4 a4~a1
@@ -190,6 +193,7 @@ d2 r2
 a8 a8~a4 a4 c8 b8~
 b1
 r1
+R1*16
 R1*10
 e2 d2
 c1
@@ -217,6 +221,7 @@ f2 r2
 f8 f8~f4 f4 f8 g8~
 g1
 r1
+R1*16
 R1*10
 g2 b2
 a1

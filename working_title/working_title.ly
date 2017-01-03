@@ -1,8 +1,8 @@
 \version "2.16.2"
 
 \header {
-  title = "Wieder da"
-  composer = "skudella & speckdrum? for Fördergruppe Tanzmusik"
+  title = "working title"
+  composer = "skudella & speckdrum (The Royal Backwash)"
 
 }
 

@@ -9,7 +9,7 @@
 global = {
   \key e \major
   \time 4/4
-  \tempo 4 = 180
+  \tempo 4 = 176
 }
 
 harmonies = \chordmode {
@@ -30,10 +30,43 @@ harmonies = \chordmode {
 
  e1 g2 a2 e1 a2 b2
  e1 g2 a2 e1 a2 b2
+ g1 fis1
+ b1 a1
  
+ e2:m c2 e2:m c2 e2:m c2 g2 a2
+ e2:m c2 e2:m c2 e2:m c2 g2 a2
+ e2:m c2 e2:m c2 e2:m c2 g2 a2
+ e2:m c2 e2:m c2 e2:m c2 g2 a2
+ a1
+ a1
+ a1
+ a1
 }
 
 violinMusic = \relative c'' {
+ R1*48
+ r2 r8 g8 e8 r8
+ r2 r8 g8 e8 r8
+ r2 r8 g8 e8 r8
+ a4 a8 g8 a8 b8 g8 a8
+ r2 r8 b8 e8 r8
+ r2 r8 b8 e8 r8
+ r2 r8 b8 e8 r8
+ e8 g8 e8 d8 b8 a8 g8 b8 
+ r2 r8 g8 e8 r8
+ r2 r8 g8 e8 r8
+ r2 r8 g8 e8 r8
+ a4 a8 g8 a8 b8 g8 a8
+ r2 r8 b8 e8 r8
+ r2 r8 b8 e8 r8
+ r2 r8 b8 e8 r8
+ e8 g8 e8 d8 b8 a8 g8 b8
+ b8 a8 g8 b8~b2
+ b8 a8 g8 b8~b2
+ \tuplet 3/2 {b4 a g }  \tuplet 3/2 {b4 a g }
+ a8 b8 r8 g'8~g8 e8 d4
+\bar ":|."
+ e1
 }
 
 leadGuitarMusic = \relative c'' {
@@ -114,8 +147,29 @@ leadMusicchorus = \relative c''{
  R1*2
  r4 b'4 b2
  a8 a8 g8 a8~a8 g8 e4
- R1*2
+ r4 b'4 b2~
+ b1
+ R1*4
 \bar ":|."
+}
+
+leadMusicBridge = \relative c''{
+r4 e8 d8~d8 b8~b8 a8~
+a8 g8~g8 a8~a8 g8 a8 b8~
+b1
+R1
+r4 e8 d8~d8 b8~b8 a8~
+a8 g8 a8 b8~b8 b8~b8 e,8~
+e1
+R1
+r4 e'8 d8~d8 b8~b8 a8~
+a8 g8~g8 a8~a8 g8 a8 b8~
+b1
+R1
+r4 e8 d8~d8 b8~b8 a8~
+a8 g8 a8 b8~b8 b8~b8 e,8~
+e1
+R1
 }
 
 leadWordsOne = \lyricmode { 
@@ -139,27 +193,36 @@ leadWordsChorus = \lyricmode {
  To the hills, where the snow falls on the lum -- ber -- jacks?
  Hey girl, what do you wan -- na do?
  Hey girl, where do you wan -- na go?
- 
- 
-
 }
 
+leadWordsBridge = \lyricmode {
+\set stanza = "bridge"
+ Why have you nev -- er learned to de -- cide?
+ Don't try to hide it be -- hind your pride.
+ How could have you sur -- vived un -- till now? 
+ Yet, you are here with me some _ -- how.
+}
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
+Do you want to dance?
+Do you want to stay at home?
+Hang a -- round a bar,
+back _ down in good old rome?
 
-
+Are you ready to leave?
+Do you need an -- oth -- er sec?
+Are you in -- se -- cure,
+in -- to which _ dis -- co -- teque?
 }
 
 leadWordsThree = \lyricmode {
 \set stanza = "3." 
 
-
 }
 
 leadWordsFour = \lyricmode {
 \set stanza = "4." 
-
 
 }
 backingOneVerseMusic = \relative c'' {
@@ -200,7 +263,8 @@ backingOneChorusMusic = \relative c'' {
   r4 e4 e2~
   e2. r4
   r4 e4 e2~
-  e2. r4
+  e1
+  R1*4
 }
 
 backingOneChorusWords = \lyricmode {
@@ -226,6 +290,7 @@ backingTwoVerseMusic = \relative c' {
  r4 fis8 gis8~gis8 fis8~fis8 e8~
  e1~
  e2 r2
+ 
 }
 
 backingTwoChorusMusic = \relative c'' {
@@ -246,7 +311,8 @@ backingTwoChorusMusic = \relative c'' {
  r4 gis4 gis2~
  gis2. r4
  r4 gis4 gis2~
- gis2. r4
+ gis1
+ R1*4
 }
 
 backingTwoChorusWords = \lyricmode {
@@ -316,7 +382,10 @@ derbassVerse = \relative c {
         \new Voice = "leadverse" { << \transpose c c { \global \leadMusicverse } >> }
         \new Voice = "leadprechorus" { << \transpose c c { \leadMusicprechorus } >> }
         \new Voice = "leadchorus" { << \transpose c c { \leadMusicchorus } >> }
+        \new Voice = "leadbridge" { << \transpose c c { \leadMusicBridge } >> }
       }
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadbridge" \leadWordsBridge
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadchorus" \leadWordsChorus
       \new Lyrics \with { alignBelowContext = #"lead" }
@@ -368,5 +437,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
+  
 }
