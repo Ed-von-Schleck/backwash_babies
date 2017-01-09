@@ -1,0 +1,423 @@
+\version "2.16.2"
+
+\header {
+  title = "case of emergency"
+  composer = "skudella & speckdrum (The Royal Backwash)"
+
+}
+
+global = {
+  \key c \minor
+  \time 4/4
+  \tempo 4 = 136
+}
+
+harmonies = \chordmode {
+  \germanChords
+ %R1
+ %c1:m g1 f1:m as2 g2
+ %c1:m d1 f1:m g1
+ %c1:m g1 f1:m as2 g2
+ %c1:m d1 f1:m g1
+
+ %f2 a2:m g1
+ %b2 b2:7 c1
+ %f2 a2:m g1
+ %e2 e2:7 f1
+ %c1 c1 a1:m g1
+ %d1 f2 g
+ %e1 e1:7 f1 g1
+ %c1 c1 a1:m g1
+ %e1 e1:7 f1 g1
+
+
+ %e1 e1:7 f1 f1
+ %f1:m f2:m7 f2:6 as1 g1
+}
+
+violinMusic = \relative c'' {
+ R1*17
+ e4 c4
+ g8 c8 d4
+ e2
+ g2 
+ e4 d4
+ b8 b8 e8 d8
+ a2
+ b2
+ e4 c4
+ g8 c8 d4
+ e2
+ g2 
+ b4. a8
+ gis8. a16~a8 b8
+ c8. d16~d8 e8
+ <d g>2
+ R2*4
+ as4. as8
+ c8. b16~b8 as8
+ as8. bes16~bes8 as8
+ b2
+\bar ":|."
+}
+
+leadGuitarMusic = \relative c'' {
+   R1
+  %d8 d8 f8 d8 f8 bes8 f8 d8 
+  %r8 bes'8 f8 d8 r8 g8g es8 c8 
+  %g8 g8 c8 g8 bes8 as8 f8 as8
+  %r8 bes8 ges8 f8 r8 c8 d8 es8
+  c8 c8 d8 c8 es8 f8 es8 d8 
+  r8 g,8 b8 d8 r8 g,8 b8 d8
+  es8 c8 c8 c8 es8 f8 es8 d8
+  r8 es8 d8 c8 r8 d8 c8 b8
+  c8 c8 d8 c8 es8 f8 es8 d8 
+  r8 g,8 b8 d8 r8 g,8 b8 d8
+  es8 c8 c8 c8 es8 f8 es8 d8
+  r1
+  c8 c8 d8 c8 es8 f8 es8 d8 
+  r8 g,8 b8 d8 r8 g,8 b8 d8
+  es8 c8 c8 c8 es8 f8 es8 d8
+  r8 es8 d8 c8 r8 d8 c8 b8
+  c8 c8 d8 c8 es8 f8 es8 d8 
+  r8 g,8 b8 d8 r8 g,8 b8 d8
+  es8 c8 c8 c8 es8 f8 es8 d8
+  R1*9
+  b4. b8 
+  d8. c16~c8 b8 
+  c8 a16 f16~f4~
+  f2
+  c'4. c8 
+  es8. d16~d8 c8
+  es2
+  d2
+\bar ":|."
+}
+
+trumpetoneVerseMusic = \relative c'' {
+
+}
+
+trumpetonePreChorusMusic = \relative c'' {
+}
+
+trumpetoneChorusMusic = \relative c'' {
+}
+
+trumpetoneBridgeMusic = \relative c'' {
+}
+
+trumpettwoVerseMusic = \relative c'' {
+}
+
+trumpettwoPreChrousMusic = \relative c'' {
+
+}
+
+trumpettwoChorusMusic = \relative c'' {
+
+}
+
+leadMusicverse = \relative c''{
+ r2 r8 es8 d8 es8
+ es4 c4 g8 c8 c8 d8~
+ d2 r8 d8 c8 d8
+ c4 c8 c8 d8 c8 d8 f8
+ es2 r8 es8 d8 es8
+ es4 c8 c8 g8 c8 c8 d8~
+ d4 r8 c8 d8 c8 f8 es8~
+ es4 c8 c8 es8 f8 es8 d8 
+ r2 r8 es8 d8 es8
+ es4 c8 c8 g8 c8 c8 d8~
+ d2 r8 d8 c8 d8
+ c4 c8 c8 d8 c8 f8 es8~
+ es2 r8 es8 d8 es8
+ es4 c8 c8 g8 c8 c8 d8~
+ d2 c8 d8 c8 f8
+ es4 c8 c8 es8 f8 es8 d8
+ R1
+
+}
+
+leadMusicprechorus = \relative c'{
+ 
+}
+
+leadMusicchorus = \relative c''{
+ r8 c8 c8 d16 c16~
+ c8 g8 a8 c8
+ e4. d8
+ d2 
+ r8 b8 b8 a16 d16~
+ d8 c8 b8 d8 
+ c4. e8
+ d2
+ r8 e8 d8 c16 c16~
+ c8 e8 d8 c8
+ e4. d8
+ d2
+ r8 as8 as8 a16 d16~
+ d8 c8 b8 d8 
+ c4. c8
+ d2 
+}
+
+leadMusicBridge = \relative c''{
+
+}
+
+leadWordsOne = \lyricmode { 
+\set stanza = "1." 
+it s a beat that burns in your heart
+it is that heat that has been there from the start
+it is a flame burs -- ting high -- er and higher
+a bass to be dropped and a brain to be stopped
+
+it is a way to just call it a day
+it is o -- kay if you just want to stay
+it is a bliss if you don't care a foul
+an ease in the head and for sure a sweet med
+}
+
+leadWordsChorus = \lyricmode {
+\set stanza = "chorus"
+up in a case of an em -- erg -- en -- cy
+stairs o the cei -- ling  and you dance with me
+stand in to flames up -- on this i -- ro -- ny
+burn all this grief with this plain me -- lo -- dy
+
+}
+
+leadWordsBridge = \lyricmode {
+\set stanza = "bridge"
+
+}
+
+leadWordsTwo = \lyricmode { 
+\set stanza = "2." 
+
+}
+
+leadWordsThree = \lyricmode {
+\set stanza = "3." 
+
+}
+
+leadWordsFour = \lyricmode {
+\set stanza = "4." 
+
+}
+backingOneVerseMusic = \relative c'' {
+r2 r8 c8 b8 b8
+c4 r4 r2
+r2 r8 b8 a8 b8
+as4 r4 r2
+r2 r8  c8 b8 b8
+c4 r4 r2
+r4 r8 g8 g8 g8 b8 as8~
+as4 r4 r4. b8
+r2 r8 c8 b8 b8
+c4 r4 r2
+r2 r8 b8 a8 b8
+as4 r4 r2
+r2 r8  c8 b8 b8
+c4 r4 r2
+r2 g8 g8 g8 b8
+as4 r4 r4. b8 
+r2 r8 b8 c8 d8 
+
+}
+
+backingOneChorusMusic = \relative c'' {
+r2.. c8
+c4. b8 b8 d8 d8 e8
+r2.. b8
+a4. a8 b8 b8 c8 d8
+r2.. c8
+c4. b8 b8 b8 b8 b8
+R1
+a4. a8
+b2
+}
+
+backingOneChorusWords = \lyricmode {
+ 
+
+}
+
+backingTwoVerseMusic = \relative c' {
+r2 r8 f8 f8 f8 
+g4 r4 r2
+r2 r8 g8 g8 as8
+f4 r4 r2
+r2 r8 f8 f8 f8 
+g4 r4 r2
+r4 r8 d8 d8 d8 es8 f8~
+f4 r4 r4. g8
+r2 r8 f8 f8 f8 
+g4 r4 r2
+r2 r8 g8 g8 as8
+f4 r4 r2
+r2 r8 f8 f8 f8 
+g4 r4 r2
+r2 d8 d8 d8 es8
+f4 r4 r4. g8 
+r2 r8 g8 g8 g8
+ 
+}
+
+backingTwoChorusMusic = \relative c'' {
+ 
+r2.. a8
+a4. g8 g8 g8 g8 g8 
+r2.. g8
+f4. f8 g8 g8 g8 g8
+r2.. a8
+a4. g8 g8 g8 g8 g8 
+r2.. g8
+f4. f8 g2
+}
+
+backingTwoChorusWords = \lyricmode {
+it is a beat
+it is that heat
+it is a flame
+a bass to be dropped
+stopped
+
+it is a way
+it is o -- kay
+it is a bliss
+an ease in the head
+med
+
+so you get em -- erg -- en -- cy
+you use the  this dance with me
+and we will this i -- ro -- ny
+and we will this me -- lo -- dy
+
+}
+
+derbassVerse = \relative c {
+  \clef bass
+  r1
+  c4 c4 g8 c8 c8 d8~
+  d2 g,2
+  f'4 f8 f8 d8 c8 c8 d8
+  es2 d2
+  c4 c4 g8 c8 c8 d8~
+  d2 g,2
+  f'4 f8 f8 d8 c8 c8 d8
+  r2 g,2
+  c4 c4 g8 c8 c8 d8~
+  d2 g,2
+  f'4 f8 f8 d8 c8 c8 d8
+  es2 d2
+  c4 c4 g8 c8 c8 d8~
+  d2 g,2
+  f'4 f8 f8 d8 c8 c8 g8
+  R1
+}
+
+\score {
+  <<
+    \new ChordNames {
+      \set chordChanges = ##t
+      \transpose c a, { \global \harmonies }
+    }
+
+    \new StaffGroup <<
+    
+      \new Staff = "Violin" {
+        \set Staff.instrumentName = #"Violin"
+        \set Staff.shortInstrumentName = #"V."
+        \set Staff.midiInstrument = #"violin"
+         \transpose c a, { \violinMusic }
+      }
+      \new Staff = "Guitar" {
+        \set Staff.instrumentName = #"Guitar"
+        \set Staff.shortInstrumentName = #"G."
+        \set Staff.midiInstrument = #"overdriven guitar"
+        \transpose c a { \global \leadGuitarMusic }
+      }
+        \new Staff = "Trumpets" <<
+        \set Staff.instrumentName = #"Trumpets"
+	\set Staff.shortInstrumentName = #"T."
+        \set Staff.midiInstrument = #"trumpet"
+        %\new Voice = "Trumpet1Verse" { \voiceOne << \transpose c c { \global \trumpetoneVerseMusic } >> }
+        %\new Voice = "Trumpet1PreChorus" { \voiceOne << \transpose c c { \trumpetonePreChorusMusic } >> }
+        %\new Voice = "Trumpet1Chorus" { \voiceOne << \transpose c c { \trumpetoneChorusMusic } >> }
+        %\new Voice = "Trumpet1Bridge" { \voiceOne << \transpose c c { \trumpetoneBridgeMusic } >> }
+	%\new Voice = "Trumpet2Verse" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic } >> }      
+	%\new Voice = "Trumpet2PreChorus" { \voiceTwo << \transpose c c {  \trumpettwoPreChrousMusic } >> }      
+	%\new Voice = "Trumpet2Chorus" { \voiceTwo << \transpose c c { \trumpettwoChorusMusic } >> }      
+        \new Voice = "Trumpet1" { \voiceOne << \transpose c c { \global \trumpetoneVerseMusic \trumpetonePreChorusMusic \trumpetoneChorusMusic \trumpetoneBridgeMusic} >> }
+	\new Voice = "Trumpet2" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic \trumpettwoPreChrousMusic \trumpettwoChorusMusic} >> }      
+      >>
+    >>  
+    \new StaffGroup <<
+      \new Staff = "lead" {
+	\set Staff.instrumentName = #"Lead"
+	\set Staff.shortInstrumentName = #"L."
+        \set Staff.midiInstrument = #"voice oohs"
+        \new Voice = "leadverse" { << \transpose c a, { \global \leadMusicverse } >> }
+        \new Voice = "leadprechorus" { << \transpose c a, { \leadMusicprechorus } >> }
+        \new Voice = "leadchorus" { << \transpose c a, { \leadMusicchorus } >> }
+        \new Voice = "leadbridge" { << \transpose c a, { \leadMusicBridge } >> }
+      }
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadbridge" \leadWordsBridge
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadchorus" \leadWordsChorus
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadverse" \leadWordsFour
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadverse" \leadWordsThree
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadverse" \leadWordsTwo
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadverse" \leadWordsOne
+      
+     
+      % we could remove the line about this with the line below, since
+      % we want the alto lyrics to be below the alto Voice anyway.
+      % \new Lyrics \lyricsto "altos" \altoWords
+
+      \new Staff = "backing" <<
+	%  \clef backingTwo
+	\set Staff.instrumentName = #"Backing"
+	\set Staff.shortInstrumentName = #"B."
+        \set Staff.midiInstrument = #"voice oohs"
+	\new Voice = "backingOnes" { \voiceOne << \transpose c a, { \global \backingOneVerseMusic \backingOneChorusMusic } >> }
+	\new Voice = "backingTwoes" { \voiceTwo << \transpose c a, { \global \backingTwoVerseMusic \backingTwoChorusMusic } >> }
+
+      >>
+      \new Lyrics \with { alignAboveContext = #"backing" }
+      \lyricsto "backingOnes" \backingOneChorusWords
+      \new Lyrics \with { alignBelowContext = #"backing" }
+      \lyricsto "backingTwoes" \backingTwoChorusWords
+      
+      \new Staff = "Staff_bass" {
+        \set Staff.instrumentName = #"Bass"
+        \set Staff.midiInstrument = #"electric bass (pick)"
+        %\set Staff.midiInstrument = #"distorted guitar"
+        \transpose c a, { \global \derbassVerse }
+      }      % again, we could replace the line above this with the line below.
+      % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
+    >>
+  >>
+  \midi {}
+  \layout {
+    \context {
+      \Staff \RemoveEmptyStaves
+      \override VerticalAxisGroup #'remove-first = ##t
+    }
+  }
+}
+
+#(set-global-staff-size 19)
+
+\paper {
+  page-count = #3
+  
+}
