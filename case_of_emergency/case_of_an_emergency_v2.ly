@@ -14,29 +14,26 @@ global = {
 
 harmonies = \chordmode {
   \germanChords
- %R1
- %c1:m g1 f1:m as2 g2
- %c1:m d1 f1:m g1
- %c1:m g1 f1:m as2 g2
- %c1:m d1 f1:m g1
+ R1
+ c1:m g1 f1:m as2 g2
+ c1:m d1 f1:m g1
+ c1:m g1 f1:m as2 g2
+ c1:m d1 f1:m g1
 
- %f2 a2:m g1
- %b2 b2:7 c1
- %f2 a2:m g1
- %e2 e2:7 f1
- %c1 c1 a1:m g1
- %d1 f2 g
- %e1 e1:7 f1 g1
- %c1 c1 a1:m g1
- %e1 e1:7 f1 g1
+ c2 c2 a2:m g2
+ e2 e2:7 f2 g2
+ c2 c2 a2:m g2
+ e2 e2:7 f2 g2
 
 
- %e1 e1:7 f1 f1
- %f1:m f2:m7 f2:6 as1 g1
+ e2 e2:7 f2 f2
+ f2:m f4:m7 f4:6 as2 g2
 }
 
 violinMusic = \relative c'' {
  R1*17
+ \break
+ \key c \major
  e4 c4
  g8 c8 d4
  e2
@@ -53,6 +50,8 @@ violinMusic = \relative c'' {
  gis8. a16~a8 b8
  c8. d16~d8 e8
  <d g>2
+   \break
+  \key c \minor
  R2*4
  as4. as8
  c8. b16~b8 as8
@@ -82,7 +81,12 @@ leadGuitarMusic = \relative c'' {
   c8 c8 d8 c8 es8 f8 es8 d8 
   r8 g,8 b8 d8 r8 g,8 b8 d8
   es8 c8 c8 c8 es8 f8 es8 d8
-  R1*9
+  R1
+  \break
+  \key c \major
+  R1*8
+  \break
+  \key c \minor
   b4. b8 
   d8. c16~c8 b8 
   c8 a16 f16~f4~
@@ -136,7 +140,8 @@ leadMusicverse = \relative c''{
  d2 c8 d8 c8 f8
  es4 c8 c8 es8 f8 es8 d8
  R1
-
+ \break
+ \key c \major
 }
 
 leadMusicprechorus = \relative c'{
@@ -225,7 +230,8 @@ c4 r4 r2
 r2 g8 g8 g8 b8
 as4 r4 r4. b8 
 r2 r8 b8 c8 d8 
-
+ \break
+ \key c \major
 }
 
 backingOneChorusMusic = \relative c'' {
@@ -263,7 +269,8 @@ g4 r4 r2
 r2 d8 d8 d8 es8
 f4 r4 r4. g8 
 r2 r8 g8 g8 g8
- 
+ \break
+ \key c \major 
 }
 
 backingTwoChorusMusic = \relative c'' {
@@ -362,7 +369,7 @@ derbassVerse = \relative c {
         \set Staff.midiInstrument = #"voice oohs"
         \new Voice = "leadverse" { << \transpose c c, { \global \leadMusicverse } >> }
         \new Voice = "leadprechorus" { << \transpose c c, { \leadMusicprechorus } >> }
-        \new Voice = "leadchorus" { << \transpose c c, { \leadMusicchorus } >> }
+        \new Voice = "leadchorus" { << \transpose c c { \leadMusicchorus } >> }
         \new Voice = "leadbridge" { << \transpose c c, { \leadMusicBridge } >> }
       }
       \new Lyrics \with { alignBelowContext = #"lead" }
