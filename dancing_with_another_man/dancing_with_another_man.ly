@@ -15,33 +15,49 @@ global = {
 harmonies = \chordmode {
   \germanChords
 r1
-a8:m a16:m a16:m a8:m a16:m a16:m  a8:m a16:m a16:m  a8:m a8:m
-f8 f16 f16 f8 f16 f16 f8 f16 f16 f8 f8
-a8:m a16:m a16:m a8:m a16:m a16:m  a8:m a16:m a16:m  a8:m a8:m
-f8 f16 f16 f8 f16 f16 f8 f16 f16 f8 f8
-a8:m a16:m a16:m a8:m a16:m a16:m  a8:m a16:m a16:m  a8:m a8:m
-f8 f16 f16 f8 f16 f16 f8 f16 f16 f8 f8
-a8:m a16:m a16:m a8:m a16:m a16:m  a8:m a16:m a16:m  a8:m a8:m
-f8 f16 f16 f8 f16 f16 f8 f16 f16 f8 f8
+%a8:m a16:m a16:m a8:m a16:m a16:m  a8:m a16:m a16:m  a8:m a8:m
+%f8 f16 f16 f8 f16 f16 f8 f16 f16 f8 f8
+%a8:m a16:m a16:m a8:m a16:m a16:m  a8:m a16:m a16:m  a8:m a8:m
+%f8 f16 f16 f8 f16 f16 f8 f16 f16 f8 f8
+%a8:m a16:m a16:m a8:m a16:m a16:m  a8:m a16:m a16:m  a8:m a8:m
+%f8 f16 f16 f8 f16 f16 f8 f16 f16 f8 f8
+%a8:m a16:m a16:m a8:m a16:m a16:m  a8:m a16:m a16:m  a8:m a8:m
+%f8 f16 f16 f8 f16 f16 f8 f16 f16 f8 f8
+a1:m f1 a1:m f1
+a1:m f1 a1:m f1
+
   
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-c4/c c4/c d4/d d8/d d8/g
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
-c4/c c4/c d4/d d8/d d8/g
+%a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
+%a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
+%a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
+%c4/c c4/c d4/d d8/d d8/g
+%a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
+%a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
+%a4:m/a a4:m/a a4:m/a a8:m/a a8:m/g
+%c4/c c4/c d4/d d8/d d8/g
+a2.:m/a a8:m/a a8:m/g
+a2.:m/a a8:m/a a8:m/g
+a2.:m/a a8:m/a a8:m/g
+c2/c d4./d d8/g
+a2.:m/a a8:m/a a8:m/g
+a2.:m/a a8:m/a a8:m/g
+a2.:m/a a8:m/a a8:m/g
+c2/c d4./d d8/g
 
-a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m c16 c16 c16 c16 b16:m b16:m b16:m b16:m
-a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m g16 g16 g16 g16  d16 d16 d16 d16
-a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m c16 c16 c16 c16 b16:m b16:m b16:m b16:m
-a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m g16 g16 g16 g16  d16 d16 d16 d16
+%a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m c16 c16 c16 c16 b16:m b16:m b16:m b16:m
+%a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m g16 g16 g16 g16  d16 d16 d16 d16
+%a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m c16 c16 c16 c16 b16:m b16:m b16:m b16:m
+%a16:m a16:m a16:m a16:m a16:m a16:m a16:m a16:m g16 g16 g16 g16  d16 d16 d16 d16
+a2:m c4 b4:m
+a2:m g4 d4
+a2:m c4 b4:m
+a2:m g4 d4
 
-d4:m d4:m e4 f4
-d4:m d4:m c4 g4 
-d4:m d4:m e4 f4
-d4:m d4:m c4 g4
+
+%d4:m d4:m e4 f4
+%d4:m d4:m c4 g4 
+%d4:m d4:m e4 f4
+%d4:m d4:m c4 g4
 
 d1:m
 d1:m
@@ -50,12 +66,13 @@ e8 e8 r4 f8 f8 r4
 d1:m
 d1:m
 d1:m
-c8 c8 r4 g8 g8 r4
+%c8 c8 r4 g8 g8 r4
+e4 d4:m c4 e4
 
-e1
-e1:7
-e1:79
-e1:79
+%e1
+%e1:7
+%e1:79
+%e1:79
 
 }
 
@@ -96,11 +113,12 @@ leadMusic = \relative c''
   a2 r8 e'8 d8 c8
   c8 a8 c8 a8 d8 a8 d8 g,8
   a2 r2
-  R1*3
-  f'8 f16 d16 f8 f16 d16 f8 f16 d16 f16 f16 f16 d16 
-  f8 f16 d16 f8 f16 d16 r2
-  f8 f16 d16 f8 f16 d16 f8 f16 d16 f16 f16 f16 d16 
-  f8 f16 d16 f8 f16 d16 r4.. c16~
+  R1*2
+  r2...c16~
+  %f'8 f16 d16 f8 f16 d16 f8 f16 d16 f16 f16 f16 d16 
+  %f8 f16 d16 f8 f16 d16 r2
+  %f8 f16 d16 f8 f16 d16 f8 f16 d16 f16 f16 f16 d16 
+  %f8 f16 d16 f8 f16 d16 r4.. c16~
 
   c16 a16 a16 g16 a16 g16~g16 a16~a8. r16 a16 c16~c16 c16~ 
   c16 a16 a16 g16 a16 g16~g16 a16~a8. r16 a16 c16~c16 c16~ 
@@ -110,6 +128,7 @@ leadMusic = \relative c''
   c16 a16 a16 g16 a16 g16~g16 a16~a8. r16 a16 c16~c16 c16~ 
   c16 a16 a16 g16 a16 g16~g16 a16~a4. r8
   r1
+  \bar ":|."
 
 }
 
@@ -120,9 +139,9 @@ com -- pared to her all o -- ther thing are just blurred gloom
 her eve -- ry move is like the twink -- le of a star
 as she is lur -- king in the twi -- light of the bar
 
-\set stanza = "Prechorus" 
-I want to be, have to be, must be me to set her free, have to be with her.  
-Why is -- n't she kis -- sing me got -- ta see what we could be? Tell me, why is she
+%\set stanza = "Prechorus" 
+%I want to be, have to be, must be me to set her free, have to be with her.  
+%Why is -- n't she kis -- sing me got -- ta see what we could be? Tell me, why is she
 
 \set stanza = "Chorus" 
 danc -- ing with an oth -- er man.
@@ -164,7 +183,7 @@ leadWordsFour = \lyricmode {
 
 backingOneMusic = \relative c'' {
   R1*9
-  R1*15
+  R1*11
   %d4 c4 b4 c8 b8
   %d4 a4 g4 b4
   %d2 b4 c4
@@ -192,7 +211,7 @@ danc -- ing with an oth -- er man
 
 backingTwoMusic = \relative c'' {
   R1*9
-  R1*15
+  R1*11
   %a4 a4 g4 f8 g8
   %f4 f4 e4 d4
   %f2 gis4 f4
@@ -226,11 +245,15 @@ danc -- ing with an oth -- er man
 
     \new Staff = "Staff_violin" {
       \set Staff.instrumentName = #"Violin"
+      \set Staff.shortInstrumentName = #"V."
+      \set Staff.midiInstrument = #"violin"
       \transpose c c { \global \violinMusic }
     }
     \new StaffGroup <<
       \new Staff = "lead" <<
 	\set Staff.instrumentName = #"Lead"
+	\set Staff.shortInstrumentName = #"L."
+        \set Staff.midiInstrument = #"voice oohs"
 	\new Voice = "lead" { << \transpose c c { \global \leadMusic } >> }
       >>
       \new Lyrics \with { alignBelowContext = #"lead" }
@@ -248,6 +271,8 @@ danc -- ing with an oth -- er man
       \new Staff = "backing" <<
 	%  \clef backingTwo
 	\set Staff.instrumentName = #"Backing"
+	\set Staff.shortInstrumentName = #"B."
+        \set Staff.midiInstrument = #"voice oohs"
 	\new Voice = "backingOnes" { \voiceOne << \transpose c c { \global \backingOneMusic } >> }
 	\new Voice = "backingTwoes" { \voiceTwo << \transpose c c { \global \backingTwoMusic } >> }
 
@@ -273,5 +298,5 @@ danc -- ing with an oth -- er man
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #3
+  page-count = #2
 }
