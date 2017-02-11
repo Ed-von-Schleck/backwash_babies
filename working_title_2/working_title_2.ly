@@ -7,9 +7,9 @@
 }
 
 global = {
-  \key e \major
+  \key e \minor
   \time 4/4
-  \tempo 4 = 120
+  \tempo 4 = 100
 }
 
 harmonies = \chordmode {
@@ -20,11 +20,11 @@ harmonies = \chordmode {
  e2:m d2:sus2 c2:7 b2:7
  
  g2 c2 b2:7 b2:7
- %g2 c2 b2:7 b2:7
- g2 a2 fis2:7 fis2:7
+ g2 c2 b2:7 b2:7
+ %g2 a2 fis2:7 fis2:7
  
- %c2 d2 g2 b2:7
- g2 b2:7 c2 d2
+ c2 d2 g2 b2:7
+ %g2 b2:7 c2 d2
  c2 d2 e2 e2
  c2 d2 g4 d4 g4 d4 
  c2 d2 e2 e2
@@ -35,10 +35,18 @@ harmonies = \chordmode {
  c2:7 b2:7 
 }
 
-violinMusic = \relative c'' {
-
+violinMusic = \relative c''' {
+r2.. bes8 
+bes16(g16~g16) f16~f8 bes8 a4 r4
+r1
+g,16(bes16~bes16) c16~c16 bes16~bes16 d16~d4 r4
+r2.. bes'8 
+bes16(g16~g16) f16~f8 bes8 a2
+r1
+<g bes>8. <g bes>16~<g bes>8 <fis a>8~<fis a>4 r4
+R1*2
+r2 r8 c'16 b16~b8 a8 a2\glissando b2
 }
-
 leadGuitarMusic = \relative c'' {
 
 }
@@ -67,16 +75,25 @@ trumpettwoChorusMusic = \relative c'' {
 
 }
 
-leadMusicverse = \relative c''{
-
+leadMusicverse = \relative c'{
+e4. e8 g8. e16~e8 e8 g2 fis4 r4
+e4. e8 g8. a16~a8 g8 bes2. r4
+e,4. e8 g8. e16~e8 e8 g2 fis4 r4
+g4. g8 b8. a16~a8 g8 bes2 b4 r4
 
 }
 
 leadMusicprechorus = \relative c'{
- 
+ R1*4
 }
 
 leadMusicchorus = \relative c''{
+g8. a16~a8 b8 a8. g16~g8 a8 b8. a16~a8 g8 fis8. g16~g8 a8 
+e8. fis16~fis8 g8 a8. g16~g8 fis8 e2 r2 
+g8. a16~a8 b8 a8. g16~g8 a8 b16 a16~a16 g16~g8 a8 b16 a16~a16 g16~g8 a8
+g8. e16~e8 g8 fis8. e16~e8 d8 e2 r2
+
+
 
 }
 
@@ -142,6 +159,17 @@ backingTwoChorusWords = \lyricmode {
 
 derbassVerse = \relative c {
   \clef bass
+  g8 g16 e16 g16 a16 r16 b16~b4 r4
+  g8. bes16~bes8 g8 b4 r4
+  g8 g16 e16 g16 a16 r16 b16~b4 r4
+  g8. bes16~bes8 g8 b4 r4 
+  g8 g16 e16 g16 a16 r16 b16~b4 r4
+  g8. bes16~bes8 g8 b4 r4 
+  g8 g16 e16 g16 a16 r16 b16~b4 r4
+  g8. bes16~bes8 g8 b4 r4
+  g4. g8 c4. c8 b8 a16 b16~b16 a16 b16~b16 a16 b16~b16 a16 c8 b8
+  g4. g8 c4. c8 b2 b2
+  
 
 }
 
@@ -218,18 +246,17 @@ derbassVerse = \relative c {
 	\new Voice = "backingTwoes" { \voiceTwo << \transpose c c { \global \backingTwoVerseMusic \backingTwoChorusMusic } >> }
 
       >>
-      \new Lyrics \with { alignAboveContext = #"backing" }
-      \lyricsto "backingOnes" \backingOneChorusWords
-      \new Lyrics \with { alignBelowContext = #"backing" }
-      \lyricsto "backingTwoes" \backingTwoChorusWords
-      
+      % again, we could replace the line above this with the line below.
+      % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
+    >>
+    \new StaffGroup <<
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
+	\set Staff.shortInstrumentName = #"Ba."
         %\set Staff.midiInstrument = #"electric bass (pick)"
-        \set Staff.midiInstrument = #"distorted guitar"
+        \set Staff.midiInstrument = #"slap bass 2"
         \transpose c c { \global \derbassVerse }
-      }      % again, we could replace the line above this with the line below.
-      % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
+      }  
     >>
   >>
   \midi {}
