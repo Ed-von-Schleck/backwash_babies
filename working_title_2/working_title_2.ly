@@ -46,6 +46,8 @@ r1
 <g bes>8. <g bes>16~<g bes>8 <fis a>8~<fis a>4 r4
 R1*2
 r2 r8 c'16 b16~b8 a8 a2\glissando b2
+
+
 }
 leadGuitarMusic = \relative c'' {
 
@@ -84,7 +86,9 @@ g4. g8 b8. a16~a8 g8 bes2 b4 r4
 }
 
 leadMusicprechorus = \relative c'{
- R1*4
+g'16 g16 e16 g16~g8 a8 g16 g16 e16 g16~g8 a8 fis2 r2
+g16 g16 e16 g16~g8 a8 c16 b16~b16 a16~a8 c8 b2 r2
+
 }
 
 leadMusicchorus = \relative c''{
@@ -130,13 +134,16 @@ leadWordsFour = \lyricmode {
 \set stanza = "4." 
 
 }
-backingOneVerseMusic = \relative c'' {
-
+backingOneVerseMusic = \relative c' {
+R1*12
 
 }
 
-backingOneChorusMusic = \relative c'' {
-
+backingOneChorusMusic = \relative c' {
+e8. d16~d8 e8 fis8. e16~e8 fis8 g8. fis16~fis8 e8 fis8. e16~e8 fis8 
+e8. e16~e8 e8 fis8. e16~e8 dis8 b2 r2 
+e8. d16~d8 e8 fis8. e16~e8 fis8 e16 e16~e16 e16~e8 e8 d16 d16~d16 d16~d8 d8
+e8. e16~e8 e8 fis8. b,16~b8 b8 b2 r2 
 }
 
 backingOneChorusWords = \lyricmode {
@@ -145,11 +152,11 @@ backingOneChorusWords = \lyricmode {
 }
 
 backingTwoVerseMusic = \relative c' {
-
+R1*12
  
 }
 
-backingTwoChorusMusic = \relative c'' {
+backingTwoChorusMusic = \relative c' {
 
 }
 
