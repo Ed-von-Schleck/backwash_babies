@@ -17,6 +17,7 @@ harmonies = \chordmode {
  e2:m d2:sus2 c2:7 b2:7
  e2:m d2:sus2 c2:7 b2:7
  e2:m d2:sus2 c2:7 b2:7
+ %e2:m d2:sus2 f2:7 b2:7
  e2:m d2:sus2 c2:7 b2:7
  
  g2 c2 b2:7 b2:7
@@ -79,7 +80,7 @@ trumpettwoChorusMusic = \relative c'' {
 
 leadMusicverse = \relative c'{
 e4. e8 g8. e16~e8 e8 g2 fis4 r4
-e4. e8 g8. a16~a8 g8 bes2. r4
+e4. e8 g8. a16~a8 g8 bes2 r2
 e,4. e8 g8. e16~e8 e8 g2 fis4 r4
 g4. g8 b8. a16~a8 g8 bes2 b4 r4
 
@@ -136,7 +137,6 @@ leadWordsFour = \lyricmode {
 }
 backingOneVerseMusic = \relative c' {
 R1*12
-
 }
 
 backingOneChorusMusic = \relative c' {
