@@ -14,6 +14,7 @@ global = {
 
 harmonies = \chordmode {
   \germanChords
+\repeat volta 3 {
 r1
 %a8:m a16:m a16:m a8:m a16:m a16:m  a8:m a16:m a16:m  a8:m a8:m
 %f8 f16 f16 f8 f16 f16 f8 f16 f16 f8 f8
@@ -66,14 +67,30 @@ e8 e8 r4 f8 f8 r4
 d1:m
 d1:m
 d1:m
-%c8 c8 r4 g8 g8 r4
-e4 d4:m c4 e4
+}
+
+\alternative{
+  {
+    c8 c8 r4 g8 g8 r4
+  }
+  {
+    c4 g4 f4 e4 a1:m \bar "|."
+  }
+}
+%e4 d4:m c4 e4
 
 %e1
 %e1:7
 %e1:79
 %e1:79
 
+c1 e1 c1 e1 
+%bes1 bes1 f1 c1
+%bes1 bes1 f1 a2 a2:7
+f1 c1 
+%f1 d1:m7 a1 a1:7
+%d2:m7 g2:m a2 a2:7 
+f2 d2:m7 a2 a2:7
 }
 
 violinMusic = \relative c''' {
@@ -129,6 +146,25 @@ leadMusic = \relative c''
   c16 a16 a16 g16 a16 g16~g16 a16~a4. r8
   r1
   \bar ":|."
+  R1*2
+  
+  e'8 e16 d16 e16 d16 c16 e16~
+  e8 e16( d16) e16 d16 c16 d16
+  e2~
+  e4 r4
+  
+  e8 e16 d16 e16 d16 c16 e16~
+  e8 e16 d16 e16 d16 c16 g'16
+  e2~
+  e4 r4
+  
+  c8. a16~a8 a8 c8.( a16~a8) a8
+  c2 r2
+  c8. a16~a8 a16 a16 c8.( a16~a8) a8
+  a2~a4 r4
+  
+  \bar "|."
+
 
 }
 
@@ -152,8 +188,12 @@ danc -- ing with an oth -- er man.
 She is danc -- ing with an oth -- er man.
 She keeps danc -- ing with an oth -- er man.
 
+\set stanza = "Bridge" 
+I want to be, have to be the one to set her free.
+Why is -- n't she kis -- sing me got -- ta see what we could be?
 
-
+Hope -- less -- ness all  a -- round.
+Bet -- ter check the lost and found.
 
 }
 leadWordsTwo = \lyricmode { 
@@ -207,6 +247,9 @@ danc -- ing with an oth -- er man
 danc -- ing with an oth -- er man
 danc -- ing with an oth -- er man
 danc -- ing with an oth -- er man
+
+
+
 }
 
 backingTwoMusic = \relative c'' {
@@ -225,6 +268,21 @@ backingTwoMusic = \relative c'' {
   g16 f16 f16 f16 f16 f16~f16 f16~f8. r16 r8. g16~ 
   g16 f16 f16 f16 f16 f16~f16 f16~f4. r8
   r1
+  
+  R1*2
+  g4.( e8
+  g4. e8) 
+  r16 gis16 fis16 gis16 a16 gis16 fis16 gis16
+  r16 gis16 fis16 gis16 a16 gis16 fis16 gis16
+  g4.( e8
+  g4. e8)
+  r16 gis16 fis16 gis16 a16 gis16 fis16 gis16
+  r16 gis16 fis16 gis16 a16 gis16 fis16 gis16
+
+  f8. f16~f8 c8 f4. c8
+  e2 r2
+  f8. f16~f8 c16 c16 f4. c8
+  cis2( g'4) r4
 }
 backingTwoWords = \lyricmode {
 danc -- ing with an oth -- er man
@@ -234,6 +292,14 @@ danc -- ing with an oth -- er man
 danc -- ing with an oth -- er man
 danc -- ing with an oth -- er man
 danc -- ing with an oth -- er man
+
+\set stanza = "Bridge" 
+Uhh __ You're not the one to do that. You bet -- ter ne -- ver come back.
+Ahh __  Just take a look at your -- self. She does -- n't want _ an elf.
+
+Hope -- less -- ness all  a -- round
+Bet -- ter check the lost  and found.
+
 }
 
 \score {
@@ -298,5 +364,5 @@ danc -- ing with an oth -- er man
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
 }
