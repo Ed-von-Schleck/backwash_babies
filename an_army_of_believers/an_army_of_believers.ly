@@ -6,11 +6,12 @@
 
 global = {
   \key cis \minor
-  \tempo 4 = 160
+  \tempo 4 = 240
   \time 4/4
 }
 
 chorus = \lyricmode {
+  \set stanza = "chorus"
   I want to raise
   an ar -- my of be -- lie -- vers
   and march in -- to the head -- quar -- ters
@@ -24,6 +25,7 @@ chorus = \lyricmode {
 }
 
 verseOne = \lyricmode {
+  \set stanza = "verse"
   Tired of the in -- suf -- fer -- ab -- le dai -- ly rou -- tine 
   where no pro -- gress is e -- ver to be seen
   wa -- ding through the un -- der -- growth of ig -- no -- rance and fear
@@ -35,6 +37,17 @@ verseOne = \lyricmode {
   be -- cause no -- one will hear you a -- ny -- way
   
     
+}
+bridge = \lyricmode {
+  \set stanza = "bridge"
+  
+  shelve your con -- ceipt and all hopes for re -- lief
+  cause the world won't heal it -- self,
+  raise your hand, take the lead,
+  it's still time to be -- lieve, 
+  we can cange it with the help of e -- very -- one that shares our views,
+  so let's get up and spread the news,
+  I
 }
 
 
@@ -59,6 +72,12 @@ harmonies = \chordmode {
   fis:m7 b:7 e:maj7 cis:m7
   fis:m7 gis:7 cis1*2:m
   
+  fis1 fis1 fis1 fis1
+  a1 e1 b1 cis1:m
+  fis1 fis1 fis1 fis1
+  a1 e1 b1 cis1:m
+  a1 gis1 cis1:m e1
+  a1 gis1:7 cis1:m
 }
 
 violinMusic = \relative c' {
@@ -129,11 +148,39 @@ leadMusic = \relative c' {
   gis4 fis8 e8~ e4 dis
   cis2 r
   r1
-  \bar "|."
+  \bar ":|."
+  \key b \major
+  
+  ais'2 ais4 ais4
+  ais4 r4 ais4 ais4
+  ais2 ais4 ais4
+  ais4 r4 b4 ais4
+  ais2 ais2 gis2 gis2 
+  dis2 r2
+  e2 e2
+  ais2 ais4 ais4
+  ais4 r4 ais4 ais4
+  ais2 ais4 ais4
+  ais4 r4 b4 ais4
+  ais2 ais2
+  gis2 gis2
+  dis2 dis2
+  e2 e2
+  e2 ais2
+  gis2 gis2
+  gis2 gis2
+  gis2 fis2
+  e2 e2
+  dis2 dis2
+  cis2 cis'2
+  \bar ":|."
+  \key b \major  
+  
 }
 leadWords = \lyricmode {
   \verseOne
   \chorus
+  \bridge
 }
 
 backingTwoMusic = \relative c' {
@@ -161,6 +208,34 @@ backingTwoMusic = \relative c' {
   dis4 dis8 e8~ e4 dis
   cis2 r
   r1
+  \bar ":|."
+  \key b \major
+
+  cis2 cis4 cis4
+  dis4 r4 dis4 dis4
+  e2 e4 e4
+  fis4 r4 fis4 fis4
+  e2 e2
+  e2 e2
+  b2 r2
+  cis2 cis2
+  cis2 cis4 cis4
+  dis4 r4 dis4 dis4
+  e2 e4 e4
+  fis4 r4 fis4 fis4
+  e2 e2
+  e2 e2 
+  b2 b2
+  cis2 cis2
+  cis2 cis2
+  dis2 dis2
+  e2 e2
+  e2 b2
+  cis2 cis2 
+  bis2 bis2
+  cis2 e2
+  
+
 
 }
 backingOneWords = \lyricmode {
@@ -192,6 +267,33 @@ backingOneMusic = \relative c'' {
   bis4 bis8 bis8~ bis4 bis
   cis2 r
   r1
+    \bar ":|."
+  \key b \major
+  
+  cis2 cis4 cis4
+  cis4 r4 cis4 cis4
+  cis2 cis4 cis4
+  cis4 r4 cis4 dis4
+  e2 cis2
+  b2 gis2
+  fis2 r2
+  gis2 b2
+  cis2 cis4 cis4
+  cis4 r4 cis4 cis4
+  cis2 cis4 cis4
+  cis4 r4 cis4 dis4  
+  e2 cis2
+  b2 gis2
+  fis2 fis2
+  gis2 gis2
+  cis2 cis2
+  bis2 bis2
+  cis2 gis2
+  gis2 fis2
+  e2 e2
+  dis2 dis2
+  cis2 cis'2
+  
 }
 backingTwoWords = \lyricmode {
   
@@ -245,5 +347,5 @@ backingTwoWords = \lyricmode {
 #(set-global-staff-size 18)
 
 \paper {
-  page-count = #1
+  page-count = #2
 }
