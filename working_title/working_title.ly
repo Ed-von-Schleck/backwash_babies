@@ -9,11 +9,12 @@
 global = {
   \key bes \minor
   \time 4/4
-  \tempo 4 = 120
+  \tempo 4 = 126
 }
 
 harmonies = \chordmode {
   \germanChords
+ R1*17
  R1*8
  bes1:m f1 es1:m des2 c2:7
  bes1:m f1 es1:m des2 c2:7
@@ -36,22 +37,44 @@ harmonies = \chordmode {
 
 }
 
-violinMusic = \relative c'' {
-}
-
-leadGuitarMusic = \relative c'' {
+violinMusic = \relative c' {
+  R1*17
 bes'2(~bes8 c16 des16 c8 des8) 
 c1
 es2. f8 es8
 des8. es16~es8 des8 c8. bes16~bes8 a8 
 bes2(~bes8 c16 des16 c8 des8) 
+%es2. f8 es8
+%< des ges >1%(~es8 des16 es16 des8 es8)
+%<f c >1 
 c1
-es2(~es8 des16 es16 des8 es8)
-<c a>1 
+es2. f8 es8
+des8. es16~es8 des8 c2 
 
-R1*16
+}
 
-<f, as des>8 <f as des>8 <f as des>8 <f as des>8 <f as des>8 <f as des>8 <f as des>8 <f as des>8
+leadGuitarMusic = \relative c''' {
+ des,8 bes8 f8 des'8 bes8 f8 des'8 bes8
+ es8 bes8 ges8  es'8 bes8 ges8  es'8 bes8
+ f'8 des8 bes8 f'8 des8 bes8 f'8 des8
+ es8 c8 beses8 es8 c8 beses8 es8 c8
+ des8 bes8 f8 des'8 bes8 f8 des'8 bes8
+ es8 bes8 ges8  es'8 bes8 ges8  es'8 bes8
+ f'8 des8 bes8 f'8 des8 bes8 f'8 des8
+ es8 c8 beses8 es8 c8 beses8 es8 c8
+ 
+ ges'8 c,8 beses8 ges'8 c,8 beses8 ges'8 c,8
+ f8 des8 bes8 f'8 des8 bes8 f'8 des8
+ ges8 c,8 beses8 ges'8 c,8 beses8 ges'8 c,8
+ f8 des8 bes8 f'8 des8 bes8 f'8 des8
+ es8 c8 beses8 es8 c8 beses8 es8 c8
+ des8 bes8 f8 des'8 bes8 f8 des'8 bes8
+ c8 beses8 f8 c'8 beses8 f8 c'8 beses8 
+ <f bes des>1
+R1
+R1*24
+
+<f' as des>8 <f as des>8 <f as des>8 <f as des>8 <f as des>8 <f as des>8 <f as des>8 <f as des>8
 <f a c>8 <f a c>8 <f a c>8 <f a c>8 <f a es'>8 <f a c>8 <f a c>8 <f a es'>8
 <ges bes des>8 <ges bes des>8 <ges bes des>8 <ges bes des>8 <ges bes des>8 <ges bes des>8 <ges bes des>8 <ges bes des>8
 <ges bes des>8 <ges bes des>8 <ges bes des>8 <ges bes des>8 <ges bes des>8 <ges bes des>8 <ges bes des>8 <ges bes des>8
@@ -86,7 +109,9 @@ trumpettwoChorusMusic = \relative c'' {
 }
 
 leadMusicverse = \relative c''{
+ R1*17
 R1*7
+
 r2. c4
 des2 bes4 f8 c'8~
 c2 r4 es4
@@ -185,6 +210,7 @@ backingTwoChorusWords = \lyricmode {
 
 derbassVerse = \relative c {
   \clef bass
+ R1*17
   bes8 bes8 des8 bes8 ges'8 f8 des8 f8
   f,4 c'8 f,8 as8 c8 des8 c8 
   es8 es8 f8 es8 ges8 f8 es8 f8

@@ -9,7 +9,7 @@
 global = {
   \key c \major
   \time 4/4
-  \tempo 4 = 106
+  \tempo 4 = 126
 }
 
 harmonies = \chordmode {
@@ -198,20 +198,18 @@ Bet -- ter check the lost and found.
 }
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
-I have been wai -- ting for the ta -- bles to be turned
-I had my fin -- gers crossed and sure -- ly had them burned
-And clear -- ly this time life is play -- ing the same song 
-my fate is lone -- ly and i'll ne -- ver get it on
-
-}
-
-leadWordsThree = \lyricmode {
-\set stanza = "3." 
 Is it just me or are there spar -- kles in the air
 the way your fin -- gers keep on cur -- ling up your hair
 i want to be with you for -- e -- ver and a day
 but what you do to me is sim -- ply not o -- kay
+}
 
+leadWordsThree = \lyricmode {
+\set stanza = "3." 
+I have been wai -- ting for the ta -- bles to be turned
+I had my fin -- gers crossed and sure -- ly had them burned
+And clear -- ly this time life is play -- ing the same song 
+my fate is lone -- ly and i'll ne -- ver get it on
 }
 
 leadWordsFour = \lyricmode {

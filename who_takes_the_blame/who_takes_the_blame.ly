@@ -34,10 +34,10 @@ harmonies = \chordmode {
   g4:m f4 es4 d4:m c1
   a1 d1
 
-  g1 g1 g2. f4 d1:7
-  g1 g1 g2. f4 d1:7
-  g1 g1 g2. f4 d1:7
-  g1 g1 g2. f4 d1:7
+  g1:m g1:m g2.:m f4 d1:7
+  g1:m g1:m g2.:m f4 d1:7
+  g1:m g1:m g2.:m f4 d1:7
+  g1:m g1:m g2.:m f4 d1:7
   
 
 }
@@ -152,6 +152,7 @@ leadMusicBridge = \relative c'''{
  bes4. g8~g4 bes4
  bes4. bes8~bes4 bes8 a8~
  a8 r2..
+ \bar"|."
 }
 
 leadWordsOne = \lyricmode { 
@@ -175,10 +176,10 @@ leadWordsChorus = \lyricmode {
 
 leadWordsBridge = \lyricmode {
 \set stanza = "bridge"
- ne -- ver e -- ver will I take the blame
- ne -- ver e -- ver will I take the blame
- ne -- ver e -- ver will I take the blame
- ne -- ver e -- ver will I take the blame
+ ne -- ver e -- ver, will I take the blame.
+ ne -- ver e -- ver, will I take the blame.
+ ne -- ver e -- ver, will I take the blame.
+ ne -- ver e -- ver, will I take the blame.
 }
 
 leadWordsTwo = \lyricmode { 
