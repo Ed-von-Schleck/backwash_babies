@@ -1,8 +1,8 @@
 \version "2.16.2"
 
 \header {
-  title = "working title"
-  composer = "skudella & speckdrum (The Royal Backwash)"
+  title = "The Girl Unseen"
+  composer = "skudella (The Royal Backwash)"
 
 }
 
@@ -38,7 +38,10 @@ harmonies = \chordmode {
 }
 
 violinMusic = \relative c' {
-  R1*17
+  \key bes \minor
+ R1*17
+\bar ".|:"
+
 bes'2(~bes8 c16 des16 c8 des8) 
 c1
 es2. f8 es8
@@ -57,20 +60,20 @@ leadGuitarMusic = \relative c''' {
  des,8 bes8 f8 des'8 bes8 f8 des'8 bes8
  es8 bes8 ges8  es'8 bes8 ges8  es'8 bes8
  f'8 des8 bes8 f'8 des8 bes8 f'8 des8
- es8 c8 beses8 es8 c8 beses8 es8 c8
+ es8 c8 a8 es'8 c8 a8 es'8 c8
  des8 bes8 f8 des'8 bes8 f8 des'8 bes8
  es8 bes8 ges8  es'8 bes8 ges8  es'8 bes8
  f'8 des8 bes8 f'8 des8 bes8 f'8 des8
- es8 c8 beses8 es8 c8 beses8 es8 c8
+ es8 c8 a8 es'8 c8 a8 es'8 c8
  
- ges'8 c,8 beses8 ges'8 c,8 beses8 ges'8 c,8
+ ges'8 c,8 a8 ges'8 c,8 a8 ges'8 c,8
  f8 des8 bes8 f'8 des8 bes8 f'8 des8
- ges8 c,8 beses8 ges'8 c,8 beses8 ges'8 c,8
+ ges8 c,8 a8 ges'8 c,8 a8 ges'8 c,8
  f8 des8 bes8 f'8 des8 bes8 f'8 des8
- es8 c8 beses8 es8 c8 beses8 es8 c8
+ es8 c8 a8 es'8 c8 a8 es'8 c8
  des8 bes8 f8 des'8 bes8 f8 des'8 bes8
- c8 beses8 f8 c'8 beses8 f8 c'8 beses8 
- <f bes des>1
+ c8 a8 f8 c'8 a8 f8 c'8 a8 
+ <f bes des>1 \fermata
 R1
 R1*24
 
@@ -112,73 +115,90 @@ leadMusicverse = \relative c''{
  R1*17
 R1*7
 
-r2. c4
-des2 bes4 f8 c'8~
-c2 r4 es4
-des2 bes4 ges8 f8~
-f2 r4 c'4
+r1
 des2 bes4 f8 c'8~
 c2 r4 es4
 des2 bes4 ges8 f8~
 f2 r2
+des'2 bes4 f8 c'8~
+c2 r8 bes8 as8 bes8~
+bes1
+r1
 bes,2 des2
-c2 r2
-es1
-a,8 a8~a8 bes8 c4. r8
+c2 r8 des8 c8 c8~ 
+c8 bes8~bes4 r2
+a8 a8~a8 bes8 c4. r8
 bes2 des2
-c2 r2
+c2 r8 des8( c8) c8(
 bes1~
-bes2 r2
+bes2) r2
 }
 
 leadMusicprechorus = \relative c'{
   r4 des4 des8 es8~es8 des8
-  c2. r4
+  c2 r8 es8 c4
   ges'4 f8 des8~des2
   R1
   r4 des4 des8 es8~es8 des8
   c2. bes8 as8
-  bes2. r4
-  R1
+  bes1
+  des1
+  
   
 }
 
 leadMusicchorus = \relative c'{
   r2 f8 es8 des8 es8~
-  es4 des8 es8~es8 des8 es4
-  c4 des8 es8~es8 des8 c4
-  des2 r2
+  es4 des8 es8~es4 f8 c8~
+  c2 r8 as8 
+  c4 des4 es8 des8~des2
   r2 f8 es8 des8 es8~
-  es4 des8 es8~es8 des8 es4
-  c2. es4
-  des2 r2
-  r2 f8 as8~as8 c8
+  es4 des8 es8~es4 f8 c8~
+  c2 r8 as8 
+  c4 des4 es8 des8~des2
+  r2 f8 as8 as8 c8~
   c4. bes8~bes4 as4
-  as4. f8~f4 as4
-  bes2 r2
+  as2.( f4
+  bes2) r2
   
-  r2 f8 as8~as8 c8
-  bes2 as4. ges8
-  f2 des2
-  es2 r2
+  r2 f8 as8 as8 bes8~
+  bes4. as8~as4 ges4
+  f4. f8 f4 f4
+  g2 r2
 \bar ":|."
 }
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
+She is the girl that no -- bo -- dy sees
+No -- bo -- dy cares a -- bout  her
+He is all she  has e -- ver been long -- ing for 
+He is all she loves __
+}
+
+leadWordsPrechorus = \lyricmode {
+\set stanza = "prechorus"
+there will be the day when he turns a -- round
+there will be the day when he sees her
+
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
-
- 
+for -- ev -- er dream -- ing of the day you will turn a -- round
+for -- ev -- er dream -- ing of your smile as you turns a -- round
+for -- ev -- er dream -- ing of you __ 
+for -- ev -- er dream -- ing al -- though it won't come true
 }
 
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
+So she holds on and he does not know
+He does not care at _ all
 
-
+Still she keeps on _ ho -- ping that he might change
+Still she longs for him __
 }
 
 leadWordsThree = \lyricmode {
@@ -195,10 +215,31 @@ leadWordsFour = \lyricmode {
 
 
 backingOneChorusMusic = \relative c'' {
+  R1*49
+  r2 as8 as8 des8 bes8~
+  bes4 as2.
+  r8 f8 as8 f8 as8 f8 des'8 bes8~
+  bes1
+  r2 as8 as8 des8 bes8~
+  bes4 as2.
+  r8 f8 as8 f8 as8 f8 des'8 bes8~
+  bes1
+  r2 des8 des8 des8 es8~
+  es4. des8~des4 c4
+  c2.( es4
+  des2) r2
+  r2 des,8 des8 des8 des8~
+  des4. des8~des4 es4
+  des4. des8 des4 des4
+  es2 r2
 }
 
 backingOneChorusWords = \lyricmode {
-
+\set stanza = "chorus"
+for -- ev -- er dream -- ing a -- bout that mo -- ment so bright 
+for -- ev -- er dream -- ing of step -- ping in -- to the light
+for -- ev -- er dream -- ing of you __ 
+for -- ev -- er dream -- ing al -- though it won't come true
 }
 
 backingTwoChorusMusic = \relative c'' {
@@ -288,6 +329,8 @@ derbassVerse = \relative c {
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadchorus" \leadWordsChorus
       \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadprechorus" \leadWordsPrechorus
+      \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsFour
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsThree
@@ -306,8 +349,8 @@ derbassVerse = \relative c {
 	\set Staff.instrumentName = #"Backing"
 	\set Staff.shortInstrumentName = #"B."
         \set Staff.midiInstrument = #"voice oohs"
-	\new Voice = "backingOnes" { \voiceOne << \transpose c c { \global \backingOneChorusMusic } >> }
-	\new Voice = "backingTwoes" { \voiceTwo << \transpose c c { \global \backingTwoChorusMusic } >> }
+	\new Voice = "backingOnes" { \voiceOne << \transpose c cis { \global \backingOneChorusMusic } >> }
+	\new Voice = "backingTwoes" { \voiceTwo << \transpose c cis { \global \backingTwoChorusMusic } >> }
 
       >>
       \new Lyrics \with { alignAboveContext = #"backing" }
@@ -317,6 +360,7 @@ derbassVerse = \relative c {
       
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
+	\set Staff.shortInstrumentName = #"Bs."
         %\set Staff.midiInstrument = #"electric bass (pick)"
         \set Staff.midiInstrument = #"distorted guitar"
         \transpose c cis { \global \derbassVerse }
@@ -336,5 +380,5 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
 }
