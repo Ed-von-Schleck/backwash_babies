@@ -38,14 +38,14 @@ harmonies = \chordmode {
 }
 
 violinMusic = \relative c''' {
-r1.. bes4 
+r1 r2. bes4 
 bes8(g8~g8) f8~f4 bes4 a2 r2
-r\breve
+r1 r1 
 g,8(bes8~bes8) c8~c8 bes8~bes8 d8~d2 r2
-r1.. bes'4 
+r1 r2. bes'4 
 <g bes>4. <g bes>8~<g bes>4 <fis a>4~<fis a>2 r2
-r\breve
-bes8(g8~g8) f8~f4 bes4 a1
+r1 r1 
+bes8(g8~g8) f8~f4 bes4 a2 r2
 R\breve*2
 r1 r4 c8 b8~b4 a4 a1\glissando b1
 
@@ -114,7 +114,7 @@ e1 e2 r2
 r4 g8 g8 a8 b8~b4 a4. g8~g4 a4
 b8 a8~a8 g8~g4 a4 b8 a8~a8 g8~g4 a4
 r4 e8 e8 e4 g4 a8 g8~g8 fis8~fis8 d8~d4
-gis\breve
+gis1 gis2 r2
 \bar ".|"
 
 }
@@ -165,7 +165,7 @@ leadWordsFour = \lyricmode {
 
 }
 backingOneVerseMusic = \relative c' {
-R\breve*12
+R1*24
 }
 
 backingOneChorusMusic = \relative c' {
@@ -173,7 +173,7 @@ r4 e4 d4 e4 fis8 fis8~fis8 e8~e4 fis4 g8 g8~g8 fis8~fis4 e4 fis4 e8 fis8~fis2
 r4 e4 e4 e4 fis4 e8 d8~d4 d4 b1 b2 r2
 r4 e8 d8 e8 g8~g4 fis4. e8~e4 d4 g8 d8~d8 d8~d4 fis4 g8 d8~d8 d8~d4 fis4
 r4 e8 e8 e4 e4 fis8 d8~d8 d8~d8 d8~d4
-e\breve 
+e1 e2 r2  
 %e8. d16~d8 e8 fis8. e16~e8 fis8 g8. fis16~fis8 e8 fis8. e16~e8 fis8 
 %e8. e16~e8 e8 fis8. e16~e8 dis8 b2 r2 
 %e8. d16~d8 e8 fis8. e16~e8 fis8 e16 e16~e16 e16~e8 e8 d16 d16~d16 d16~d8 d8
@@ -186,7 +186,7 @@ backingOneChorusWords = \lyricmode {
 }
 
 backingTwoVerseMusic = \relative c' {
-R\breve*12
+R1*24
  
 }
 
