@@ -133,7 +133,7 @@ i re -- veal all of its grace just like huck -- le -- ber -- ry finn
 
 leadWordsPreChorus  = \lyricmode {
 \set stanza = "prechorus"
-feel -- ling the wind breeze blow -- ing a -- round my feet
+feel -- ling the wind is breez -- ing a -- round my feet
 when have they start -- ed mov -- ing with the beat
 }
 
