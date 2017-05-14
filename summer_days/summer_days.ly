@@ -131,6 +131,12 @@ fleet -- ing stripes are paint -- ed by a lone -- ly plain
 i re -- veal all of its grace just like huck -- le -- ber -- ry finn
 }
 
+leadWordsPreChorus  = \lyricmode {
+\set stanza = "prechorus"
+feel -- ling the wind breeze blow -- ing a -- round my feet
+when have they start -- ed mov -- ing with the beat
+}
+
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
 its been the sum -- mer days of co -- ro -- nals and pol -- ka dots
@@ -258,6 +264,8 @@ derbassVerse = \relative c {
       \lyricsto "leadbridge" \leadWordsBridge
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadchorus" \leadWordsChorus
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadprechorus" \leadWordsPreChorus
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsFour
       \new Lyrics \with { alignBelowContext = #"lead" }
