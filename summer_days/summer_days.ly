@@ -9,45 +9,45 @@
 global = {
   \key e \minor
   \time 4/4
-  \tempo 4 = 90
+  \tempo 4 = 180
 }
 
 harmonies = \chordmode {
   \germanChords
- e2:m d2:sus2 c2:7 b2:7
- e2:m d2:sus2 c2:7 b2:7
- e2:m d2:sus2 c2:7 b2:7
+ e1:m d1:sus2 c1:7 b1:7
+ e1:m d1:sus2 c1:7 b1:7
+ e1:m d1:sus2 c1:7 b1:7
  %e2:m d2:sus2 f2:7 b2:7
- e2:m d2:sus2 c2:7 b2:7
+ e1:m d1:sus2 c1:7 b1:7
  
- g2 c2 b2:7 b2:7
- g2 c2 b2:7 b2:7
+ g1 c1 b1:7 b1:7
+ g1 c1 b1:7 b1:7
  %g2 a2 fis2:7 fis2:7
  
- c2 d2 g2 b2:7
+ c1 d1 g1 b1:7
  %g2 b2:7 c2 d2
- c2 d2 e2 e2
- c2 d2 g4 d4 g4 d4 
- c2 d2 e2 e2
+ c1 d1 e1 e1
+ c1 d1 g2 d2 g2 d2 
+ c1 d1 e1 e1
  
- c2:7 b2:7
- c2:7 b2:7 
- c2:7 b2:7 
- c2:7 b2:7 
+ c1:7 b1:7
+ c1:7 b1:7 
+ c1:7 b1:7 
+ c1:7 b1:7 
  
 }
 
 violinMusic = \relative c''' {
-r2.. bes8 
-bes16(g16~g16) f16~f8 bes8 a4 r4
-r1
-g,16(bes16~bes16) c16~c16 bes16~bes16 d16~d4 r4
-r2.. bes'8 
-<g bes>8. <g bes>16~<g bes>8 <fis a>8~<fis a>4 r4
-r1
-bes16(g16~g16) f16~f8 bes8 a2
-R1*2
-r2 r8 c16 b16~b8 a8 a2\glissando b2
+r1.. bes4 
+bes8(g8~g8) f8~f4 bes4 a2 r2
+r\breve
+g,8(bes8~bes8) c8~c8 bes8~bes8 d8~d2 r2
+r1.. bes'4 
+<g bes>4. <g bes>8~<g bes>4 <fis a>4~<fis a>2 r2
+r\breve
+bes8(g8~g8) f8~f4 bes4 a1
+R\breve*2
+r1 r4 c8 b8~b4 a4 a1\glissando b1
 
 
 }
@@ -84,21 +84,21 @@ leadMusicverse = \relative c''{
 %e4. e8 g8. a16~a8 g8 bes2 r2
 %e,4. e8 g8. e16~e8 e8 g2 fis4 r4
 %g4. g8 b8. a16~a8 g8 bes2 b4 r4
-r8 g8 g8 r16 e16 g8 e16 g16~g16 e16 g16 e16
-g8 e16 g16~g16 e16~e8 fis4 r4
-r8 g16 e16 g8 r16  e16 g8 e16 g16~g16 e16 g16 e16
-g8 e16 g16~g16 a16~a8 fis4 r4
-r8 b16 b16 e8 r16 b16 a8 g16 a16~a8 g8
-c8. d16~d8 b8~b4 r4
-r8 g16 e16 g8 r16  e16 g8 e16 g16~g8 g16 e16
-g16 e16~e16 g16~g16 a16~a16 g16(fis4) r4
+r4 g4 g4 r8 e8 g4 e8 g8~g8 e8 g8 e8
+g4 e8 g8~g8 e8~e4 fis2 r2
+r4 g8 e8 g4 r8  e8 g4 e8 g8~g8 e8 g8 e8
+g4 e8 g8~g8 a8~a4 fis2 r2
+r4 b8 b8 e4 r8 b8 a4 g8 a8~a4 g4
+c4. d8~d4 b4~b2 r2
+r4 g8 e8 g4 r8  e8 g4 e8 g8~g4 g8 e8
+g8 e8~e8 g8~g8 a8~a8 g8(fis2) r2
 
 
 }
 
 leadMusicprechorus = \relative c'{
-g'16 g16 e16 g16~g8( a8) g16 g16 e16 g16~g8 a8 fis2 r2
-g16 g16 e16 g16~g8 a8 c16 b16~b16 a16~a8 c8 b2 r2
+g'8 g8 e8 g8~g4( a4) g8 g8 e8 g8~g4 a4 fis1 r1
+g8 g8 e8 g8~g4 a4 c8 b8~b8 a8~a4 c4 b1 r1
 
 }
 
@@ -107,14 +107,14 @@ leadMusicchorus = \relative c''{
 %e8. fis16~fis8 g8 a8. g16~g8 fis8 e2 r2 
 %g8. a16~a8 b8 a8. g16~g8 a8 b16 a16~a16 g16~g8 a8 b16 a16~a16 g16~g8 a8
 %g8. e16~e8 g8 fis8. e16~e8 d8 e2 r2
-r8 g8 a8 b8 a16 a16~a16 g16~g8 a8
-b16 b16~b16 a16~a8 g8 fis8 g16 a16~a4
-r8 e8 e8 g8 a8 g16 fis16~fis8 fis8
-e1
-r8 g16 g16 a16 b16~b8 a8. g16~g8 a8
-b16 a16~a16 g16~g8 a8 b16 a16~a16 g16~g8 a8
-r8 e16 e16 e8 g8 a16 g16~g16 fis16~fis16 d16~d8
-gis1
+r4 g4 a4 b4 a8 a8~a8 g8~g4 a4
+b8 b8~b8 a8~a4 g4 fis4 g8 a8~a2
+r4 e4 e4 g4 a4 g8 fis8~fis4 fis4
+e1 e2 r2
+r4 g8 g8 a8 b8~b4 a4. g8~g4 a4
+b8 a8~a8 g8~g4 a4 b8 a8~a8 g8~g4 a4
+r4 e8 e8 e4 g4 a8 g8~g8 fis8~fis8 d8~d4
+gis\breve
 \bar ".|"
 
 }
@@ -165,15 +165,15 @@ leadWordsFour = \lyricmode {
 
 }
 backingOneVerseMusic = \relative c' {
-R1*12
+R\breve*12
 }
 
 backingOneChorusMusic = \relative c' {
-r8 e8 d8 e8 fis16 fis16~fis16 e16~e8 fis8 g16 g16~g16 fis16~fis8 e8 fis8 e16 fis16~fis4
-r8 e8 e8 e8 fis8 e16 d16~d8 d8 b1
-r8 e16 d16 e16 g16~g8 fis8. e16~e8 d8 g16 d16~d16 d16~d8 fis8 g16 d16~d16 d16~d8 fis8
-r8 e16 e16 e8 e8 fis16 d16~d16 d16~d16 d16~d8
-e1 
+r4 e4 d4 e4 fis8 fis8~fis8 e8~e4 fis4 g8 g8~g8 fis8~fis4 e4 fis4 e8 fis8~fis2
+r4 e4 e4 e4 fis4 e8 d8~d4 d4 b1 b2 r2
+r4 e8 d8 e8 g8~g4 fis4. e8~e4 d4 g8 d8~d8 d8~d4 fis4 g8 d8~d8 d8~d4 fis4
+r4 e8 e8 e4 e4 fis8 d8~d8 d8~d8 d8~d4
+e\breve 
 %e8. d16~d8 e8 fis8. e16~e8 fis8 g8. fis16~fis8 e8 fis8. e16~e8 fis8 
 %e8. e16~e8 e8 fis8. e16~e8 dis8 b2 r2 
 %e8. d16~d8 e8 fis8. e16~e8 fis8 e16 e16~e16 e16~e8 e8 d16 d16~d16 d16~d8 d8
@@ -186,7 +186,7 @@ backingOneChorusWords = \lyricmode {
 }
 
 backingTwoVerseMusic = \relative c' {
-R1*12
+R\breve*12
  
 }
 
@@ -200,16 +200,16 @@ backingTwoChorusWords = \lyricmode {
 
 derbassVerse = \relative c {
   \clef bass
-  g8 g16 e16 g16 a16 r16 b16~b4 r4
-  g8. bes16~bes8 g8 b4 r4
-  g8 g16 e16 g16 a16 r16 b16~b4 r4
-  g8. bes16~bes8 g8 b4 r4 
-  g8 g16 e16 g16 a16 r16 b16~b4 r4
-  g8. bes16~bes8 g8 b4 r4 
-  g8 g16 e16 g16 a16 r16 b16~b4 r4
-  g8. bes16~bes8 g8 b4 r4
-  g4. g8 c4. c8 b8 a16 b16~b16 a16 b16~b16 a16 b16~b16 a16 c8 b8
-  g4. g8 c4. c8 b2 b2
+  g4 g8 e8 g8 a8 r8 b8~b2 r2
+  g4. bes8~bes4 g4 b2 r2
+  g4 g8 e8 g8 a8 r8 b8~b2 r2
+  g4. bes8~bes4 g4 b2 r2 
+  g4 g8 e8 g8 a8 r8 b8~b2 r2
+  g4. bes8~bes4 g4 b2 r2 
+  g4 g8 e8 g8 a8 r8 b8~b2 r2
+  g4. bes8~bes4 g4 b2 r2
+  g2. g4 c2. c4 b4 a8 b8~b8 a8 b8~b8 a8 b8~b8 a8 c4 b4
+  g2. g4 c2. c4 b1 b1
   
 
 }
