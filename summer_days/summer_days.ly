@@ -1,15 +1,15 @@
 \version "2.16.2"
 
 \header {
-  title = "Working title 2"
-  composer = "skudella (The Royal Backwash)"
+  title = "Summer days"
+  composer = "skudella & speckdrum (The Royal Backwash)"
 
 }
 
 global = {
   \key e \minor
   \time 4/4
-  \tempo 4 = 100
+  \tempo 4 = 90
 }
 
 harmonies = \chordmode {
@@ -34,6 +34,7 @@ harmonies = \chordmode {
  c2:7 b2:7 
  c2:7 b2:7 
  c2:7 b2:7 
+ 
 }
 
 violinMusic = \relative c''' {
@@ -42,11 +43,11 @@ bes16(g16~g16) f16~f8 bes8 a4 r4
 r1
 g,16(bes16~bes16) c16~c16 bes16~bes16 d16~d4 r4
 r2.. bes'8 
-bes16(g16~g16) f16~f8 bes8 a2
-r1
 <g bes>8. <g bes>16~<g bes>8 <fis a>8~<fis a>4 r4
+r1
+bes16(g16~g16) f16~f8 bes8 a2
 R1*2
-r2 r8 c'16 b16~b8 a8 a2\glissando b2
+r2 r8 c16 b16~b8 a8 a2\glissando b2
 
 
 }
@@ -78,11 +79,20 @@ trumpettwoChorusMusic = \relative c'' {
 
 }
 
-leadMusicverse = \relative c'{
-e4. e8 g8. e16~e8 e8 g2 fis4 r4
-e4. e8 g8. a16~a8 g8 bes2 r2
-e,4. e8 g8. e16~e8 e8 g2 fis4 r4
-g4. g8 b8. a16~a8 g8 bes2 b4 r4
+leadMusicverse = \relative c''{
+%e4. e8 g8. e16~e8 e8 g2 fis4 r4
+%e4. e8 g8. a16~a8 g8 bes2 r2
+%e,4. e8 g8. e16~e8 e8 g2 fis4 r4
+%g4. g8 b8. a16~a8 g8 bes2 b4 r4
+r8 g8 g8 r16 e16 g8 e16 g16~g16 e16 g16 e16
+g8 e16 g16~g16 e16~e8 fis4 r4
+r8 g16 e16 g8 r16  e16 g8 e16 g16~g16 e16 g16 e16
+g8 e16 g16~g16 a16~a8 fis4 r4
+r8 b16 b16 e8 r16 b16 a8 g16 a16~a8 g8
+c8. d16~d8 b8~b4 r4
+r8 g16 e16 g8 r16  e16 g8 e16 g16~g8 g16 e16
+g16 e16~e16 g16~g16 a16~a16 g16(fis4) r4
+
 
 }
 
@@ -93,12 +103,19 @@ g16 g16 e16 g16~g8 a8 c16 b16~b16 a16~a8 c8 b2 r2
 }
 
 leadMusicchorus = \relative c''{
-g8. a16~a8 b8 a8. g16~g8 a8 b8. a16~a8 g8 fis8. g16~g8 a8 
-e8. fis16~fis8 g8 a8. g16~g8 fis8 e2 r2 
-g8. a16~a8 b8 a8. g16~g8 a8 b16 a16~a16 g16~g8 a8 b16 a16~a16 g16~g8 a8
-g8. e16~e8 g8 fis8. e16~e8 d8 e2 r2
-
-
+%g8. a16~a8 b8 a8. g16~g8 a8 b8. a16~a8 g8 fis8. g16~g8 a8 
+%e8. fis16~fis8 g8 a8. g16~g8 fis8 e2 r2 
+%g8. a16~a8 b8 a8. g16~g8 a8 b16 a16~a16 g16~g8 a8 b16 a16~a16 g16~g8 a8
+%g8. e16~e8 g8 fis8. e16~e8 d8 e2 r2
+r8 g8 a8 b8 a16 a16~a16 g16~g8 a8
+b16 b16~b16 a16~a8 g8 fis8 g16 a16~a4
+r8 e8 e8 g8 a8 g16 fis16~fis8 fis8
+e1
+r8 g16 g16 a16 b16~b8 a8. g16~g8 a8
+b16 a16~a16 g16~g8 a8 b16 a16~a16 g16~g8 a8
+r8 e16 e16 e8 g8 a16 g16~g16 fis16~fis16 d16~d8
+gis1
+\bar ".|"
 
 }
 
@@ -108,12 +125,18 @@ leadMusicBridge = \relative c''{
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
-
+Hot air a -- bove the street looks like its danc -- ing with the grain
+stand -- ing tall and stout and an -- swers ev -- ery step the air will spin
+fleet -- ing stripes are paint -- ed by a lone -- ly plain
+i re -- veal all of its grace just like huck -- le -- ber -- ry finn
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
-
+its been the sum -- mer days of co -- ro -- nals and pol -- ka dots
+of course there will be none like this
+shel -- tered with the scent of for -- get -- me -- nots and lol -- li -- pops
+my sum -- mer love and ev -- ery fare -- well kiss
 }
 
 leadWordsBridge = \lyricmode {
@@ -140,10 +163,15 @@ R1*12
 }
 
 backingOneChorusMusic = \relative c' {
-e8. d16~d8 e8 fis8. e16~e8 fis8 g8. fis16~fis8 e8 fis8. e16~e8 fis8 
-e8. e16~e8 e8 fis8. e16~e8 dis8 b2 r2 
-e8. d16~d8 e8 fis8. e16~e8 fis8 e16 e16~e16 e16~e8 e8 d16 d16~d16 d16~d8 d8
-e8. e16~e8 e8 fis8. b,16~b8 b8 b2 r2 
+r8 e8 d8 e8 fis16 fis16~fis16 e16~e8 fis8 g16 g16~g16 fis16~fis8 e8 fis8 e16 fis16~fis4
+r8 e8 e8 e8 fis8 e16 d16~d8 d8 b1
+r8 e16 d16 e16 g16~g8 fis8. e16~e8 d8 g16 d16~d16 d16~d8 fis8 g16 d16~d16 d16~d8 fis8
+r8 e16 e16 e8 e8 fis16 d16~d16 d16~d16 d16~d8
+e1 
+%e8. d16~d8 e8 fis8. e16~e8 fis8 g8. fis16~fis8 e8 fis8. e16~e8 fis8 
+%e8. e16~e8 e8 fis8. e16~e8 dis8 b2 r2 
+%e8. d16~d8 e8 fis8. e16~e8 fis8 e16 e16~e16 e16~e8 e8 d16 d16~d16 d16~d8 d8
+%e8. e16~e8 e8 fis8. b,16~b8 b8 b2 r2 
 }
 
 backingOneChorusWords = \lyricmode {
@@ -278,6 +306,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #1
+  page-count = #2
   
 }
