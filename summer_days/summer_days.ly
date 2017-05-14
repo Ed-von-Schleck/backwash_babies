@@ -97,7 +97,7 @@ g16 e16~e16 g16~g16 a16~a16 g16(fis4) r4
 }
 
 leadMusicprechorus = \relative c'{
-g'16 g16 e16 g16~g8 a8 g16 g16 e16 g16~g8 a8 fis2 r2
+g'16 g16 e16 g16~g8( a8) g16 g16 e16 g16~g8 a8 fis2 r2
 g16 g16 e16 g16~g8 a8 c16 b16~b16 a16~a8 c8 b2 r2
 
 }
@@ -133,7 +133,7 @@ i re -- veal all of its grace just like huck -- le -- ber -- ry finn
 
 leadWordsPreChorus  = \lyricmode {
 \set stanza = "prechorus"
-feel -- ling the wind is breez -- ing a -- round my feet
+feel -- ling the wind breez -- ing a -- round my feet
 when have they start -- ed mov -- ing with the beat
 }
 
