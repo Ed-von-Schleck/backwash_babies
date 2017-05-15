@@ -1,7 +1,7 @@
 \version "2.16.2"
 
 \header {
-  title = "Summer days"
+  title = "Summer Love"
   composer = "skudella & speckdrum (The Royal Backwash)"
 
 }
