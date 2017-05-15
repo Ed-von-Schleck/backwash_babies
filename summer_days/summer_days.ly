@@ -109,7 +109,7 @@ leadMusicchorus = \relative c''{
 %g8. e16~e8 g8 fis8. e16~e8 d8 e2 r2
 r4 g4 a4 b4 a8 a8~a8 g8~g4 a4
 b8 b8~b8 a8~a4 g4 fis4 g8 a8~a2
-r4 e8 e8~e4 g4 a8 g8~g8 fis8~fis8 fis8~fis8 e8~
+r4 e8 e8~e4 g4 a4 g8 fis8~fis8 fis8~fis8 e8~
 e1 r1
 r4 g8 g8 a8 b8~b4 a4. g8~g4 a4
 b8 a8~a8 g8~g4 a4 b8 a8~a8 g8~g4 a4
@@ -170,7 +170,7 @@ R1*24
 
 backingOneChorusMusic = \relative c' {
 r4 e4 d4 e4 fis8 fis8~fis8 e8~e4 fis4 g8 g8~g8 fis8~fis4 e4 fis4 e8 fis8~fis2
-r4 e8 e8~e4 e4 fis8 e8~e8 d8~d8 d8~d8 b8~b1 r1
+r4 e8 e8~e4 e4 fis4 e8 d8~d8 d8~d8 b8~b1 r1
 r4 e8 d8 e8 g8~g4 fis4. e8~e4 d4 g8 d8~d8 d8~d4 fis4 g8 d8~d8 d8~d4 fis4
 e8 e8~e8 e8~e4 e4 fis8 d8~d8 d8~d8 d8~d8 e8~
 e1 r1 
