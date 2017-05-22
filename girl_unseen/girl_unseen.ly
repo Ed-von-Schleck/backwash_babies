@@ -277,7 +277,10 @@ derbassVerse = \relative c {
   f,4 c'8 f,8 as8 c8 des8 c8 
   es8 es8 f8 es8 ges8 f8 es8 f8
   des4 f8 des8 c8 f8 a8 c8
-  des4 r2.
+  des8
+  %des,8 des8 r8 des8 es8 des8 c8 f8
+  %c8 f8 r8 f8 es8 des8 c8 f8
+  %ges8 des8 r8 
   R1*7
 }
 
@@ -285,7 +288,7 @@ derbassVerse = \relative c {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \transpose c cis { \global \harmonies }
+      \transpose c dis { \global \harmonies }
     }
 
     \new StaffGroup <<
@@ -294,13 +297,13 @@ derbassVerse = \relative c {
         \set Staff.instrumentName = #"Violin"
         \set Staff.shortInstrumentName = #"V."
         \set Staff.midiInstrument = #"violin"
-         \transpose c cis { \violinMusic }
+         \transpose c dis { \violinMusic }
       }
       \new Staff = "Guitar" {
         \set Staff.instrumentName = #"Guitar"
         \set Staff.shortInstrumentName = #"G."
         \set Staff.midiInstrument = #"electric guitar (jazz)"
-        \transpose c cis { \global \leadGuitarMusic }
+        \transpose c dis { \global \leadGuitarMusic }
       }
         \new Staff = "Trumpets" <<
         \set Staff.instrumentName = #"Trumpets"
@@ -313,8 +316,8 @@ derbassVerse = \relative c {
 	%\new Voice = "Trumpet2Verse" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic } >> }      
 	%\new Voice = "Trumpet2PreChorus" { \voiceTwo << \transpose c c {  \trumpettwoPreChrousMusic } >> }      
 	%\new Voice = "Trumpet2Chorus" { \voiceTwo << \transpose c c { \trumpettwoChorusMusic } >> }      
-        \new Voice = "Trumpet1" { \voiceOne << \transpose c cis { \global \trumpetoneVerseMusic \trumpetonePreChorusMusic \trumpetoneChorusMusic \trumpetoneBridgeMusic} >> }
-	\new Voice = "Trumpet2" { \voiceTwo << \transpose c cis { \global \trumpettwoVerseMusic \trumpettwoPreChrousMusic \trumpettwoChorusMusic} >> }      
+        \new Voice = "Trumpet1" { \voiceOne << \transpose c dis { \global \trumpetoneVerseMusic \trumpetonePreChorusMusic \trumpetoneChorusMusic \trumpetoneBridgeMusic} >> }
+	\new Voice = "Trumpet2" { \voiceTwo << \transpose c dis { \global \trumpettwoVerseMusic \trumpettwoPreChrousMusic \trumpettwoChorusMusic} >> }      
       >>
     >>  
     \new StaffGroup <<
@@ -322,9 +325,9 @@ derbassVerse = \relative c {
 	\set Staff.instrumentName = #"Lead"
 	\set Staff.shortInstrumentName = #"L."
         \set Staff.midiInstrument = #"voice oohs"
-        \new Voice = "leadverse" { << \transpose c cis { \global \leadMusicverse } >> }
-        \new Voice = "leadprechorus" { << \transpose c cis { \leadMusicprechorus } >> }
-        \new Voice = "leadchorus" { << \transpose c cis { \leadMusicchorus } >> }
+        \new Voice = "leadverse" { << \transpose c dis { \global \leadMusicverse } >> }
+        \new Voice = "leadprechorus" { << \transpose c dis { \leadMusicprechorus } >> }
+        \new Voice = "leadchorus" { << \transpose c dis { \leadMusicchorus } >> }
       }
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadchorus" \leadWordsChorus
@@ -349,8 +352,8 @@ derbassVerse = \relative c {
 	\set Staff.instrumentName = #"Backing"
 	\set Staff.shortInstrumentName = #"B."
         \set Staff.midiInstrument = #"voice oohs"
-	\new Voice = "backingOnes" { \voiceOne << \transpose c cis { \global \backingOneChorusMusic } >> }
-	\new Voice = "backingTwoes" { \voiceTwo << \transpose c cis { \global \backingTwoChorusMusic } >> }
+	\new Voice = "backingOnes" { \voiceOne << \transpose c dis { \global \backingOneChorusMusic } >> }
+	\new Voice = "backingTwoes" { \voiceTwo << \transpose c dis { \global \backingTwoChorusMusic } >> }
 
       >>
       \new Lyrics \with { alignAboveContext = #"backing" }
@@ -363,7 +366,7 @@ derbassVerse = \relative c {
 	\set Staff.shortInstrumentName = #"Bs."
         %\set Staff.midiInstrument = #"electric bass (pick)"
         \set Staff.midiInstrument = #"distorted guitar"
-        \transpose c cis { \global \derbassVerse }
+        \transpose c dis { \global \derbassVerse }
       }      % again, we could replace the line above this with the line below.
       % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
     >>
