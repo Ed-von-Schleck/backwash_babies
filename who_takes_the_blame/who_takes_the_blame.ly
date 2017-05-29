@@ -92,20 +92,20 @@ trumpettwoChorusMusic = \relative c'' {
 }
 
 leadMusicverse = \relative c''{
-r2 r8 g8 d'8 g,8
+r2 r8 g8 bes8 g8
 d'4 d8 g,8 d'8 g,8 d'8 c8~
 c8 c8~c8 bes8 c4 bes4 
-d8 g,8 d'4 d8 g,8 d'8 c8
-r2 r8 g8 d'8 g,8
+d8( g,8) d'4 d8 g,8 d'8 c8
+r2 r8 g8 bes8 g8
 d'4 d8 g,8 d'8 g,8 d'8 c8~
 c8 c8~c8 bes8 c4 bes4 
 bes8 bes8~bes8 c8~c8 bes8~bes8 a8
-r2 r8 g8 d'8 g,8
-d'4 d8 g,8 d'8 g,8 d'8 c8~
+r2 r8 g8 bes8 g8
+d'8 g,8 d'8 g,8 d'8 g,8 d'8 c8~
 c8 c8~c8 bes8 c4 bes4 
 d8 g,8 d'4 d8 g,8 d'8 c8
-r2 r8 g8 d'8 g,8
-d'4 d8 g,8 d'8 g,8 d'8 c8~
+r2 r8 g8 bes8 g8
+d'8 g,8 d'8 g,8 d'8 g,8 d'8 c8~
 c8 c8~c8 bes8 c4 bes4 
 a8 a8~a8 bes8~bes8 a8~a8 d8
 
@@ -157,7 +157,15 @@ leadMusicBridge = \relative c'''{
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
+It is my fault that you ne -- ver learned how to be -- lieve me
+al -- though you al -- ways tried
+It is my fault I can nei -- ther be trust -- ed nor doubt -- ed
+and you have your pride
 
+I am the rea -- son why the world is a place of mis -- treat -- ment
+is this what you are im -- plying
+I am the rea -- son ev -- ery -- bo -- dy is feel -- ing so lone -- ly
+this is what you're saying
 }
 
 leadWordsChorus = \lyricmode {
@@ -165,11 +173,12 @@ leadWordsChorus = \lyricmode {
  Who takes the blame?
  Who takes the blame?
  Who takes the blame?
- I am not in -- sane
+
+ Sure -- ly I'm to blame
  Who takes the blame?
  Who takes the blame?
  Who takes the blame?
- I am not in -- sane
+ this is going in -- sane
  
  \bar ":|."
 }
@@ -217,25 +226,32 @@ R1*17
 
 backingTwoChorusMusic = \relative c'' {
  r4 bes4 a8 bes8~bes8 a8~
- a4 g4 es8 f8~f8 d8  
- r4 bes'4 a8 bes8~bes8 a8~
+ a4 g4 es8 f8~f8 r8
+ r4 bes4 a8 bes8~bes8 a8~
  a4 g4 r2 
  r4 bes4 a8 bes8~bes8 a8~
- a4 g4 es8 f8~f8 d8
+ a4 g4 es8 f8~f8 r8
  des8 des8~des8 d8~d4 e4
  ges4 r2.
  r4 bes4 a8 bes8~bes8 a8~
- a4 g4 es8 f8~f8 d8  
- r4 bes'4 a8 bes8~bes8 a8~
+ a4 g4 es8 f8~f8 r8  
+ r4 bes8 bes8 a8 bes8~bes8 a8~
  a4 g4 r2 
  r4 bes4 a8 bes8~bes8 a8~
- a4 g4 es8 f8~f8 d8
+ a4 g4 es8 f8~f8 r8
  des8 des8~des8 d8~d4 e4
  ges4 r2.
 }
 
 backingTwoChorusWords = \lyricmode {
-
+ For all the pen -- guins dy -- ing
+ And your failed mar -- riage
+ For ev -- ery child that's cry -- ing
+ Sure -- ly I'm to blame
+ Your cou -- sin talks so damn lot 
+ for re -- li -- gious ri -- ots
+ You don't win lo -- ttery jack -- pots
+ this is going in -- sane
 }
 
 derbassVerse = \relative c {

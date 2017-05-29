@@ -99,8 +99,8 @@ g8 e8~e8 g8~g8 a8~a8 g8(fis2) r2
 }
 
 leadMusicprechorus = \relative c'{
-g'8 g8 e8 g8~g4( a4) g8 g8 e8 g8~g4 a4 fis1 r1
-g8 g8 e8 g8~g4 a4 c8 b8~b8 a8~a4 c4 b1 r1
+g'8 g8 f8 g8~g4( a4) g8 g8 f8 g8~g4 a4 fis1 r1
+g8 g8 f8 g8~g4 a4 c8 b8~b8 a8~a4 c4 b1 r1
 
 }
 
@@ -154,7 +154,12 @@ leadWordsBridge = \lyricmode {
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
-
+Can't trace the time with sun -- beams on your skin and cher -- ry cheeks
+as you close your eyes some bees and dra -- gon -- flys waft sor -- rows by 
+this _ warmth will shed its bloom in  two more weeks
+and the world by far to large thatwe could catch it with our eyes
+than everyone of us runts could catch with our eyes
+and the world is bigger than everyone of us runts could catch with our eyes
 }
 
 leadWordsThree = \lyricmode {
@@ -168,6 +173,12 @@ leadWordsFour = \lyricmode {
 }
 backingOneVerseMusic = \relative c' {
 R1*24
+}
+
+backingOnePrechorusMusic = \relative c' {
+R1*4
+d8 d8 d8 des8~des4 d4
+
 }
 
 backingOneChorusMusic = \relative c' {
