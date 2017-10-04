@@ -82,13 +82,13 @@ trumpettwoChorusMusic = \relative c'' {
 
 leadMusicverse = \relative c'{
 r2. r8 e8
-b'4 b8 a8~a4 g4
+b'4 b8 a8~a4 g8 fis8~
 fis2 r4 fis8 e8 
 g8 e8~e8 g8~g8 e8~e8 a8~
 a8 e8~e8 r8 r4 r8 e8
-b'4 b8 a8~a4 g4
+b'4 b8 a8~a4 g8 fis8~
 fis2 r4 fis8 e8
-g8 g8 g8 e8 g8 a8~a8 e8~
+g8 g8 g8 e8 g8 a8 a8 e8~
 e2 r2
 
 }
@@ -119,7 +119,7 @@ b4 b4 dis8 b8 dis8 a8~
 a8 g2..
 r2 c8 b8 a8 b8~
 b4 fis8 a8~a8(g8~g8) e8~
-e1
+e1\bar":|"
 }
 
 leadMusicBridge = \relative c'''{
@@ -131,7 +131,7 @@ leadWordsOne = \lyricmode {
 I watch the clouds pass by
 they are chas _ -- ing each ot -- ther
 I watch them race the sky
-the hor -- i -- zont is the fi -- nish line
+the hor -- i -- zont is the fi -- nish _ line
 }
 
 leadWordsPrechorus = \lyricmode {
@@ -153,9 +153,6 @@ leadWordsChorus = \lyricmode {
 }
 
 
-leadWordsChorus2 = \lyricmode {
-
-}
 
 leadWordsBridge = \lyricmode {
  
@@ -166,23 +163,24 @@ leadWordsTwo = \lyricmode {
 I let the time pass by
 it is flow -- ing like a stream _
 I feel the se -- conds fly
-It's a count -- down on _ all my dreams
+It's a count -- down on _ all my _ dreams
 }
 
 leadWordsThree = \lyricmode {
 \set stanza = "3." 
 I watch the grass grow strong
-And the straws be -- come _ dry
-I watch 
-They're like sky _ -- scra -- pers ris -- ing high
+And the straws be -- come _ dry _
+They're rea -- ching for the skies
+just like sky _ -- scra -- pers ris -- ing _ high
 }
 
 leadWordsFour = \lyricmode {
 \set stanza = "4." 
 
 The years is grow -- ing old
-And the days are get -- ting shorter
-
+And the days are get -- ting shor -- ter
+The air is get -- ting cold
+Still my mind _ keeps on drif -- ting a -- way
 
 }
 
@@ -222,7 +220,7 @@ g4 g4 fis8 g8 fis8 d8~
 d8 e2..
 r2 a8 e8 e8 fis8~
 fis4 fis8 fis8~fis8 (dis8~dis8) e8~
-e1
+e1 \bar":|"
 }
 
 backingOneBridgeMusic = \relative c'' {
@@ -415,6 +413,7 @@ fis8 fis8 r8 fis8 fis8. a16~a8 fis8
       
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
+        \set Staff.shortInstrumentName = #"Bs."
         \set Staff.midiInstrument = #"electric bass (pick)"
         %\set Staff.midiInstrument = #"distorted guitar"
         \transpose c c { \global \derbassVerse }
