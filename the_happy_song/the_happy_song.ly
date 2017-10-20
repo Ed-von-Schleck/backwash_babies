@@ -69,7 +69,7 @@ backing_I = \relative c'' {
   \global
   R1*16
   
-  r8 g g g g g g bes~
+  r8 g g e g g g bes~
   bes bes bes bes bes bes bes bes
   a a a a a4 a
   g8 g g g g g g g~
@@ -88,7 +88,7 @@ backing_I = \relative c'' {
   
   e2 r8 b8 b cis~
   cis2 r4. g8
-  g8 g4 a~ a b4 d8~
+  g8 g8~g8 a8~a8 b8~b8 d8~
   d2 r
 
 }
@@ -97,15 +97,15 @@ backing_II = \relative c'' {
   \global
   R1*16
   
-  r8 g g g g g g f~
-  f f f f f f f f
-  f f f f f4 f
-  d8 d d d d d d d~
+  r8 g g d g d g bes~
+  bes f bes a bes a bes c
+  bes a a f a4 f
+  d'8 c bes f f a bes g~
  
-  d d d d d d e f~
-  f f f f f f f f
-  f f f f f4 f
-  d8 d d d d4 r
+  g g g d g d g bes~
+  bes f bes a bes a bes c
+  bes a a f a4 a
+  bes8 d, g a g4 r
   
   R1*8
   
@@ -165,7 +165,7 @@ lead = \relative c'' {
   
   e2) r8 g' g g~
   g2 r4. g,8
-  g8 g4 a~ a b4 fis8~
+  g8 g8~g8 a8~a8 b8~b8 fis8~
   fis2 r
   \bar "|."
   
@@ -242,7 +242,7 @@ choirPart = \new ChoirStaff <<
     instrumentName = \markup \center-column { "Backing I" "Backing II" }
     instrumentName = \markup \center-column { "B I" "B II" }
   } <<
-    \new Voice = "Backing I" { \voiceOne \backing_I }
+    %\new Voice = "Backing I" { \voiceOne \backing_I }
     \new Voice = "Backing II" { \voiceTwo \backing_II }
   >>
   \new Lyrics \with {
