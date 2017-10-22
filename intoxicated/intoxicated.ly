@@ -103,15 +103,16 @@ r8 cis8 cis8 cis8
 
 \repeat volta 2{
 cis8 cis cis cis
-cis cis cis cis
-d d d d
+cis e d cis 
+d d d e
 d cis b a8(
 gis4) r4
 R2*2
 r8 cis8 cis8 cis8
 cis8 cis cis cis
-cis cis cis cis
-d d d d
+cis8 cis cis cis
+cis e d cis 
+d d d e
 d cis b a8(
 gis4) r4
 R2*2
@@ -189,18 +190,18 @@ backingTwoVerseMusic = \relative c' {
 }
 
 backingTwoChorusMusic = \relative c'' {
-  ais8 ais ais ais
+  ais8 gis ais gis
   ais ais ais ais 
-  b b b b
+  b a b a
   b a gis fis8(
   e4) r8 d'8
   cis8(b8) r4
   cis8( d~d) e(~
   e cis) r4
 
-  ais8 ais ais ais
+  ais8 gis ais gis
   ais ais ais ais 
-  b b b b
+  b a b a
   b a gis fis8(
   e4) r8 d'8
   cis8(b8) r4
