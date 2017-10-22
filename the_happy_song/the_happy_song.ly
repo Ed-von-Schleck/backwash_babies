@@ -100,7 +100,7 @@ backing_II = \relative c'' {
   r8 g g d g d g bes~
   bes f bes a bes a bes c
   bes a a f a4 f
-  d'8 c bes f f a bes g~
+  d'8 c bes g g g bes g~
  
   g g g d g d g bes~
   bes f bes a bes a bes c
