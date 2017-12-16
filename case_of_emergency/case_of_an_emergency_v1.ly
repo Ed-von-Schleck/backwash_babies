@@ -34,26 +34,11 @@ violinMusic = \relative c'' {
  R1*17
  \break
  \key c \major
- e4 c4
- g8 c8 d4
- e2
- g2 
- e4 d4
- b8 b8 e8 d8
- a2
- b2
- e4 c4
- g8 c8 d4
- e2
- g2 
- b4. a8
- gis8. a16~a8 b8
- c8. d16~d8 e8
- <d g>2
+ R1*8
    \break
   \key c \minor
  R2*4
- as4. as8
+ as'4. as8
  c8. b16~b8 as8
  as8. bes16~bes8 as8
  b2
@@ -153,18 +138,16 @@ leadMusicchorus = \relative c''{
  c8 g8 a8 c8
  e4. d8
  d2 
- r8 b8 b8 a16 d16~
- d8 c8 b8 d8 
- c4. e8
- d2
+ r2.. d8 
+ e4. g8
+ g8 d d e
  r8 e8 d8 c16 c16~
  c8 e8 d8 c8
  e4. d8
  d2
- r8 as8 as8 a16 d16~
- d8 c8 b8 d8 
- c4. c8
- d2 
+ r2.. d8 
+ e4. g8
+ g2 
 }
 
 leadMusicBridge = \relative c''{
@@ -184,17 +167,18 @@ it is a bliss if you don't care a foul
 an ease in the head and for sure a sweet med
 }
 
+
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
 up in a case of an em -- erg -- en -- cy
-stairs o the cei -- ling  and you dance with me
+ you dance with me and we will
 stand in to flames up -- on this i -- ro -- ny
-burn all this grief with this plain me -- lo -- dy
+ me -- lo -- dy
 
 }
 
 leadWordsBridge = \lyricmode {
-\set stanza = "bridge"
+%\set stanza = "bridge"
 
 }
 
@@ -213,95 +197,47 @@ leadWordsFour = \lyricmode {
 
 }
 backingOneVerseMusic = \relative c'' {
-r2 r8 c8 b8 b8
-c4 r4 r2
-r2 r8 b8 a8 b8
-as4 r4 r2
-r2 r8  c8 b8 b8
-c4 r4 r2
-r4 r8 g8 g8 g8 b8 as8~
-as4 r4 r4. b8
-r2 r8 c8 b8 b8
-c4 r4 r2
-r2 r8 b8 a8 b8
-as4 r4 r2
-r2 r8  c8 b8 b8
-c4 r4 r2
-r2 g8 g8 g8 b8
-as4 r4 r4. b8 
-r2 r8 b8 c8 d8 
- \break
- \key c \major
+R1*17
 }
 
 backingOneChorusMusic = \relative c'' {
-r2.. c8
-c4. b8 b8 d8 d8 e8
-r2.. b8
-a4. a8 b8 b8 c8 d8
-r2.. c8
-c4. b8 b8 b8 b8 b8
-R1
-a4. a8
-b2
+ \break
+ \key c \major
+ r2.. c8
+ c4. b8
+ b8 d d e 
+ r8 b8 b8 a16 d16~
+ d8 c8 b8 d8 
+ c4. e8
+ d2
+ r2.. c8
+ c4. b8
+ b d d e
+ r8 as,8 as8 a16 d16~
+ d8 c8 b8 d8 
+ c4. c8
+ d2
 }
 
 backingOneChorusWords = \lyricmode {
- 
+ em -- erg -- en -- cy
+you use the stairs to the cei -- ling  and you dance with me
+this i -- ro -- ny
+and we will
+burn all this grief with this plain me -- lo -- dy
 
 }
 
 backingTwoVerseMusic = \relative c' {
-r2 r8 f8 f8 f8 
-g4 r4 r2
-r2 r8 g8 g8 as8
-f4 r4 r2
-r2 r8 f8 f8 f8 
-g4 r4 r2
-r4 r8 d8 d8 d8 es8 f8~
-f4 r4 r4. g8
-r2 r8 f8 f8 f8 
-g4 r4 r2
-r2 r8 g8 g8 as8
-f4 r4 r2
-r2 r8 f8 f8 f8 
-g4 r4 r2
-r2 d8 d8 d8 es8
-f4 r4 r4. g8 
-r2 r8 g8 g8 g8
- \break
- \key c \major 
+ 
 }
 
 backingTwoChorusMusic = \relative c'' {
- 
-r2.. a8
-a4. g8 g8 g8 g8 g8 
-r2.. g8
-f4. f8 g8 g8 g8 g8
-r2.. a8
-a4. g8 g8 g8 g8 g8 
-r2.. g8
-f4. f8 g2
+
 }
 
 backingTwoChorusWords = \lyricmode {
-it is a beat
-it is that heat
-it is a flame
-a bass to be dropped
-stopped
 
-it is a way
-it is o -- kay
-it is a bliss
-an ease in the head
-med
-
-so you get em -- erg -- en -- cy
-you use the  this dance with me
-and we will this i -- ro -- ny
-and we will this me -- lo -- dy
 
 }
 
@@ -324,6 +260,24 @@ derbassVerse = \relative c {
   d2 g,2
   f'4 f8 f8 d8 c8 c8 g8
   R1
+  \break
+  \key c \major
+  e'4 c4
+ g8 c8 d4
+ e2
+ g2 
+ e4 d4
+ b8 b8 e8 d8
+ a2
+ b2
+ e4 c4
+ g8 c8 d4
+ e2
+ g2 
+ b,4. a8
+ gis8. a16~a8 b8
+ c8. d16~d8 e8
+ <d g>2
 }
 
 
@@ -391,19 +345,19 @@ derbassVerse = \relative c {
       % we want the alto lyrics to be below the alto Voice anyway.
       % \new Lyrics \lyricsto "altos" \altoWords
 
-      \new Staff = "backing" <<
-	%  \clef backingTwo
-	\set Staff.instrumentName = #"Backing"
-	\set Staff.shortInstrumentName = #"B."
-        \set Staff.midiInstrument = #"voice oohs"
-	\new Voice = "backingOnes" { \voiceOne << \transpose c a, { \global \backingOneVerseMusic \backingOneChorusMusic } >> }
-	\new Voice = "backingTwoes" { \voiceTwo << \transpose c a, { \global \backingTwoVerseMusic \backingTwoChorusMusic } >> }
-
-      >>
-      \new Lyrics \with { alignAboveContext = #"backing" }
-      \lyricsto "backingOnes" \backingOneChorusWords
-      \new Lyrics \with { alignBelowContext = #"backing" }
-      \lyricsto "backingTwoes" \backingTwoChorusWords
+       \new Staff = "backing" <<
+ 	  \clef backingTwo
+ 	\set Staff.instrumentName = #"Backing"
+ 	\set Staff.shortInstrumentName = #"B."
+         \set Staff.midiInstrument = #"voice oohs"
+ 	\new Voice = "backingOnes" { \voiceOne << \transpose c a, { \global \backingOneVerseMusic \backingOneChorusMusic } >> }
+ 	\new Voice = "backingTwoes" { \voiceTwo << \transpose c a, { \global \backingTwoVerseMusic \backingTwoChorusMusic } >> }
+ 
+       >>
+       \new Lyrics \with { alignAboveContext = #"backing" }
+       \lyricsto "backingOnes" \backingOneChorusWords
+       \new Lyrics \with { alignBelowContext = #"backing" }
+       \lyricsto "backingTwoes" \backingTwoChorusWords
       
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
