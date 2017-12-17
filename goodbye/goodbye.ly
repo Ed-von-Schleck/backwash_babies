@@ -14,6 +14,9 @@ global = {
 
 harmonies = \chordmode {
   \germanChords
+c1 c g g e e:7 a:m a:m 
+d:m d:m a:m a:m e e e e
+
 d1:m d:m  b:7 b:7 e e a:m a:m
 d1:m d:m  b:7 b:7 e e e e
 
@@ -26,18 +29,30 @@ d1:m d:m  b:7 b:7 e e e e
 c1 c g g a:m a:m f f
 c1 c g g a:m a:m f f
 
-c c g g e e a:m a:m 
-d:m d:m a:m a:m e e e e
 
 
 
 }
 
 violinMusic = \relative c'' {
-  R1*32
-  r1
   r4
-  g8 g c d~d4
+  g8 g c d~d e~
+  e2. c8 c~
+  c4 b c8 d~d b~
+  b2. g8 e
+  e'4 e e d8 c
+  e4 e d8 e d c
+  a2~a8 e c' a~
+  a1
+  r2 f'8 e~e d~
+  d2~d8 c d8 f
+  e4 e e c8 a~
+  a2~a8 a c a
+  e'2~e8 e8 d c 
+  e2~e8 e8 d c
+\tuplet 3/4 {e gis f} \tuplet 3/4 {e d c} 
+\tuplet 3/4 {b a gis} \tuplet 3/4 {f e gis}
+ a1
 }
 
 leadGuitarMusic = \relative c'' {
@@ -69,6 +84,7 @@ trumpettwoChorusMusic = \relative c'' {
 }
 
 leadMusicverse = \relative c''{
+ R1*16
 a1
 r4. f8 a b~b c~
 c8 b8~b8 a~a g~g4
@@ -113,8 +129,7 @@ r2. e8 c8
 f8 f f f f f f8 f
 a a a a a( b) a( g) 
 e2 r2
-r1_\markup { \italic improvise  \italic wistle  }
-R1*14
+
 \bar ".|:"
 
 }
@@ -196,7 +211,7 @@ leadWordsFive = \lyricmode {
 }
 
 backingOneVerseMusic = \relative c'' {
-R1*16
+R1*32
 }
 
 backingOnePrechorusMusic = \relative c'' {
@@ -212,19 +227,16 @@ e4 d c b a g e c
 c'8 b c d c4 c8 c
 f8 f f f f e d c~
 c2 c4. e8~
-e2 r4 e,8 g8~
-g8 d8~d4 e8 f8~f8 d8~
-d8(f8~f2) r4
+e2 r4 e,8 e8~
+e8 d8~d4 e8 f8~f8 d8~
+d4.(f8~f4) r4
 e'4 d c b a g e c
 c'8 b c d c c c c
 f f f f f( e) d( c)
 c2 c4. e8
 \bar ":|."
 
-r1_\markup { \italic improvise  \italic wistle  }
 
-R1*14
-\bar ":|."
 
 }
 
@@ -302,7 +314,7 @@ backingTwoBridgeWords = \lyricmode {
 
 derbassVerse = \relative c {
   \clef bass
-  R1*16
+  R1*32
 
 
 }
@@ -405,15 +417,16 @@ c4 e g e
 	\new Voice = "backingTwoBridge" { \voiceTwo << \transpose c c {  \backingTwoBridgeMusic } >> }
 
       }
-      \new Lyrics \with { alignAboveContext = #"backing" }
+      \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingOneBridge" \backingOneBridgeWords
-      \new Lyrics \with { alignAboveContext = #"backing" }
-      \lyricsto "backingOneChorus" \backingOneChorusWords
-      \new Lyrics \with { alignAboveContext = #"backing" }
+      \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingOneChorus" \backingOneChorusWordsTwo
-      \new Lyrics \with { alignAboveContext = #"backing" }
+      \new Lyrics \with { alignBelowContext = #"backing" }
+      \lyricsto "backingOneChorus" \backingOneChorusWords
+
+      \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingOnePrechorus" \backingOnePrechorusWords
-      \new Lyrics \with { alignAboveContext = #"backing" }
+      \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingOneVerse" \backingOneVerseWords
       
       \new Lyrics \with { alignAboveContext = #"backing" }
