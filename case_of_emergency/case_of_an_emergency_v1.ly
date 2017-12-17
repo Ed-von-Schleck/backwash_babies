@@ -156,14 +156,14 @@ leadMusicBridge = \relative c''{
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
-it s a beat that burns in your heart
+it is a beat that burns in your heart
 it is that heat that has been there from the start
 it is a flame burs -- ting high -- er and higher
 a bass to be dropped and a brain to be stopped
 
 it is a way to just call it a day
 it is o -- kay if you just want to stay
-it is a bliss if you don't care a foul
+it is a bliss if you don't care at all
 an ease in the head and for sure a sweet med
 }
 
@@ -172,8 +172,8 @@ leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
 up in a case of an em -- erg -- en -- cy
  you dance with me and we will
-stand in to flames up -- on this i -- ro -- ny
- me -- lo -- dy
+stand in the flames up -- on this i -- ro -- ny
+plain me -- lo -- dy
 
 }
 
@@ -184,12 +184,28 @@ leadWordsBridge = \lyricmode {
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
+it is a twitch that's straight from your heart
+it is a force that will tear your mind a -- part
+it is that hate grow -- ing lou -- der and louder
+a bomb to be dropped and a world to be shocked
 
+it is na -- ive to af -- firm its o -- kay
+it's of no help to just qui -- et -- ly pray
+it is a bliss if you don't care at all
+an ease in the head and for sure a sweet med
 }
 
 leadWordsThree = \lyricmode {
 \set stanza = "3." 
+it is that calm right be -- fore the storm
+it is the love that gets for -- fei -- ted and torn
+it is a world get -- ting dul -- ler and duller
+the men that get part and the weak that get hurt
 
+i know it's pain -- less to keep your eyes shut
+but now i beg you to go with your gut
+it is a bliss if you care for it all
+an ease in the head and for sure a sweet med
 }
 
 leadWordsFour = \lyricmode {

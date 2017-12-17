@@ -136,22 +136,39 @@ leadMusicchorus = \relative c''{
 }
 
 leadMusicBridge = \relative c'''{
- bes4. g8~g4 r4
- bes4. g8~g4 f4
- bes4. g8~g4 f8 d8~
- d8 r2..
- bes'4. g8~g4 r4
- bes4. g8~g4 f4
- bes4. g8~g4 f8 d8~
- d8 r2..
- bes'4. g8~g4 r4
- bes4. g8~g4 f4
- bes4. g8~g4 f8 d8~
- d8 r2..
- bes'4. g8~g4 r4
- bes4. g8~g4 bes4
- bes4. bes8~bes4 bes8 a8~
- a8 r2..
+%  bes4. g8~g4 r4
+%  bes4. g8~g4 f4
+%  bes4. g8~g4 f8 d8~
+%  d8 r2..
+%  bes'4. g8~g4 r4
+%  bes4. g8~g4 f4
+%  bes4. g8~g4 f8 d8~
+%  d8 r2..
+%  bes'4. g8~g4 r4
+%  bes4. g8~g4 f4
+%  bes4. g8~g4 f8 d8~
+%  d8 r2..
+%  bes'4. g8~g4 r4
+%  bes4. g8~g4 bes4
+%  bes4. bes8~bes4 bes8 a8~
+%  a8 r2..
+ a,4. bes c4 
+ bes4. a c4 
+ d4. c bes4 
+ a4. bes a4
+ bes4. c d4
+ bes4. a c4 
+ d4 d8 c4. bes4
+ a4 r2.
+ a4. bes c4 
+ bes4. a c4 
+ d4. c bes4 
+ a4. bes a4
+ bes4. c d4
+ bes4. a c4 
+ d4 d8 d4. c4
+ d4 r2.
+
  \bar"|."
 }
 
@@ -185,20 +202,49 @@ leadWordsChorus = \lyricmode {
 
 leadWordsBridge = \lyricmode {
 \set stanza = "bridge"
- ne -- ver e -- ver, will I take the blame.
- ne -- ver e -- ver, will I take the blame.
- ne -- ver e -- ver, will I take the blame.
- ne -- ver e -- ver, will I take the blame.
+ %ne -- ver e -- ver, will I take the blame.
+ %ne -- ver e -- ver, will I take the blame.
+ %ne -- ver e -- ver, will I take the blame.
+ %ne -- ver e -- ver, will I take the blame.
+ 
+ blame me for trea -- son 
+ with -- out a -- ny rea -- son
+ mix ar -- ses and at -- ter
+ and fill the cup, to drink
+ 
+ blame me for witch -- craft
+ and bind me on a shaft
+ stack dead -- wood and tin -- der 
+ and light it up, in flames
+
 }
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
+%I am the one who has al -- ways been faith -- ful and ho -- nest,  ne -- ver told a single lie
+%I am the one ne -- ver 
+It is my fault that your next to last tweet got de -- le -- ted
+"and your" time -- line is a mess
+It is my fault that your laun -- dry's been washed with hot wa -- ter
+so it shrank your dress
 
+I am the rea -- son why your fa -- vo -- rite show just got can -- celled
+_ _ _ _ _ _ _
+I am the rea -- son shopp -- ing is so ex -- pen -- sive the last while
+_ _ _ _ _
 }
 
 leadWordsThree = \lyricmode {
 \set stanza = "3." 
+It is my fault that the co -- lor of air is dis -- taste -- ful
+howe -- ver this is _ meant
+It is my fault that the scent of your ear -- plugs is itch -- y
+this shit makes no sense
 
+I am the rea -- son why your friends are not hand -- some nor craf -- ty
+_ _ _ _ _ _ _
+I am the rea -- son why you were not in -- vi -- ted to hog -- wards
+_ _ _ _ _
 }
 
 leadWordsFour = \lyricmode {
@@ -206,25 +252,48 @@ leadWordsFour = \lyricmode {
 
 }
 backingOneVerseMusic = \relative c'' {
-
-
+}
+backingOnePrechorusMusic = \relative c'' {
 }
 
 backingOneChorusMusic = \relative c'' {
-
 }
-
+backingOneBridgeMusic = \relative c'' {
+}
+backingOneVerseWords = \lyricmode {
+}
+backingOnePrechorusWords = \lyricmode {
+}
 backingOneChorusWords = \lyricmode {
- 
-
+}
+backingOneBridgeWords = \lyricmode {
 }
 
 backingTwoVerseMusic = \relative c' {
-R1*17
- 
+r2 r8 d8 d d
+g2. (f8 es8~
+es2) r2
+r1
+r2 r8 d8 d d
+g2. (f8 es8~
+es2) r2
+r1
+r2 r8 d8 d d
+g2. (f8) es8~
+es2 r2
+r1
+r2 r8 d8 d d
+g2. (f8) es8~
+es2 r2
+
+r1
+}
+backingTwoPrechorusMusic = \relative c' { 
+  
 }
 
 backingTwoChorusMusic = \relative c'' {
+  r1
  r4 bes4 a8 bes8~bes8 a8~
  a4 g4 es8 f8~f8 r8
  r4 bes4 a8 bes8~bes8 a8~
@@ -242,6 +311,20 @@ backingTwoChorusMusic = \relative c'' {
  des8 des8~des8 d8~d4 e4
  ges4 r2.
 }
+backingTwoBridgeMusic = \relative c' { 
+}
+
+
+backingTwoVerseWords = \lyricmode {
+ It is my fault
+ It is my fault
+ I am the rea -- son
+ I am the rea -- son
+}
+
+backingTwoPrechorusWords = \lyricmode {
+}
+
 
 backingTwoChorusWords = \lyricmode {
  For all the pen -- guins dy -- ing
@@ -252,6 +335,9 @@ backingTwoChorusWords = \lyricmode {
  for re -- li -- gious ri -- ots
  You don't win lo -- ttery jack -- pots
  this is going in -- sane
+}
+
+backingTwoBridgeWords = \lyricmode {
 }
 
 derbassVerse = \relative c {
@@ -323,19 +409,41 @@ derbassVerse = \relative c {
       % we want the alto lyrics to be below the alto Voice anyway.
       % \new Lyrics \lyricsto "altos" \altoWords
 
-      \new Staff = "backing" <<
+      \new Staff = "backing" {
 	%  \clef backingTwo
 	\set Staff.instrumentName = #"Backing"
 	\set Staff.shortInstrumentName = #"B."
         \set Staff.midiInstrument = #"voice oohs"
-	\new Voice = "backingOnes" { \voiceOne << \transpose c c { \global \backingOneVerseMusic \backingOneChorusMusic } >> }
-	\new Voice = "backingTwoes" { \voiceTwo << \transpose c c { \global \backingTwoVerseMusic \backingTwoChorusMusic } >> }
+	\new Voice = "backingOneVerse" { \voiceOne << \transpose c c { \global \backingOneVerseMusic  } >> }
+	\new Voice = "backingOnePrechorus" { \voiceOne << \transpose c c { \backingOnePrechorusMusic } >> }
+	\new Voice = "backingOneChorus" { \voiceOne << \transpose c c { \backingOneChorusMusic } >> }
+	\new Voice = "backingOneBridge" { \voiceOne << \transpose c c { \backingOneBridgeMusic } >> }
+	\new Voice = "backingTwoVerse" { \voiceTwo << \transpose c c { \global \backingTwoVerseMusic  } >> }
+	\new Voice = "backingTwoPrechorus" { \voiceTwo << \transpose c c { \backingTwoPrechorusMusic } >> }
+	\new Voice = "backingTwoChorus" { \voiceTwo << \transpose c c { \backingTwoChorusMusic } >> }
+	\new Voice = "backingTwoBridge" { \voiceTwo << \transpose c c { \backingTwoBridgeMusic } >> }
 
-      >>
+      }
       \new Lyrics \with { alignAboveContext = #"backing" }
-      \lyricsto "backingOnes" \backingOneChorusWords
+      \lyricsto "backingOneBridge" \backingOneBridgeWords
       \new Lyrics \with { alignBelowContext = #"backing" }
-      \lyricsto "backingTwoes" \backingTwoChorusWords
+      \lyricsto "backingTwoBridge" \backingTwoBridgeWords 
+      \new Lyrics \with { alignAboveContext = #"backing" }
+      \lyricsto "backingOneChorus" \backingOneChorusWords 
+      \new Lyrics \with { alignBelowContext = #"backing" }
+      \lyricsto "backingTwoChorus" \backingTwoChorusWords
+      \new Lyrics \with { alignAboveContext = #"backing" }
+      \lyricsto "backingOnePrechorus" \backingOnePrechorusWords
+      \new Lyrics \with { alignBelowContext = #"backing" }
+      \lyricsto "backingTwoPrechorus" \backingTwoPrechorusWords
+
+      \new Lyrics \with { alignAboveContext = #"backing" }
+      \lyricsto "backingOneVerse" \backingOneVerseWords
+      \new Lyrics \with { alignBelowContext = #"backing" }
+      \lyricsto "backingTwoVerse" \backingTwoVerseWords
+
+
+ 
       
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
@@ -358,6 +466,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
   
 }
