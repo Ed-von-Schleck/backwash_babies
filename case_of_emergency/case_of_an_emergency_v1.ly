@@ -28,6 +28,13 @@ harmonies = \chordmode {
 
  e2 e2:7 f2 f2
  f2:m f4:m7 f4:6 as2 g2
+
+ r1
+ c1:m g1 f1:m as2 g2
+ c1:m d1 f1:m g1
+ c1:m g1 f1:m as2 g2
+ c1:m d1 f1:m g1
+
 }
 
 violinMusic = \relative c'' {
@@ -151,8 +158,34 @@ leadMusicchorus = \relative c''{
 }
 
 leadMusicBridge = \relative c''{
+ R1*4
 
 }
+
+
+leadMusicOutro = \relative c''{
+  \key c \major
+r2 r8 a gis a
+a4 e a8 b a gis~
+gis2 r8 gis a gis 
+f4 f8 f gis f e f
+e4 ~e8( d8 e8) e8 gis b
+b4 a8 e e a b  b~
+b2 r8 b8 a gis
+f8 f8 f8 f f( a) f e~
+e2 r8 c' b c
+c4 a8 a c8 e c b~
+b2 r8 c b c 
+c4 a8 a c d c c~
+c2 r8 b d b
+c4 a8 a a b c dis~
+dis2 c8 c b a
+f4 f8 f f8 a f e~
+e2 r2
+\bar "|."
+
+}
+
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
@@ -196,11 +229,11 @@ an ease in the head and for sure a sweet med
 }
 
 leadWordsThree = \lyricmode {
-\set stanza = "3." 
+\set stanza = "outro." 
 it is that calm right be -- fore the storm
 it is the love that gets for -- fei -- ted and torn
 it is a world get -- ting dul -- ler and duller
-the men that get part and the weak that get hurt
+the men get part -- ed and the weak get hurt
 
 i know it's pain -- less to keep your eyes shut
 but now i beg you to go with your gut
@@ -342,15 +375,17 @@ derbassVerse = \relative c {
         \new Voice = "leadprechorus" { << \transpose c a, { \leadMusicprechorus } >> }
         \new Voice = "leadchorus" { << \transpose c a, { \leadMusicchorus } >> }
         \new Voice = "leadbridge" { << \transpose c a, { \leadMusicBridge } >> }
+        \new Voice = "leadoutro" {<< \transpose c c { \leadMusicOutro } >> }
       }
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadoutro" \leadWordsThree
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadbridge" \leadWordsBridge
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadchorus" \leadWordsChorus
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsFour
-      \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadverse" \leadWordsThree
+
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsTwo
       \new Lyrics \with { alignBelowContext = #"lead" }
