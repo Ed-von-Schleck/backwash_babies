@@ -96,7 +96,7 @@ r2. e'4
 a1
 r4. f8 a b~b c~
 c8 b8~b8 b~b a~a b~
-b c~c b~b( a~a4)
+b c~c b~b a~a4
 c8 b8~b a~a c~c b~
 b1
 r1
@@ -143,7 +143,7 @@ leadWordsOne = \lyricmode {
  girl
  you're like the prin -- cess that I al -- ways loved to save in these _ vi -- de -- o games
  but girl 
- that fact that I _ al -- ways have to, is driv --  ing me in -- same 
+ that fact that I _ al -- ways have to, is _ driv --  ing me in -- same 
 
  
 
@@ -189,18 +189,27 @@ leadWordsTwo = \lyricmode {
  girl I am your prince  
  and I am ti -- red of ad -- ven -- tures and the  games _ you play 
  and though 
- I know that I can't live with -- out you, I al -- so can not stay
+ I know that I can't live with -- out you, I _ al -- so can not stay
  
  %know that you would be worth it, you ha be worth it does not make much sence
 
 }
 
 leadWordsThree = \lyricmode {
-
+\set stanza = "3." 
+girl 
+you ne -- ver re -- al -- ized the way that you had changed and the _ way _ I did
+and so
+you did not no _ -- tice the mo -- ment I de -- ci _ -- ded to quit
 }
 
 leadWordsFour = \lyricmode {
+\set stanza = "4." 
 
+girl you were my princ -- ess and  you would have be -- en worth all the _ trou -- ble and pain 
+
+in -- stead
+I want to drown my love and all my pain, and tied you to this chain
 
 
 }
@@ -460,6 +469,6 @@ c4 e g e
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
   
 }
