@@ -1,52 +1,35 @@
 \version "2.16.2"
 
 \header {
-  title = "Aladdin"
+  title = "Lied des Varieteedirektors"
   composer = "skudella (The Royal Backwash)"
 
 }
 
 global = {
-  \key d \minor
-  \time 12/8
-  \tempo 4. = 94
+  \key e \major
+  \time 4/4
+  \tempo 4 = 156
 }
 
 harmonies = \chordmode {
   \germanChords
-  g1.:m g1.:dim
-  g2.:m es4. g4.:m g1.:dim
-  es1. d1.
-  es2. es4.:maj7 es4. d2. d2.:7
-   
-  R1.*1
-  
-  g1.:m c1. g1.:m c1. 
-  g1.:m c1. g1.:m c1.
-  
-  d1. 
-  es1.
-  d1. 
-  bes4. bes4. a4. gis4.
-  g1.:m
-  g1.:m
-  
-  
-  %g8:m g16:m g16:m g8:m   g8:m g16:m g16:m g8:m   g8:m g16:m g16:m g8:m  g8:m g8:m g8:m
-  %c8 c16 c16 c8   c8 c16 c16 c8   c8 c16 c16 c8  c8 c8 c8
-  %g8:m g16:m g16:m g8:m   g8:m g16:m g16:m g8:m   g8:m g16:m g16:m g8:m  g8:m g8:m g8:m
-  %c8 c16 c16 c8   c8 c16 c16 c8   c8 c16 c16 c8  c8 c8 c8
-  %g8:m g16:m g16:m g8:m   g8:m g16:m g16:m g8:m   g8:m g16:m g16:m g8:m  g8:m g8:m g8:m
-  %c8 c16 c16 c8   c8 c16 c16 c8   c8 c16 c16 c8  c8 c8 c8
-  %g8:m g16:m g16:m g8:m   g8:m g16:m g16:m g8:m   g8:m g16:m g16:m g8:m  g8:m g8:m g8:m
-  %c8 c16 c16 c8   c8 c16 c16 c8   c8 c16 c16 c8  c8 c8 c8
+\repeat volta 2 {
 
+  R1
+  e1 a1 b1 e
+  e1 a1 b1 e
+  c1 e c e4 d e e
+  c1 e c2 a2:m7 b2 b2:7
+  R1
+  e1:m a1:m7 b1:7 e1:m 
+  e1:m a1:m7 b1:7 a1:m7
+  c1 b1:7 e1:m g1}
+  \alternative {
+    {c1 fis1 b1 b1:7}
+    {c1 b1 e1:m a1:m e1:m a1:m e1:m}
+  }
 
-  %d8 d16 d16 d8   d8 d16 d16 d8   d8 d16 d16 d8  d8 d8 d8
-  %bes4. bes4. a4. gis4.
-  %g8:m g16:m g16:m g8:m   g8:m g16:m g16:m g8:m   g8:m g16:m g16:m g8:m  g8:m g8:m g8:m
-  %g8:m g16:m g16:m g8:m   g8:m g16:m g16:m g8:m   g8:m r4 r4.
-  
 }
 
 violinMusic = \relative c'' {
@@ -54,15 +37,7 @@ violinMusic = \relative c'' {
 }
 
 leadGuitarMusic = \relative c'' {
- d8 bes8 g8 d'8 bes8 g8 d'8 bes8 g8 d'8 bes8 g8 
- des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8
- d'8 bes8 g8 d'8 bes8 g8 es'8 bes8 g8 d'8 bes8 g8 
- des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8
  
- bes8 g es bes'8 g es bes'8 g es bes'8 g es 
- a8 ges d  a'8 ges d  a'8 ges d  a'8 ges d
- bes'8 g es bes'8 g es c'8 g es bes'8 g es 
- a8 ges d  a'8 ges d  <d ges bes>2. 
 
 }
 
@@ -90,8 +65,25 @@ trumpettwoChorusMusic = \relative c'' {
 
 }
 
-leadMusicverse = \relative c''{
-R1.*8
+leadMusicverse = \relative c'{
+r2. e8 e8 
+gis8 b b b cis b gis e 
+cis4 fis2 e4
+dis4. b8 cis b cis dis 
+e4 r4 r4. e8
+gis8 b b b cis b gis e 
+cis4 fis2 e4
+dis4. b8 cis b cis dis 
+e4 r4 r4. e8
+g4. e8 fis e fis e 
+gis2 r8 e8 fis a 
+g4. e8 fis e fis e 
+gis4 fis8. a16 gis8  r8 e4
+g4. e8 fis e fis e 
+gis2 r8 e8 fis a 
+g2 c4 g8.( c16)
+b4 a8.( c16) b4 r4
+
 
 }
 
@@ -100,24 +92,46 @@ leadMusicprechorus = \relative c'{
 }
 
 leadMusicchorus = \relative c''{
+  \bar "||"
+  \tempo 4 = 90
+  
+  \key e \minor
+\repeat volta 2 {
+r2 r8 b8 bes8 b8
+g8 e8 d8 e8 r8 b'8 bes8 b8
+g8 e8 d8 e8 r8 b8 c8 b8
+dis8 fis8 fis8 fis8 b8 a8~a8 g16 a16
+b2 r8 b8 bes8 b8
+g8 e8 d8 e8 r8 b'8 bes8 b8
+g8 e8 d8 e8 r8 b8 bes8 b8
+dis dis8 dis8 dis8 e8 dis8 cis8 dis8
+e2 r4 r8 fis8
+g4 b d8  b d dis~
+dis2. b8 dis8
+e8 b8~b8 a8~a8 b8 a8 g8 
+b2 r4 r8 fis8}
+\alternative {
+    { g4 b4 d8( b8) d8 ais8~
+      ais4 ais4 ais8( gis8) ais8 b8~
+      b1
+      r1
+    }
+    { g4 b4 d8( b8) d8 dis8~
+      dis8 r8 dis4\staccato dis4\staccato dis8 e8~
+      e1~
+      e2 fis4 e8 g8(~
+      g8 fis8~fis8 e8~e8 c8~c8 b8 )
+      r2 fis4 dis8 e8~
+      e2 r2
+     
+    }
+  }
+\bar "|."
 
-r4.\fermata g4. g4 bes8~bes8 g4
-d'2.~d4. d4.
-c4.~c4 bes8 bes4 a8~a8 g4
-bes4 a8~a8 g4 es2.(
-d4) r8 g4. g4 bes8~bes8 g4
-d'2.~d4. d4.
-c4.~c4 bes8 bes4 a8~a8 g4
-bes4 a8~a8 g4 g4 bes8~bes8 g4
-%a2. r2.
-g2. r2.
 
-r8 d'8 d d d d d d d d c bes
-bes4. g4 bes8 bes4 c8~c8 bes4
-r8 d8 d d d d d d d d c bes
-bes8 r4 r4. a8 r4 gis8 r4
-g4. r4. r2.
-r1.
+
+
+
 }
 
 leadMusicBridge = \relative c'''{
@@ -126,25 +140,40 @@ leadMusicBridge = \relative c'''{
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
-All chil -- dren know the sto -- ry of a -- lad -- din
-the tales a -- bout thiefs and gold
-but the sto -- ry that I'm gon -- na tell you
-has nei -- ther been heard of nor has it been told
+_ Erst ges -- tern noch war ich auf ei -- ner Fei -- er,
+mit mei -- nem al -- ten Freund Berl -- ioz.
+Und währ -- end ich ver -- su -- che nicht zu rei -- ern, 
+be -- merk -- eh ich die -- ses Ge -- schoss.
 
-Let us go on  an adventures trip
-to the depth of al -- ad -- dins soul
-let me show you the feel -- ings he's feeling ashamed for
+Ein Rüsch -- chen Kleid -- chen ganz in weiß.
+Da -- zu noch Kur -- ven und _ ei -- nen Hin -- tern so heiß.
+Noch si -- cher kei -- ne sech -- zehn Jahr, 
+doch das ist mir so was von e -- gal.
 
-and the feel -- ings he does not show
+
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
- where -- ev -- er I go
- I find the scent of your fa -- vourite per -- fume 
- all those me -- mo -- ries 
- are haun -- ting me they will be _ my de -- fi -- nite doom 
- 
+
+Es ist ein teuf -- lisch -- es Spiel
+das mir so oft schon ge -- fiel
+der Mensch muss trin -- ken will er sich mal glück -- lich fühl'n
+
+Doch ist der Geist erst be -- täubt
+wird pu -- rer Wahn -- sinn ge -- streut
+der Mensch ver -- gisst was Mut -- ti ihm hat ein -- ge -- bläut
+
+Denn schon am Mor -- gen da -- nach 
+kommt die Reu -- e und mit ihr die Schmach
+
+Wer mit dem Teu -- fel spielt
+der wird be -- siegt.
+
+mit dem Teu -- fel spielt
+der wird be -- siegt
+wird be -- siegt
+wird be -- siegt
 }
 
 leadWordsBridge = \lyricmode {
@@ -154,13 +183,28 @@ leadWordsBridge = \lyricmode {
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
+Und so spre -- che ich sie an und bin be -- schei -- den, 
+be -- haup -- te ich hei -- ße Ber -- lioz.
+Und währ -- end mei -- ne Au -- gen sie ent -- klei -- den,
+er -- zähl ich ihr von mei -- nem  Schloss.
 
-
+Von mei -- nem Wa -- gen noch da -- zu,
+und mei -- ner Fir -- ma mit _ Sitz in Ma -- li -- _ -- bu 
+Auch wenn sie kaum ein Wort ver -- steht,
+so wird sie den -- noch _ flach ge -- legt.
 }
 
 leadWordsThree = \lyricmode {
 \set stanza = "3." 
+_ Doch ir -- gend -- wie kam al -- les völ -- lig and -- ers, 
+als ich am Mor _ gen er -- wacht.
+Statt ei -- nem Mäd -- chen hab ich ei -- nen Ka -- ter,
+der mich von Her -- zen aus -- ge -- lacht.
 
+Ich eil -- e schnell ins Kran -- ken -- haus,
+und hoff die Schwes -- ter setzt _  ein _ En -- de dem Grauß
+doch wart -- et dort _ nur auf mich 
+die Di -- a -- gno -- se lautet Sy -- phi -- lis.
 }
 
 leadWordsFour = \lyricmode {
@@ -196,36 +240,11 @@ backingTwoChorusWords = \lyricmode {
 
 derbassVerse = \relative c {
   \clef bass
-  g4. es' d a4 bes8
-  g4. des' bes a4 ges8
-  g4. es' d a4 bes8
-  g4. des' bes a4 ges8
-  
-  es'4. g, a bes4 es8
-  d4. g, a  bes4 g8
-  es'4. g, a bes4 es8
-  a,4 a8 a bes a ges2.
-
 
 }
 
 derbassChorus = \relative c {
-  r1.
-  d2.~d4. r8 g, d' 
-  c4. g a4 bes8 a4 g8
-  d'2. g4. g, 
-  c2. r2.
-  d4.~d4 d8 g4 d bes
-  c4. g4 g8 g4 a4 g4
-  g2. a4. bes
-  c2. r2.
-  r8 d d g2. r8 d bes
-  c4. g a4 bes8 a4 g8
-  r8 d' d c4. r4 c8 c bes a
-  bes4. bes a as
-  g r2. r4 ges8
-  g4. r2. r4.
-
+ 
 }
 \score {
   <<
