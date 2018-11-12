@@ -13,14 +13,23 @@ global = {
 }
 
 harmonies = \chordmode {
+  
   \germanChords
+  R1.
   g1.:m g1.:dim
   g2.:m es4. g4.:m g1.:dim
+  g1.:m g1.:dim
+  g2.:m es4. g4.:m g1.:dim
+  
   es1. d1.
   es2. es4.:maj7 es4. d2. d2.:7
    
   R1.*1
   
+  g1.:m c1. g1.:m c1. 
+  g1.:m c1. g1.:m c1.
+  
+  R1.
   g1.:m c1. g1.:m c1. 
   g1.:m c1. g1.:m c1.
   
@@ -49,12 +58,32 @@ harmonies = \chordmode {
   
 }
 
-violinMusic = \relative c'' {
-  
+violinMusic = \relative c' {
+R1. *9
+r8 es( d es8 d8 es) g( ges g  es' d es)  
+d4. bes8( a g) d4( g8) es4( d8)
+es4. d8( es g) bes4( bes8) a4( bes8)
+ges8( a ges) c( a es') <a, c>2.
+
+r1.
+d4. g bes4 a8 g4 bes8
+e,2.~e4 f8 e4 d8
+bes4. des4. g,4 a8 bes4 d8
+<c e>2. r2.
+d4. g a4 bes8 a4 g8
+c4.~c8 bes8 c a4 bes8 a4 f8
+g4. d4. g4 d g 
+<c, e>2. r2.
+
 }
 
 leadGuitarMusic = \relative c'' {
+  R1.
  d8 bes8 g8 d'8 bes8 g8 d'8 bes8 g8 d'8 bes8 g8 
+ des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8
+ d'8 bes8 g8 d'8 bes8 g8 es'8 bes8 g8 d'8 bes8 g8 
+ des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8
+ d'8 bes8 g8 d'8 bes8 g8 d'8 bes8 g8 d'8 bes8 g8 
  des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8
  d'8 bes8 g8 d'8 bes8 g8 es'8 bes8 g8 d'8 bes8 g8 
  des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8 des'8 bes8 g8
@@ -91,7 +120,17 @@ trumpettwoChorusMusic = \relative c'' {
 }
 
 leadMusicverse = \relative c''{
-R1.*8
+r2. r4.  r8 g8 a8 
+bes4.~bes8 a8 g8  d'4.~d8 des8(d8)
+des4 bes bes bes a g
+bes4.~bes8 a8 g8 bes4 d4 g,4 
+des'2. r4. r8  g,8 a8
+bes4.~bes8 a8 g8 d'4.~d8 des8 d8
+des4 bes bes bes a g
+bes4 g g g4 bes4 g4
+g2. r2.
+
+R1.*4
 
 }
 
@@ -101,20 +140,31 @@ leadMusicprechorus = \relative c'{
 
 leadMusicchorus = \relative c''{
 
-r4.\fermata g4. g4 bes8~bes8 g4
+r4.\fermata g4. g4 bes4 g4
 d'2.~d4. d4.
-c4.~c4 bes8 bes4 a8~a8 g4
-bes4 a8~a8 g4 es2.(
-d4) r8 g4. g4 bes8~bes8 g4
+c4.~c4 bes8 bes4 a4 g4
+bes4 a4 g4 es2.(
+d4) r8 g4. g4 bes4 g4
 d'2.~d4. d4.
-c4.~c4 bes8 bes4 a8~a8 g4
-bes4 a8~a8 g4 g4 bes8~bes8 g4
+c4.~c4 bes8 bes4 a4 g4
+bes4 a4 g4 g4 bes4 g4
 %a2. r2.
 g2. r2.
 
-r8 d'8 d d d d d d d d c bes
-bes4. g4 bes8 bes4 c8~c8 bes4
-r8 d8 d d d d d d d d c bes
+r4. \fermata g4. g4 bes4 g4
+d'2.~d4. d4.
+c4.~c4 bes8 bes4 a4 g4
+bes4 a4 g4 es2.(
+d4) r8 g4. g4 bes4 g4
+d'2.~d4. d4.
+c4.~c4 bes8 bes4 a4 g4
+bes4 a4 g4 g4 bes4 g4
+%a2. r2.
+g2. r2.
+
+r8 d'8 d d d d g d d g d c
+bes4 g4 bes8 bes8 bes4 c4 bes4
+a8 d8 d g d d g d d g d c
 bes8 r4 bes8 r4 a8 r4 gis8 r4
 g4. r4. r2.
 r1.
@@ -126,27 +176,18 @@ leadMusicBridge = \relative c'''{
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
-All chil -- dren know the sto -- ry of A -- lad -- din
-tales a -- bout thiefs and gold
+All the  chil -- dren _ know the sto -- ry of A -- lad -- din
+tales a -- bout thiefs_ _ and gold
 but the sto -- ry that I'm gon -- na tell you
 has nei -- ther been heard of nor has it been told
 
-Let me take on an ad -- ven -- tur -- es trip 
-to the depths of A -- lad -- dins soul
-Let me show you the sec -- rets that he is a -- shamed of
-and the feel -- lings that he does not show
-%and the things he does not want you to know
+%Let me take on an ad -- ven -- tur -- es trip 
+%to the depths of A -- lad -- dins soul
+%Let me show you the sec -- rets that he is a -- shamed of
+%and the feel -- lings that he does not show
 
-%Let us go on  an adventures trip
-%to the depth of All -- ad -- dins soul
-%let me show you the feel -- ings he's feeling ashamed for
 
-%and the feel -- ings he does not show
 
-When the sun sets up  -- on the des -- sert
-and the moon dips the world in its glow
-He sneaks out in -- to the dunes and he cries
-and he sings the only tune he knows
 
 }
 
@@ -157,10 +198,11 @@ leadWordsChorus = \lyricmode {
  all those me -- mo -- ries 
  are haun -- ting me they will be _ my de -- fi -- nite doom 
  
- 
- 
- di -- ving in -- to the feel -- ings and in -- to the  mem -- ories I have of you
- wai -- ting for the 
+ where -- ev -- er I go
+ I find the scent of your fa -- vourite per -- fume 
+ all those me -- mo -- ries 
+ are haun -- ting me they will be _ my de -- fi -- nite doom 
+
 }
 
 leadWordsBridge = \lyricmode {
@@ -170,7 +212,10 @@ leadWordsBridge = \lyricmode {
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
-
+When the sun sets up  -- on the ci -- ty and des -- sert,
+the moon dips the world in its glow
+He sneaks out to the dunes and he cries _ his eyes out
+and si__ -- ngs the one tune he knows
 
 }
 
@@ -198,20 +243,43 @@ backingOneChorusWords = \lyricmode {
 }
 
 backingTwoVerseMusic = \relative c' {
-R1*17
+R1. *23
  
 }
 
 backingTwoChorusMusic = \relative c'' {
+d,4. g4. a4( bes8) a4 g8
+e2.~e4 d4 es4 
+d'2. c4 bes8 a4( g8)
+c2. r2.
+bes4. g4. a4 bes8 a4 g8
+e2.~e4 d4 es4 
+g2~g8 d8 d4 es4 c4
+e2. r2.
 
+r8 ges8 ges ges ges ges g g g a a a
+g4 es4 es8 es es4 d es 
+d8 ges8 ges ges ges ges g g g a a a
+d,8 r4 d8 r4 e8 r4 ges8 r4
+g4. r4. r2. 
+r1.
 }
 
 backingTwoChorusWords = \lyricmode {
+In the warm des -- sert nights
+when the moon and the stars shine
+you can find me stray -- ing by
+and can hear the me -- lo -- dy bloom
 
 }
 
 derbassVerse = \relative c {
   \clef bass
+  R1.
+  g4. es' d a4 bes8
+  g4. des' bes a4 ges8
+  g4. es' d a4 bes8
+  g4. des' bes a4 ges8
   g4. es' d a4 bes8
   g4. des' bes a4 ges8
   g4. es' d a4 bes8
@@ -226,6 +294,8 @@ derbassVerse = \relative c {
 }
 
 derbassChorus = \relative c {
+  r1.
+  R1.*8
   r1.
   d2.~d4. r8 g, d' 
   c4. g a4 bes8 a4 g8
@@ -321,9 +391,11 @@ derbassChorus = \relative c {
       \lyricsto "backingOnes" \backingOneChorusWords
       \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingTwoes" \backingTwoChorusWords
-      
+    >>  
+    \new StaffGroup <<      
       \new Staff = "Staff_bass" {
-        \set Staff.instrumentName = #"Bass"
+        \set Staff.instrumentName = #"BASS"
+	\set Staff.shortInstrumentName = #"BS."
         \set Staff.midiInstrument = #"electric bass (pick)"
         %\set Staff.midiInstrument = #"distorted guitar"
         \transpose c c { \global \derbassVerse \derbassChorus}
@@ -343,6 +415,6 @@ derbassChorus = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
   
 }
