@@ -30,8 +30,8 @@ harmonies = \chordmode {
   g1.:m c1. g1.:m c1.
   
   R1.
-  g1.:m c1. g1.:m c1. 
-  g1.:m c1. g1.:m c1.
+  g8:m g:m g:m g:m g:m g:m g:m g:m g:m g:m g:m g:m c c c c c c c c c c c c g:m g:m g:m g:m g:m g:m g:m g:m g:m g:m g:m g:m c c c c c c c c c c c c 
+  g8:m g:m g:m g:m g:m g:m g:m g:m g:m g:m g:m g:m c c c c c c c c c c c c g:m g:m g:m g:m g:m g:m g:m g:m g:m g:m g:m g:m c c c c c c c c c c c c 
   
   d1. 
   es1.
@@ -162,12 +162,12 @@ bes4 a4 g4 g4 bes4 g4
 %a2. r2.
 g2. r2.
 
-r8 d'8 d d d d g d d g d c
+r8 d'8 d g d d g d d g d c
 bes4 g4 bes8 bes8 bes4 c4 bes4
 a8 d8 d g d d g d d g d c
 bes8 r4 bes8 r4 a8 r4 gis8 r4
 g4. r4. r2.
-r1.
+r1. \bar "|." 
 }
 
 leadMusicBridge = \relative c'''{
@@ -203,6 +203,9 @@ leadWordsChorus = \lyricmode {
  all those me -- mo -- ries 
  are haun -- ting me they will be _ my de -- fi -- nite doom 
 
+ all those voi -- ces and me -- mo -- ries for -- ev -- er stream -- ing through my dreams and my mind,
+ haun -- ting me in my sleep al -- though I try to run, I can not hide
+ %and al -- though I sleep I can not find
 }
 
 leadWordsBridge = \lyricmode {
@@ -271,6 +274,8 @@ when the moon and the stars shine
 you can find me stray -- ing by
 and can hear the me -- lo -- dy bloom
 
+ all those voi -- ces and me -- mo -- ries for -- ev -- er stream -- ing through my dreams and my mind,
+ haun -- ting me in my sleep al -- though I try to run, I can not hide
 }
 
 derbassVerse = \relative c {
