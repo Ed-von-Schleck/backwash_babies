@@ -216,6 +216,15 @@ backingOneBridgeWords = \lyricmode {
 backingTwoVerseMusic = \relative c' {
 R2.*20
 g'2. fis e g2 a4 fis2.~fis2. r2. r2. 
+R2.*9
+c'2. e fis2 g4 
+a2.~a2. g2 fis4
+e2. d2. c2.
+R2.*2
+c4 b c
+d2.~d2. d2.
+
+
 }
 
 backingTwoPrechorusMusic = \relative c'' {
@@ -223,7 +232,11 @@ backingTwoPrechorusMusic = \relative c'' {
 }
 
 backingTwoChorusMusic = \relative c'' {
-
+R2.*52
+a2. b c~ c2 b4
+c2. g2. e'2. c2 g4 
+b2. g d' c2 g4
+b2.~b2. r2.  r2.
 }
 
 backingTwoBridgeMusic = \relative c'' {
