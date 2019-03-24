@@ -68,7 +68,7 @@ bes4 c4 es d c bes d2. r2.
 bes4 es d c bes c f2. r2 f4 
 %bes4 c4 es d c bes d2. r2 f,4 
 es2 d4 g,4. g8 c es d4(c) d f,2 f4
-c'2 bes4 a g f d' c d f2 f4 
+c'2 bes4 a g f d' c d es2 f4 
 es2 d4 g,4. g8 c es d4(c) d f,2 
 f4 c'2 bes4 a( g) f g2. r2.
 
@@ -185,7 +185,7 @@ derbassChorus = \relative c {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \transpose c c { \global \harmonies }
+      \transpose c f, { \global \harmonies }
     }
 
     \new StaffGroup <<
@@ -223,10 +223,10 @@ derbassChorus = \relative c {
 	\set Staff.instrumentName = #"Lead"
 	\set Staff.shortInstrumentName = #"L."
         \set Staff.midiInstrument = #"voice oohs"
-        \new Voice = "leadverse" { << \transpose c c { \global \leadMusicverse } >> }
-        \new Voice = "leadprechorus" { << \transpose c c { \leadMusicprechorus } >> }
-        \new Voice = "leadchorus" { << \transpose c c { \leadMusicchorus } >> }
-        \new Voice = "leadbridge" { << \transpose c c { \leadMusicBridge } >> }
+        \new Voice = "leadverse" { << \transpose c f { \global \leadMusicverse } >> }
+        \new Voice = "leadprechorus" { << \transpose c f { \leadMusicprechorus } >> }
+        \new Voice = "leadchorus" { << \transpose c f { \leadMusicchorus } >> }
+        \new Voice = "leadbridge" { << \transpose c f { \leadMusicBridge } >> }
       }
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadbridge" \leadWordsBridge
