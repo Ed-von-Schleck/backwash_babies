@@ -9,7 +9,7 @@
 global = {
   \key bes \major
   \time 3/4
-  \tempo 4 = 105
+  \tempo 4 = 126
 }
 
 harmonies = \chordmode {
@@ -81,7 +81,7 @@ d4. es8 d4 f4. es8 d4
 cis2 a4 e'2 cis4 d2. r2. 
 g,4. fis8 g4 bes4 c bes 
 d4. des8 d4 f es 
-\tempo 4 = 80
+\tempo 4 = 90
 d a f f f a f
 g2. r2.
 
