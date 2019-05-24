@@ -26,12 +26,11 @@ fis1:m a1 e1 cis1
 fis1:m a1 e1 cis1
 
 
-e dis2 dis2:7 fis1:m gis1
-e1 dis2 dis2:7 fis1:m a2 gis2
+a cis2:sus2 cis2 e1 d2 cis2
+a1 cis2:sus2 cis2 e1 d2 cis2
 
-R1
-a1 a cis cis:maj7 fis:m fis:m d e
-a1 a cis cis:maj7 fis:m fis:m d e
+a1 a cis cis:7 fis:m fis:m d e
+a1 a cis cis:7 fis:m fis:m d e
 
 %fis1:m gis2:sus2 gis2 b1 a2 gis2
 %fis1:m gis2:sus2 gis2 b1 d2 cis2
@@ -115,17 +114,18 @@ leadMusicprechorus = \relative c'{
 }
 
 leadMusicchorus = \relative c''{
-r8 gis cis dis
+  
+r8 fis, a b
 \bar ".|:"
-e4 b e fis8 dis8~
-dis4 cis8 b8~b8 a8 gis a
-cis4 a cis8( dis cis) c8~
-c2 r8 gis cis dis
-e4 cis e gis 
-dis4 cis8 b8~b8 a8 gis a
-cis4 a gis8 a cis e8~
-e2( dis4) r4
-r4 c8 c dis4 c 
+a4 a a r
+fis'8 fis fis fis f f dis cis  
+b4 gis b8 gis b gis  
+a b a gis r8 fis a b 
+a4 a a r
+fis'8 fis fis fis f f dis cis  
+b4 gis b8 gis b gis  
+a b a gis r8 fis a b \bar ":|."  
+ 
 
 r4 a8 a8 cis4 a8 r8 
 a8 a8~a8 cis8~cis4 e4 
@@ -134,7 +134,7 @@ gis2 r4 cis8 cis
 e8 cis8~cis8 cis8~cis8 cis8 cis8 cis
 e8 cis8~cis8 cis8~cis r8 cis cis
 e cis~cis cis~cis4 b8 a
-b b b cis~cis2
+b b b d~d4(cis4)
 r4 a8 a8 cis4 a8 r8 
 a8 a8~a8 cis8~cis4 e4 
 gis2 e4 cis8 gis8~
@@ -142,7 +142,8 @@ gis2 r4 cis8 cis
 e8 cis8~cis8 cis8~cis8 cis8 cis8 cis
 e8 cis8~cis8 cis8~cis r8 cis cis
 e cis~cis cis~cis4 b8 a
-b b  cis~cis4
+b b b d~d4(cis4)
+\bar ":|."
 
 
 %r8 fis, a b 
@@ -156,15 +157,6 @@ b b  cis~cis4
 %r8 fis8 fis e fis e fis e 
 %fis a fis gis r8 fis a b \bar ":|." 
 
-%\bar ".|:"
-%cis4 fis, r2
-%r2.. a8
-%b4 r8 a b a b a 
-%b d d cis r8 fis, a b 
-%cis4 fis, r2
-%r1
-%r8 b8 b a b a b a 
-%b d d cis r8 fis, a b \bar ":|." 
 }
 
 leadMusicBridge = \relative c'''{
@@ -201,7 +193,7 @@ and you feel the rhy -- thm and your mind gets car -- ried a -- way.
 
 %You can not tell me, 
 
-And the beat goes
+%And the beat goes
 
 when the beat drops,
 and your arms start wiggl -- ing a -- round
@@ -209,10 +201,9 @@ you can feel the rhy -- thm and your hips say yay
 you can't stand that urge and get car -- ried a -- way
 
 when the beat drops,
-
-and your arms just want to break free.
-Your pre -- cious mind pops,
-and in your pants you feel the bum -- ble -- bees.
+and your pre -- cious mind has to sneeze,
+when your arms go crazy and just want to break free.
+and in -- side your pants you feel the bum -- ble -- bees.
 
 
 
@@ -263,18 +254,18 @@ backingOnePrechorusMusic = \relative c'' {
 }
 
 backingOneChorusMusic = \relative c'' {
-r8 cis fis e 
-fis4 fis r2
-r2.. e8
-dis4 r8 e dis dis cis dis
-e fis e dis r8 cis fis e 
-fis4 fis r2
-R1
-r8 dis dis dis dis e dis cis
-d e d cis r8 cis fis e 
-R1*3
-e,2 g4 gis8 c8~
-c2 r4
+%r8 cis fis e 
+%fis4 fis r2
+%r2.. e8
+%dis4 r8 e dis dis cis dis
+%e fis e dis r8 cis fis e 
+%fis4 fis r2
+%R1
+%r8 dis dis dis dis e dis cis
+%d e d cis r8 cis fis e 
+%R1*3
+%e,2 g4 gis8 c8~
+%c2 r4
 
 
 
@@ -360,18 +351,18 @@ b4. a8~a4 gis4~
 gis1
 
 
-r2 cis8\glissando fis, fis4 
-e8 fis~fis gis~gis4 r8 a
-%e8 fis~fis a~a4 r8 f
+%r2 cis8\glissando fis, fis4 
+%e8 fis~fis gis~gis4 r8 a
+%%e8 fis~fis a~a4 r8 f
 
-b r8 r8 a b r8 r4
-a8 a8~a8 gis~gis2
-r2 cis8\glissando fis, fis4 
-e8 fis~fis gis~gis4 r8 a
-%e8 fis~fis a~a4 r8 f
+%b r8 r8 a b r8 r4
+%a8 a8~a8 gis~gis2
+%r2 cis8\glissando fis, fis4 
+%e8 fis~fis gis~gis4 r8 a
+%%e8 fis~fis a~a4 r8 f
 
-b r8 r8 a b r8 r4
-a8 a8~a8 gis~gis2
+%b r8 r8 a b r8 r4
+%a8 a8~a8 gis~gis2
 
 
 }
