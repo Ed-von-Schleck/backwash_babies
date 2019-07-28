@@ -117,8 +117,8 @@ leadMusicchorus = \relative c''{
   
 r8 fis, a b
 \bar ".|:"
-a4 a a r
-fis'8 fis fis fis f f dis cis  
+e4 e e r
+fis8 fis fis fis f f dis cis  
 b4 gis b8 gis b gis  
 a b a gis r8 fis a b 
 a4 a a r

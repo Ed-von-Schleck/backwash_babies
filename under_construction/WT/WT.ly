@@ -1,60 +1,29 @@
 \version "2.16.2"
 
 \header {
-  title = "WT"
+  title = "working title"
   composer = "skudella (The Royal Backwash)"
 
 }
 
 global = {
-  \key fis \minor
+  \key e \minor
   \time 4/4
-  \tempo 4 = 140
+  \tempo 4 = 120
 }
 
 harmonies = \chordmode {
   \germanChords
 
-%fis2.:m a4~a1 e2. d4~d2 cis2 
-%fis2.:m a4~a1 e2. d4~d2 cis2 
-%fis2.:m a4~a1 e2. d4~d2 cis2 
-%fis2.:m a4~a1 e2. d4~d2 cis2 
-fis1:m a1 e1 cis1
-fis1:m a1 e1 cis1
-fis1:m a1 e1 cis1
-fis1:m a1 e1 cis1
-
-e1 gis2:sus2 gis2 b1 a2 gis2
-e1 gis2:sus2 gis2 b1 d2 cis2
-e1 gis2:sus2 gis2 b1 a2 gis2
-e1 gis2:sus2 gis2 b1 d2 cis2
 
 }
 
 violinMusic = \relative c'' {
-
+  
 }
 
 leadGuitarMusic = \relative c'' {
-fis8 fis8 cis'4 b4 a4
-fis8 fis8 a8 fis8 r8 cis8 e8 f8
-fis8 fis8 cis'4 b4 a4
-gis8 gis8 a8 gis8 r8 cis,8 e8 f8
 
-fis8 fis8 cis'4 b4 a4
-fis8 fis8 a8 fis8 r8 cis8 e8 f8
-fis8 fis8 cis'4 b4 a4
-gis8 gis8 a8 gis8 r8 cis,8 e8 f8
-
-fis8 fis8 cis'4 b4 a4
-fis8 fis8 a8 fis8 r8 cis8 e8 f8
-fis8 fis8 cis'4 b4 a4
-gis8 gis8 a8 gis8 r8 cis,8 e8 f8
-
-fis8 fis8 cis'4 b4 a4
-fis8 fis8 a8 fis8 r8 cis8 e8 f8
-fis8 fis8 cis'4 b4 a4
-gis8 r2..
 }
 
 trumpetoneVerseMusic = \relative c'' {
@@ -81,7 +50,8 @@ trumpettwoChorusMusic = \relative c'' {
 
 }
 
-leadMusicverse = \relative c''{
+leadMusicverse = \relative c'{
+
 
 }
 
@@ -91,7 +61,6 @@ leadMusicprechorus = \relative c'{
 
 leadMusicchorus = \relative c''{
 
-
 }
 
 leadMusicBridge = \relative c'''{
@@ -99,22 +68,18 @@ leadMusicBridge = \relative c'''{
 }
 
 leadWordsOne = \lyricmode { 
-\set stanza = "1." 
-
 
 }
 
 leadWordsPrechorus = \lyricmode {
-
+\
 }
 
 leadWordsChorus = \lyricmode {
-\set stanza = "chorus"
-
 }
 
 
-leadWordsChorusTwo = \lyricmode {
+leadWordsChorus2 = \lyricmode {
 
 }
 
@@ -123,17 +88,16 @@ leadWordsBridge = \lyricmode {
 }
 
 leadWordsTwo = \lyricmode { 
-\set stanza = "2." 
 
 }
 
 leadWordsThree = \lyricmode {
-\set stanza = "3." 
 
 }
 
 leadWordsFour = \lyricmode {
-\set stanza = "4." 
+\
+
 
 }
 
@@ -143,6 +107,7 @@ leadWordsFive = \lyricmode {
 }
 
 backingOneVerseMusic = \relative c'' {
+
 }
 
 backingOnePrechorusMusic = \relative c'' {
@@ -150,9 +115,6 @@ backingOnePrechorusMusic = \relative c'' {
 }
 
 backingOneChorusMusic = \relative c'' {
-
-
-
 
 }
 
@@ -164,16 +126,12 @@ backingOneVerseWords = \lyricmode {
 }
 
 backingOnePrechorusWords = \lyricmode {
+\set stanza = "prechorus"
 
 }
 
 
 backingOneChorusWords = \lyricmode {
-
-}
-
-backingOneChorusWordsTwo = \lyricmode {
-
 
 }
 
@@ -212,29 +170,8 @@ backingTwoChorusWords = \lyricmode {
 backingTwoBridgeWords = \lyricmode {
 }
 
-derbassVerse = \relative c, {
+derbassVerse = \relative c {
   \clef bass
-fis4 f8 fis8~fis8 f8 fis8 gis8 
-a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
-gis8 gis8 gis8 b8 a8 gis8 fis8 gis8
-fis4 f8 fis8~fis8 f8 fis8 gis8 
-a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
-gis1
-
-fis4 f8 fis8~fis8 f8 fis8 gis8 
-a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
-gis8 gis8 gis8 b8 a8 gis8 fis8 gis8
-fis4 f8 fis8~fis8 f8 fis8 gis8 
-a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
-gis1
-
-}
-
-derbassChorus = \relative c {
 
 }
 
@@ -256,8 +193,8 @@ derbassChorus = \relative c {
       \new Staff = "Guitar" {
         \set Staff.instrumentName = #"Guitar"
         \set Staff.shortInstrumentName = #"G."
-        \set Staff.midiInstrument = #"overdriven guitar"
-        %\set Staff.midiInstrument = #"acoustic guitar (steel)"
+        %\set Staff.midiInstrument = #"overdriven guitar"
+        \set Staff.midiInstrument = #"acoustic guitar (steel)"
         \transpose c c { \global \leadGuitarMusic }
       }
         \new Staff = "Trumpets" <<
@@ -287,8 +224,6 @@ derbassChorus = \relative c {
       }
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadbridge" \leadWordsBridge
-      \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadchorus" \leadWordsChorusTwo
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadchorus" \leadWordsChorus
       \new Lyrics \with { alignBelowContext = #"lead" }
@@ -323,16 +258,13 @@ derbassChorus = \relative c {
 	\new Voice = "backingTwoBridge" { \voiceTwo << \transpose c c {  \backingTwoBridgeMusic } >> }
 
       }
-      \new Lyrics \with { alignBelowContext = #"backing" }
+      \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOneBridge" \backingOneBridgeWords
-      \new Lyrics \with { alignBelowContext = #"backing" }
-      \lyricsto "backingOneChorus" \backingOneChorusWordsTwo
-      \new Lyrics \with { alignBelowContext = #"backing" }
+      \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOneChorus" \backingOneChorusWords
-
-      \new Lyrics \with { alignBelowContext = #"backing" }
+      \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOnePrechorus" \backingOnePrechorusWords
-      \new Lyrics \with { alignBelowContext = #"backing" }
+      \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOneVerse" \backingOneVerseWords
       
       \new Lyrics \with { alignAboveContext = #"backing" }
@@ -349,7 +281,6 @@ derbassChorus = \relative c {
         \set Staff.midiInstrument = #"electric bass (pick)"
         %\set Staff.midiInstrument = #"distorted guitar"
         \transpose c c { \global \derbassVerse }
-        \transpose c c { \global \derbassChorus }
       }      % again, we could replace the line above this with the line below.
       % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
     >>

@@ -1,34 +1,42 @@
 \version "2.16.2"
 
 \header {
-  title = "Colors of your Eyes"
-  composer = "skudella (The Royal Backwash)"
+  title = "Who takes the blame"
+  composer = "skudella & speckdrum (The Royal Backwash)"
 
 }
 
 global = {
-  \key g \major
+  \key d \minor
   \time 4/4
-  \tempo 4 = 126
+  \tempo 4 = 200
 }
 
 harmonies = \chordmode {
   \germanChords
+  %g4. c8:m~c2:m g4. c8:m~c2:m g4. c8:m~c2:m c2 b2:7
+  %g4. c8:m~c2:m g4. c8:m~c2:m g4. c8:m~c2:m a2 d2
+  %g4. c8:m~c2:m g4. c8:m~c2:m g4. c8:m~c2:m c2 b2:7
+  %g4. c8:m~c2:m g4. c8:m~c2:m g4. c8:m~c2:m a2 d2
   R1
-  g1 e1:m g1 e1:m
-  a1:m d1 g2 c2:9 g1
-  g1 e1:m g1 e1:m
-  a1:m d1 g2 c2:9 g1
+  g2.. c8:m~c1:m g2.. c8:m~c1:m g2.. c8:m~c1:m c1:7 a1
+  g2.. c8:m~c1:m g2.. c8:m~c1:m g2.. c8:m~c1:m a1 d1
+  %g2.. c8:m~c1:m g2.. c8:m~c1:m g2.. c8:m~c1:m c1 b1:7
+  %g2.. c8:m~c1:m g2.. c8:m~c1:m g2.. c8:m~c1:m a1 d1
+
+
+  g4:m f4 es4 d4:m c1
+  g4:m f4 es4 d4:m c1
+  g4:m f4 es4 d4:m c1
+  a1 d1
+  g4:m f4 es4 d4:m c1
+  g4:m f4 es4 d4:m c1
+  g4:m f4 es4 d4:m c1
+  a1 d1
+
   
-  c1 c1 g1 g1
-  c1 a1:m d1 d2:sus2 d2
-  c1 c1 g1 g1
-  c1 a1:m d1 d1
   
-  g1 e1:m g1 e1:m
-  a1:m d1 g2 c2:9 g1
-  g1 e1:m g1 e1:m
-  a1:m d1 g2 c2:9 g1
+
 }
 
 violinMusic = \relative c'' {
@@ -36,7 +44,23 @@ violinMusic = \relative c'' {
 }
 
 leadGuitarMusic = \relative c'' {
-
+R1*33
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>2
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>2
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>4 <c f>4
+<a d>4 r2.
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>2
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>2
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>4 <c f>4
+<a d>4 r2.
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>2
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>2
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>4 <c f>4
+<a d>4 r2.
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>2
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>2
+<c f>8 <d g>8~<d g>8 <d g>8~<d g>4 <c f>4
+<a d>4 r2.
 
 }
 
@@ -65,23 +89,23 @@ trumpettwoChorusMusic = \relative c'' {
 }
 
 leadMusicverse = \relative c''{
-r2 r8 g8 a8 g8
-b2 b16 b16 b16 b16~b8 a8( 
-g4) r4 r8 g8 a8 g8
-b4. d,8 b'8 d,8 b'8 a8(
-g4) r4 e8 b'8~b8 a8~
-a4 r4 r8 b8~b8 d,8~
-d4 r4 e8 g8~g8 b8~
-b8 g8 r2.
-r2 r8 g8 a8 g8
-b2 b16 b16 b16 b16~b8 a8( 
-g4) r4 r8 g8 a8 g8
-b4 b8 g8 b8 b8~b8 a8(
-g4) r4 e8 b'8~b8 a8~
-a4 r4 r8 b8~b8 d,8~
-d4 d8 d8 e8 g8~g8 b8~
-b8 g8 r2.
-r1
+r2 r8 g8 bes8 g8
+d'4 d8 g,8 d'8 g,8 d'8 c8~
+c8 c8~c8 bes8 c4 bes4 
+d8( g,8) d'4 d8 g,8 d'8 c8
+r2 r8 g8 bes8 g8
+d'4 d8 g,8 d'8 g,8 d'8 c8~
+c8 c8~c8 bes8 c4 bes4 
+bes8 bes8~bes8 c8~c8 bes8~bes8 a8
+r2 r8 g8 bes8 g8
+d'8 g,8 d'8 g,8 d'8 g,8 d'8 c8~
+c8 c8~c8 bes8 c4 bes4 
+d8 g,8 d'4 d8 g,8 d'8 c8
+r2 r8 g8 bes8 g8
+d'8 g,8 d'8 g,8 d'8 g,8 d'8 c8~
+c8 c8~c8 bes8 c4 bes4 
+a8 a8~a8 bes8~bes8 a8~a8 d8
+
 }
 
 leadMusicprechorus = \relative c'{
@@ -89,92 +113,136 @@ leadMusicprechorus = \relative c'{
 }
 
 leadMusicchorus = \relative c''{
-R1*15
+  r2 r8 d8 d8 c8
+  d4 r2.
+  r2 r8 d8 d8 c8
+  d4 r2.
+  r2 r8 d8 d8 c8
+  d4 r2.
+  r1
+  a8 a8~a8 bes8~bes4 a4
+  d4 r4 r8 d8 d8 c8
+  d4 r2.
+  r2 r8 d8 d8 c8
+  d4 r2.
+  r2 r8 d8 d8 c8
+  d4 r2.
+  r1
+  a8 a8~a8 bes8~bes4 a4
+  d4 r2.
 }
 
 leadMusicBridge = \relative c'''{
-r2 r8 g,8 \tuplet 3/2 {a~a g}
-b4 b4 b4  a16~a8 b16
-\tuplet 3/4 {a g~g} \tuplet 3/4 {g~g fis} g8  g8 \tuplet 3/2 {a~a g}
-b4 b4 b4  a16~a8 b16
-\tuplet 3/4 {a g~g} \tuplet 3/4 {g~g fis} g8 r8 b8~b8 d,8~
-d4 r4 e8 g8~g8 b8~
-b8 g8 r2.
-r2 r8 g8 a8 g8
-b2 b16 b16 b16 b16~b8 a8( 
-g4) r4 r8 g8 a8 g8
-b4 b8 g8 b8 b8~b8 a8(
-g4) r4 e8 b'8~b8 a8~
-a4 r4 r8 b8~b8 d,8~
-d4 d8 d8 e8 g8~g8 b8~
-b8 g8 r2.
-r1
+ a,4. bes c4 
+ bes4. a c4 
+ d4. c bes4 
+ a4. bes a4
+ a4. bes c4
+ bes4. a bes4 
+ d4 d8 c4. 
+ d4 d8 c4. r2
+ a4. bes c4 
+ bes4. a c4 
+ d4. c bes4 
+ a4. bes a4
+ a4. bes c4
+ bes4. a bes4 
+ d4 d8 c4. 
+ d4 d8 c4. r2
+ \bar"|."
 }
+
+% leadMusicBridge = \relative c'''{
+%  bes4. g8~g4 r4
+%  bes4. g8~g4 f4
+%  bes4. g8~g4 f8 d8~
+%  d8 r2..
+%  bes'4. g8~g4 r4
+%  bes4. g8~g4 f4
+%  bes4. g8~g4 f8 d8~
+%  d8 r2..
+%  bes'4. g8~g4 r4
+%  bes4. g8~g4 f4
+%  bes4. g8~g4 f8 d8~
+%  d8 r2..
+%  bes'4. g8~g4 r4
+%  bes4. g8~g4 bes4
+%  bes4. bes8~bes4 bes8 a8~
+%  a8 r2..
+%  \bar"|."
+% }
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
-I like the green col -- or of your eyes.
-I like the way you look to the skies
-o -- hohh -- hohh o -- hoo 
-and your bo -- dy.
-I like the brown col -- or of your eyes
-I like your smile when you act su -- prised 
-o -- hohh -- hohh o -- hoo 
-And your dir -- ty hu -- mor
-}
+It is my fault that you ne -- ver learned how to be -- lieve me
+al -- though you al -- ways tried
+It is my fault I can nei -- ther be trust -- ed nor doubt -- ed
+and you have your pride
 
-leadWordsChorus = \lyricmode {
-\set stanza = "chorus 1"
-But e --very time you ask me why 
-}
-
-leadWordsChorus2 = \lyricmode {
-\set stanza = "chorus 2"
- I love the brown grey green yel -- low co -- lor of your eyes
- I love the brown grey green yel -- low co -- lor of your eyes
-
-}
-
-leadWordsBridge = \lyricmode {
-\set stanza = "5." 
-I love the brown grey green yel -- low co -- lor of your eyes
-I love the brown grey green yel -- low co -- lor of your eyes
-and you know, you know,  
-that I can't help it.
-
-I love the brown grey green yel -- low co -- lor of your eyes
-I love the brown grey green yel -- low co -- lor of your eyes
-and I know, I know,  
-I am a hy -- po -- crite.
+I am the rea -- son why the world is a place of mis -- treat -- ment
+is this what you are im -- plying
+I am the rea -- son ev -- ery -- bo -- dy is feel -- ing so lone -- ly
+this is what you're saying
 }
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
-I like the grey col -- or of your eyes
-You're like the  devil _ _ in dis -- guise
-o -- hohh -- hohh o -- hoo 
-And I've fal -- len for you
-I like the yellow co -- lor in your eyes
-_ ev -- ery breath you take is a prize
-o -- hohh -- hohh o -- hoo 
-_ you are my sun -- shine
+It is my fault that your next to last tweet got de -- le -- ted
+"and your" time -- line is a mess
+It is my fault that your laun -- dry's been washed with hot wa -- ter
+so it shrank your dress
+
+I am the rea -- son why your fa -- vo -- rite show just got can -- celled
+_ _ _ _ _ _ _
+I am the rea -- son shopp -- ing is so ex -- pen -- sive the last while
+_ _ _ _ _
+}
+
+leadWordsChorus = \lyricmode {
+\set stanza = "chorus"
+ Who takes the blame?
+ Who takes the blame?
+ Who takes the blame?
+
+ Sure -- ly I'm to blame
+ Who takes the blame?
+ Who takes the blame?
+ Who takes the blame?
+ this is going in -- sane
+ 
+ \bar ":|."
+}
+
+leadWordsBridge = \lyricmode {
+\set stanza = "bridge"
+ blame me for trea -- son 
+ with -- out a -- ny rea -- son
+ mix ar -- ses and at -- ter
+ and fill the cup, fill the cup
+ 
+ blame me for witch -- craft
+ and bind me on a shaft
+ stack dead -- wood and tin -- der 
+ and light it up, light it up
 }
 
 leadWordsThree = \lyricmode {
 \set stanza = "3." 
+It is my fault that the co -- lor of air is dis -- taste -- ful
+howe -- ver this is _ meant
+It is my fault that the scent of your ear -- plugs is itch -- y
+this shit makes no sense
 
+I am the rea -- son why your friends are not hand -- some nor craf -- ty
+_ _ _ _ _ _ _
+I am the rea -- son why you were not in -- vi -- ted to hog -- wards
+_ _ _ _ _
 }
 
 leadWordsFour = \lyricmode {
 \set stanza = "4." 
 
 }
-
-
-leadWordsFive = \lyricmode {
-
-}
-
 backingOneVerseMusic = \relative c'' {
 
 
@@ -185,21 +253,54 @@ backingOneChorusMusic = \relative c'' {
 }
 
 backingOneChorusWords = \lyricmode {
- 
 
 }
 
 backingTwoVerseMusic = \relative c' {
-
+r2 r8 d8 d d
+g2. a8 g8
+r2 r8 d8 d d
+g2. a8 g8
+r2 r8 d8 d d
+g2. a8 g8
+R1*17
  
 }
 
 backingTwoChorusMusic = \relative c'' {
-
+ r4 bes4 a8 bes8~bes8 a8~
+ a4 g4 es8 f8~f8 r8
+ r4 bes4 a8 bes8~bes8 a8~
+ a4 g4 r2 
+ r4 bes4 a8 bes8~bes8 a8~
+ a4 g4 es8 f8~f8 r8
+ des8 des8~des8 d8~d4 e4
+ ges4 r2.
+ r4 bes4 a8 bes8~bes8 a8~
+ a4 g4 es8 f8~f8 r8  
+ r4 bes8 bes8 a8 bes8~bes8 a8~
+ a4 g4 r2 
+ r4 bes4 a8 bes8~bes8 a8~
+ a4 g4 es8 f8~f8 r8
+ des8 des8~des8 d8~d4 e4
+ ges4 r2.
 }
 
 backingTwoChorusWords = \lyricmode {
-
+ It is my fault
+ It is my fault
+ I am the rea -- son
+ I am the rea -- son
+}
+backingTwoChorusWords = \lyricmode {
+ For all the pen -- guins dy -- ing
+ And your failed mar -- riage
+ For ev -- ery child that's cry -- ing
+ Sure -- ly I'm to blame
+ Your cou -- sin talks so damn lot 
+ for re -- li -- gious ri -- ots
+ You don't win lo -- ttery jack -- pots
+ this is going in -- sane
 }
 
 derbassVerse = \relative c {
@@ -306,6 +407,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #1
+  page-count = #2
   
 }
