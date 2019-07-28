@@ -186,25 +186,20 @@ leadWordsPrechorus = \lyricmode {
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
-So when the beat drops,
-and your feet start danc -- ing and your hips say yay __ _
-And when the time stops,
-and you feel the rhy -- thm and your mind gets car -- ried a -- way.
-
-%You can not tell me, 
-
-%And the beat goes
+So when the beat drops in,
+watch me as I fall in love with ev -- ry sin -- gle note that vibes through the air
+And when the time slows down,
+join me div -- ing dee -- per in -- to ev -- ry sin -- gle tone that floats through my hair.
 
 when the beat drops,
-and your arms start wiggl -- ing a -- round
-you can feel the rhy -- thm and your hips say yay
+and your mind start lo -- sing control
+you can feel the stroll that's lea -- ding through you soul 
 you can't stand that urge and get car -- ried a -- way
 
 when the beat drops,
-and your pre -- cious mind has to sneeze,
-when your arms go crazy and just want to break free.
-and in -- side your pants you feel the bum -- ble -- bees.
-
+and your feet start mo -- ving a -- long,
+wish this sing -- le song would just go on and on
+you for -- get your pain so just sing with me yay
 
 
 }
