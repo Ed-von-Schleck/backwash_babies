@@ -26,8 +26,8 @@ fis1:m a1 e1 cis1
 fis1:m a1 e1 cis1
 
 
-a cis2:sus2 cis2 e1 d2 cis2
-a1 cis2:sus2 cis2 e1 d2 cis2
+a cis2:sus2 cis2 e1 d4. cis8~cis2
+a1 cis2:sus2 cis2 e1 d4. cis8~cis2
 
 a1 a cis cis:7 fis:m fis:m d e
 a1 a cis cis:7 fis:m fis:m d e
@@ -117,7 +117,7 @@ leadMusicchorus = \relative c''{
   
 r8 fis, a b
 \bar ".|:"
-e4 e e r
+cis4 cis cis r
 fis8 fis fis fis f f dis cis  
 b4 gis b8 gis b gis  
 a b a gis r8 fis a b 
@@ -191,9 +191,11 @@ watch me as I fall in love with ev -- ry sin -- gle note that vibes through the 
 And when the time slows down,
 join me div -- ing dee -- per in -- to ev -- ry sin -- gle tone that floats through my hair.
 
+so when the
+
 when the beat drops,
-and your mind start lo -- sing control
-you can feel the stroll that's lea -- ding through you soul 
+and your mind start lo -- sing con -- trol
+you can feel the stroll that's lea -- ding through your soul 
 you can't stand that urge and get car -- ried a -- way
 
 when the beat drops,
@@ -206,11 +208,6 @@ you for -- get your pain so just sing with me yay
 
 
 leadWordsChorusTwo = \lyricmode {
-So when the beat drops,
-and your arms start wiggl -- ing and they want to break free.
-Your pre -- cious mind pops,
-and __ _ in your pants you feel a hive of bum __ _ -- ble -- bees.
-And the beat goes
 
 
 }
@@ -242,6 +239,7 @@ leadWordsFive = \lyricmode {
 backingOneVerseMusic = \relative c'' {
   R1*16
 cis8 cis fis f
+r2
 }
 
 backingOnePrechorusMusic = \relative c'' {
@@ -261,8 +259,17 @@ backingOneChorusMusic = \relative c'' {
 %R1*3
 %e,2 g4 gis8 c8~
 %c2 r4
+a4 fis8(e) fis4 r
+cis'8 b a gis gis fis gis a
 
+e4 e e cis 
+d8 e fis f r2
 
+a4 fis8(e) e4 r
+cis'8 b a gis gis fis gis a
+
+e4 e e cis 
+d8 e fis f r2
 
 
 
@@ -281,6 +288,10 @@ backingOnePrechorusWords = \lyricmode {
 
 
 backingOneChorusWords = \lyricmode {
+beat drops in,
+watch me as I fall in love with ev -- ry sin -- gle note in the air
+time slows down,
+join me div -- ing dee -- per in -- to ev -- ry sin -- gle tone in my hair.
 
 }
 
