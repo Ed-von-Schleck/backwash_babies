@@ -121,8 +121,8 @@ cis4 cis cis r
 fis8 fis fis fis f f dis cis  
 b4 gis b8 gis b gis  
 a b a gis r8 fis a b 
-a4 a a r
-fis'8 fis fis fis f f dis cis  
+cis4 cis cis r
+fis8 fis fis fis f f dis cis  
 b4 gis b8 gis b gis  
 a b a gis r8 fis a b \bar ":|."  
  
@@ -259,7 +259,7 @@ backingOneChorusMusic = \relative c'' {
 %R1*3
 %e,2 g4 gis8 c8~
 %c2 r4
-a4 fis8(e) fis4 r
+a4 fis8(e) e4 r
 cis'8 b a gis gis fis gis a
 
 e4 e e cis 
@@ -340,20 +340,20 @@ derbassVerse = \relative c, {
 R1
 fis4 f8 fis8~fis8 f8 fis8 gis8 
 a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
+b4. e,8~e4 gis4~
 gis4 gis b a
 fis4 f8 fis8~fis8 f8 fis8 gis8 
 a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
+b4. e,8~e4 gis4~
 gis1
 
 fis4 f8 fis8~fis8 f8 fis8 gis8 
 a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
+b4. e,8~e4 gis4~
 gis4 gis b a
 fis4 f8 fis8~fis8 f8 fis8 gis8 
 a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
+b4. e,8~e4 gis4~
 gis1
 
 
