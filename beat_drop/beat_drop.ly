@@ -39,6 +39,23 @@ a1 a cis cis:7 fis:m fis:m d e
 }
 
 violinMusic = \relative c'' {
+R1*25
+e2 d 
+cis4( a) cis( a')
+b8( a gis a) gis( fis f cis)
+f4. cis8 \tuplet 3/4 {f fis gis}
+r4 a8 a8~a gis fis gis
+r4 a8 a8~a gis fis gis
+fis4. gis8~gis4 a4
+b( a) gis( a)
+e2 d 
+cis4( a) cis( a')
+b8( a gis a) gis( fis f cis)
+f4. cis8 \tuplet 3/4 {f fis gis}
+r4 a8 a8~a gis fis gis
+r4 a8 a8~a gis fis gis
+fis4. gis8~gis4 a4
+b( a) gis( a)
 
 }
 
@@ -390,7 +407,7 @@ derbassChorus = \relative c {
         \set Staff.instrumentName = #"Violin"
         \set Staff.shortInstrumentName = #"V."
         \set Staff.midiInstrument = #"violin"
-         \transpose c c { \violinMusic }
+         \transpose c c { \global \violinMusic }
       }
       \new Staff = "Guitar" {
         \set Staff.instrumentName = #"Guitar"
