@@ -126,17 +126,27 @@ leadMusicBridge = \relative c'''{
 leadWordsOne = \lyricmode { 
 \set stanza = "Verse"
 
-If you want me to
+Could you please help me
+to find my way back to pro -- per sa -- ni -- ty
+Could you please help me
+to act like I'm in line
+
+I just wan -- na be
+a vi -- tal part of a bright so -- ci -- e -- ty
+I just wan -- na be
+a piece that will fit in
+
 }
 
 leadWordsPrechorus = \lyricmode {
 \set stanza = "Prechorus"
-la la la
+Don't you think that your mind is quite con -- strained
+Don't you think that your life's a bit too framed, it needs to be named.
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "Chorus"
-la la la
+Stop ma -- king mind -- sets mate all a -- cross the world 
 }
 
 
