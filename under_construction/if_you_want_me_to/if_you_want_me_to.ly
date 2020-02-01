@@ -9,14 +9,16 @@
 global = {
   \key g \major
   \time 2/2
-  \tempo "shuffled" 4 = 116
+  \tempo "shuffled" 4 = 140
 }
 
 harmonies = \chordmode {
   \germanChords
-  c1:7 ges1:7 b1:7 a4.:7 a8~a2 
-  c1:7 b1:7 e1 e:7   
-  
+  a1
+   
+  a1 d2 c2 a1 e  
+  a1 d2 c2 a1 e  
+ 
   a1 d2 c2 a1 e
   a1 d2 c2 a1 e
   a1 d2 c2 a1 e
@@ -30,12 +32,25 @@ harmonies = \chordmode {
   e1 d a g4. b8~b2
   e1 g2 a d1 a2 b2:7
   e1
-  
+  R1
+  c1:7 ges1:7 b1:7 a4.:7 a8~a2 
+  c1:7 b1:7 e1 e:7   
  
 }
 
 violinMusic = \relative c'' {
+  r1  \bar ":.|.:"
+  dis2..(~dis8\glissando e8)
+  r8 r4 dis8( e~e) g(~
+  g4\glissando e4) dis8( e8~e) g(~
+  g4\glissando e4) dis8 e8 r4
+  dis2..(~dis8\glissando e8)
+  r8 c4 b8(c8~c8) a8~
+  a4 e8 r8 r2 
+  r1\bar ":|."
   
+  
+
 }
 
 leadGuitarMusic = \relative c'' {
@@ -67,7 +82,7 @@ trumpettwoChorusMusic = \relative c'' {
 }
 
 leadMusicverse = \relative c'{
-R1*7
+R1*8
 r2. e'8 d
 e8 cis8~cis8 a8~a4 r8 e
 g4 gis a8 g a8 cis8~cis4 a g8 a~a e~
@@ -178,14 +193,46 @@ leadWordsFive = \lyricmode {
 }
 
 backingOneVerseMusic = \relative c'' {
-
+R1*25
 }
 
 backingOnePrechorusMusic = \relative c'' {
+r2.. e8~
+e4 e d8 c8~c  b~
+b1
+r1
+r2.. e8~
+e4 e d8 c8~c dis~
+dis4 r2.
 
 }
 
 backingOneChorusMusic = \relative c'' {
+r1
+e,4 gis e'2(
+d2..) b8
+a4 e' cis~cis8 d8~
+d4. dis8 r2
+
+e,4 gis e'2(
+d2 cis )
+r4 d e d
+cis4. dis8~dis8 r4.
+
+e,4 gis e'2(
+d2..) b8
+a4 e' cis~cis8 d8~
+d4. dis8 r2
+
+e,4 gis e'2(
+d2 cis )
+r4 d e d
+cis4 cis dis8 b dis e8~
+e8 r2..
+
+
+
+
 
 }
 
@@ -241,7 +288,10 @@ backingTwoBridgeWords = \lyricmode {
 
 derbassVerse = \relative c {
   \clef bass
-  R1*8
+  a4 c b bes 
+  a4 c b bes a4 c b bes  a4 c b bes  a4 e g gis
+  a4 c b bes a4 c b bes  a4 c b bes  a4 e g gis
+  
   a4 c b bes a4 c b bes  a4 c b bes  a4 e g gis
   a4 c b bes a4 c b bes  a4 c b bes  a4 e g gis
   a4 c b bes a4 c b bes  a4 c b bes  a4 e g gis
@@ -372,6 +422,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #1
+  page-count = #2
   
 }
