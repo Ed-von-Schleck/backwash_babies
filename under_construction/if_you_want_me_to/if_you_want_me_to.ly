@@ -40,12 +40,12 @@ harmonies = \chordmode {
 
 violinMusic = \relative c'' {
   r1  \bar ":.|.:"
-  dis2..(~dis8\glissando e8)
-  r8 r4 dis8( e~e) g(~
+  dis2.(~dis8\glissando e8)
+  r2 dis8( e~e) g(~
   g4\glissando e4) dis8( e8~e) g(~
   g4\glissando e4) dis8 e8 r4
-  dis2..(~dis8\glissando e8)
-  r8 c4 b8(c8~c8) a8~
+  dis2.(~dis8\glissando e8)
+  r4 c4 b8(c8~c8) a8~
   a4 e8 r8 r2 
   r1\bar ":|."
   
