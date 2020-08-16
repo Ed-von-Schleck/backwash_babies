@@ -457,9 +457,10 @@ c4 e g e
       \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOneBridge" \backingOneBridgeWords
       \new Lyrics \with { alignAboveContext = #"backing" }
-      \lyricsto "backingOneChorus" \backingOneChorusWordsTwo
-      \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOneChorus" \backingOneChorusWords
+      \new Lyrics \with { alignAboveContext = #"backing" }
+      \lyricsto "backingOneChorus" \backingOneChorusWordsTwo
+
 
       \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOnePrechorus" \backingOnePrechorusWords
