@@ -228,6 +228,7 @@ backingOnePrechorusMusic = \relative c'' {
 }
 
 backingOneChorusMusic = \relative c'' {
+R1*32
 r2 c4. e8~
 e2 r4 c8 c8~
 c8 b8~b4 c8 d8~d8 b8~
@@ -236,10 +237,10 @@ e4 d c b a g e c
 c'8 b c d c4 c8 c
 f8 f f f f e d c~
 c2 c4. e8~
-e2 r4 e,8 e8~
+e2 r4 e8 e8~
 e8 d8~d4 e8 f8~f8 d8~
-d4.(f8~f4) r4
-e'4 d c b a g e c
+d2. r4
+e4 d c b a g e c
 c'8 b c d c c c c
 f f f f f( e) d( c)
 c2 c4. e8
@@ -296,9 +297,27 @@ backingTwoVerseMusic = \relative c' {
 
 backingTwoPrechorusMusic = \relative c'' {
 
+
 }
 
-backingTwoChorusMusic = \relative c'' {
+backingTwoChorusMusic = \relative c' {
+R1*32
+r1
+r4 c4 b(c) 
+b2 d e f
+c4 c c c
+e e e c
+f2(a,2 f'2)
+e4( d)
+c2 r2
+r4 c4 b(c) 
+b2 d e f
+c4 c c c
+e e e c
+f2(a,2 f'2)
+e4( d)
+c2 r2
+
 
 }
 
@@ -308,6 +327,7 @@ backingTwoBridgeMusic = \relative c'' {
 
 
 backingTwoVerseWords = \lyricmode {
+  
 }
 
 backingTwoPrechorusWords = \lyricmode {
@@ -315,6 +335,14 @@ backingTwoPrechorusWords = \lyricmode {
 
 
 backingTwoChorusWords = \lyricmode {
+ba -- by you are go -- ing 
+down down down down down down down down
+down __
+good -- bye
+ba -- by it is get -- ting 
+dark dark dark dark dark dark dark dark
+dark __
+good -- bye
 }
 
 
@@ -410,8 +438,8 @@ c4 e g e
       % we want the alto lyrics to be below the alto Voice anyway.
       % \new Lyrics \lyricsto "altos" \altoWords
 
-      \new Staff = "backing" {
-	%  \clef backingTwo
+      \new Staff = "backing" <<
+	%\clef backingTwo
 	\set Staff.instrumentName = #"Backing"
 	\set Staff.shortInstrumentName = #"B."
         \set Staff.midiInstrument = #"voice oohs"
@@ -425,31 +453,32 @@ c4 e g e
 	\new Voice = "backingTwoChorus" { \voiceTwo << \transpose c c { \backingTwoChorusMusic } >> }
 	\new Voice = "backingTwoBridge" { \voiceTwo << \transpose c c {  \backingTwoBridgeMusic } >> }
 
-      }
-      \new Lyrics \with { alignBelowContext = #"backing" }
+      >>
+      \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOneBridge" \backingOneBridgeWords
-      \new Lyrics \with { alignBelowContext = #"backing" }
+      \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOneChorus" \backingOneChorusWordsTwo
-      \new Lyrics \with { alignBelowContext = #"backing" }
+      \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOneChorus" \backingOneChorusWords
 
-      \new Lyrics \with { alignBelowContext = #"backing" }
+      \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOnePrechorus" \backingOnePrechorusWords
-      \new Lyrics \with { alignBelowContext = #"backing" }
+      \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOneVerse" \backingOneVerseWords
       
-      \new Lyrics \with { alignAboveContext = #"backing" }
+      \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingTwoBridge" \backingTwoBridgeWords
-      \new Lyrics \with { alignAboveContext = #"backing" }
+      \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingTwoChorus" \backingTwoChorusWords
-      \new Lyrics \with { alignAboveContext = #"backing" }
+      \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingTwoPrechorus" \backingTwoPrechorusWords
-      \new Lyrics \with { alignAboveContext = #"backing" }
+      \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingTwoVerse" \backingTwoVerseWords
       
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
         \set Staff.midiInstrument = #"electric bass (pick)"
+        \set Staff.midiMaximumVolume = #0.0
         %\set Staff.midiInstrument = #"distorted guitar"
         \transpose c c { \global \derbassVerse }
         \transpose c c { \global \derbassChorus }
