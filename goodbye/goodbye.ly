@@ -303,19 +303,19 @@ backingTwoPrechorusMusic = \relative c'' {
 backingTwoChorusMusic = \relative c' {
 R1*32
 r1
-r4 c4 b(c) 
+r2 e4 c4 
 b2 d e f
 c4 c c c
 e e e c
 f2(a,2 f'2)
-e4( d)
+e4( d8) c8~
 c2 r2
-r4 c4 b(c) 
+r2 e4 c4 
 b2 d e f
 c4 c c c
 e e e c
 f2(a,2 f'2)
-e4( d)
+e4 d4 
 c2 r2
 
 
@@ -342,7 +342,17 @@ good -- bye
 ba -- by it is get -- ting 
 dark dark dark dark dark dark dark dark
 dark __
+way you die
+}
+backingTwoChorusWordsTwo = \lyricmode {
+ba -- by you are go -- ing 
+down down down down down down down down
+down __
 good -- bye
+ba -- by it is get -- ting 
+dark dark dark dark dark dark dark dark
+dark __
+don't know why
 }
 
 
@@ -471,6 +481,8 @@ c4 e g e
       \lyricsto "backingTwoBridge" \backingTwoBridgeWords
       \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingTwoChorus" \backingTwoChorusWords
+      \new Lyrics \with { alignBelowContext = #"backing" }
+      \lyricsto "backingTwoChorus" \backingTwoChorusWordsTwo      
       \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingTwoPrechorus" \backingTwoPrechorusWords
       \new Lyrics \with { alignBelowContext = #"backing" }
