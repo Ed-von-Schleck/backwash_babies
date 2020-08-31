@@ -1,29 +1,40 @@
 \version "2.16.2"
 
 \header {
-  title = "If you want"
+  title = "working title"
   composer = "skudella (The Royal Backwash)"
 
 }
 
 global = {
   \key e \minor
-  \time 4/4
-  \tempo 4 = 100
+  \time 2/2
+  \tempo 2 = 100
 }
 
 harmonies = \chordmode {
   \germanChords
-    r1
-    a1 d2 c a1 e2 d
-    a1 d2 c a1 e2 d
-    a1 d2 c a1 e2 d
-    a1 d2 c a1 e2 d
-    d1 a1 d g2 e 
-    d1 a1 e d
-    
-    c g d a
-    c g d e
+  a1:m g:6 f:7 e a:m g:6 f:7 e:7
+  a1:m g:6 f:7 e a2:m g f e a2.:m e4 
+  a8:m r2..
+
+  c1 c  b:7 b:7 e1 e1:7 f1 f
+  d1:m d1:m f f g g g:7 g:7
+  c1 c b:7 b:7 e1 e1:7 f f
+  d1:m d1:m f f e e e:7 e:7 
+  a4:m g f e a4.:m e8 
+  a8:m r4.
+  
+  g1 g1 d:m d:m 
+  f f c c
+  e e a4:m g f e a4.:m e8 
+  a8:m r4.
+  
+  a2:m g:6 f:7 e a:m g:6 f:7 e:7
+  a2:m g:6 f:7 e a:m g:6 f:7 e:7
+  a2:m g:6 f:7 e a:m g:6 f4:7 f8:7 e:7 e2:7
+  a2:m g f e a2.:m e4 
+  a8:m r2.. 
 }
 
 violinMusic = \relative c'' {
@@ -59,35 +70,24 @@ trumpettwoChorusMusic = \relative c'' {
 }
 
 leadMusicverse = \relative c'{
-r2 r8
-e'16 cis e8 cis16 e16~e16
-cis~cis a~a8 r8 r4 e8 e8 
-fis a a fis a fis a  cis~cis a~a
-r8 r2
-r2 r8
-e'16 cis e8 cis16 e16~e16
-cis~cis a~a8 r8 r4 e8 e8 
-fis a a fis cis' a cis a~a
-r2..
-r2 r8
-e'16 cis e8 cis16 e16~e16
-cis~cis a~a8 r8 r4 e8 e8 
-fis a a fis a fis a  cis~cis a~a
-r8 r2
-r2 r8
-e'16 cis e8 cis16 e16~e16
-cis~cis a~a8 r8 r4 e8 e8 
-fis a a fis cis' a cis a~a
-r2..
-r2 r8 a8 a fis 
-a4 a a8 fis a cis~
-cis a e fis~fis a a fis 
-a4 a a8 fis a4 
-g8 g~g gis~gis8 a8 a fis 
-a4 a a8 fis a cis~
-cis a e fis~fis a a fis 
-gis8 gis~gis gis~gis fis gis a~
-a2 r2
+e'4 e4 d4. c8 
+d8 c8~c8 a8~a4 r4
+a4 a4 c c
+b4. e,8~e4 r4
+r4 e'4 a4. e8
+d8 c8~c8 d8~d4 d8 c8
+a4 c d c
+d8 dis8~dis e8 r4 dis8 e
+a4 e d4. c8
+d e r4 r4 e4
+f f g f 
+e4. b8~b8 r8 e4
+e c d b
+c a b gis 
+c a8 a8~a4 gis
+a8 r2..
+
+
 
 
 
@@ -99,19 +99,33 @@ leadMusicprechorus = \relative c'{
 }
 
 leadMusicchorus = \relative c''{
-
+r2 e4.  g8~
+g4 e4 g8 b8~b4
+a4. fis8~fis4 dis4
+e fis8 a8~a4 
+R1*46
 }
 
-leadMusicBridge = \relative c'''{
-
+leadMusicBridge = \relative c''{
+e4 e4 d4. c8 
+d8 c8~c8 a8~a4 r4
+a4 a4 b b
+c4. e,8~e4 r4
+r4 e'4 g4. e8
+c8 d8~d8 e8~e4 d8 c8
+a4 c d c
+d8 dis8~dis e8 r4 dis8 e
+a4 e d4. c8
+c a8~a8 b8~b4 r4
+c c d c 
+a8 c8~c8 e8~e4 r4
+e c d b
+c a b gis 
+c a8 a8~a4 gis
+a8 r2..
 }
 
 leadWordsOne = \lyricmode { 
-If you real -- ly want me to
-I can be the one you al_ _ -- ways dreamed of
-If you may -- be  want_ _ to
-you can do the same_ _ thing_ _ for me
-
 
 }
 
@@ -223,7 +237,7 @@ derbassVerse = \relative c {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \transpose c c { \global \harmonies }
+      \transpose c a { \global \harmonies }
     }
 
     \new StaffGroup <<
@@ -261,10 +275,10 @@ derbassVerse = \relative c {
 	\set Staff.instrumentName = #"Lead"
 	\set Staff.shortInstrumentName = #"L."
         \set Staff.midiInstrument = #"voice oohs"
-        \new Voice = "leadverse" { << \transpose c c { \global \leadMusicverse } >> }
-        \new Voice = "leadprechorus" { << \transpose c c { \leadMusicprechorus } >> }
-        \new Voice = "leadchorus" { << \transpose c c { \leadMusicchorus } >> }
-        \new Voice = "leadbridge" { << \transpose c c { \leadMusicBridge } >> }
+        \new Voice = "leadverse" { << \transpose c a, { \global \leadMusicverse } >> }
+        \new Voice = "leadprechorus" { << \transpose c a, { \leadMusicprechorus } >> }
+        \new Voice = "leadchorus" { << \transpose c a, { \leadMusicchorus } >> }
+        \new Voice = "leadbridge" { << \transpose c a, { \leadMusicBridge } >> }
       }
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadbridge" \leadWordsBridge
