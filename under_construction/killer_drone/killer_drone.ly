@@ -9,12 +9,13 @@
 global = {
   \key d \minor
   \time 4/4
-  \tempo 4 = 130
+  \tempo 4 = 160
 }
 
 harmonies = \chordmode {
   \germanChords
- r1 
+ R1*8
+ 
  g8 g8 r2.   g8 g8 r2.
  es4 es4 es4 es4 c4. d8~d2
  g8 g8 r2.   g8 g8 r2.
@@ -27,6 +28,8 @@ harmonies = \chordmode {
  bes1 bes1 a1:sus2 a1 as1 as1 g1 g1
 
 
+ d1:m d1:m f f c c a:m a:m
+ f f d:m d:m 
 }
 
 violinMusic = \relative c'' {
@@ -34,6 +37,17 @@ violinMusic = \relative c'' {
 }
 
 leadGuitarMusic = \relative c'' {
+<g d' g>4. <g d' g>8~<g d' g>4 <g d' g>4~
+<g d' g>8 <g d' g>8~<g d' g>4 <g d' g>8 <g d' g>8 <g d' g>8 <g d' g>8
+
+<es bes' es>4. <es bes' es>8~<es bes' es>4 <ges des' ges>4~
+<ges des' ges>8 <ges des' ges>8~<ges des' ges>4 <ges des' ges>8 <ges des' ges>8 <ges des' ges>8 <ges des' ges>8
+
+<g d' g>4. <g d' g>8~<g d' g>4 <g d' g>4~
+<g d' g>8 <g d' g>8~<g d' g>4 <g d' g>8 <g d' g>8 <g d' g>8 <g d' g>8
+
+<es bes' es>4. <es bes' es>8~<es bes' es>4 <ges des' ges>4~
+<ges des' ges>8 <ges des' ges>8~<ges des' ges>4 <ges des' ges>8 <ges des' ges>8 <ges des' ges>8 <ges des' ges>8
 
 
 }
@@ -63,6 +77,7 @@ trumpettwoChorusMusic = \relative c'' {
 }
 
 leadMusicverse = \relative c''{
+R1*7
 r2. f,8 g8
 r2 c8 d8~d8 bes8(
 g2) r8 bes8 bes8 g8 
@@ -87,8 +102,21 @@ leadMusicprechorus = \relative c''{
 }
 
 leadMusicchorus = \relative c''{
- r4. bes8 d4 d8 d8~
- d8 d8~d8 d8~d8 c8 bes8 d8
+ r4. bes8 d4 bes8 d8~
+ d8 d8~d8 d8~d8( c8) bes8 d8~
+ d1(des1)
+ r2 c4 c 
+ d2 d 
+ bes4 g8 g8~g2
+ r1
+ r4. bes8 d4 bes8 d8~
+ d8 d8~d8 d8~d8( c8) bes8 d8~
+ d1(des1)
+ r2 c4 c 
+ d2 d 
+ bes4 g8 g8~g2
+ r1
+ 
 }
 
 leadMusicBridge = \relative c'''{
@@ -111,7 +139,7 @@ _ that is cros -- sing my _ way _
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
  and if you e -- ver pass her way
- please dont try to run
+ ba -- by please dont try to run
  she will get you any -- way
  so be bet -- ter just stay calm
  \bar ":|."

@@ -14,11 +14,13 @@ global = {
 
 harmonies = \chordmode {
   \germanChords
- R1
- c1:m g1 f1:m as2 g2
- c1:m d1 f1:m g1
- c1:m g1 f1:m as2 g2
- c1:m d1 f1:m g1
+ %R1
+ %c1:m g1 f1:m as2 g2
+ %c1:m d1 f1:m g1
+ %c1:m g1 f1:m as2 g2
+ %c1:m d1 f1:m g1
+ 
+ R1*17
 
  c2 c2 a2:m g2
  e2 e2:7 f2 g2
@@ -66,22 +68,26 @@ leadGuitarMusic = \relative c'' {
   %r8 bes'8 f8 d8 r8 g8g es8 c8 
   %g8 g8 c8 g8 bes8 as8 f8 as8
   %r8 bes8 ges8 f8 r8 c8 d8 es8
-  c8 c8 d8 c8 es8 f8 es8 d8 
-  r8 g,8 b8 d8 r8 g,8 b8 d8
-  es8 c8 c8 c8 es8 f8 es8 d8
-  r8 es8 d8 c8 r8 d8 c8 b8
-  c8 c8 d8 c8 es8 f8 es8 d8 
-  r8 g,8 b8 d8 r8 g,8 b8 d8
-  es8 c8 c8 c8 es8 f8 es8 d8
+  
+  g8 r es'4~ es8 f, g as
+  g8 r d'4~ d8 f, ges g
+  as8 r es'4~ es8 bes c d
+  es es, f ges g as bes b
+  
+  g r es'4~ es8 f, g as
+  ges r d'4~ d8 f, ges g
+  as8 r es'4~ es8 bes c d
+  r1  
+  
+  g,8 r es'4~ es8 f, g as
+  g8 r d'4~ d8 f, ges g
+  as8 r es'4~ es8 bes c d
+  es es, f ges g as bes b
+  
+  g r es'4~ es8 f, g as
+  fis r d'4~ d8 ges, ges g
+  as8 r es'4~ es8 bes c d
   r1
-  c8 c8 d8 c8 es8 f8 es8 d8 
-  r8 g,8 b8 d8 r8 g,8 b8 d8
-  es8 c8 c8 c8 es8 f8 es8 d8
-  r8 es8 d8 c8 r8 d8 c8 b8
-  c8 c8 d8 c8 es8 f8 es8 d8 
-  r8 g,8 b8 d8 r8 g,8 b8 d8
-  es8 c8 c8 c8 es8 f8 es8 d8
-  R1
   \break
   \key c \major
   R1*8
@@ -173,21 +179,21 @@ leadMusicBridge = \relative c''{
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
-it s a beat that burns in your heart
+it is a beat that burns in your heart
 it is that heat that has been there from the start
 it is a flame burs -- ting high -- er and higher
 a bass to be dropped and a brain to be stopped
 
 it is a way to just call it a day
 it is o -- kay if you just want to stay
-it is a bliss if you don't care a foul
+it is a bliss if you don't care at all
 an ease in the head and for sure a sweet med
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
-up in a case of an em -- erg -- en -- cy
-stairs o the cei -- ling  and you dance with me
+straight up in case of an em -- erg -- en -- cy
+stairs to the cei -- ling  and you dance with me
 stand in to flames up -- on this i -- ro -- ny
 burn all this grief with this plain me -- lo -- dy
 
@@ -219,7 +225,7 @@ r2 r8 b8 a8 b8
 as4 r4 r2
 r2 r8  c8 b8 b8
 c4 r4 r2
-r4 r8 g8 g8 g8 b8 as8~
+r4 r8 ges8 ges ges b8 as8~
 as4 r4 r4. b8
 r2 r8 c8 b8 b8
 c4 r4 r2
@@ -227,7 +233,7 @@ r2 r8 b8 a8 b8
 as4 r4 r2
 r2 r8  c8 b8 b8
 c4 r4 r2
-r2 g8 g8 g8 b8
+r2 ges8 ges ges b8
 as4 r4 r4. b8 
 r2 r8 b8 c8 d8 
  \break
@@ -313,7 +319,7 @@ derbassVerse = \relative c {
   f'4 f8 f8 d8 c8 c8 d8
   es2 d2
   c4 c4 g8 c8 c8 d8~
-  d2 g,2
+  d2 fis,2
   f'4 f8 f8 d8 c8 c8 d8
   r2 g,2
   c4 c4 g8 c8 c8 d8~
@@ -321,7 +327,7 @@ derbassVerse = \relative c {
   f'4 f8 f8 d8 c8 c8 d8
   es2 d2
   c4 c4 g8 c8 c8 d8~
-  d2 g,2
+  d2 fis,2
   f'4 f8 f8 d8 c8 c8 g8
   R1
 }

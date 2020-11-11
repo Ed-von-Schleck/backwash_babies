@@ -26,8 +26,8 @@ fis1:m a1 e1 cis1
 fis1:m a1 e1 cis1
 
 
-a cis2:sus2 cis2 e1 d2 cis2
-a1 cis2:sus2 cis2 e1 d2 cis2
+a cis2:sus2 cis2 e1 d4. cis8~cis2
+a1 cis2:sus2 cis2 e1 d4. cis8~cis2
 
 a1 a cis cis:7 fis:m fis:m d e
 a1 a cis cis:7 fis:m fis:m d e
@@ -39,6 +39,23 @@ a1 a cis cis:7 fis:m fis:m d e
 }
 
 violinMusic = \relative c'' {
+R1*25
+e2 d 
+cis4( a) cis( a')
+b8( a gis a) gis( fis f cis)
+f4. cis8 \tuplet 3/4 {f fis gis}
+r4 a8 a8~a gis fis gis
+r4 a8 a8~a gis fis gis
+fis4. gis8~gis4 a4
+b( a) gis( a)
+e2 d 
+cis4( a) cis( a')
+b8( a gis a) gis( fis f cis)
+f4. cis8 \tuplet 3/4 {f fis gis}
+r4 a8 a8~a gis fis gis
+r4 a8 a8~a gis fis gis
+fis4. gis8~gis4 a4
+b( a) gis( a)
 
 }
 
@@ -117,12 +134,12 @@ leadMusicchorus = \relative c''{
   
 r8 fis, a b
 \bar ".|:"
-a4 a a r
-fis'8 fis fis fis f f dis cis  
+cis4 cis cis r
+fis8 fis fis fis f f dis cis  
 b4 gis b8 gis b gis  
 a b a gis r8 fis a b 
-a4 a a r
-fis'8 fis fis fis f f dis cis  
+cis4 cis cis r
+fis8 fis fis fis f f dis cis  
 b4 gis b8 gis b gis  
 a b a gis r8 fis a b \bar ":|."  
  
@@ -186,36 +203,28 @@ leadWordsPrechorus = \lyricmode {
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
-So when the beat drops,
-and your feet start danc -- ing and your hips say yay __ _
-And when the time stops,
-and you feel the rhy -- thm and your mind gets car -- ried a -- way.
+So when the beat drops in,
+watch me as I fall in love with ev -- ry sin -- gle note that vibes through the air
+And when the time slows down,
+join me div -- ing dee -- per in -- to ev -- ry sin -- gle tone that floats through my hair.
 
-%You can not tell me, 
-
-%And the beat goes
+so when the
 
 when the beat drops,
-and your arms start wiggl -- ing a -- round
-you can feel the rhy -- thm and your hips say yay
+and your mind start lo -- sing con -- trol
+you can feel the stroll that's lea -- ding through your soul 
 you can't stand that urge and get car -- ried a -- way
 
 when the beat drops,
-and your pre -- cious mind has to sneeze,
-when your arms go crazy and just want to break free.
-and in -- side your pants you feel the bum -- ble -- bees.
-
+and your feet start mo -- ving a -- long,
+wish this sing -- le song would just go on and on
+you for -- get your pain so just sing with me yay
 
 
 }
 
 
 leadWordsChorusTwo = \lyricmode {
-So when the beat drops,
-and your arms start wiggl -- ing and they want to break free.
-Your pre -- cious mind pops,
-and __ _ in your pants you feel a hive of bum __ _ -- ble -- bees.
-And the beat goes
 
 
 }
@@ -247,6 +256,7 @@ leadWordsFive = \lyricmode {
 backingOneVerseMusic = \relative c'' {
   R1*16
 cis8 cis fis f
+r2
 }
 
 backingOnePrechorusMusic = \relative c'' {
@@ -266,8 +276,17 @@ backingOneChorusMusic = \relative c'' {
 %R1*3
 %e,2 g4 gis8 c8~
 %c2 r4
+a4 fis8(e) e4 r
+cis'8 b a gis gis fis gis a
 
+e4 e e cis 
+d8 e fis f r2
 
+a4 fis8(e) e4 r
+cis'8 b a gis gis fis gis a
+
+e4 e e cis 
+d8 e fis f r2
 
 
 
@@ -286,6 +305,10 @@ backingOnePrechorusWords = \lyricmode {
 
 
 backingOneChorusWords = \lyricmode {
+beat drops in,
+watch me as I fall in love with ev -- ry sin -- gle note in the air
+time slows down,
+join me div -- ing dee -- per in -- to ev -- ry sin -- gle tone in my hair.
 
 }
 
@@ -334,20 +357,20 @@ derbassVerse = \relative c, {
 R1
 fis4 f8 fis8~fis8 f8 fis8 gis8 
 a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
+b4. e,8~e4 gis4~
 gis4 gis b a
 fis4 f8 fis8~fis8 f8 fis8 gis8 
 a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
+b4. e,8~e4 gis4~
 gis1
 
 fis4 f8 fis8~fis8 f8 fis8 gis8 
 a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
+b4. e,8~e4 gis4~
 gis4 gis b a
 fis4 f8 fis8~fis8 f8 fis8 gis8 
 a2 r8 fis8 a8 cis8 
-b4. a8~a4 gis4~
+b4. e,8~e4 gis4~
 gis1
 
 
@@ -384,7 +407,7 @@ derbassChorus = \relative c {
         \set Staff.instrumentName = #"Violin"
         \set Staff.shortInstrumentName = #"V."
         \set Staff.midiInstrument = #"violin"
-         \transpose c c { \violinMusic }
+         \transpose c c { \global \violinMusic }
       }
       \new Staff = "Guitar" {
         \set Staff.instrumentName = #"Guitar"

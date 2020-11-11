@@ -114,7 +114,7 @@ b8 b8~b8 a8~a4 g4 fis4 g8 a8~a2
 r4 e8 e8~e4 g4 a4 g8 fis8~fis8 fis8~fis8 e8~
 e1 r1
 r4 g8 g8 a8 b8~b4 a4. g8~g4 a4
-b8 a8~a8 g8~g4 a4 b8 a8~a8 g8~g4 a4
+b8 a8~a8 g8~g4 a4 d4 b4 a4 b4
 g8 e8~e8 e8~e4 g4 a8 g8~g8 fis8~fis8 d8~d8 gis8~
 gis1 r1
 \bar ".|"
@@ -143,7 +143,7 @@ leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
 its been the sum -- mer days of co -- ro -- nals and pol -- ka dots
 of course there will be none like this
-shel -- tered with the scent of for -- get -- me -- nots and lol -- li -- pops
+shel -- tered with the scent of for -- get -- me -- nots for -- get -- me -- nots
 my sum -- mer love and ev -- ery fare -- well kiss __
 }
 
@@ -184,7 +184,7 @@ d8 d8 d8 des8~des4 d4
 backingOneChorusMusic = \relative c' {
 r4 e4 d4 e4 fis8 fis8~fis8 e8~e4 fis4 g8 g8~g8 fis8~fis4 e4 fis4 e8 fis8~fis2
 r4 e8 e8~e4 e4 fis4 e8 d8~d8 d8~d8 b8~b1 r1
-r4 e8 d8 e8 g8~g4 fis4. e8~e4 d4 g8 d8~d8 d8~d4 fis4 g8 d8~d8 d8~d4 fis4
+r4 e8 d8 e8 g8~g4 fis4. e8~e4 d4 g8 d8~d8 d8~d4 fis4 g4 g4 fis4 fis4
 e8 e8~e8 e8~e4 e4 fis8 d8~d8 d8~d8 d8~d8 e8~
 e1 r1 
 %e8. d16~d8 e8 fis8. e16~e8 fis8 g8. fis16~fis8 e8 fis8. e16~e8 fis8 

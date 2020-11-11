@@ -24,6 +24,11 @@ harmonies = \chordmode {
   c1 a1:m d1 d2:sus2 d2
   c1 c1 g1 g1
   c1 a1:m d1 d1
+  
+  g1 e1:m g1 e1:m
+  a1:m d1 g2 c2:9 g1
+  g1 e1:m g1 e1:m
+  a1:m d1 g2 c2:9 g1
 }
 
 violinMusic = \relative c'' {
@@ -84,11 +89,26 @@ leadMusicprechorus = \relative c'{
 }
 
 leadMusicchorus = \relative c''{
-
+R1*15
 }
 
 leadMusicBridge = \relative c'''{
-
+r2 r8 g,8 \tuplet 3/2 {a~a g}
+b4 b4 b4  a16~a8 b16
+\tuplet 3/4 {a g~g} \tuplet 3/4 {g~g fis} g8  g8 \tuplet 3/2 {a~a g}
+b4 b4 b4  a16~a8 b16
+\tuplet 3/4 {a g~g} \tuplet 3/4 {g~g fis} g8 r8 b8~b8 d,8~
+d4 r4 e8 g8~g8 b8~
+b8 g8 r2.
+r2 r8 g8 a8 g8
+b2 b16 b16 b16 b16~b8 a8( 
+g4) r4 r8 g8 a8 g8
+b4 b8 g8 b8 b8~b8 a8(
+g4) r4 e8 b'8~b8 a8~
+a4 r4 r8 b8~b8 d,8~
+d4 d8 d8 e8 g8~g8 b8~
+b8 g8 r2.
+r1
 }
 
 leadWordsOne = \lyricmode { 
@@ -105,8 +125,9 @@ And your dir -- ty hu -- mor
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus 1"
-e --very time you ask me why 
+But e --very time you ask me why 
 }
+
 leadWordsChorus2 = \lyricmode {
 \set stanza = "chorus 2"
  I love the brown grey green yel -- low co -- lor of your eyes
@@ -115,8 +136,16 @@ leadWordsChorus2 = \lyricmode {
 }
 
 leadWordsBridge = \lyricmode {
-\set stanza = "bridge"
- 
+\set stanza = "5." 
+I love the brown grey green yel -- low co -- lor of your eyes
+I love the brown grey green yel -- low co -- lor of your eyes
+and you know, you know,  
+that I can't help it.
+
+I love the brown grey green yel -- low co -- lor of your eyes
+I love the brown grey green yel -- low co -- lor of your eyes
+and I know, I know,  
+I am a hy -- po -- crite.
 }
 
 leadWordsTwo = \lyricmode { 
@@ -126,9 +155,9 @@ You're like the  devil _ _ in dis -- guise
 o -- hohh -- hohh o -- hoo 
 And I've fal -- len for you
 I like the yellow co -- lor in your eyes
-_ ev -- ery breath you take is sun -- rise
+_ ev -- ery breath you take is a prize
 o -- hohh -- hohh o -- hoo 
-you are my 
+_ you are my sun -- shine
 }
 
 leadWordsThree = \lyricmode {
@@ -143,11 +172,7 @@ leadWordsFour = \lyricmode {
 
 
 leadWordsFive = \lyricmode {
-\set stanza = "5." 
-I love the brown grey green yel -- low co -- lor of your eyes
-I love the brown grey green yel -- low co -- lor of your eyes
-and you know, you know,  
-that I can't help it.
+
 }
 
 backingOneVerseMusic = \relative c'' {
