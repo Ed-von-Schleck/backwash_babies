@@ -368,13 +368,13 @@ backingTwoChorusWords = \lyricmode {
 
 }
 
-derbassVerse = \relative c' {
-%  \clef "bass"
+derbassVerse = \relative c, {
+ \clef "bass"
 r2
 R1*48
 
 r2  r8 b e g
-e4. e4. g8 g
+a4. a4. g8 g
 f4. f4. d8 e 
 g4. g e8 b~
 b4 r4  r8 b e g
@@ -485,9 +485,19 @@ derbassChorus = \relative c {
 	\set Staff.shortInstrumentName = #"BS."
         \set Staff.midiInstrument = #"electric bass (pick)"
         %\set Staff.midiInstrument = #"distorted guitar"
-        \transpose c c { \global \derbassVerse \derbassChorus}
+        %\transpose c c { \global \derbassVerse \derbassChorus}
+        
       }      % again, we could replace the line above this with the line below.
       % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
+      \new TabStaff \with { \RemoveAllEmptyStaves
+    stringTunings = #bass-tuning
+  } {
+    %\set TabStaff.minimumFret = #5
+    % \set TabStaff.restrainOpenStrings = ##t
+    \transpose c c { \global \derbassVerse \derbassChorus}
+    
+  }
+      
     >>
   >>
   
