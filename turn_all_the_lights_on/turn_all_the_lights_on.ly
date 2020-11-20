@@ -41,7 +41,6 @@ harmonies = \chordmode {
   a1:m g f d2:m/a e:m
   a1:m g f d2:m/a g/b
   
-  
 }
 
 violinMusic = \relative c'' {
@@ -281,11 +280,11 @@ d4 r4 r2
 r4 f8 c~c f8~f4
 r4 e8 c~c e8~e4
 r4 e4~e8 e~e4
-f8 e c b g f e c
+f4 c g e 
 r4 f'8 c~c f8~f4
 r4 e8 c~c e8~e4
 r4 e4~e8 e~e4
-f8 e c b g f e c
+f4 c g e
 }
 
 leadWordsOne = \lyricmode { 
@@ -318,12 +317,35 @@ hearts love free -- ly
 leadWordsBridge = \lyricmode {
 \set stanza = "bridge"
 turn all the 
-lights on 
+lights on put the 
+shine on cause we're
+all here to
+stay
+
+see off the
+sad -- ness light up
+black -- ness let the
+glow guide our 
+way 
+
+good ridd -- ance
+drib mi -- nutes
+may the
+times glim bright -- ly
+
+dis -- a -- ppear
+dis -- mal fear
+may the
+hearts love free -- ly
 }
 
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
+re -- mem -- ber when the world was used to be
+a place of fun and games for you and me
+when did we lose the sight for li -- ber -- ty
+did all the sparks of joy fade bitt -- er -- ly
 
 
 }
@@ -496,7 +518,6 @@ r4 g8 e4 g4.
 r4 g4. g
 a8 g e d b' a g e
 
-
 }
 
 derbassChorus = \relative c {
@@ -618,6 +639,6 @@ derbassChorus = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-%  page-count = #2
+  page-count = #2
   
 }
