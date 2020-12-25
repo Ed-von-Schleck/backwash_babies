@@ -368,8 +368,8 @@ backingTwoChorusWords = \lyricmode {
 
 }
 
-derbassVerse = \relative c' {
-%  \clef "bass"
+derbassVerse = \relative c {
+\clef "bass"
 r2
 R1*48
 
