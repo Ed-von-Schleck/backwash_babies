@@ -14,20 +14,43 @@ global = {
 
 harmonies = \chordmode {
   \germanChords
- \repeat unfold 8 {
+\repeat volta 2 {
+\repeat unfold 6 {
    e1~e4~e8 a8~a4 cis4:m
    e1~e4~e8 a8~a4 b4
  }
  
- R1*2
+ r1
+ r1
  
  \repeat unfold 6 {
    e4~e8 b2~b8
    cis4:m~cis8:m a2:maj7~a8:maj7 
  }
  
+ \repeat volta 2 {
+   e1~e4~e8 a8~a4 cis4:m
+ e1~e4~e8 a8~a4 b4
+ e1~e4~e8 a8~a4 cis4:m
+ e1~e4~e8 a8~a4 b4
+} 
+}
+ 
  d1 a g b
  c g a1 b:7
+ 
+   \repeat unfold 2 {
+   cis1:m~cis4:m b2~b4
+   cis1:m~cis4:m a2~a4
+   b1~b4 gis2:m~gis4:m
+   e1~e4 a2~a4
+   cis1:m~cis4:m b2~b4
+   cis1:m~cis4:m a2~a4
+   b1~b4 gis2:m~gis4:m
+   e1~e4 a2~a4
+   }
+
+  
 }
 
 trumpetoneVerseMusic = \relative c'' {
@@ -56,7 +79,27 @@ trumpettwoChorusMusic = \relative c'' {
 
 leadMusicverse = \relative c''{
 
-  R1*33
+  R1*8
+  
+  dis8 dis dis dis dis dis cis b 
+  cis cis cis b gis4 r
+  dis'8 dis dis dis dis dis cis b 
+  cis cis cis b gis4 r
+  fis8 fis fis fis fis fis fis e
+  fis fis fis gis b4 r
+  fis8 fis fis fis fis fis fis e
+  fis fis fis gis b4 r
+  
+  r4 fis8 gis~gis b~b r8
+  r4 fis8 gis~gis b~b r8
+  r4 fis8 gis~gis b~b cis8~
+  cis r8 b4 gis fis
+  r4 fis8 gis~gis b~b r8
+  r4 fis8 gis~gis b~b r8
+  r4 fis8 gis~gis b~b cis8~
+  cis r8 b4 gis fis
+  
+  R1*1
   
 
 }
@@ -82,14 +125,14 @@ leadMusicchorus = \relative c''{
   b8 b8~b b8~b cis~cis b8~
   b2 r2
   
-  d4 d d e8 d8~
-  d4 cis2 a4
-  b g b d8 dis8~
-  dis2 r2
-  e4 d g, e'
-  d b d b 
-  cis a cis e
-  fis2~fis4 r4 
+  fis4 r gis r
+  b r8 cis~cis b~b r8
+  fis4 r gis r
+  b r8 dis~dis cis~cis r8
+  fis,4 r gis r
+  b r8 cis~cis b~b r8
+  fis4 r gis r
+  r1
   
   %gis gis fis4 e8 fis8~
   %fis8 cis8~cis2 cis4 
@@ -104,34 +147,69 @@ leadMusicchorus = \relative c''{
 
 leadMusicBridge = \relative c''{
 
+  d4 d d e8 d8~
+  d4 cis2 a4
+  b g b d8 dis8~
+  dis2 r2
+  e4 d g, e'
+  d b d b 
+  cis a cis e
+  fis2~fis4 r4 
+
 }
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
 
+Got so much to say but I don't
+have the pro -- per words
+Sing -- ing in my head but I don't 
+find the match -- ing chords
+la la here and la la there is
+runn -- ing through my mind
+can't you see it's hunt -- ing me
+this needs to be un -- wind
+
+it's in me
+it's out there
+just have to sing it out now
+it needs to
+be chan -- ted
+not ve -- ry sage still loud though
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
 If I could put it in -- to words I'd write a song for you
-If I would know the pro -- per notes I'd write a song for you
-So all that's left to do now is sing it out like this
+If I would know some love -- ly notes I'd write a song for you
+but all that's left to do now is sing it out like this
 la la la la la 
+la la la la la 
+la la la la la
 la la 
-la la la like this
-la la la la 
-la la la la 
-la la la la 
-la
+
 }
 
 leadWordsBridge = \lyricmode {
 \set stanza = "bridge"
-
+May -- be it's a bless -- ing
+by a -- ny gent -- le muse
+what a waste of 
+ar -- tis -- try to
+choose a fool like me
 }
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
+Got in -- ten -- sive feel -- ings that are hard to ver -- ba -- lize
+ne -- ver- cea -- sing me -- lo -- dies I want to vo -- ca -- lize
+well con -- si -- dered rhymes are ve -- ry hard to fa -- bri -- cate
+me -- lo -- diz -- ing sen -- ti -- ments is not a piece of cake
+
+it's in me it's out there
+just have to write it down now
+I'm pick -- ing a pen -- cil
+re -- pea -- ting one word some -- how
 }
 
 leadWordsThree = \lyricmode {
@@ -144,19 +222,29 @@ leadWordsFour = \lyricmode {
 
 }
 backingOneVerseMusic = \relative c'' {
- R1*34
+ R1*26
 }
 
 backingOneChorusMusic = \relative c'' {
   R1*12
-  d4 a fis a 
-  a e cis e 
-  g d b d 
-  b' fis dis fis
-  c' g e g
-  g d c d
-  a' e cis e
-  dis'2~dis4
+  
+  r4 e8( cis) r4 e8( cis) 
+  gis'4 r8 e~e gis~gis e
+  r4 e8( cis) r4 e8( cis) 
+  gis'4 r8 dis~dis e~e e
+  r4 e8( cis) r4 e8( cis) 
+  gis'4 r8 e~e gis~gis e
+  r4 e8( cis) r4 e8( cis) 
+  b8 b8~b b8~b cis~cis b8
+  
+%  d4 a fis a 
+%  a e cis e 
+%  g d b d 
+%  b' fis dis fis
+%  c' g e g
+%  g d c d
+%  a' e cis e
+%  dis'2~dis4
   %dis4 e gis e
   %gis, b dis b
   %e gis b g
@@ -170,10 +258,7 @@ la la la la
 la la la la 
 la la la la 
 la la la la 
-la la la la 
-la la la la 
-la la la la 
-
+sing it out like this
 }
 
 backingTwoVerseMusic = \relative c' {
@@ -193,16 +278,66 @@ derbassVerse = \relative c {
 }
 
 leadGuitarMusic = \relative c {
-  \repeat unfold 8 {
+  \repeat unfold 4 {
   <e fis'>4 r4 <e gis'> r4
   <e b''>4 r8 <e cis''>8~<e cis''>8 <e b''>8~<e b''> e 
   <e fis'>4 r4 <e gis'> r4
   <e b''>4 r8 <e dis''>8~<e dis''>8 <e cis''>8~<e cis''> e 
   }
+  <e b''>4 <e b''> r2
+  <e gis'>4 <e gis'> r2
+  <e fis'>4 <e fis'> r8 <e gis'>8~<e gis'> <e gis'>8 
+  <e b'>4 <e gis'>4 r2
+  <e b''>4 <e b''> r2
+  <e gis'>4 <e gis'> r2
+  <e fis'>4 <e fis'> r8 <e gis'>8~<e gis'> r8
+  <e b'>4 r8 <e dis'>8~<e dis'> <e cis'>8~<e cis'> r8
   
 }
 
+violinMusic = \relative c'' {
+% a und dis vermeisen
+R1*54
+  
+  cis4 e cis gis8 fis8~
+  fis4 gis2 b4
+  cis gis cis e8 dis8~
+  dis2 r2
+  dis4 b dis fis
+  e b fis b 
+  e b gis a
+  gis2~gis4 r4 
 
+  cis4 e cis gis8 fis8~
+  fis4 gis2 b4
+  cis gis cis e8 dis8~
+  dis2 r2
+  fis4 e dis b
+  fis gis b gis 
+  e' b gis e
+  a2~a4 r4 
+
+  
+  b4 cis dis e8 b8~
+  b4 cis2 gis4
+  cis gis cis dis8 dis8~
+  dis2 r2
+  e4 dis gis, e'
+  dis b dis b 
+  cis a cis e
+  fis2~fis4 r4 
+
+  gis4 gis gis e8 dis8~
+  dis4 e2 b4
+  cis gis cis dis8 e8~
+  e2 r2
+  e4 dis gis, e'
+  dis b dis b 
+  e b cis dis
+  e2~e4 r4 
+
+
+}
 
 \score {
   <<
@@ -217,7 +352,7 @@ leadGuitarMusic = \relative c {
         \set Staff.instrumentName = #"Violin"
         \set Staff.shortInstrumentName = #"V."
         \set Staff.midiInstrument = #"violin"
-         \transpose c c { \violinMusic }
+         \transpose c c { \global \violinMusic }
       }
       \new Staff = "Guitar" {
         \set Staff.instrumentName = #"Guitar"
@@ -272,7 +407,7 @@ leadGuitarMusic = \relative c {
 	%  \clef backingTwo
 	\set Staff.instrumentName = #"Backing"
 	\set Staff.shortInstrumentName = #"B."
-        \set Staff.midiInstrument = #"voice oohs"
+        \set Staff.midiInstrument = #"synth voice"
 	\new Voice = "backingOnes" { \voiceOne << \transpose c c { \global \backingOneVerseMusic \backingOneChorusMusic } >> }
 	\new Voice = "backingTwoes" { \voiceTwo << \transpose c c { \global \backingTwoVerseMusic \backingTwoChorusMusic } >> }
 
