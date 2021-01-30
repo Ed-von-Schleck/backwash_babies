@@ -243,15 +243,51 @@ backingOneBridgeWords = \lyricmode {
 }
 
 backingTwoVerseMusic = \relative c' {
-
+R1*19
 }
 
 backingTwoPrechorusMusic = \relative c'' {
+R1*8
 
 }
 
-backingTwoChorusMusic = \relative c'' {
+backingTwoChorusMusic = \relative c' {
+ 
+e4 g c2
+r2. b4
+c2. g8 a~
+a r r2 e8 g
+f4. a8~a4 f4
+d2 c8 d8~d4
+f2..(g8~
+g2) r2
 
+e4 g c2
+r2. b4
+b2. gis8 a~
+a r r2 e8 g
+f4. a8~a4 f4
+d2 c8 d8~d4
+e2 r2
+r1
+
+e4 g c2
+r2. b4
+c2. g8 a~
+a r r2 e8 g
+f4.( a8~a4) f4
+d2 c8( d8~d4)
+f2..(g8~
+g2) r2
+
+e4 g c2
+r2. b4
+b2. gis8 a~
+a r r2 e8( g)
+f4. a8~a4 f4
+d2 c4 d4
+e2 r2
+r1
 }
 
 backingTwoBridgeMusic = \relative c'' {
@@ -267,6 +303,15 @@ backingTwoPrechorusWords = \lyricmode {
 
 
 backingTwoChorusWords = \lyricmode {
+one, two, three, please dance with me
+cause the mu -- sic will play the whole day
+four, five, six, please move your hips
+I'm the rhy -- thm and beat you o -- bey
+
+one, two, three, the place to be
+you can sing and dance a -- way
+four, five, six, the leav -- ing ship
+is set -- ting its sails in the bay
 }
 
 

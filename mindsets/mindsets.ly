@@ -1,7 +1,7 @@
 \version "2.16.2"
 
 \header {
-  title = "If you want me to"
+  title = "Mindsets"
   composer = "skudella (The Royal Backwash)"
 
 }
@@ -15,27 +15,27 @@ global = {
 harmonies = \chordmode {
   \germanChords
   a1
-   
-  a1 d2 c2 a1 e  
-  a1 d2 c2 a1 e  
- 
+
+  a1 d2 c2 a1 e
+  a1 d2 c2 a1 e
+
   a1 d2 c2 a1 e
   a1 d2 c2 a1 e
   a1 d2 c2 a1 e
   a1 d2 c2 a1 e
-  
+
   d1 c2 c2:7 e1 e
   d1 c2 c2:7 b1:7 b:7
-  
+
   e1 d a g4. b8~b2
   e1 g2 a d1 a4. b8:7~b2:7
   e1 d a g4. b8~b2
   e1 g2 a d1 a2 b2:7
   e1
   R1
-  c1:7 ges1:7 b1:7 a4.:7 a8~a2 
-  c1:7 b1:7 e1 e:7   
- 
+  c1:7 ges1:7 b1:7 a4.:7 a8~a2
+  c1:7 b1:7 e1 e:7
+
 }
 
 violinMusic = \relative c'' {
@@ -46,10 +46,10 @@ violinMusic = \relative c'' {
   g4\glissando e4) dis8 e8 r4
   dis2.(~dis8\glissando e8)
   r4 c4 b8(c8~c8) a8~
-  a4 e8 r8 r2 
+  a4 e8 r8 r2
   r1\bar ":|."
-  
-  
+
+
 
 }
 
@@ -113,20 +113,20 @@ b4 r4
 
 leadMusicchorus = \relative c''{
 r8 e8 e d
-e4 b a a8 g 
+e4 b a a8 g
 a g~g e~e4 r8 d
 e4 e e8 d e g~
 g4. fis8  r8 e'8 e d
-e4 b a a8 g 
-a g~g a~a r a g 
+e4 b a a8 g
+a g~g a~a r a g
 a4 a8 g a4 a8 g8
 a g a b~b r8 e8  d
-e4 b a a8 g 
+e4 b a a8 g
 a g~g e~e4 r8 d
 e4 e e8 d e g~
 g4. fis8  r8 e'8 e d
-e4 b a a8 g 
-a g~g a~a r a g 
+e4 b a a8 g
+a g~g a~a r a g
 a4 a8 g a4 a8 g8
 a g a b a g e e~
 e r2..
@@ -138,7 +138,7 @@ leadMusicBridge = \relative c'''{
 
 }
 
-leadWordsOne = \lyricmode { 
+leadWordsOne = \lyricmode {
 \set stanza = "Verse"
 
 Could you please help me
@@ -161,7 +161,14 @@ Don't you think that your life's a bit too framed, it needs to be named.
 
 leadWordsChorus = \lyricmode {
 \set stanza = "Chorus"
-Stop ma -- king mind -- sets mate all a -- cross the world 
+Stop ma -- king mind -- sets mate all a -- cross the world
+'cause I want one of my own, yeah.
+Stop ma -- king mind -- sets mate for each boy and girl
+for each thought, for each snot, for each what -- not please stop
+ma -- king mind -- sets mate all a -- cross the world
+'cause I want one of my own, yeah.
+Stop ma -- king mind -- sets mate for each boy and girl
+for each thought, for each snot, for what -- e -- ver you be -- lieve i can -- not
 }
 
 
@@ -170,10 +177,10 @@ leadWordsChorusTwo = \lyricmode {
 }
 
 leadWordsBridge = \lyricmode {
- 
+
 }
 
-leadWordsTwo = \lyricmode { 
+leadWordsTwo = \lyricmode {
 
 }
 
@@ -237,7 +244,7 @@ e8 r2..
 }
 
 backingOneBridgeMusic = \relative c'' {
-  
+
 }
 
 backingOneVerseWords = \lyricmode {
@@ -248,7 +255,14 @@ backingOnePrechorusWords= \lyricmode {
 
 
 backingOneChorusWords = \lyricmode {
-
+Mind -- sets mate
+and I want one uh -- yeah
+Mind -- sets mate
+uh -- uh -- uh  -- uh stop
+Mind -- sets mate
+and I want one uh -- yeah
+Mind -- sets mate
+uh -- uh -- uh  -- uh be -- lieve I can not
 }
 
 
@@ -288,16 +302,16 @@ backingTwoBridgeWords = \lyricmode {
 
 derbassVerse = \relative c {
   \clef bass
-  a4 c b bes 
+  a4 c b bes
   a4 c b bes a4 c b bes  a4 c b bes  a4 e g gis
   a4 c b bes a4 c b bes  a4 c b bes  a4 e g gis
-  
+
   a4 c b bes a4 c b bes  a4 c b bes  a4 e g gis
   a4 c b bes a4 c b bes  a4 c b bes  a4 e g gis
   a4 c b bes a4 c b bes  a4 c b bes  a4 e g gis
   a4 c b bes a4 c b bes  a4 c b bes  a4 e g gis
 
-  
+
 }
 
 \score {
@@ -308,7 +322,7 @@ derbassVerse = \relative c {
     }
 
     \new StaffGroup <<
-    
+
       \new Staff = "Violin" {
         \set Staff.instrumentName = #"Violin"
         \set Staff.shortInstrumentName = #"V."
@@ -330,13 +344,13 @@ derbassVerse = \relative c {
         %\new Voice = "Trumpet1PreChorus" { \voiceOne << \transpose c c { \trumpetonePreChorusMusic } >> }
         %\new Voice = "Trumpet1Chorus" { \voiceOne << \transpose c c { \trumpetoneChorusMusic } >> }
         %\new Voice = "Trumpet1Bridge" { \voiceOne << \transpose c c { \trumpetoneBridgeMusic } >> }
-	%\new Voice = "Trumpet2Verse" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic } >> }      
-	%\new Voice = "Trumpet2PreChorus" { \voiceTwo << \transpose c c {  \trumpettwoPreChrousMusic } >> }      
-	%\new Voice = "Trumpet2Chorus" { \voiceTwo << \transpose c c { \trumpettwoChorusMusic } >> }      
+	%\new Voice = "Trumpet2Verse" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic } >> }
+	%\new Voice = "Trumpet2PreChorus" { \voiceTwo << \transpose c c {  \trumpettwoPreChrousMusic } >> }
+	%\new Voice = "Trumpet2Chorus" { \voiceTwo << \transpose c c { \trumpettwoChorusMusic } >> }
         \new Voice = "Trumpet1" { \voiceOne << \transpose c c { \global \trumpetoneVerseMusic \trumpetonePreChorusMusic \trumpetoneChorusMusic \trumpetoneBridgeMusic} >> }
-	\new Voice = "Trumpet2" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic \trumpettwoPreChrousMusic \trumpettwoChorusMusic} >> }      
+	\new Voice = "Trumpet2" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic \trumpettwoPreChrousMusic \trumpettwoChorusMusic} >> }
       >>
-    >>  
+    >>
     \new StaffGroup <<
       \new Staff = "lead" {
 	\set Staff.instrumentName = #"Lead"
@@ -361,8 +375,8 @@ derbassVerse = \relative c {
       \lyricsto "leadverse" \leadWordsTwo
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsOne
-      
-     
+
+
       % we could remove the line about this with the line below, since
       % we want the alto lyrics to be below the alto Voice anyway.
       % \new Lyrics \lyricsto "altos" \altoWords
@@ -391,7 +405,7 @@ derbassVerse = \relative c {
       \lyricsto "backingOnePrechorus" \backingOnePrechorusWords
       \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOneVerse" \backingOneVerseWords
-      
+
       \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingTwoBridge" \backingTwoBridgeWords
       \new Lyrics \with { alignAboveContext = #"backing" }
@@ -400,7 +414,7 @@ derbassVerse = \relative c {
       \lyricsto "backingTwoPrechorus" \backingTwoPrechorusWords
       \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingTwoVerse" \backingTwoVerseWords
-      
+
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
         \set Staff.midiInstrument = #"electric bass (pick)"
@@ -423,5 +437,6 @@ derbassVerse = \relative c {
 
 \paper {
   page-count = #2
-  
+
 }
+
