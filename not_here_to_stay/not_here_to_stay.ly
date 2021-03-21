@@ -140,6 +140,7 @@ d4. e8~e2
 }
 
 leadMusicchorus = \relative c'{
+\repeat volta 2{
 e8 a,~a e'~e a,~a e'~
 e a,~a e'~e e~e d~
 d2. e8 c~
@@ -148,6 +149,7 @@ e8 a,~a e'~e a,~a e'~
 e a,~a e'~e e~e d~
 d2. e8 c~
 c2 r2
+}
 c4 c e4. c8
 b8 dis8~dis fis~fis4 r8 a 
 g8(fis8~fis) e~e4. g8
@@ -161,13 +163,14 @@ R1
 }
 
 leadWordsOne = \lyricmode { 
-\set stanza = "Verse 1" 
-pay -- ing for my drinks the whole e -- vening
-hang -- ing on my lips while I'm sing -- ing
-you keep fol -- low -- ing ev -- er -- y  move I do 
-whisper -- ing lit -- tle things in your ears __ _
-you cant't make you blush dis -- ap -- pear __ _
-we both know all the ways __ _ _ this could end 
+\set stanza = "1."
+star -- ing at the paint of the cei -- ling,
+hop -- ing no one sees how you're feel -- ing,
+you think you can __ _ hide your -- self in the crowd
+qui -- et -- ly your lips are __ _ mov -- ing
+sync -- ing with the beats that are groov -- ing
+but in -- side your __ _ head you are sing -- ing loud
+
 
 }
 
@@ -181,7 +184,7 @@ but it will ne -- ver change the fact that
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
-I will  not __ _  stay __ _ for an -- oth -- er day,
+I will  not a -- muse you for an -- oth -- er day,
 I will not pre -- tend that I am here to stay,
 all the things you want me to,
 take care of and do for you,
@@ -189,10 +192,20 @@ take care of and do for you,
 you will have to do them on your own
 }
 
+leadWordsChorusTwo = \lyricmode {
+Please do not re -- fuse to hear the things I say,
+Please do not per -- sue me for an -- oth -- er day,
+
+}
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
-
+pay -- ing for my drinks the whole e -- vening
+hang -- ing on my lips while I'm sing -- ing
+you keep fol -- low -- ing ev -- er -- y  move I do 
+whisper -- ing lit -- tle things in your ears __ _
+you cant't make your blush dis -- ap -- pear __ _
+we both know all the ways __ _ _ this could end 
 }
 
 leadWordsThree = \lyricmode {
@@ -270,7 +283,25 @@ derbassVerse = \relative c {
   \tuplet 3/2 {d4 d d} \tuplet 3/2 {d e d}
   b2 r2
 
-
+  R1*6
+  
+  a8 a b a c a e' a,
+  c c g' c, e g f e
+  d d e d f d a' f
+  a f d a' gis f e d
+  a8 a b a c a e' a,
+  c c g' c, e g f e
+  d d e d f d a' f
+  a f d a' gis f e d
+  c1
+  b2 dis
+  a1
+  g2 b
+  e, g 
+  c b4 fis'
+  e,8 fis g e fis g a fis
+  g a b g a b c b
+  
 }
 
 \score {
@@ -318,6 +349,8 @@ derbassVerse = \relative c {
         \new Voice = "leadprechorus" { << \transpose c c { \leadMusicprechorus } >> }
         \new Voice = "leadchorus" { << \transpose c c { \leadMusicchorus } >> }
       }
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadchorus" \leadWordsChorusTwo
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadchorus" \leadWordsChorus
       \new Lyrics \with { alignBelowContext = #"lead" }
@@ -372,5 +405,5 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
 }
