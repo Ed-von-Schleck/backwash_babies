@@ -2,6 +2,6 @@
 !*/
 !*.ly
 !*.pdf
-!*.midi
+#!*.midi
 !.gitignore
 !Readme.md
