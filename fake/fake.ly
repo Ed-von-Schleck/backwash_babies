@@ -112,7 +112,7 @@ b4. d8~d4 b
 c4. a8~a4 f4~
 f2 r2
 r2  a4 a8 a8~
-a4 a c a
+a4 a b a
 c2 c4 a4
 c4 c d b~ 
 b2 r4 b
@@ -161,8 +161,8 @@ c2 c4 a
 c a c d8 b~
 b2 r2
 b4. b8~b4 d
-b4. b8~b4 cis4
-d2 r2
+b4. c8~c4 d4
+e2 r2
 \bar ":|."
 %R1*8
 %r2 e4.  g8~
@@ -329,7 +329,7 @@ derbassVerse = \relative c {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \transpose c c { \global \harmonies }
+      \transpose c a, { \global \harmonies }
     }
 
     \new StaffGroup <<
@@ -338,14 +338,14 @@ derbassVerse = \relative c {
         \set Staff.instrumentName = #"Violin"
         \set Staff.shortInstrumentName = #"V."
         \set Staff.midiInstrument = #"violin"
-         \transpose c c { \violinMusic }
+         \transpose c a, { \violinMusic }
       }
       \new Staff = "Guitar" {
         \set Staff.instrumentName = #"Guitar"
         \set Staff.shortInstrumentName = #"G."
         %\set Staff.midiInstrument = #"overdriven guitar"
         \set Staff.midiInstrument = #"acoustic guitar (steel)"
-        \transpose c c { \global \leadGuitarMusic }
+        \transpose c a, { \global \leadGuitarMusic }
       }
         \new Staff = "Trumpets" <<
         \set Staff.instrumentName = #"Trumpets"
@@ -367,10 +367,10 @@ derbassVerse = \relative c {
 	\set Staff.instrumentName = #"Lead"
 	\set Staff.shortInstrumentName = #"L."
         \set Staff.midiInstrument = #"voice oohs"
-        \new Voice = "leadverse" { << \transpose c c { \global \leadMusicverse } >> }
-        \new Voice = "leadprechorus" { << \transpose c c { \leadMusicprechorus } >> }
-        \new Voice = "leadchorus" { << \transpose c c { \leadMusicchorus } >> }
-        \new Voice = "leadbridge" { << \transpose c c { \leadMusicBridge } >> }
+        \new Voice = "leadverse" { << \transpose c a, { \global \leadMusicverse } >> }
+        \new Voice = "leadprechorus" { << \transpose c a, { \leadMusicprechorus } >> }
+        \new Voice = "leadchorus" { << \transpose c a, { \leadMusicchorus } >> }
+        \new Voice = "leadbridge" { << \transpose c a, { \leadMusicBridge } >> }
       }
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadbridge" \leadWordsBridge
