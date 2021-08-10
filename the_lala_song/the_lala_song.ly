@@ -143,7 +143,7 @@ leadMusicchorus = \relative c''{
 %    fis4 fis fis r8 fis8~
 %    fis fis~fis fis8 e4 gis
   }
-}
+
 
 leadMusicBridge = \relative c''{
 
@@ -360,6 +360,12 @@ R1*54
         \set Staff.midiInstrument = #"overdriven guitar"
         \transpose c c { \global \leadGuitarMusic }
       }
+        \new TabStaff \transpose c c, {
+        \leadGuitarMusic 
+        \set TabStaff.minimumFret = #9
+        \set TabStaff.restrainOpenStrings = ##t
+        }
+        
         \new Staff = "Trumpets" <<
         \set Staff.instrumentName = #"Trumpets"
 	\set Staff.shortInstrumentName = #"T."
@@ -371,8 +377,8 @@ R1*54
 	%\new Voice = "Trumpet2Verse" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic } >> }      
 	%\new Voice = "Trumpet2PreChorus" { \voiceTwo << \transpose c c {  \trumpettwoPreChrousMusic } >> }      
 	%\new Voice = "Trumpet2Chorus" { \voiceTwo << \transpose c c { \trumpettwoChorusMusic } >> }      
-        \new Voice = "Trumpet1" { \voiceOne << \transpose c c { \global \trumpetoneVerseMusic \trumpetonePreChorusMusic \trumpetoneChorusMusic \trumpetoneBridgeMusic} >> }
-	\new Voice = "Trumpet2" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic \trumpettwoPreChrousMusic \trumpettwoChorusMusic} >> }      
+        %\new Voice = "Trumpet1" { \voiceOne << \transpose c c { \global \trumpetoneVerseMusic \trumpetonePreChorusMusic \trumpetoneChorusMusic \trumpetoneBridgeMusic} >> }
+	%\new Voice = "Trumpet2" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic \trumpettwoPreChrousMusic \trumpettwoChorusMusic} >> }      
       >>
     >>  
     \new StaffGroup <<
