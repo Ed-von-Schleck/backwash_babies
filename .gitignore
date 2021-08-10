@@ -3,5 +3,6 @@
 !*.ly
 !*.pdf
 !*.midi
+!*.mid
 !.gitignore
 !Readme.md
