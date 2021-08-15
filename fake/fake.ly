@@ -160,8 +160,8 @@ f4 e d8 c8~c8 c~
 c2 c4 a
 c a c d8 b~
 b2 r2
-b4. b8~b4 d
-b4. c8~c4 d4
+b4. c8~c4 d
+b4. b8~b4 c4
 e2 r2
 \bar ":|."
 %R1*8
@@ -229,8 +229,6 @@ with some new pic to re -- view.
 
 
 leadWordsChorusTwo = \lyricmode {
-\set stanza = "verse 2" 
-
 
 }
 
@@ -239,10 +237,22 @@ leadWordsBridge = \lyricmode {
 }
 
 leadWordsTwo = \lyricmode { 
+\set stanza = "verse 2"
+Jet -- ting o -- ver to Du -- bai, for you that's called shop -- ping,
+Ber -- lin is al -- so nice, since you can shop there for a low price.
+On the mu -- se -- ums you pass ,
+feel -- ling like up -- per class _ __
+But there's no chance you'd miss a store of jewe -- le -- ry  or cloths.
 
 }
 
 leadWordsThree = \lyricmode {
+\set stanza = "verse 3"
+You have not yet been to Prague, but you wan -- na go ,
+makes sence, since all the drinks, are __ _ cheap as hell, and that's your thing.
+You are so _ __ in -- to Jazz , 
+yet lis -- ten -- ing  to trash ,
+And back and forth, your neck goes one more with an -- oth -- er booze.
 
 }
 
@@ -258,15 +268,57 @@ leadWordsFive = \lyricmode {
 }
 
 backingOneVerseMusic = \relative c'' {
-
+R1*16
 }
 
 backingOnePrechorusMusic = \relative c'' {
-
+R1*23
+f4. c8~c4 a4~
+a2 r2
+R1*3
+r2. d4
+d e4 a4 g4~
+g1
 }
 
 backingOneChorusMusic = \relative c'' {
+R1*31
 
+r4 g' e f8 g8~
+\repeat volta 2 {
+
+g8 r2..
+r4 g e f8 g8~
+g8 r2..
+r2 c,4 d
+e e8 e8~e4 e
+gis2 fis4 gis
+a8 a8~a a~a f f4~
+f4 g e f8 g8~
+g8 r2..
+r4 g e f8 g8~
+g8 r2.. 
+r2 c,4 d
+e e e8 e8~e gis~
+gis4 gis4 fis  gis
+a8 a8~a a~a f f4~ |}
+\alternative{
+  {f4 g e f8 g8 |}
+  {f4 r2. |}
+}
+
+
+R1*5
+
+r2 g4 e
+g g g8 a~a4
+g2 r2
+
+R1*5
+d4. c8~c4 d
+e4. fis8~fis4 e4
+gis2 r2
+\bar ":|."
 }
 
 backingOneBridgeMusic = \relative c'' {
@@ -277,7 +329,7 @@ backingOneVerseWords = \lyricmode {
 }
 
 backingOnePrechorusWords = \lyricmode {
-
+fun and games
 }
 
 
@@ -290,15 +342,57 @@ backingOneBridgeWords = \lyricmode {
 }
 
 backingTwoVerseMusic = \relative c' {
+R1*16
 
 }
 
 backingTwoPrechorusMusic = \relative c'' {
-
+R1*23
+c,4. e8~e4 f4~
+f2 r2
+R1*3
+r2. g4
+g d4 a'4 b4~
+b1
 }
 
 backingTwoChorusMusic = \relative c'' {
+R1*31
 
+r4 g a b8 c8~
+\repeat volta 2 {
+
+c8 r2..
+r4 g g d'8 b8~
+b8 r2..
+r2 c4 d
+b b8 b8~b4 a
+b2 g4 b
+f8 f8~f f~f f a4~
+a4 g a b8 c8~
+c8 r2..
+r4 g g d'8 b8~
+b8 r2.. 
+r2 c4 d
+b b b8 b8~b a~
+a4 b4 a  b
+f8 f8~f f~f f a4~ |}
+\alternative{
+  {a4 g g d'8 b8 |}
+  {a4 r2. |}
+}
+
+
+R1*5
+r2 b4 c
+b b b8 a~a4
+b2 r2
+
+R1*5
+g4. a8~a4 g
+gis4. e8~e4 gis4
+b2 r2
+\bar ":|."
 }
 
 backingTwoBridgeMusic = \relative c'' {
@@ -358,8 +452,8 @@ derbassVerse = \relative c {
 	%\new Voice = "Trumpet2Verse" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic } >> }      
 	%\new Voice = "Trumpet2PreChorus" { \voiceTwo << \transpose c c {  \trumpettwoPreChrousMusic } >> }      
 	%\new Voice = "Trumpet2Chorus" { \voiceTwo << \transpose c c { \trumpettwoChorusMusic } >> }      
-        \new Voice = "Trumpet1" { \voiceOne << \transpose c c { \global \trumpetoneVerseMusic \trumpetonePreChorusMusic \trumpetoneChorusMusic \trumpetoneBridgeMusic} >> }
-	\new Voice = "Trumpet2" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic \trumpettwoPreChrousMusic \trumpettwoChorusMusic} >> }      
+        \new Voice = "Trumpet1" { \voiceOne << \transpose c a, { \global \trumpetoneVerseMusic \trumpetonePreChorusMusic \trumpetoneChorusMusic \trumpetoneBridgeMusic} >> }
+	\new Voice = "Trumpet2" { \voiceTwo << \transpose c a, { \global \trumpettwoVerseMusic \trumpettwoPreChrousMusic \trumpettwoChorusMusic} >> }      
       >>
     >>  
     \new StaffGroup <<
@@ -392,22 +486,22 @@ derbassVerse = \relative c {
       % we want the alto lyrics to be below the alto Voice anyway.
       % \new Lyrics \lyricsto "altos" \altoWords
 
-      \new Staff = "backing" {
+      \new Staff = "backing" <<
 	%  \clef backingTwo
 	\set Staff.instrumentName = #"Backing"
 	\set Staff.shortInstrumentName = #"B."
-        \set Staff.midiInstrument = #"voice oohs"
-	\new Voice = "backingOneVerse" { \voiceOne << \transpose c c { \global \backingOneVerseMusic } >> }
-	\new Voice = "backingOnePrechorus" { \voiceOne << \transpose c c { \backingOnePrechorusMusic } >> }
-	\new Voice = "backingOneChorus" { \voiceOne << \transpose c c { \backingOneChorusMusic } >> }
-	\new Voice = "backingOneBridge" { \voiceOne << \transpose c c { \backingOneBridgeMusic } >> }
+        \set Staff.midiInstrument = #"choir aahs"
+	\new Voice = "backingOneVerse" { \voiceOne << \transpose c a, { \global \backingOneVerseMusic } >> }
+	\new Voice = "backingOnePrechorus" { \voiceOne << \transpose c a, { \backingOnePrechorusMusic } >> }
+	\new Voice = "backingOneChorus" { \voiceOne << \transpose c a, { \backingOneChorusMusic } >> }
+	\new Voice = "backingOneBridge" { \voiceOne << \transpose c a, { \backingOneBridgeMusic } >> }
 
-	\new Voice = "backingTwoVerse" { \voiceTwo << \transpose c c { \global \backingTwoVerseMusic } >> }
-	\new Voice = "backingTwoPrechorus" { \voiceTwo << \transpose c c { \backingTwoPrechorusMusic } >> }
-	\new Voice = "backingTwoChorus" { \voiceTwo << \transpose c c { \backingTwoChorusMusic } >> }
-	\new Voice = "backingTwoBridge" { \voiceTwo << \transpose c c {  \backingTwoBridgeMusic } >> }
+	\new Voice = "backingTwoVerse" { \voiceTwo << \transpose c a, { \global \backingTwoVerseMusic } >> }
+	\new Voice = "backingTwoPrechorus" { \voiceTwo << \transpose c a, { \backingTwoPrechorusMusic } >> }
+	\new Voice = "backingTwoChorus" { \voiceTwo << \transpose c a, { \backingTwoChorusMusic } >> }
+	\new Voice = "backingTwoBridge" { \voiceTwo << \transpose c a, {  \backingTwoBridgeMusic } >> }
 
-      }
+      >>
       \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOneBridge" \backingOneBridgeWords
       \new Lyrics \with { alignAboveContext = #"backing" }
@@ -447,6 +541,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #1
+  page-count = #2
   
 }
