@@ -1,41 +1,127 @@
 \version "2.16.2"
 
 \header {
-  title = "Dance With Me"
-  composer = "skudella (The Royal Backwash)"
+  title = "Nights of Summer"
+  composer = "skudella (The Royal Backwash) & Ed-von-Schleck"
 
 }
 
 global = {
-  \key c \major
-  \time 4/4
-  \tempo 4 = 176
+  \key d \major
+  \time 3/4
+  \tempo 4 = 125
 }
 
 harmonies = \chordmode {
   \germanChords
-  R1
-g1 b:7 e:m a2:m d2
-g1 b:7 e:m c2 d2
-g1 b:7 e:m a2:m d2
-g1 b:7 e:m c2 d2
-
-e1 a:m f c2 g2
-e1 a:m f d:m7 e e:7
-
-c1 c a:m a:m d:m g f g
-c1 c e a:m d:m g c g
-c1 c a:m a:m d:m g f g
-c1 c e a:m d:m g c g
-
-a:m d g b:7
-a:m d g d
-
-
+  %intro
+  d2. fis:m b:m a
+  d fis:m b:m g4 g4 a  
+  %verse
+  d2. a e:m g2 a4
+  d2. a e:m g 
+  d2. a e:m g2 a4
+  d2. a e:m g 
+  %prechorus
+  c2. g d d
+  c g a a:7
+  %chorus
+  d fis:m b:m a
+  d fis:m b:m a
+  d fis:m b:m a
+  d fis:m b:m a
+  g g d a
+  g e:m a a:7
+  %bridge
+  \tempo 4 = 155
+  g d fis:m b:m
+  g d fis:m b:m
+  g d fis:m b:m
+  g d fis:m b:m
+  
+  g d a d
+  g d a b:m
+  g d a d
+  g d a b:m
+  
+  g2.*2 d
+  b2.:m fis:m e:m a
+  d
+  
+  
 }
 
-violinMusic = \relative c'' {
+violinMusic = \relative c' {
+    \key d \major
+
+  r4 fis8 a a fis
+  a4 a8 fis a8 d
+  b fis fis4 e8 fis
+  e4 fis g
+  d' a a8 d
+  cis a~a4. fis8
+  b2.
+  cis8 d e~e d cis
   
+  \bar ":|."
+  
+  R2.*16
+  
+  
+  
+  r4 c,8 e g c
+  c b g4 g8 b
+  b a fis2
+  fis8 g a g fis d
+  c4 e c'8 a
+  b d b a g b 
+  a4 b a 
+  g2 r4  
+  
+  R2.*24
+ 
+  a8( cis d) a e'( d)
+  fis,( cis' d) a e'( d)
+  e,( b' cis) e, d'( cis)
+  cis4( b) r
+  
+  a8( cis d) a e'( d)
+  fis,( cis' d) a e'( d)
+  e,( b' cis) e, d'( cis)
+  cis4( b) r
+  
+  a8( cis d) a e'( d)
+  fis,( cis' d) a e'( d)
+  e,( b' cis) e, d'( cis)
+  cis4( b) r
+  
+  a8( cis d) a e'( d)
+  fis,( cis' d) a e'( d)
+  e,( b' cis) e, d'( cis)
+  cis4( b) r  
+  
+  
+  d2 e4
+  fis2 d4
+  cis4 b a
+  fis e d
+  
+  d'2 e4
+  fis2 d4
+  cis4 b a
+  b2 r4
+  
+  d2 e4
+  fis2 d4
+  cis4 b a
+  fis e d
+  
+  d'2 e4
+  fis2 d4
+  cis4 b a
+  b2 r4
+  
+  R2.*9
 }
 
 leadGuitarMusic = \relative c'' {
@@ -66,119 +152,145 @@ trumpettwoChorusMusic = \relative c'' {
 
 }
 
-leadMusicVerse = \relative c''{
-r2 r8 b8 a b
-d  b a g a b a g
-a g8~g b~b r8 a b
-e b a g a b a g
-a a g a~a r8 r8 b
-d b a g a b a g
-a g~g a~a4 b8 g~
-g e~e r8 r2
-r2 r8 b'8 a b
-d  b a g a b a g
-a g8~g b~b r8 a b
-e b a g a b a g
-a a g a~a r8 a b
-d b a g a b a g
-a g~g a~a4 b8 g~
-g e~e r8 r2
-r1
+leadMusicverse = \relative c'{
+R2.*7
+r2 d8 e8
+fis4 a fis8 e8~
+e4 d cis8 b8~
+b2.
+r4 d4 e4
+fis4 a d8 cis8~
+cis4 a fis8 b8~
+b2.
+r4 d,4 e4
+fis4 a4. d8
+cis8 a4. fis8 b8~
+b2.
+r2 d,8 e
+fis4 d8 a8~a4
+e'4 cis d8 e8~
+e2.
+r2.
+}
 
+leadMusicprechorus = \relative c'{
+R1*6
+}
 
+leadMusicchorus = \relative c''{
+r4 d,8 e8 fis8 d'
+cis2 cis8 d 
+e4 d cis8 d~
+d4 cis e 
+d a fis 
+a( fis4.) a8
+b2 r4
+r2.
+r4 d,8 e8 fis8 d'
+cis2 cis8( d) 
+e4 d e8 fis~
+fis4 e d 
+d e d 
+cis8 b2 a8
+b2 r4
+r2.
+r2 d8 d8 
+d4 e4. d8 
+cis a8~a4 cis8 cis
+cis4 d cis8 b~
+b4 r4  d8 d8
+d4 e d8 d8(
+cis2) a4
+e'2 r4
+  \bar ":|."
 
 }
 
-leadMusicPrechorus = \relative c''{
-r4. b8 b a b c~
-c a~a r8 r4 c8 a
-c c~c d~d c~c c~
-c2( b2) 
-r4. b8 b a b c~
-c(a~a) r8 r4 c8 a
-c8 c~c2 r4
-d2 c
-e2.(d8 c
-e2) r2
-}
+leadMusicBridge = \relative c'{
 
-leadMusicChorus = \relative c''{
+  R2.*8
   
-e4 e e2 
-r4. d8 e d e d 
-e2. d8 c~
-c r r2 e8 c
-d8 d8~d d~d4 e
-g, g8 d'~d4 b 
-c2(e4. d8)~
-d2 r2
-
-e4 e e2 
-r4. d8 e d e d 
-e2. d8 c~
-c r r2 e8 c
-d8 d8~d d~d4 e
-g, g8 d'~d4 b 
-c2 r2
-r1
-
-e4 e e2 
-r4. d8 e d e d 
-e2. d8 c~
-c r r4. c8 e8 c
-d8 d8~d d~d4 e
-g,8 g~g d'~d4 b 
-c2(e4. d8)~
-d2 r2
-
-e4 e e2 
-r4. d8 e d e d 
-e2. d8 c~
-c r r2 e8 c
-d8 d8~d d~d4 e
-g,4 g8 d'~d4 b 
-c2 r2
-r1
-\bar"|."
-}
-
-leadMusicBridge = \relative c'''{
+  \bar ".|:"
+  
+  r4 d'8 cis b4
+  r a8 g fis4
+  r e8 e a cis,
+  cis4 d d8 e
+  
+  b8 r d'8 cis b4
+  r a8 g fis4
+  r e8 e a cis,
+  cis4 d r
+  
+  \bar ":|."
+  
+    r4 b' b
+  a8 fis4 d4.
+  e4 d e8 fis~
+  fis4 a4 d,4
+  
+  r4 b' b
+  a2 d,4
+  e d e8 fis~
+  fis2.
+  
+  r4 b b
+  a fis d
+  e8 d4 e4.
+  fis4 a8 d,4.
+  
+  r4 b' b
+  a fis8 d4.
+  e4 d e8 fis~ \break
+  fis4 r4 g8 a8
+  
+  b2.
+  d
+  a
+  r2 d,8 e
+  
+  fis2.
+  a
+  e4 fis8 e4.
+  d4 b8 a4.
+  
+  d2.
+  \bar "|."
 
 }
 
 leadWordsOne = \lyricmode { 
-\set stanza = "verse"
+\set stanza = "1." 
+When the shim -- mers of ve -- nus and mars,
+just com -- pletes the whole pic --  ture of stars.
+And the sounds of the cric -- kets and frogs
+just keep ec -- ho -- ing in -- to the dark  
+  
+  
+  
 
-you spend an ho -- ur on your eyes and on your make up two
-and an -- oth -- er thir -- ty min -- utes on your per -- fect hair -- do
-be -- fore you e -- ven could con -- si -- der go -- ing through your ward -- robes
-_ it's a twen -- ty min -- ute bus ride to your clos -- est friend
-and an -- o -- ther fif -- teen min -- utes that you have to pre -- tend
-that you re -- ally do not care if she se -- lects the same _ wardrobe
 
 }
 
 leadWordsPrechorus = \lyricmode {
-\set stanza = "prechorus"
-you  just wa -- na go out till the lights of the night fade
-you brought all your friends, there were ea -- sy to per -- suade
+With the col -- ors of the day, fad -- ing a -- way,
+comes the magic of the night.
 }
 
 leadWordsChorus = \lyricmode {
-\set stanza = "chorus"
-one, two, three,
-you bet -- ter come and dance with me
-cause the mu -- sic will not play for the whole day
-four, five, six, 
-come on, come on, and move your hips
-it's the beat and rhy -- thm that you just o -- bey
+\set stanza = "Chorus" 
 
-one, two, three,
-this is the right _ place to be
-where you can sing and dance your troub -- les all a -- way
-four, five, six,
-just get on -- board the leav -- ing ship
-as it's set -- ting its _ sails to leave the bay
+Walk -- ing through the night, with a girl by my side,
+is a thing that is nice to have
+look -- ing up the stars, with you in my arms,
+is the one thing I'll ne -- ver for -- get
+
+with the scent of the flo -- wers, 
+and the gras -- ses in bloom,
+I could stand there for hours
+with you
+
+
 }
 
 
@@ -187,11 +299,28 @@ leadWordsChorusTwo = \lyricmode {
 }
 
 leadWordsBridge = \lyricmode {
- 
+  \set stanza = "Bridge" 
+   so we chase fi -- re -- flies
+  and we let them pur -- pose -- ly es -- cape
+  in -- to space, we may rise
+  still stay on the sur -- face
+  \set stanza = "Chorus 2" 
+
+  how your sil -- hou -- ette out -- lines a -- gainst the sky
+  I can't tell the stars from your eyes
+  there are mil -- lions of shoo -- ting stars pas -- sing by
+  all the world is a dream in dis -- guise
+  
+  and the time slows down
+  as we watch the mil -- ky way cir -- ce -- ling us
 }
 
 leadWordsTwo = \lyricmode { 
-
+\set stanza = "2." 
+When the warmth of the day slow -- ly fades,
+and the moon shows its face in the sky.
+I can see that small tear on your cheek,
+and by chance your lips fall on -- to mine.
 }
 
 leadWordsThree = \lyricmode {
@@ -210,7 +339,7 @@ leadWordsFive = \lyricmode {
 }
 
 backingOneVerseMusic = \relative c'' {
-
+R2.*32
 }
 
 backingOnePrechorusMusic = \relative c'' {
@@ -218,18 +347,64 @@ backingOnePrechorusMusic = \relative c'' {
 }
 
 backingOneChorusMusic = \relative c'' {
-
+r4 d,8 e8 fis8 g
+a2 fis8 a 
+b4 a g8 e~
+e4 fis g 
+fis d d 
+cis( d4.) cis8
+fis2 r4
+r2.
+r4 d8 e8 fis8 g
+a2 fis8 a 
+b4 a b8 cis~
+cis4 b a 
+a g fis 
+a( fis4.) a8
+fis2 r4
+r2.
+r2.
+r2.
+r2  e8 fis
+g4 a a8 g~
+g4 r2
+r2 e8 e8(
+fis2) a4
+g2 r4
 }
 
-backingOneBridgeMusic = \relative c'' {
-  
+backingOneBridgeMusic = \relative c' {
+  R2.*17
+  d'8 a4 a4.
+  cis4 cis4 cis8 d~
+  d4 d4 d4
+  R2.
+  d2 a4
+  cis4 cis4 cis8 d~
+  d2.
+  R2.
+  d4 a4 a4
+  cis8 cis4 cis4.
+  d4 d8 d4.
+  R2.
+  d4 a8 a4.
+  cis4 cis4 cis8 d~
+  d4 r4 g,8 fis8  
+  g2.
+  g2.
+  fis2.
+  r2 fis8 e8
+  fis2.
+  fis2.
+  g4 g8 g4.
+  a4 b8 a4.
+  a2.   
 }
 
 backingOneVerseWords = \lyricmode {
 }
 
 backingOnePrechorusWords = \lyricmode {
-\set stanza = "prechorus"
 
 }
 
@@ -243,51 +418,14 @@ backingOneBridgeWords = \lyricmode {
 }
 
 backingTwoVerseMusic = \relative c' {
-R1*19
 }
 
 backingTwoPrechorusMusic = \relative c'' {
-R1*8
 
 }
 
-backingTwoChorusMusic = \relative c' {
- 
-e4 g c2
-r2. b4
-c2. g8 a~
-a r r2 e8 g
-f4. a8~a4 f4
-d2 c8 d8~d4
-f2..(g8~
-g2) r2
+backingTwoChorusMusic = \relative c'' {
 
-e4 g c2
-r2. b4
-b2. gis8 a~
-a r r2 e8 g
-f4. a8~a4 f4
-d2 c8 d8~d4
-e2 r2
-r1
-
-e4 g c2
-r2. b4
-c2. g8 a~
-a r r2 e8 g
-f4.( a8~a4) f4
-d2 c8( d8~d4)
-f2..(g8~
-g2) r2
-
-e4 g c2
-r2. b4
-b2. gis8 a~
-a r r2 e8( g)
-f4. a8~a4 f4
-d2 c4 d4
-e2 r2
-r1
 }
 
 backingTwoBridgeMusic = \relative c'' {
@@ -299,19 +437,12 @@ backingTwoVerseWords = \lyricmode {
 }
 
 backingTwoPrechorusWords = \lyricmode {
+  
 }
 
 
 backingTwoChorusWords = \lyricmode {
-one, two, three, please dance with me
-cause the mu -- sic will play the whole day
-four, five, six, please move your hips
-I'm the rhy -- thm and beat you o -- bey
-
-one, two, three, the place to be
-you can sing and dance a -- way
-four, five, six, the leav -- ing ship
-is set -- ting its sails in the bay
+  
 }
 
 
@@ -319,7 +450,49 @@ backingTwoBridgeWords = \lyricmode {
 }
 
 derbassVerse = \relative c {
-  \clef bass
+
+\clef bass
+d4 fis4. d8 
+cis4 fis4. cis8
+b4 fis'4. b,8
+a4 g fis
+d'4 fis4. d8 
+cis4 fis4. cis8
+b4 fis'4. b,8
+a4 g fis
+
+r2.*4
+r2.*4
+r2.*4
+r2.*4
+r2.*4
+r2.*4
+
+d'4 fis4. d8 
+cis4 fis4. cis8
+b4 fis'4. b,8
+a4 g fis
+d'4 fis4. d8 
+cis4 fis4. cis8
+b4 fis'4. b,8
+a4 g fis
+d'4 fis4. d8 
+cis4 fis4. cis8
+b4 fis'4. b,8
+a4 g fis
+d'4 fis4. d8 
+cis4 fis4. cis8
+b4 fis'4. b,8
+a4 g fis
+
+g8 b d b d g 
+b4 a g 
+fis d fis
+e d cis
+g8 b d b d g 
+g4 e b
+a2.
+a2.
 
 }
 
@@ -365,27 +538,25 @@ derbassVerse = \relative c {
 	\set Staff.instrumentName = #"Lead"
 	\set Staff.shortInstrumentName = #"L."
         \set Staff.midiInstrument = #"voice oohs"
-        \new Voice = "leadVerse" { << \transpose c c { \global \leadMusicVerse } >> }
-        \new Voice = "leadPrechorus" { << \transpose c c { \leadMusicPrechorus } >> }
-        \new Voice = "leadChorus" { << \transpose c c { \leadMusicChorus } >> }
-        \new Voice = "leadBridge" { << \transpose c c { \leadMusicBridge } >> }
+        \new Voice = "leadverse" { << \transpose c c { \global \leadMusicverse } >> }
+        \new Voice = "leadprechorus" { << \transpose c c { \leadMusicprechorus } >> }
+        \new Voice = "leadchorus" { << \transpose c c { \leadMusicchorus } >> }
+        \new Voice = "leadbridge" { << \transpose c c { \leadMusicBridge } >> }
       }
       \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadBridge" \leadWordsBridge
+      \lyricsto "leadbridge" \leadWordsBridge
       \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadChorus" \leadWordsChorusTwo
+      \lyricsto "leadchorus" \leadWordsChorus
       \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadChorus" \leadWordsChorus
+      \lyricsto "leadprechorus" \leadWordsPrechorus
       \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadPrechorus" \leadWordsPrechorus
+      \lyricsto "leadverse" \leadWordsFour
       \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadVerse" \leadWordsFour
+      \lyricsto "leadverse" \leadWordsThree
       \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadVerse" \leadWordsThree
+      \lyricsto "leadverse" \leadWordsTwo
       \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadVerse" \leadWordsTwo
-      \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadVerse" \leadWordsOne
+      \lyricsto "leadverse" \leadWordsOne
       
      
       % we could remove the line about this with the line below, since
@@ -396,7 +567,7 @@ derbassVerse = \relative c {
 	%  \clef backingTwo
 	\set Staff.instrumentName = #"Backing"
 	\set Staff.shortInstrumentName = #"B."
-        \set Staff.midiInstrument = #"voice oohs"
+        \set Staff.midiInstrument = #"choir aahs"
 	\new Voice = "backingOneVerse" { \voiceOne << \transpose c c { \global \backingOneVerseMusic } >> }
 	\new Voice = "backingOnePrechorus" { \voiceOne << \transpose c c { \backingOnePrechorusMusic } >> }
 	\new Voice = "backingOneChorus" { \voiceOne << \transpose c c { \backingOneChorusMusic } >> }
@@ -425,9 +596,11 @@ derbassVerse = \relative c {
       \lyricsto "backingTwoPrechorus" \backingTwoPrechorusWords
       \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingTwoVerse" \backingTwoVerseWords
-      
+    >>  
+    \new StaffGroup <<
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
+	\set Staff.shortInstrumentName = #"BS."
         \set Staff.midiInstrument = #"electric bass (pick)"
         %\set Staff.midiInstrument = #"distorted guitar"
         \transpose c c { \global \derbassVerse }
@@ -447,6 +620,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
   
 }

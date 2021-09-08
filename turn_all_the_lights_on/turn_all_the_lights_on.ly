@@ -65,26 +65,54 @@ r4 c8 a~a c8~c4
 r4 c4~c8 c~c4 
 d8 c a g e d c a
 
-R1*32
+e'4. g8~g4 e4
+f8 g8~g8 a~a4 g4~
+g1
+f8 g a c~c b~b g
+e4. g8~g4 e4
+f8 g8~g8 a~a4 b4~
+b1
+c4 d e g
 
-r2 r8 e' a c
-d4^\markup{picking and chords}~d8 d~d4 c8 b
-a4~a8 a~a4 g8 a
-b4~b8 b~b4 a8 e~
-e4 r4 r8 e a c 
-d4~d8 d~d4 c8 b
-a4~a8 a~a4 g8 a
-b4~b8 b~b4 g8 b~
-b4 r4 r2
+e8 c c e~e4 g
+e8 c c e~e4 g
+e8 c c e~e4 g
+e8 b b f'~f4 e
+e8 c c e~e4 g
+e8 c c e~e4 g
+e8 c c e~e4 g
+e8 b b f'~f4 e
 
-r4 d8 a~a d8~d4 
-r4 c8 a~a c8~c4 
-r4 c4~c8 c~c4 
-d8 c a g e d c a
-r4 d'8 a~a d8~d4 
-r4 c8 a~a c8~c4 
-r4 c4~c8 c~c4 
-d8 c a g e d c a
+
+R1
+r4 b c d
+f e d e
+d8 e f a b gis f d
+e2 r2
+r4 b c d
+f e d e
+d8 e f a g4 f
+
+R1*8
+r2  r8 g, c e
+f4~f8 f~f4 e8 d
+c4~c8 c~c4 b8 c 
+d4~d8 d~d4 c8 g~
+g4 r4  r8 g c e
+f4~f8 f~f4 e8 d
+c4~c8 c~c4 b8 c 
+d4~d8 d~d4 b8 d~
+d4 r4 r2
+
+r4 f8 c~c f8~f4
+r4 e8 c~c e8~e4
+r4 e4~e8 e~e4
+d8 c a g e d c a 
+r4 f''8 c~c f8~f4
+r4 e8 c~c e8~e4
+r4 e4~e8 e~e4
+d8 c a g e d c a  
+
 }
 
 leadGuitarMusic = \relative c'' {
@@ -267,24 +295,26 @@ f4 c f c
 }
 
 leadMusicBridge = \relative c''{
-r2  r8 g c e
-f4~f8 f~f4 e8 d
-c4~c8 c~c4 b8 c 
-d4~d8 d~d4 c8 g~
-g4 r4  r8 g c e
-f4~f8 f~f4 e8 d
-c4~c8 c~c4 b8 c 
-d4~d8 d~d4 b8 d~
-d4 r4 r2
 
-r4 f8 c~c f8~f4
-r4 e8 c~c e8~e4
-r4 e4~e8 e~e4
-f4 c g e 
-r4 f'8 c~c f8~f4
-r4 e8 c~c e8~e4
-r4 e4~e8 e~e4
-f4 c g e
+r2 r8 e, a c
+d4^\markup{picking and chords}~d8 d~d4 c8 b
+a4~a8 a~a4 g8 a
+b4~b8 b~b4 a8 e~
+e4 r4 r8 e a c 
+d4~d8 d~d4 c8 b
+a4~a8 a~a4 g8 a
+b4~b8 b~b4 g8 b~
+b4 r4 r2
+
+r4 d8 a~a d8~d4 
+r4 c8 a~a c8~c4 
+r4 c4~c8 c~c4 
+f4 c d e
+r4 d8 a~a d8~d4 
+r4 c8 a~a c8~c4 
+r4 c4~c8 c~c4 
+f4 c d a
+ 
 }
 
 leadWordsOne = \lyricmode { 
@@ -367,14 +397,16 @@ R1*32
 
 backingOneChorusMusic = \relative c' {
 R1*8
-r4 c8 e~e e8~e4 
-r4 g8 g~g g~g4 
+
+
+r4 c8 d~d e8~e4 
+r4 g8 f~f e~e4 
 r4 e4~e8 e~e4 
-f4 f f f 
-r4 c8 e~e e8~e4 
-r4 g8 g~g g~g4 
+f4 g a g 
+r4 c,8 d~d e8~e4 
+r4 g8 f~f e~e4 
 r4 e4~e8 e~e4 
-f4 f f f 
+f4 g a g 
 
 
 
