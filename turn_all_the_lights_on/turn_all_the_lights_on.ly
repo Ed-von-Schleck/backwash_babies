@@ -391,8 +391,42 @@ leadWordsFour = \lyricmode {
 }
 backingOneVerseMusic = \relative c'' {
 r2
-R1*32
+R1*16
+R1
+r1
+r4 g4 b c 
+c b c d8 e~
+e2 r2
+R1
+r4 c4 b c
+c b c b8 g~
+g2 r2
+r1
+r4 g4 b c 
+c b c d8 e~
+e2 r2
+r1
+d,4~d8 e~e4 f4
+r1
 
+}
+
+backingOneVerseOne = \lyricmode {
+\set stanza = "1." 
+
+it's not the way it used to be
+I can not se the time I feel
+is this the way you want to live
+want to feel
+}
+
+backingOneVerseTwo = \lyricmode {
+\set stanza = "2." 
+
+the world _ __ used to be so real
+you and me and the sound of spree 
+when did we stop to feel so free 
+bitt -- er -- ly
 }
 
 backingOneChorusMusic = \relative c' {
@@ -635,6 +669,11 @@ derbassChorus = \relative c {
       \lyricsto "backingOnes" \backingOneChorusWords
       \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingTwoes" \backingTwoChorusWords
+      \new Lyrics \with { alignBelowContext = #"backing" }
+      \lyricsto "backingOnes" \backingOneVerseTwo        
+      
+      \new Lyrics \with { alignBelowContext = #"backing" }
+      \lyricsto "backingOnes" \backingOneVerseOne      
     >>  
     \new StaffGroup <<      
       \new Staff = "Staff_bass" {
