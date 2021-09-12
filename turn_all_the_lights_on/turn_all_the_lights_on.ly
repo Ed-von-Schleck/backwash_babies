@@ -393,40 +393,38 @@ backingOneVerseMusic = \relative c'' {
 r2
 R1*16
 R1
-r1
-r4 g4 b c 
-c b c d8 e~
+r2. a4
+g4~g8 b8~b4 c 
+c8 b8~b c8~c d~d e~
 e2 r2
-R1
-r4 c4 b c
-c b c b8 g~
+r2. a,4
+g4~g8 b8~b4 c 
+c8 b8~b c8~c b~b g~
 g2 r2
-r1
-r4 g4 b c 
-c b c d8 e~
+r2. a4
+g4~g8 b8~b4 c 
+c8 b8~b c8~c d~d e~
 e2 r2
-r1
-d,4~d8 e~e4 f4
+r2. f,4
+d4~d8 e~e4 f4
 r1
 
 }
 
 backingOneVerseOne = \lyricmode {
 \set stanza = "1." 
-
-it's not the way it used to be
-I can not se the time I feel
-is this the way you want to live
-want to feel
+it used to be ev -- ver so __ _ real
+app -- ly to me, all the things you feel 
+you want to be your king -- doms own queen
+we want to feel
 }
 
 backingOneVerseTwo = \lyricmode {
 \set stanza = "2." 
-
-the world _ __ used to be so real
-you and me and the sound of spree 
-when did we stop to feel so free 
-bitt -- er -- ly
+was used to be realm of our dreams
+for you and me, ev - very thing was real
+for li -- ber -- ty, we __ _ used to sing
+so bitt -- er -- ly
 }
 
 backingOneChorusMusic = \relative c' {
