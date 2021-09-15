@@ -65,27 +65,28 @@ r4 c8 a~a c8~c4
 r4 c4~c8 c~c4 
 d8 c a g e d c a
 
-e'4. g8~g4 e4
-f8 g8~g8 a~a4 g4~
-g1
-f8 g a c~c b~b g
-e4. g8~g4 e4
-f8 g8~g8 a~a4 b4~
-b1
-c4 d e g
-
-e8 c c e~e4 g
-e8 c c e~e4 g
-e8 c c e~e4 g
-e8 b b f'~f4 e
-e8 c c e~e4 g
-e8 c c e~e4 g
-e8 c c e~e4 g
-e8 b b f'~f4 e
+R1*16
+%e'4. g8~g4 e4
+%f8 g8~g8 a~a4 g4~
+%g1
+%f8 g a c~c b~b g
+%e4. g8~g4 e4
+%f8 g8~g8 a~a4 b4~
+%b1
+%c4 d e g
+%
+%e8 c c e~e4 g
+%e8 c c e~e4 g
+%e8 c c e~e4 g
+%e8 b b f'~f4 e
+%e8 c c e~e4 g
+%e8 c c e~e4 g
+%e8 c c e~e4 g
+%e8 b b f'~f4 e
 
 
 R1
-r4 b c d
+r4 b' c d
 f e d e
 d8 e f a b gis f d
 e2 r2
@@ -111,7 +112,8 @@ d8 c a g e d c a
 r4 f''8 c~c f8~f4
 r4 e8 c~c e8~e4
 r4 e4~e8 e~e4
-d8 c a g e d c a  
+d8 c a g e d c a
+\bar "|."
 
 }
 
@@ -250,7 +252,7 @@ leadMusicverse = \relative c'{
   R1
   r4 c c e 
   c d8 c8~c4 d4
-  b4~b8 c~c4 c4
+  d4~d8 e~e4 f4
   R1
   
 }
@@ -372,9 +374,9 @@ hearts love free -- ly
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
-re -- mem -- ber when the world was used to be
+re -- mem -- ber how the world had used to be
 a place of fun and games for you and me
-when did we lose the sight for li -- ber -- ty
+when have we lost the sight for li -- ber -- ty
 did all the sparks of joy fade bitt -- er -- ly
 
 
@@ -405,8 +407,9 @@ r2. a4
 g4~g8 b8~b4 c 
 c8 b8~b c8~c d~d e~
 e2 r2
-r2. f,4
-d4~d8 e~e4 f4
+r2. d4
+b4~b8 c~c4 c4
+
 r1
 
 }
@@ -421,8 +424,8 @@ we want to feel
 
 backingOneVerseTwo = \lyricmode {
 \set stanza = "2." 
-was used to be realm of our dreams
-for you and me, ev - very thing was real
+had used to be realm _ __ of our dreams
+for you and me, ev -- very thing was real
 for li -- ber -- ty, we __ _ used to sing
 so bitt -- er -- ly
 }
