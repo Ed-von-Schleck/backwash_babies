@@ -23,26 +23,28 @@ chExceptions = #(append
                         
                         
 harmonies = \chordmode {
+  \germanChords
 
   r4.
-  c1 f2:maj7 g:sus2/d c1 f2:maj7 g
-  e1:m f2 g:sus2/d e1:m f2 g
-  c1 f2:maj7 d:sus4 c1 f2:maj7 g
+  c1 f2:maj7 g:sus4/d c1 f2:maj7 g
+  e1:m f2 g:sus4/d e1:m f2 g
+  c1 f2:maj7 d:sus2 c1 f2:maj7 g
   e1:m f2 d:m7 e1:m f2 g
   \set chordNameExceptions = #chExceptions
         
   \repeat unfold 2 {
-  c1:1.3.5.9 a:sus2/e f:maj7 g
+  %c1:1.3.5.9 a:sus4/e f:maj7 g
+  c1:sus2 a:sus4/e f:maj7 g
   }
-  e1:m a:sus2 f:maj7 g
+  e1:m a:sus4 f:maj7 g
   e1:m a:m f:maj7 g
   
   c f:maj7 c f:maj7
   c f:maj7 c f2 g f g
   
-  e1:m a:m7 c d:sus4
-  c1 a:sus2/e f:maj7 g
-  e:m a:sus4 c g:sus2/d
+  e1:m a:m7 c d:sus2
+  c1 a:sus4/e f:maj7 g
+  e:m a:sus4 c g:sus4/d
   c f:maj7 a:m g g
   
   
