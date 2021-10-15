@@ -110,6 +110,17 @@ leadMusicchorus = \relative c''{
 
 leadMusicBridge = \relative c''{
   \key c \major
+R1
+r8 c8 c c c c c c
+b4 c r2
+r8 c8 c c c c c c
+c4 r r2
+r8 c8 c c c c c c
+b4 c r2
+r8 c8 c c c c c c
+c4 d d4 c
+
+
 R1*24
 }
 
@@ -117,6 +128,17 @@ leadWordsOne = \lyricmode {
 \set stanza = "1." 
 no -- to -- ri -- ous -- ly boys don't cry
 and boys don't shi -- ver
+we are men
+born to be strong and stur -- dy
+
+boys don't fail
+and boys don't stum -- ble
+heads held up
+no room for he -- si -- ta -- tion
+
+for -- ward for -- ward for -- ward and don't
+e -- ver look back e -- ver look back 
+
 
 }
 
@@ -141,7 +163,9 @@ what are you fee -- ling Ben -- ja -- min
 leadWordspreChorus = \lyricmode {
 \set stanza = "prechorus"
 be a sol -- dier
-like a boul -- der
+like they told ya
+
+a boul -- der
 
 
 }
@@ -254,7 +278,7 @@ violinMusic = \relative c' {
   \key a \major
   R1*16
   \key c \major
-  R1 r2 r4 r8 f8 e8 r8 r4 r2 r2 r4 r8 f8 e8 r8 r4 r2 r2 r4 r8 f8 g8 r8 r4 r2 r2 r4 r8 f8 g8 r8 r4 r2 r4 a4 ~ a4. f8 c'2 ais4. a8 ~ a2 ~ a4. f8 d'8 c8 d8 c8 g4. a8 ~ a2 ~ a4. f8 d'8 c8 d8 c8 d4. e8 ~ e2 f2 g8 f8 e8 c8 d8. e16 ~ e8 c8 a8 r8 r4 g'8 f8 e8 c8 d8. e16 ~ e8 c8 d8. e16 ~ e8 c8 a8 r8 r4 g'8 f8 e8 c8 d8. e16 ~ e8 c8 g'8 f8 e8 c8 d8. e16 ~ e8 c8 d8. e16 ~ e8 c8 g'8 f8 e8 c8 d8. e16 ~ e8 c8 d8. e16 ~ e8 c8 d8. e16 ~ e8 d8 
+  R1 r2 r4 r8 f8 e4 g r2 r2 r4 r8 f8 e8 r8 r4 r2 r2 r4 r8 f8 g8 r8 r4 r2 r2 r4 r8 f8 g8 r8 r4 r2 r4 a4 ~ a4. f8 c'2 ais4. a8 ~ a2 ~ a4. f8 d'8 c8 d8 c8 g4. a8 ~ a2 ~ a4. f8 d'8 c8 d8 c8 d4. e8 ~ e2 f2 g8 f8 e8 c8 d8. e16 ~ e8 c8 a8 r8 r4 g'8 f8 e8 c8 d8. e16 ~ e8 c8 d8. e16 ~ e8 c8 a8 r8 r4 g'8 f8 e8 c8 d8. e16 ~ e8 c8 g'8 f8 e8 c8 d8. e16 ~ e8 c8 d8. e16 ~ e8 c8 g'8 f8 e8 c8 d8. e16 ~ e8 c8 d8. e16 ~ e8 c8 d8. e16 ~ e8 d8 
   c2 
  
   

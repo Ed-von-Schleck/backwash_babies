@@ -36,10 +36,10 @@ harmonies = \chordmode {
   
   d4:m d:m r2  
   
-  a1:m d1:m g e:m
-  a:m d:m g e:m
-  a1:m g f d2:m/a e:m
-  a1:m g f d2:m/a g/b
+  a1:m d1:m e:m c
+  a:m d:m e:m g
+  f a:m c e:m7
+  f a:m c e:m7
   
 }
 
@@ -95,25 +95,44 @@ f e d e
 d8 e f a g4 f
 
 R1*8
-r2  r8 g, c e
-f4~f8 f~f4 e8 d
-c4~c8 c~c4 b8 c 
-d4~d8 d~d4 c8 g~
-g4 r4  r8 g c e
-f4~f8 f~f4 e8 d
-c4~c8 c~c4 b8 c 
-d4~d8 d~d4 b8 d~
-d4 r4 r2
 
-r4 f8 c~c f8~f4
-r4 e8 c~c e8~e4
-r4 e4~e8 e~e4
-d8 c a g e d c a 
-r4 f''8 c~c f8~f4
-r4 e8 c~c e8~e4
-r4 e4~e8 e~e4
-d8 c a g e d c a
-\bar "|."
+R1
+
+a,4 a8 c b c b a 
+d4 d8 e f e d c
+b4 b8 c b a b g
+c4 b a g 
+a a8 c b c b a 
+d4 d8 e f e d c
+b4 b8 c b a b g
+b4 a b d
+f4. f8~f4 e8 d
+c4. c8~c4 b8 c
+d4. d8~d4 c8 b~
+b4 r4 r8 b d e
+f4. f8~f4 e8 d
+c4. c8~c4 b8 c
+d4. d8~d4 c4
+e2 g,
+a1
+% r2  r8 g, c e
+% f4~f8 f~f4 e8 d
+% c4~c8 c~c4 b8 c 
+% d4~d8 d~d4 c8 g~
+% g4 r4  r8 g c e
+% f4~f8 f~f4 e8 d
+% c4~c8 c~c4 b8 c 
+% d4~d8 d~d4 b8 d~
+% d4 r4 r2
+% 
+% r4 f8 c~c f8~f4
+% r4 e8 c~c e8~e4
+% r4 e4~e8 e~e4
+% d8 c a g e d c a 
+% r4 f''8 c~c f8~f4
+% r4 e8 c~c e8~e4
+% r4 e4~e8 e~e4
+% d8 c a g e d c a  
 
 }
 
@@ -244,7 +263,7 @@ leadMusicverse = \relative c'{
   R1
   r4 c c e 
   c d8 c8~c4 d4
-  b4~b8 c~c4 c4
+  d4~d8 e~e4 f4
   R1
   r4 c c c 
   e d8 c8~c4 d4
@@ -311,11 +330,11 @@ b4 r4 r2
 r4 d8 a~a d8~d4 
 r4 c8 a~a c8~c4 
 r4 c4~c8 c~c4 
-f4 c d e
+d4 c d e
 r4 d8 a~a d8~d4 
 r4 c8 a~a c8~c4 
 r4 c4~c8 c~c4 
-f4 c d a
+d4 c d c
  
 }
 
@@ -672,7 +691,7 @@ derbassChorus = \relative c {
       \lyricsto "backingTwoes" \backingTwoChorusWords
       \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingOnes" \backingOneVerseTwo        
-      
+
       \new Lyrics \with { alignBelowContext = #"backing" }
       \lyricsto "backingOnes" \backingOneVerseOne      
     >>  
@@ -704,6 +723,6 @@ derbassChorus = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
   
 }
