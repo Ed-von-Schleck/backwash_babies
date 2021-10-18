@@ -28,7 +28,7 @@ harmonies = \chordmode {
   a:m d:m g e:m
   a:m d:m g e:m
   
-  a1:m g f d2:m/a e:m
+  a1:m g f d2:m/a e:m/b
   a1:m g f d2:m/a g/b
   c1 e:m a:m/e f/c
   c1 e:m a:m/e f/c
@@ -47,7 +47,7 @@ violinMusic = \relative c'' {
 \partial 2 {
   r8 e, a c 
 }
-d4^\markup{picking}~d8 d~d4 c8 b
+d4~d8 d~d4 c8 b
 a4~a8 a~a4 g8 a
 b4~b8 b~b4 a8 e~
 e4 r4 r8 e a c 
@@ -88,7 +88,7 @@ R1*16
 R1
 r4 b' c d
 f e d e
-d8 e f a b gis f d
+f4 e8 d g4 e8 d
 e2 r2
 r4 b c d
 f e d e
@@ -282,7 +282,7 @@ leadMusicprechorus = \relative c'{
 
 leadMusicchorus = \relative c''{
 
-r4^\markup{semibreve chords} e e e8 b~
+r4 e e e8 b~
 b b~b r8 r8 b8 b b
 c4 c c b8 a~
 a r8 r4 r2
@@ -292,7 +292,7 @@ b b~b r8 r8 b8 b b
 c4 c c b8 a~
 a r8 r4 r2
 
-r4^\markup{chords (pattern)} e'8 c~c e8~e4 
+r4 e'8 c~c e8~e4 
 r4 e8 c~c e8~e4 
 r4 e4~e8 e~e4 
 f4 c f c 
