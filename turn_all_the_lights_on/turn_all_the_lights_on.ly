@@ -98,7 +98,7 @@ R1*8
 
 R1
 
-a4 a8 c b c b a 
+a,4 a8 c b c b a 
 d4 d8 e f e d c
 b4 b8 c b a b g
 c4 b a g 
@@ -271,7 +271,7 @@ leadMusicverse = \relative c'{
   R1
   r4 c c e 
   c d8 c8~c4 d4
-  b4~b8 c~c4 c4
+  d4~d8 e~e4 f4
   R1
   
 }
@@ -723,6 +723,6 @@ derbassChorus = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
   
 }
