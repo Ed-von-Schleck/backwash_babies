@@ -723,6 +723,6 @@ derbassChorus = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #3
+  page-count = #2
   
 }
