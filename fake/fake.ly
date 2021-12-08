@@ -239,7 +239,7 @@ leadWordsBridge = \lyricmode {
 leadWordsTwo = \lyricmode { 
 \set stanza = "verse 2"
 Jet -- ting o -- ver to Du -- bai, for you that's called shop -- ping,
-Ber -- lin is al -- so nice, since you can shop there for a low price.
+Ber -- lin is al -- so nice, since you're such a fan of mer -- chan -- dise.
 On the mu -- se -- ums you pass ,
 feel -- ling like up -- per class _ __
 But there's no chance you'd miss a store of jewe -- le -- ry  or cloths.
