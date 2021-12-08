@@ -90,11 +90,11 @@ r8 des,8 ges8 a8 ~ a8 cis4 r8
 leadMusicchorus = \relative c''{
   \key a \major
   r2 r8 d,8 e8 fis8 
-  fis8 r8 r4 r8 fis8 e8 d8 ~ 
+  fis8 r8 r4 r8 fis8 e8 d8  
   d8 r8 r4 r2 
   e1 
   r2 r8 d8 e8 fis8 
-  fis8 r8 r4 r8 fis8 e8 d8 ~ 
+  fis8 r8 r4 r8 fis8 e8 d8 
   d8 r8 r4 r2 
   e1 
   a2 r2 
@@ -121,12 +121,12 @@ r8 c8 c c c c c c
 c4 d d4 c
 
 
-R1*24
+R1*15
 }
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
-no -- to -- ri -- ous -- ly boys don't cry
+we all have been told boys don't cry
 and boys don't shi -- ver
 we are men
 born to be strong and stur -- dy
@@ -138,41 +138,48 @@ no room for he -- si -- ta -- tion
 
 for -- ward for -- ward for -- ward and don't
 e -- ver look back e -- ver look back 
+go fear -- less and stur -- dy in -- to your fu -- ture
 
+for -- ward for -- ward for -- ward and don't
+e -- ver look back just be
+brave be brave be brave be brave boy
 
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
-do do do do do do
-do do do do
-do do do do do do 
-Ooh
-what are you fee -- ling ooh
-is it just numb and hol -- low
-Ooh
+they keep you up
+you keep 'em in 
+no
 
-do 
-do 
-do do do do
-do do do do do do do
-Ben -- ja -- min,
-what are you fee -- ling Ben -- ja -- min
+you wan't to love
+you'd love to feel
+no
+ah
+what are you fee -- ling oh
+is it just numb and hol -- low
+ah
+
+just let it out
+ig -- nore your doubt
+it's all just hurt -- less fee -- lings
 }
 
 leadWordspreChorus = \lyricmode {
 \set stanza = "prechorus"
 be a sol -- dier
 like they told ya
-
-a boul -- der
-
+be a boul -- der
+like a sol -- dier oh
 
 }
 
 leadWordsBridge = \lyricmode {
 \set stanza = "bridge"
-
+it is o -- kay to have e -- mo -- tions
+it is o -- kay to feel in -- firm
+it is o -- kay to show de -- vo -- tion
+these fee -- lings all won't do you harm nor sor -- row
 }
 
 leadWordsTwo = \lyricmode { 
@@ -200,7 +207,7 @@ backingOneprechorus = \relative c'' {
  R1 
  r8 g8 b8 d8 ~ d8 b4 r8 
  R1 
- r8 a8 a8 a8 ~ a8 des4 b8  
+ r8 a8 a8 a8 ~ a8 des4 r8  
  
 }
 
@@ -229,20 +236,47 @@ backingOneChorusWords = \lyricmode {
 _ _ _ _ 
 _ _ _ _
 _ _ _ _
-_ _ _ _ _
-do do do do do do 
-do do do do
-do do do do do do do 
-do do do do do
-do do do do
-do do do do do do do
+_ _ _ _ 
+these thoughts
+they keep you up
+you keep 'em in 
+don't let them e -- ver no -- tice
+
+
+oh
+you want to love
+you'd love to feel
+you hope that no one knows this
+
 Ben -- ja -- min
 what are you fee -- ling
 Ben -- ja -- min
 is it just numb and hol -- low
 Ben -- ja -- min
 
+just let it out
+ig -- nore your doubt
+it's all just hurt -- less fee -- lings
 
+these thoughts
+they keep you up
+you keep 'em in 
+don't let them e -- ver no -- tice
+
+oh
+you want to love
+you'd love to feel
+you hope that no one knows this
+
+Ben -- ja -- min
+what are you fee -- ling
+Ben -- ja -- min
+is it just numb and hol -- low
+Ben -- ja -- min
+
+just let it out
+ig -- nore your doubt
+it's all just hurt -- less fee -- lings
 }
 
 backingOnebridge = \relative c' {
@@ -337,14 +371,16 @@ violinMusic = \relative c' {
       \lyricsto "leadchorus" \leadWordsChorus
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadprechorus" \leadWordspreChorus
-      \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadverse" \leadWordsFour
-      \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadverse" \leadWordsThree
+      %\new Lyrics \with { alignBelowContext = #"lead" }
+      %\lyricsto "leadverse" \leadWordsFour
+      %\new Lyrics \with { alignBelowContext = #"lead" }
+      %\lyricsto "leadverse" \leadWordsThree
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsTwo
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsOne
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadoutro" \leadWordsChorus
       
      
       % we could remove the line about this with the line below, since
@@ -386,6 +422,6 @@ violinMusic = \relative c' {
 #(set-global-staff-size 19)
 
 \paper {
-  %page-count = #3
+  page-count = #3
   
 }
