@@ -1,7 +1,7 @@
 \version "2.16.2"
 
 \header {
-  title = "not today"
+  title = "today"
   composer = "skudella (The Royal Backwash)"
 
 }
@@ -86,6 +86,7 @@ leadMusicverse = \relative c'{
 \key e \major
   
 R1*15
+\bar ".|:"
 r2 e4 fis 
 gis b b gis
 b2 cis4 fis,
@@ -103,6 +104,7 @@ cis e fis e
 fis2 e4 fis~
 fis1
 r1
+\bar ":|."
 
 }
 
@@ -119,6 +121,7 @@ e4. b'8~b4 a4~
 }
 
 leadMusicchorus = \relative c''{
+\bar ".|:"
 a4 a, d e8 fis~
 fis4 r4 r4. a,8
 fis' fis8~fis4 e4 d8 fis8~
@@ -135,6 +138,7 @@ fis' fis8~fis4 e4 d8 g8~
 g b,4. r4. a8
 fis' fis8~fis4 e4 d4
 cis4. d8~d4 e4
+r1
 \bar ":|."
 }
 
@@ -145,10 +149,10 @@ leadMusicBridge = \relative c'''{
 leadWordsOne = \lyricmode { 
 \set stanza = "1."
 
-when I think a -- bout my life of fai -- lures
-it's no ea -- sy to _ keep my faith
+when you think a -- bout your life of fai -- lures
+it's not ea -- sy to _ keep the faith
 or be -- lieve there'll be a spree to -- mor -- row
-gol -- den a -- ges that will save the day
+gol -- den a -- ges that will brighten your day
 
 
 }
@@ -156,17 +160,17 @@ gol -- den a -- ges that will save the day
 leadWordsPrechorus = \lyricmode {
 \set stanza = "prechorus 1"
 
-it's these days when I can't see the bright side
-it's these days when I just have to sing:
+it's these days when the world shows it's grey side
+it's these days you want to stay in bed
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
 
-_ but not to -- day, to -- day I'm gon -- na live 
-to -- day I'm gon -- na go out, to -- day I'm gon -- na set things straight
-in -- stead to -- day, to -- day I'm gon -- na give
-my -- self an -- ot -- her mo -- ment, to -- day I'm gon -- na sail a -- way
+_ but not to -- day, to -- day we're gon -- na live 
+to -- day we're gon -- na go out, to -- day we're gon -- na set things straight
+in -- stead to -- day, to -- day we're gon -- na give
+our -- self an -- ot -- her memor -- ry, to -- day we're gon -- na seize the day
 }
 
 
@@ -179,15 +183,27 @@ leadWordsBridge = \lyricmode {
 }
 
 leadWordsTwo = \lyricmode { 
-
+\set stanza = "2."
+when you look out -- side your ti -- ny win -- dows
+and you can not see the sun __ _  shine
+it is to hard sa -- vour peace and shel -- ter 
+and you can't see a -- ny -- thing de -- vine   
 }
 
 leadWordsThree = \lyricmode {
-
+\set stanza = "3."
+when you think a -- bout the trouble you've been through
+it is hard to see the bright -- est side
+al -- though you have to ad -- mit that it's been
+ov -- ver ma -- ny parts on hell~of a ride
 }
 
 leadWordsFour = \lyricmode {
-
+\set stanza = "4."
+when you think a -- bout your favour -- ite mo -- ments
+un -- ac -- ces -- sib -- ly trapped in the past
+just a sha -- dow of what they had been __ _
+but for -- tu -- nate -- ly, so are the worst
 }
 
 
@@ -222,6 +238,7 @@ cis e8~e4 d4 cis8 d8~
 d b4. r4. g8
 b a8~a4 g4 a4
 e4. fis8~fis4 g4
+r1
 }
 
 backingOneBridgeMusic = \relative c'' {
@@ -403,6 +420,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #1
+  page-count = #2
   
 }
