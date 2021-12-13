@@ -129,7 +129,7 @@ leadWordsOne = \lyricmode {
 we all have been told boys don't cry
 and boys don't shi -- ver
 we are men
-born to be strong and stur -- dy
+born to be strong and da -- ring
 
 boys don't fail
 and boys don't stum -- ble
@@ -137,7 +137,7 @@ heads held up
 no room for he -- si -- ta -- tion
 
 for -- ward for -- ward for -- ward and don't
-e -- ver look back e -- ver look back 
+e -- ver look back ne -- ver look back 
 go fear -- less and stur -- dy in -- to your fu -- ture
 
 for -- ward for -- ward for -- ward and don't
