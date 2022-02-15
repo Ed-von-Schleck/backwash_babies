@@ -186,7 +186,7 @@ leadWordsTwo = \lyricmode {
 \set stanza = "2."
 when you look out -- side your ti -- ny win -- dows
 and you can not see the sun __ _  shine
-it is to hard sa -- vour peace and shel -- ter 
+it is hard to sa -- vour peace and shel -- ter 
 and you can't see a -- ny -- thing de -- vine   
 }
 
@@ -203,7 +203,7 @@ leadWordsFour = \lyricmode {
 when you think a -- bout your favour -- ite mo -- ments
 un -- ac -- ces -- sib -- ly trapped in the past
 just a sha -- dow of what they had been __ _
-but for -- tu -- nate -- ly, so are the worst
+but __ _ for -- tu -- nate -- ly, so~are the worst
 }
 
 

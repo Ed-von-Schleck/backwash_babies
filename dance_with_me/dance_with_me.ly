@@ -147,14 +147,14 @@ leadMusicBridge = \relative c'''{
 }
 
 leadWordsOne = \lyricmode { 
-\set stanza = "verse"
+\set stanza = "verse 1"
 
 you spend an ho -- ur on your eyes and on your make up two
 and an -- oth -- er thir -- ty min -- utes on your per -- fect hair -- do
 be -- fore you e -- ven could con -- si -- der go -- ing through your ward -- robes
 _ it's a twen -- ty min -- ute bus ride to your clos -- est friend
 and an -- o -- ther fif -- teen min -- utes that you have to pre -- tend
-that you re -- ally do not care if she se -- lects the same _ wardrobe
+that you re -- ally do not care if she se -- lects the same _ ward -- robe
 
 }
 
@@ -184,6 +184,7 @@ as it's set -- ting its _ sails to leave the bay
 
 leadWordsChorusTwo = \lyricmode {
 
+
 }
 
 leadWordsBridge = \lyricmode {
@@ -191,6 +192,15 @@ leadWordsBridge = \lyricmode {
 }
 
 leadWordsTwo = \lyricmode { 
+\set stanza = "verse 2"  
+you start the eve -- ning with a beer, some gin and to -- nic too
+and con -- ti -- nue with some cock -- tails and some shots for__ _ you
+be -- fore you e -- ven could con -- si -- der go -- ing to the ci -- ty 
+so when you fi -- nal -- ly de -- cide to hit the streets to -- night
+all your friends are with you and your ward -- robe clings so__ _ tight
+you're to drunk to en -- ter a -- ny club__ _ ,ooh it's such a pi -- ty
+
+
 
 }
 
