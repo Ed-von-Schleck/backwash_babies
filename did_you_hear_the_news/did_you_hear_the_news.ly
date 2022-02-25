@@ -67,7 +67,23 @@ leadMusicprechorus = \relative c{
 
 leadMusicchorus = \relative c''{
 
-r2   r4  c16 c16 c16 c16 a8  r8   r4   r8   r16  a16 c8 c8 b16 b8 b16 ~ b16 b16 b8  r4  c16 c16 c16 c16 a8  r8   r4   r8   r16  a16 c8 c8 d16 d8 d16 ~ d16 d16 d8  r2  e8 e8 e8 e8 e16 e8 e16 ~ e16  r16  e8 c8 c8 c8 c8 c16 c8 c16 ~ c16  r16   r8   r8   r16  d16 d8 b8 d8 c8 b8 c8 a8  r8   r4   r4  c16 c16 c16 c16 a8  r8   r4   r8   r16  a16 c8 c8 b16 b8 b16 ~ b16 c16 d8  r4  c16 c16 c16 c16 a8  r8   r4   r8   r16  a16 c8 c8 d16 d8 d16 ~ d16 d16 d8  r2  e8 e8 e8 e8 e16 e8 e16 ~ e16  r16  e8 c8 c8 c8 c8 c16 c8 c16 ~ c16  r16   r8   r8   r16  d16 d8 b8 d8 c8 b8 c8 a8  r8   r4   r2
+r2   r4  c16 c16 c16 c16 
+a8  r8   r4   r8   r16  a16 c8 c8 
+b16 b8 b16 ~ b16 b16 b8  r4  c16 c16 c16 c16 
+a8  r8   r4   r8   r16  a16 c8 c8 
+d16 d8 d16 ~ d16 d16 d8  r2  
+e8 e8 e8 e8 e16 e8 e16 ~ e16  r16  e8 
+c8 c8 c8 c8 c16 c8 c16 ~ c16  r16   r8   
+r8   r16  d16 d8 b8 d8 c8 b8 c8 
+a8  r8   r4   r4  c16 c16 c16 c16 
+a8  r8   r4   r8   r16  a16 c8 c8 
+b16 b8 b16 ~ b16 c16 d8  r4  c16 c16 c16 c16 
+a8  r8   r4   r8   r16  a16 c8 c8 
+d16 d8 d16 ~ d16 d16 d8  r2  
+e8 e8 e8 e8 e16 e8 e16 ~ e16  r16  e8 
+c8 c8 c8 c8 c16 c8 c16 ~ c16  r16   r8   
+r8   r16  d16 d8 b8 d8 c8 b8 c8 
+a8  r8   r4   r2
 
 
 }
@@ -89,7 +105,7 @@ leadWordsPrechorus = \lyricmode {
 
 }
 
-leadWordsChorus = \lyricmode {
+leadWordsChorusOne = \lyricmode {
 \set stanza = "chorus" 
 Did you hear the news? 
 The world is co -- ming to an end. 
@@ -112,7 +128,25 @@ the world is co -- ming to an end
 }
 
 
+
 leadWordsChorusTwo = \lyricmode {
+\set stanza = "last chorus" 
+Did you hear the news? 
+We gon -- na fight un -- til the end. 
+Did you hear the news? 
+with bro -- ken bones their will must bend 
+
+Ev -- ry litt -- le bit of hope 
+will car -- ry us a -- long this road 
+We gon -- na fight un -- til the end. 
+
+Did you hear the news? 
+Re -- venge is ours and it is near. 
+Did you hear the news? 
+get on your feet and fight my dear 
+Ev -- ry litt -- le bit of hope 
+will car -- ry us a -- long this road 
+We gon -- na fight un -- til the end.
 
 }
 
@@ -122,21 +156,13 @@ leadWordsBridge = \lyricmode {
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "verse 2"
-Jet -- ting o -- ver to Du -- bai, for you thats called shop -- ping,
-Ber -- lin is al -- so nice, since you can shop there for a low price.
-On the mu -- se -- ums you pass ,
-feel -- ling like up -- per class _ __
-But theres no chance youd miss a store of jewe -- le -- ry  or cloths.
+
 
 }
 
 leadWordsThree = \lyricmode {
 \set stanza = "verse 3"
-You have not yet been to Prague, but you wan -- na go ,
-makes sence, since all the drinks, are __ _ cheap as hell, and thats your thing.
-You are so _ __ in -- to Jazz , 
-yet lis -- ten -- ing  to trash ,
-And back and forth, your neck goes one more with an -- oth -- er booze.
+
 
 }
 
@@ -174,7 +200,7 @@ backingOneVerseWords = \lyricmode {
 }
 
 backingOnePrechorusWords = \lyricmode {
-fun and games
+
 }
 
 
@@ -262,7 +288,7 @@ derbassVerse = \relative c {
 	%\new Voice = "Trumpet2" { \voiceTwo << \transpose c c { \global \trumpettwoVerseMusic \trumpettwoPreChrousMusic \trumpettwoChorusMusic} >> }      
       %>>
     >>  
-    \new StaffGroup <<
+    
       \new Staff = "lead" {
 	\set Staff.instrumentName = #"Lead"
 	\set Staff.shortInstrumentName = #"L."
@@ -275,7 +301,9 @@ derbassVerse = \relative c {
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadbridge" \leadWordsBridge
       \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadchorus" \leadWordsChorus
+      \lyricsto "leadchorus" \leadWordsChorusTwo
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadchorus" \leadWordsChorusOne
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadprechorus" \leadWordsPrechorus
       \new Lyrics \with { alignBelowContext = #"lead" }
@@ -333,13 +361,13 @@ derbassVerse = \relative c {
         \transpose c c { \global \derbassVerse }
       }      % again, we could replace the line above this with the line below.
       % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
-    >>
+    
   >>
   \midi {}
   \layout {
     \context {
       \Staff \RemoveEmptyStaves
-      \override VerticalAxisGroup #remove-first = ##t
+      %\override VerticalAxisGroup #remove-first = ##t
     }
   }
 }
