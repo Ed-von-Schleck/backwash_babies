@@ -30,7 +30,7 @@ b:m b:m b:m b:m f f a:7 a:7
 violinMusic = \relative c'' {
 R1*12
 R1*2
-r8 fis \tuplet 3/2{fis8 e d} d8(b8~b4)
+r8 fis \tuplet 3/2{fis8 e d} d8 b8~b4
 d8 b d g~g4 fis8 r8
 R1*2
 r4 b, d b 
@@ -78,8 +78,8 @@ d4 r2.
 r8 b d8 b d b d fis~
 fis4 r2.
 r2 r8 fis e fis
-a a~a8 a~a gis~gis gis~
-gis4. d8 fis fis~fis d~
+a a~a8 a~a gis~gis g~
+g4. d8 fis fis~fis d~
 d4 r2.
 r1
 \bar ":|.|:"
