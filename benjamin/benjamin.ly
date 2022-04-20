@@ -169,8 +169,8 @@ leadWordspreChorus = \lyricmode {
 \set stanza = "prechorus"
 be a sol -- dier
 like they told ya
-be a boul -- der
-like a sol -- dier oh
+with broad shoul -- ders 
+like a boul -- der
 
 }
 
@@ -183,7 +183,18 @@ these fee -- lings all won't do you harm nor sor -- row
 }
 
 leadWordsTwo = \lyricmode { 
-\set stanza = "2." 
+
+_ _ _ _ _ \set stanza = "2." 
+boys don't doubt and boys don't give in 
+stand your ground
+to not seem weak and fra -- gile
+boys are right and boys don't check back
+plead your case
+re -- tain your pride and ho -- nour
+fur -- ther fur -- ther fur -- ther don't you e -- ver look back e -- ver look back
+no fai -- lure or set- -- back shall stain your fu -- ture 
+fur -- ther fur -- ther fur -- ther don't you e -- ver look back just be
+brave be brave be brave be brave boy
 }
 
 leadWordsThree = \lyricmode {
@@ -363,7 +374,7 @@ violinMusic = \relative c' {
         \new Voice = "leadprechorus" { << \transpose c c { \leadMusicprechorus } >> }
         \new Voice = "leadchorus" { << \transpose c c { \leadMusicchorus } >> }
         \new Voice = "leadbridge" { << \transpose c c { \leadMusicBridge } >> }
-        \new Voice = "leadoutro" { << \transpose a c' { \leadMusicchorus } >> }
+        %\new Voice = "leadoutro" { << \transpose a c' { \leadMusicchorus } >> }
       }
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadbridge" \leadWordsBridge
@@ -392,7 +403,7 @@ violinMusic = \relative c' {
 	\set Staff.instrumentName = #"Backing"
 	\set Staff.shortInstrumentName = #"B."
         \set Staff.midiInstrument = #"voice oohs"
-	\new Voice = "backingOnes" { \voiceOne << \transpose c c { \global \backingOneVerseMusic \backingOneprechorus \backingOneChorusMusic \backingOnebridge \transpose a c' {\backingOneChorusMusic} } >> }
+	\new Voice = "backingOnes" { \voiceOne << \transpose c c { \global \backingOneVerseMusic \backingOneprechorus \backingOneChorusMusic \backingOnebridge %{ \transpose a c' {\backingOneChorusMusic}%}  } >> }
 	\new Voice = "backingTwoes" { \voiceTwo << \transpose c c { \global \backingTwoVerseMusic \backingTwoChorusMusic } >> }
 
       >>
@@ -422,6 +433,6 @@ violinMusic = \relative c' {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #3
+  page-count = #2
   
 }
