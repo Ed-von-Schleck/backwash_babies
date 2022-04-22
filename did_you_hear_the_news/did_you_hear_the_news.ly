@@ -55,7 +55,22 @@ harmonies = \chordmode {
 
 violinMusic = \relative c'' {
   R1 R1*16 R1*15
-  d8. c16 ~ c8 b8 d8 b16 c16 ~ c8 b16 c16 ~ c16  r16  b8 a8 b8 c4  r4   r8   r16  b16 c8 b8 c8 b8 a8 b8 a8  r16  b16 c8 b8 c8 b8 a8 b8 d8. c16 ~ c8 b8 d8 b16 c16 ~ c8 b16 c16 ~ c16  r16  b8 a8 b8 c4  r4   r8   r16  b16 c8 b8 c8 b8 a8 b8 a8  r16  b16 c8 b8 c8 b8 a8 b8 c4  r4   r8  c8 d8 e8 f4  r8  f8 d8  r16  e16 ~ e16 b16 c8 e4  r4   r4   r8  c8 f4  r8  f8 g8  r16  f16 ~ f16 d8 b16 c4  r4   r8  c8 d8 e8 f4 r8  f8 d8  r16  e16 ~ e16 b16 c8 e4  r4   r4   r8  c8 f4 e4 b4  c4  
+  d8. c16 ~ c8 b8 d8 b16 c16 ~ c8 b16 c16 ~ 
+  c16  r16  b8 a8 b8 c4  r4   
+  r8   r16  b16 c8 b8 c8 b8 a8 b8 
+  a8  r16  b16 c8 b8 c8 b8 a8 b8 
+  d8. c16 ~ c8 b8 d8 b16 c16 ~ c8 b16 c16 ~ 
+  c16  r16  b8 a8 b8 c4  r4   
+  r8   r16  b16 c8 b8 c8 b8 a8 b8 
+  a8  r16  b16 c8 b8 c8 b8 a8 b8 
+  c4  r4   r8  c8 d8 e8 
+  f4  r8  f8 d8  r16  e16 ~ e16 b16 c8 
+  e4  r4   r4   r8  c8 
+  f4  r8  f8 g8  r16  f16 ~ f16 d8 b16 
+  c4  r4   r8  c8 d8 e8 
+  f4 r8  f8 d8  r16  e16 ~ e16 b16 c8 
+  e4  r4   r4   r8  c8 
+  f4 e4 b4  c4  
 }
 
 leadGuitarMusic = \relative c {
@@ -88,7 +103,21 @@ trumpettwoChorusMusic = \relative c {
 
 leadMusicverse = \relative c''{
 
-r2   r4   r8   r16  d16 e8 e8 e8 g16 e16 ~ e16 d8  r16   r8  g16 d16 e8  r8   r8   r16  f16 f8 e8 d8 e16 d16 ~ d16 e8  r16   r4   r2  f8 e8 e8 d8 ~ d8 e8 c8 d16 e16 ~ e16 e8  r16   r4   r2   r2   r4   r8   r16  d16 e8 e8 e8 g16 e16 ~ e16  r16   r8   r8  g16 d16 e8  r8   r8   r16  f16 f8 e8 d8 e16 d16 ~ d16  r16   r8   r4   r2   r8  f8 g8 e8 ~ e8 d8 c8 d16 e16 ~ e16  r16   r8   r4   r2   r8  c16 d16 c8 b8  r16  b16 c16 d16 c8  r8   r8  c16 d16 c8 b8  r8  c16 d16 c8  r8  c4 d4 e4  r4  
+r2   r4   r8   r16  d16 
+e8 e8 e8 g16 e16 ~ e16 d8  r16   r8  g16 d16 
+e8  r8   r8   r16  f16 f8 e8 d8 e16 d16 ~ 
+d16 e8  r16   r4   r2  
+f8 e8 e8 d8 ~ d8 e8 c8 d16 e16 ~ 
+e16 e8  r16   r4   r2   
+r2   r4   r8   r16  d16 e8
+e8 e8 g16 e16 ~ e16  r16   r8   r8  g16 d16 
+e8  r8   r8   r16  f16 f8 e8 d8 e16 d16 ~ 
+d16  r16   r8   r4   r2   
+r8  f8 g8 e8 ~ e8 d8 c8 d16 e16 ~ 
+e16  r16   r8   r4   r2   
+r8  c16 d16 c8 b8  r16  b16 c16 d16 c8  r8   
+r8  c16 d16 c8 b8  r8  c16 d16 c8  r8  
+c4 d4 e4  r4  
 \set Score.repeatCommands = #'(end-repeat)
 
 
@@ -303,7 +332,7 @@ derbassVerse = \relative c {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \transpose c c { \global \harmonies }
+      \transpose a f { \global \harmonies }
     }
 
     \new StaffGroup <<
@@ -312,7 +341,7 @@ derbassVerse = \relative c {
         \set Staff.instrumentName = #"Violin"
         \set Staff.shortInstrumentName = #"V."
         \set Staff.midiInstrument = #"violin"
-         \transpose c c { \violinMusic }
+         \transpose a f { \global \violinMusic }
       }
       % \new Staff = "Guitar" {
 %         \set Staff.instrumentName = #"Guitar"
@@ -342,9 +371,9 @@ derbassVerse = \relative c {
 	\set Staff.shortInstrumentName = #"L."
         \set Staff.midiInstrument = #"voice oohs"
         %\new Voice = "leadprechorus" { << \transpose c a, { \leadMusicprechorus } >> }
-        \new Voice = "leadchorus" { << \transpose c c { \leadMusicchorus } >> }
-        \new Voice = "leadverse" { << \transpose c c { \global \leadMusicverse } >> }
-        \new Voice = "leadbridge" { << \transpose c c { \leadMusicBridge } >> }
+        \new Voice = "leadchorus" { << \transpose a f { \global \leadMusicchorus } >> }
+        \new Voice = "leadverse" { << \transpose a f { \leadMusicverse } >> }
+        \new Voice = "leadbridge" { << \transpose a f { \leadMusicBridge } >> }
       }
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadbridge" \leadWordsBridge
