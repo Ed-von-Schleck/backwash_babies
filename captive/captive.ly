@@ -98,16 +98,27 @@ dis4 dis8 dis dis4  dis
 dis8 cis8~cis dis~dis e dis4
 R1*4
 
-r4 gis gis gis
-a a a a
-gis gis gis gis
-gis8 fis8~fis gis~gis fis gis4
-R1*4
 
-gis4 gis4~gis gis
-a a a a
-gis gis gis gis
-gis8 fis8~fis gis~gis fis gis4 
+r4 dis dis dis 
+e e e4 e  
+dis4 dis dis dis 
+dis8 cis8~cis dis~dis cis dis4
+R1*4
+dis4 dis~dis dis 
+e e e4 e  
+dis4 dis dis4  dis 
+dis8 cis8~cis dis~dis e dis4
+
+%r4 gis gis gis
+%a a a a
+%gis gis gis gis
+%gis8 fis8~fis gis~gis fis gis4
+%R1*4
+
+%gis4 gis4~gis gis
+%a a a a
+%gis gis gis gis
+%gis8 fis8~fis gis~gis fis gis4 
 
 }
 
@@ -123,24 +134,24 @@ dis2 r2
 }
 
 leadMusicchorus = \relative c'{
-r4 dis4 dis dis8 dis 
-dis cis r2.
+r4 gis'4 gis gis8 gis 
+gis fis r2.
 r1
-fis8 fis~fis fis~fis4 r4
-r4 dis4 dis8 dis dis8 dis 
-dis cis~cis cis~cis4 r4
+b8 b~b b~b4 r4
+r4 gis4 gis8 gis gis8 gis 
+gis fis~fis fis~fis4 r4
 r1
-fis8 fis~fis fis fis~fis cis4
-dis8 r8 dis4 dis8 dis dis4 
-dis8 cis cis cis cis4 r4
+b8 b~b b b~b fis4
+gis8 r8 gis4 gis8 gis gis4 
+gis8 fis fis fis fis4 r4
 r1
-fis8 fis~fis fis~fis8 cis8~cis dis~
-dis8 r8 dis4 dis8 dis dis dis 
-dis8 cis~cis cis~cis4 r4
+b8 b~b b~b8 fis8~fis gis~
+gis8 r8 gis4 gis8 gis gis gis 
+gis8 fis~fis fis~fis4 r4
 r1
-fis4 fis8 fis~fis cis~cis dis~
+b4 b8 b~b fis~fis gis~
 \bar ":|."
-dis4 r2.
+gis4 r2.
 
 
 
@@ -208,7 +219,20 @@ leadWordsFive = \lyricmode {
 }
 
 backingOneVerseMusic = \relative c'' {
-R1*28
+R1*16
+
+r4 gis gis gis
+a a a a
+gis gis gis gis
+gis8 fis8~fis gis~gis fis gis4
+R1*4
+
+gis4 gis4~gis gis
+a a a a
+gis gis gis gis
+gis8 fis8~fis gis~gis ais gis4 
+
+
 }
 
 backingOnePrechorusMusic = \relative c' {
@@ -222,23 +246,23 @@ ais2 r2
 
 backingOneChorusMusic = \relative c' {
 r1 
-r4 cis8 cis~cis cis cis4 
-gis' gis8 gis gis gis gis4 
-ais8 b~b ais~ais4 r4
+r4 fis8 fis~fis fis fis4 
+cis' cis8 cis cis cis cis4 
+dis8 e~e dis~dis4 r4
 r1
-r2.  cis,8 cis  
-gis'4 gis8 gis gis gis gis4 
-b8 ais~ais b ais~ais fis4
+r2.  fis,8 fis  
+cis'4 cis8 cis cis cis cis4 
+e8 dis~dis e dis~dis b4
 gis8 r8 r2.
-r2. cis,8 cis 
-gis'8 gis8 gis4 gis4 gis8 gis8 
-fis8 gis~gis ais~ais8 fis8~fis gis~
-gis8 r8 r2.
-r2. cis,8 cis 
-gis'4 gis gis4 gis4 
-ais4 gis8 fis~fis eis~eis dis~
+r2. fis8 fis 
+cis'8 cis8 cis4 cis4 cis8 cis8 
+b8 cis~cis dis~dis8 b8~b b~
+b8 r8 r2.
+r2. fis8 fis 
+cis'4 cis cis4 cis4 
+dis4 cis8 b~b ais~ais gis~
 \bar ":|. "
-dis4 r2.
+gis4 r2.
 }
 
 backingOneBridgeMusic = \relative c'' {
