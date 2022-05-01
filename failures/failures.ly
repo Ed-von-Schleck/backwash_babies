@@ -142,7 +142,7 @@ leadWordsBridge = \lyricmode {
 }
 
 leadWordsTwo = \lyricmode { 
-\set stanza = "verse 1"
+\set stanza = "verse 2"
 Al -- ice was an -- oth -- er girl I knew from _ school,
 _ she was kind of lame _ 
 and _ I was _  so un -- cool.
@@ -152,18 +152,31 @@ that was quite cruel.
 }
 
 leadWordsThree = \lyricmode {
+\set stanza = "verse 2"
 
 }
 
 leadWordsFour = \lyricmode {
 
-
-
 }
 
 
 leadWordsFive = \lyricmode {
+\set stanza = "verse 5"
+La -- ter in  my life _ I _ star -- ted to sing
+I played a lit -- tle tune and by mis -- take I _ mixed~up the key.
+And sang a B ins -- tead G.
+That was the most _ re -- cent time,
+that I had failed.
+}
 
+leadWordsSix = \lyricmode {
+\set stanza = "verse 6"
+Fin -- al -- ly my life will some -- day come to an end,
+and this will be the day, that I can fin -- al -- ly stop~to pre -- tend
+and start to com _ __ -- pre -- hend
+It'll be the day I re -- al -- ize 
+my time was~well spend
 }
 
 backingOneVerseMusic = \relative c'' {
@@ -298,6 +311,10 @@ derbassVerse = \relative c {
       \lyricsto "leadchorus" \leadWordsChorus
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadprechorus" \leadWordsPrechorus
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadverse" \leadWordsSix
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadverse" \leadWordsFive      
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsFour
       \new Lyrics \with { alignBelowContext = #"lead" }
