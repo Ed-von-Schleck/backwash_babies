@@ -62,8 +62,8 @@ violinMusic = \relative c'' {
   b4 a4 fis cis  fis8 gis fis gis~gis r8 cis, e
   fis gis a gis gis a b gis a fis a cis~cis4 r4
   a4 fis a fis a8 b a gis~gis4 r4
-  \tuplet 3/2 {a4 a fis} \tuplet 3/2 {a a fis} \tuplet 3/2 {a a fis} gis4 r4
-  %\tuplet 3/2 {a4 a fis} \tuplet 3/2 {a a fis} \tuplet 3/2 {a fis a} cis4 r4
+  %\tuplet 3/2 {a4 a fis} \tuplet 3/2 {a a fis} \tuplet 3/2 {a a fis} gis4 r4
+  \tuplet 3/2 {a4 a fis} \tuplet 3/2 {a a fis} \tuplet 3/2 {a fis a} cis4 r4
   cis2 fis,8 a~a8 r
   d4. cis8~cis4 r
   cis8 b a gis a b a gis
