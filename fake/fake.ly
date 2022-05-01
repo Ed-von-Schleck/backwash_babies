@@ -28,6 +28,16 @@ harmonies = \chordmode {
   d1:m d1:m f f c c g g
   d1:m d1:m f f g:7 g:7 e:7 e:7
 
+
+  a2:m g f e 
+  a2:m g f e  
+  a2:m g f e 
+  a2:m g f e 
+  a2:m g f e  
+  a2:m g f e 
+  a2:m g f e 
+  a2.:m g4  a8:m r2..
+
   %c1 c b:7 b:7 e1 e1:7 f f
   %d1:m d1:m f f e e e:7 e:7 
   %a4:m g f e a4.:m e8 
@@ -46,6 +56,24 @@ harmonies = \chordmode {
 }
 
 violinMusic = \relative c'' {
+  \key cis \minor
+  R1*65
+  cis4 cis b b8 a  b a b cis~cis r8 b cis
+  b4 a4 fis cis  fis8 gis fis gis~gis r8 cis, e
+  fis gis a gis gis a b gis a fis a cis~cis4 r4
+  a4 fis a fis a8 b a gis~gis4 r4
+  \tuplet 3/2 {a4 a fis} \tuplet 3/2 {a a fis} \tuplet 3/2 {a a fis} gis4 r4
+  %\tuplet 3/2 {a4 a fis} \tuplet 3/2 {a a fis} \tuplet 3/2 {a fis a} cis4 r4
+  cis2 fis,8 a~a8 r
+  d4. cis8~cis4 r
+  cis8 b a gis a b a gis
+  a b a gis~gis4 r
+  a4 fis8 fis~fis cis a' fis~
+  fis r2..
+  \bar "|."
+
+  
+  
   
 }
 
@@ -432,7 +460,7 @@ derbassVerse = \relative c {
         \set Staff.instrumentName = #"Violin"
         \set Staff.shortInstrumentName = #"V."
         \set Staff.midiInstrument = #"violin"
-         \transpose c a, { \violinMusic }
+         \transpose c c { \violinMusic }
       }
       \new Staff = "Guitar" {
         \set Staff.instrumentName = #"Guitar"
@@ -541,6 +569,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
   
 }
