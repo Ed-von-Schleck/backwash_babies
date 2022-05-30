@@ -39,16 +39,16 @@ harmonies = \chordmode {
  d1 a g b
  c g a1 b:7
  
-   \repeat unfold 2 {
+   
    cis1:m~cis4:m b2~b4
    cis1:m~cis4:m a2~a4
    b1~b4 gis2:m~gis4:m
    e1~e4 a2~a4
-   cis1:m~cis4:m b2~b4
-   cis1:m~cis4:m a2~a4
-   b1~b4 gis2:m~gis4:m
-   e1~e4 a2~a4
-   }
+   % cis1:m~cis4:m b2~b4
+%    cis1:m~cis4:m a2~a4
+%    b1~b4 gis2:m~gis4:m
+%    e1~e4 a2~a4
+   
 
   
 }
@@ -155,7 +155,15 @@ leadMusicBridge = \relative c''{
   d b d b 
   cis a cis e
   fis2~fis4 r4 
-
+  
+  gis4 gis gis e8 dis8~
+  dis4 e2 b4
+  cis gis cis dis8 e8~
+  e2 r2
+  e4 dis gis, e'
+  dis b dis b 
+  e b cis dis
+  e2~e4 r4 
 }
 
 leadWordsOne = \lyricmode { 
@@ -192,11 +200,19 @@ la la
 
 leadWordsBridge = \lyricmode {
 \set stanza = "bridge"
+
 May -- be it's a bless -- ing
 by a -- ny gent -- le muse
 what a waste of 
 ar -- tis -- try to
 choose a fool like me
+May -- be words aren't ea -- sy
+and sing -- ing's pre -- tty hard
+may -- be I will
+ab -- di -- cate and
+sing what's in my head
+
+
 }
 
 leadWordsTwo = \lyricmode { 
@@ -273,68 +289,80 @@ backingTwoChorusWords = \lyricmode {
 
 derbassVerse = \relative c {
   \clef bass
-
-
+%   \repeat volta 24 { e,8 e8 gis8 gis8 e8 e8 gis8 gis8 }
+%   R1*23
+%   cis1(dis)
 }
 
 leadGuitarMusic = \relative c {
-  \repeat unfold 4 {
-  <e fis'>4 r4 <e gis'> r4
-  <e b''>4 r8 <e cis''>8~<e cis''>8 <e b''>8~<e b''> e 
-  <e fis'>4 r4 <e gis'> r4
-  <e b''>4 r8 <e dis''>8~<e dis''>8 <e cis''>8~<e cis''> e 
-  }
-  <e b''>4 <e b''> r2
-  <e gis'>4 <e gis'> r2
-  <e fis'>4 <e fis'> r8 <e gis'>8~<e gis'> <e gis'>8 
-  <e b'>4 <e gis'>4 r2
-  <e b''>4 <e b''> r2
-  <e gis'>4 <e gis'> r2
-  <e fis'>4 <e fis'> r8 <e gis'>8~<e gis'> r8
-  <e b'>4 r8 <e dis'>8~<e dis'> <e cis'>8~<e cis'> r8
+  % \repeat unfold 4 {
+%   <e fis'>4 r4 <e gis'> r4
+%   <e b''>4 r8 <e cis''>8~<e cis''>8 <e b''>8~<e b''> e 
+%   <e fis'>4 r4 <e gis'> r4
+%   <e b''>4 r8 <e dis''>8~<e dis''>8 <e cis''>8~<e cis''> e 
+%   }
+%   <e b''>4 <e b''> r2
+%   <e gis'>4 <e gis'> r2
+%   <e fis'>4 <e fis'> r8 <e gis'>8~<e gis'> <e gis'>8 
+%   <e b'>4 <e gis'>4 r2
+%   <e b''>4 <e b''> r2
+%   <e gis'>4 <e gis'> r2
+%   <e fis'>4 <e fis'> r8 <e gis'>8~<e gis'> r8
+%   <e b'>4 r8 <e dis'>8~<e dis'> <e cis'>8~<e cis'> r8
   
 }
 
 violinMusic = \relative c'' {
 % a und dis vermeisen
-R1*54
+R1*26
+  gis2~gis4~gis8 b8~b1
+  cis2~cis4~cis8 e,8 
+  fis gis a b cis a gis fis
+  gis2~gis4~gis8 b8~b1
+  cis2~cis4~cis8 e,8 
+  fis gis a b cis b gis fis
+  b4 b b b8 cis~
+  cis a~a2 cis4
+  b8 b8~b b8~b cis~cis b8~
+  b2 r2
+R1*16
   
-  cis4 e cis gis8 fis8~
-  fis4 gis2 b4
-  cis gis cis e8 dis8~
-  dis2 r2
-  dis4 b dis fis
-  e b fis b 
-  e b gis a
-  gis2~gis4 r4 
-
-  cis4 e cis gis8 fis8~
-  fis4 gis2 b4
-  cis gis cis e8 dis8~
-  dis2 r2
-  fis4 e dis b
-  fis gis b gis 
-  e' b gis e
-  a2~a4 r4 
-
-  
-  b4 cis dis e8 b8~
-  b4 cis2 gis4
-  cis gis cis dis8 dis8~
-  dis2 r2
-  e4 dis gis, e'
-  dis b dis b 
-  cis a cis e
-  fis2~fis4 r4 
-
-  gis4 gis gis e8 dis8~
-  dis4 e2 b4
-  cis gis cis dis8 e8~
-  e2 r2
-  e4 dis gis, e'
-  dis b dis b 
-  e b cis dis
-  e2~e4 r4 
+  % cis4 e cis gis8 fis8~
+%   fis4 gis2 b4
+%   cis gis cis e8 dis8~
+%   dis2 r2
+%   dis4 b dis fis
+%   e b fis b 
+%   e b gis a
+%   gis2~gis4 r4 
+% 
+%   cis4 e cis gis8 fis8~
+%   fis4 gis2 b4
+%   cis gis cis e8 dis8~
+%   dis2 r2
+%   fis4 e dis b
+%   fis gis b gis 
+%   e' b gis e
+%   a2~a4 r4 
+% 
+%   
+%   b4 cis dis e8 b8~
+%   b4 cis2 gis4
+%   cis gis cis dis8 dis8~
+%   dis2 r2
+%   e4 dis gis, e'
+%   dis b dis b 
+%   cis a cis e
+%   fis2~fis4 r4 
+% 
+%   gis4 gis gis e8 dis8~
+%   dis4 e2 b4
+%   cis gis cis dis8 e8~
+%   e2 r2
+%   e4 dis gis, e'
+%   dis b dis b 
+%   e b cis dis
+%   e2~e4 r4 
 
 
 }
@@ -360,11 +388,6 @@ R1*54
         \set Staff.midiInstrument = #"overdriven guitar"
         \transpose c c { \global \leadGuitarMusic }
       }
-        \new TabStaff \transpose c c, {
-        \leadGuitarMusic 
-        \set TabStaff.minimumFret = #9
-        \set TabStaff.restrainOpenStrings = ##t
-        }
         
         \new Staff = "Trumpets" <<
         \set Staff.instrumentName = #"Trumpets"
@@ -426,7 +449,7 @@ R1*54
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
         %\set Staff.midiInstrument = #"electric bass (pick)"
-        \set Staff.midiInstrument = #"synth bass 1"
+        \set Staff.midiInstrument = #"acoustic bass"
         \transpose c c { \global \derbassVerse }
       }      % again, we could replace the line above this with the line below.
       % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
@@ -444,6 +467,6 @@ R1*54
 #(set-global-staff-size 19)
 
 \paper {
-%  page-count = #3
+  page-count = #2
   
 }
