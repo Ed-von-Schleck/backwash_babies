@@ -28,6 +28,7 @@ c1 e a:m f4. e8~e2
 c1 e a:m d4.:m7 e8~e2
 d4.:m7 e8~e2 d4.:m7 e8~e2
 R1
+\bar ":|."
 
 
 f1 c4. g8~g2 a1:m d4.:m e8~e2
@@ -77,8 +78,9 @@ trumpettwoChorusMusic = \relative c'' {
 
 }
 
-leadMusicverse = \relative c''{
+leadMusicverse = \relative c'{
 r2. d8 e
+\bar ".|:"
 d c c4 c8 a c e~
 e2 r4 d8 e
 d c c c~c4 d8 e
@@ -94,7 +96,7 @@ c a c b~b8 c c d
 e4 e e8 d c b~
 b2 r4 d8 e
 d c8~c8 a~a e' d e
-c a c b~b8 r4.
+c a c b~b8 r8 r4
 
 }
 
@@ -117,6 +119,9 @@ c8 c c d~d c c e~
 e b b c~c d c d
 c b~b a~a2
 r1
+r2 \tuplet 3/2{d,4_\markup { \italic wistle  } e f}
+f8_\markup { \italic wistle  } f8 f gis~gis2
+
 
 }
 
@@ -181,12 +186,26 @@ leadWordsFive = \lyricmode {
 }
 
 backingOneVerseMusic = \relative c'' {
-
-
+r1
+c4. a8~a4( c4)
+d8(c~c) b~b4 a
+b2..(a8~
+a2) r2
+c4. a8~a4( c4)
+d8(c~c) b~b4 a
+b2..(a8~
+a2) r2
+c4. a8~a4( c4)
+d8(c~c) b~b4 a
+b2..(c8~
+c4. d8~d4) r4
+c4. a8~a4( c4)
+d8(c~c) b~b4 a
+b2..(c8~
+c4. b8~b8) r8 r4
 }
 
 backingOneChorusMusic = \relative c'' {
-R1*17
 r2 gis8 a b c~
 c2. r4
 r2 gis8 b gis e~
@@ -200,10 +219,19 @@ r1
 c4. d8~d4 e4
 b4. c8~c4 d
 f8 e8~e e~e2
-r1
+c'8_\markup { \italic wistle  } a8 c b~b2
+\tuplet 3/2{c4_\markup { \italic wistle  } a f} \tuplet 3/2{f4 gis b}
+c8_\markup { \italic wistle  } a8 c b~b2
+
 }
 
 backingOneChorusWords = \lyricmode {
+\set stanza = "(2. Violin, 3. Backing)"
+ Sai -- ling o -- ver the sea
+ Sai -- ling o -- ver the sea
+ Sai -- ling o -- ver the sea
+ Sai -- ling o -- ver the sea
+
 \set stanza = "chorus"
 
  O -- ver the sea,
@@ -229,7 +257,46 @@ backingTwoChorusWords = \lyricmode {
 
 derbassVerse = \relative c {
   \clef bass
+r1
+a4 r4. a8 b8 c8~
+c4. g8~g8 r e' c
+d8 a8 c8 d8~d4 r4 
+f,8 f8~f8 e8~e4 r4
+a4 r4. a8 b8 c8~
+c4. g8~g8 r e' c
+d8 a8 c8 d8~d4 r4 
+f,8 f8~f8 e8~e4 r4
+c'4 c4 g g
+a a e e
+r8 f r8 f r8 f r8 f
+r8 g r8 g r8 b r8 b
+c4 c4 e, e
+a a g g
+r8 f r8 f r8 f r8 f
+f8 f8~f8 e8~e4 r4
 
+c'16 c c c~c4
+e,8 fis gis a~
+a4. e8~e4 r4
+c'16 c c c~c4
+e,8 fis gis a~
+a4. e'8~e4 r4
+c16 c c c~c4
+e,8 fis gis a~
+a2 b2
+
+c4. c8~c8 c8 c c 
+b8 b8~b b8~b8 b a g
+a4. e8~e4 a4
+f8 f8~f e8~e2
+c'4. c8~c8 c8 c c 
+b8 b8~b b8~b8 b a g
+a4. e8~e4 a4
+f8 f8~f e8~e2
+f8 f8 f e8~e2
+\tuplet3/2{f8 f f }f e8~e2
+r1
+%\tuplet4/3{f8 f f f} e8~e2
 }
 
 \score {
@@ -313,8 +380,8 @@ derbassVerse = \relative c {
       
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
-        %\set Staff.midiInstrument = #"electric bass (pick)"
-        \set Staff.midiInstrument = #"distorted guitar"
+        \set Staff.midiInstrument = #"electric bass (pick)"
+        %\set Staff.midiInstrument = #"distorted guitar"
         \transpose c c { \global \derbassVerse }
       }      % again, we could replace the line above this with the line below.
       % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
@@ -332,6 +399,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
   
 }
