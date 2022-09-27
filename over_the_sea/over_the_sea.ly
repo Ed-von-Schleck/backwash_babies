@@ -164,15 +164,26 @@ leadWordsBridge = \lyricmode {
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
-
+If I stay on this side of the sea,
+I will ne -- ver be -- come, the man I long to be?
+If I stay on this side of the sea,
+will I e -- ver find_ _ _ peace and har -- mo -- ny
+Or will I stum -- ble on_ _ and on
+ne -- ver sure if this is where I real -- ly be -- long
+And will It fin -- al -- ly turn out wrong
+turn -- ing life on earth in -- to my sad -- dest _ song.
 
 }
 
 leadWordsThree = \lyricmode {
 \set stanza = "3." 
-If I stay on this side of the sea,
-I will ne -- ver be -- come, the man I long to be?
-If I stay on this side of the sea,
+If I stay with you here on the beach
+I will ne -- ver be_ _, the man I want to be.
+If I stay with you here on the sand, 
+I will ne -- ver be free, but I will un -- der -- stand
+
+That I'm am hap -- py
+
 }
 
 leadWordsFour = \lyricmode {
