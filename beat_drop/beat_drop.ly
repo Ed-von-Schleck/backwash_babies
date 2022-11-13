@@ -25,9 +25,12 @@ fis1:m a1 e1 cis1
 fis1:m a1 e1 cis1
 fis1:m a1 e1 cis1
 
-
-a cis2:sus2 cis2 e1 d4. cis8~cis2
-a1 cis2:sus2 cis2 e1 d4. cis8~cis2
+fis1:m fis1:m e b
+fis1:m fis1:m e b
+a cis:7  fis1:m fis1:m 
+a cis:7  fis1:m fis1:m 
+a cis:7  fis1:m fis1:m 
+a cis:7  fis1:m fis1:m 
 
 a1 a cis cis:7 fis:m fis:m d e
 a1 a cis cis:7 fis:m fis:m d e
@@ -40,6 +43,9 @@ a1 a cis cis:7 fis:m fis:m d e
 
 violinMusic = \relative c'' {
 R1*25
+R1*8
+R1*8
+
 e2 d 
 cis4( a) cis( a')
 b8( a gis a) gis( fis f cis)
@@ -126,41 +132,43 @@ gis gis a cis
 
 }
 
-leadMusicprechorus = \relative c'{
+leadMusicprechorus = \relative c''{
+    \time 2/2
 
+  r8 cis8_\markup { \italic {shuffled}} cis8 b8
+  cis4 a fis4 r4
+  r2 r8 b8 b8 a8
+  b4 a e4 r8 a
+  b4 fis dis8 cis'8 cis8 b8
+  cis4 a fis4 r4
+  r2 r8 b8 b8 a8
+  b4 a e4 r4
+  b'4 fis dis8 
 }
 
 leadMusicchorus = \relative c''{
-  
-r8 fis, a b
-\bar ".|:"
-cis4 cis cis r
-fis8 fis fis fis f f dis cis  
-b4 gis b8 gis b gis  
-a b a gis r8 fis a b 
-cis4 cis cis r
-fis8 fis fis fis f f dis cis  
-b4 gis b8 gis b gis  
-a b a gis r8 fis a b \bar ":|."  
- 
 
-r4 a8 a8 cis4 a8 r8 
-a8 a8~a8 cis8~cis4 e4 
-gis2 e4 cis8 gis8~
-gis2 r4 cis8 cis
-e8 cis8~cis8 cis8~cis8 cis8 cis8 cis
-e8 cis8~cis8 cis8~cis r8 cis cis
-e cis~cis cis~cis4 b8 a
-b b b d~d4(cis4)
-r4 a8 a8 cis4 a8 r8 
-a8 a8~a8 cis8~cis4 e4 
-gis2 e4 cis8 gis8~
-gis2 r4 cis8 cis
-e8 cis8~cis8 cis8~cis8 cis8 cis8 cis
-e8 cis8~cis8 cis8~cis r8 cis cis
-e cis~cis cis~cis4 b8 a
-b b b d~d4(cis4)
-\bar ":|."
+  cis8 cis8 b8
+  \time 4/4
+  cis4 cis cis cis
+  b8 a~a b~b4  cis8 a~
+  a fis8 r2.
+  r2 r8 b8 cis8 b8
+  cis4 cis cis cis
+  b8 a~a b~b4 cis8 cis~
+  cis r2..
+  r2 r8 b8 cis8 b8
+  cis4 cis cis cis
+  b8 a~a b(~b4 cis8) a~   
+  a fis8 r2.
+  r2 r8 b8 cis8 b8
+  cis4 cis cis cis
+  b8 a~a b~b4 cis8 cis~
+  cis r2..
+  r1 
+
+  \bar "||"
+
 
 
 %r8 fis, a b 
@@ -176,8 +184,24 @@ b b b d~d4(cis4)
 
 }
 
-leadMusicBridge = \relative c'''{
-
+leadMusicBridge = \relative c''{
+r4 a8 a8 cis4 a8 r8 
+a8 a8~a8 cis8~cis4 e4 
+gis2 e4 cis8 gis8~
+gis2 r4 cis8 cis
+e8 cis8~cis8 cis8~cis8 cis8 cis8 cis
+e8 cis8~cis8 cis8~cis r8 cis cis
+e cis~cis cis~cis4 b8 a
+b b b d~d4(cis4)
+r4 a8 a8 cis4 a8 r8 
+a8 a8~a8 cis8~cis4 e4 
+gis2 e4 cis8 gis8~
+gis2 r4 cis8 cis
+e8 cis8~cis8 cis8~cis8 cis8 cis8 cis
+e8 cis8~cis8 cis8~cis r8 cis cis
+e cis~cis cis~cis4 b8 a
+b b b d~d4(cis4)
+\bar "|."
 }
 
 leadWordsOne = \lyricmode { 
@@ -198,27 +222,26 @@ and I'm com -- mand -- ing them to move with the beat.
 }
 
 leadWordsPrechorus = \lyricmode {
+\set stanza = "prechorus"
+So when the beat drops in,
+and when the grove kicks in  
+the show be -- gins
+
+So when the crowd gets loud
+you're gon -- na sing _ __ out
+loud and proud
+
 
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
-So when the beat drops in,
-watch me as I fall in love with ev -- ry sin -- gle note that vibes through the air
-And when the time slows down,
-join me div -- ing dee -- per in -- to ev -- ry sin -- gle tone that floats through my hair.
+ 
+this is the time you bet -- ter join in -- to the rhy -- thm.
+this is the time you bet -- ter start to swing and dance.
+and if you don't have  a -- ny -- bo -- dy to dance with.
+you bet -- ter find some -- one, this  might be your last chance.
 
-so when the
-
-when the beat drops,
-and your mind start lo -- sing con -- trol
-you can feel the stroll that's lea -- ding through your soul 
-you can't stand that urge and get car -- ried a -- way
-
-when the beat drops,
-and your feet start mo -- ving a -- long,
-wish this sing -- le song would just go on and on
-you for -- get your pain so just sing with me yay
 
 
 }
@@ -230,7 +253,17 @@ leadWordsChorusTwo = \lyricmode {
 }
 
 leadWordsBridge = \lyricmode {
- 
+\set stanza = "Bridge"
+  
+when the beat drops,
+and your mind start lo -- sing con -- trol
+you can feel the stroll that's lea -- ding through your soul 
+you can't stand that urge and get car -- ried a -- way
+
+when the beat drops,
+and your feet start mo -- ving a -- long,
+wish this sing -- le song would just go on and on
+you for -- get your pain so just sing with me yay
 }
 
 leadWordsTwo = \lyricmode { 
@@ -260,33 +293,38 @@ r2
 }
 
 backingOnePrechorusMusic = \relative c'' {
-
+    \time 2/2
+  r1
+  cis8 dis eis fis~fis2
+  e4 e e r4
+  dis dis e2
+  
+  r1
+  cis8 dis eis fis~fis2
+  e4 e e r4
+  gis gis fis2 
 }
 
 backingOneChorusMusic = \relative c'' {
-%r8 cis fis e 
-%fis4 fis r2
-%r2.. e8
-%dis4 r8 e dis dis cis dis
-%e fis e dis r8 cis fis e 
-%fis4 fis r2
-%R1
-%r8 dis dis dis dis e dis cis
-%d e d cis r8 cis fis e 
-%R1*3
-%e,2 g4 gis8 c8~
-%c2 r4
-a4 fis8(e) e4 r
-cis'8 b a gis gis fis gis a
 
-e4 e e cis 
-d8 e fis f r2
-
-a4 fis8(e) e4 r
-cis'8 b a gis gis fis gis a
-
-e4 e e cis 
-d8 e fis f r2
+  
+  \time 4/4
+  e4 e e e
+  fis8 fis8~fis8 fis8~fis4  fis8 fis~
+  fis cis8 r2.
+  r1
+  e4 e e e
+  fis8 fis8~fis8 fis8~fis4  fis8 fis~
+  fis r2..
+  r1
+  e4 e e e
+  fis8 fis8~fis8 fis8(~fis4  fis8) fis~
+  fis cis8 r2.
+  r1
+  e4 e e e
+  fis8 fis8~fis8 fis8~fis4  fis8 fis~
+  fis r2..
+  r1 
 
 
 
@@ -300,15 +338,25 @@ backingOneVerseWords = \lyricmode {
 }
 
 backingOnePrechorusWords = \lyricmode {
+where will you be?
+
+grove kicks in
+
+show be -- gins
+
+what will you do?
+
+crowd gets loud
+sing _ __ out
+loud and proud
 
 }
 
 
 backingOneChorusWords = \lyricmode {
-beat drops in,
-watch me as I fall in love with ev -- ry sin -- gle note in the air
-time slows down,
-join me div -- ing dee -- per in -- to ev -- ry sin -- gle tone in my hair.
+
+
+
 
 }
 
@@ -391,7 +439,33 @@ gis1
 }
 
 derbassChorus = \relative c {
+    \time 2/2
 
+  fis4_\markup { \italic {half time}}   fis4 r4 cis'\glissando 
+  fis,2 r4 cis'\glissando 
+  e,2 r4 cis'\glissando 
+  dis,8 dis8~dis dis dis4 cis
+  fis4 fis4 r4 cis'\glissando 
+  fis,2 r4 cis'\glissando 
+  e,2 r4 cis'\glissando  
+  dis,8 dis8~dis dis dis4 cis
+  \time 4/4
+  fis,4_\markup { \italic {double time}} a b a
+  b cis e fis
+  a,8 fis~fis fis~fis4 a8 fis~
+  fis fis~fis4 r2
+  fis4 a b a
+  b cis e fis
+  a,8 fis~fis fis~fis4 a8 fis~
+  fis fis~fis4 r2
+  fis4 a b a
+  b cis e fis
+  a,8 fis~fis fis~fis4 a8 fis~
+  fis fis~fis4 r2
+  fis4 a b a
+  b cis e fis
+  a,8 fis~fis fis~fis4 a8 fis~
+  fis fis~fis4 r2
 }
 
 \score {
@@ -523,6 +597,6 @@ derbassChorus = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #3
+  page-count = #4
   
 }
