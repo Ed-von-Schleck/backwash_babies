@@ -1,5 +1,6 @@
 \version "2.16.2"
 
+
 \header {
   title = "Over the Sea"
   composer = "skudella (The Royal Backwash)"
@@ -111,7 +112,7 @@ r2 e8 d c b~
 b4. (a8~a4)  r4
 r2 b8 c d e~
 e2. r4
-c8 c c d~d c c e~
+c8^\segno c c d~d c c e~
 e b~b c~c d c d
 c b~b a~a2
 r1
@@ -310,7 +311,7 @@ f8 f8~f e8~e2
 c'4. c8~c8 c8 c c 
 b8 b8~b b8~b8 b a g
 a4. e8~e4 a4
-f8 f8~f e8~e2
+f8 f8~f e8~e2-\markup {\italic "D.S. "}
 f8 f8 f e8~e2
 \tuplet3/2{f8 f f }f e8~e2
 r1
