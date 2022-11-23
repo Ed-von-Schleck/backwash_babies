@@ -138,11 +138,11 @@ leadMusicprechorus = \relative c''{
   r8 cis8_\markup { \italic {shuffled}} cis8 b8
   cis4 a fis4 r4
   r2 r8 b8 b8 a8
-  b4 gis e4 r8 a
+  b4 a e4 r8 a
   b4 fis dis8 cis'8 cis8 b8
   cis4 a fis4 r4
   r2 r8 b8 b8 a8
-  b4 gis e4 r4
+  b4 a e4 r4
   b'4 fis dis8 
 }
 
@@ -228,7 +228,7 @@ and when the grove kicks in
 the show be -- gins
 
 So when the crowd gets loud
-you're gon -- na sing it out
+you're gon -- na sing _ __ out
 loud and proud
 
 
@@ -295,14 +295,14 @@ r2
 backingOnePrechorusMusic = \relative c'' {
     \time 2/2
   r1
-  cis8 dis f fis~fis2
+  cis8 dis eis fis~fis2
   e4 e e r4
   dis dis e2
   
   r1
   cis8 dis eis fis~fis2
   e4 e e r4
-  dis dis e2
+  gis gis fis2 
 }
 
 backingOneChorusMusic = \relative c'' {
@@ -346,7 +346,8 @@ show be -- gins
 
 what will you do?
 
-sing it out
+crowd gets loud
+sing _ __ out
 loud and proud
 
 }
@@ -437,17 +438,17 @@ gis1
 
 }
 
-derbassChorus = \relative c, {
+derbassChorus = \relative c {
     \time 2/2
 
   fis4_\markup { \italic {half time}}   fis4 r4 cis'\glissando 
   fis,2 r4 cis'\glissando 
-  e,2 r4 fis\glissando 
-  dis'8 dis8~dis dis dis4 cis
-  fis,4 fis4 r4 cis'\glissando 
+  e,2 r4 cis'\glissando 
+  dis,8 dis8~dis dis dis4 cis
+  fis4 fis4 r4 cis'\glissando 
   fis,2 r4 cis'\glissando 
-  e,2 r4 fis\glissando 
-  dis'8 dis8~dis dis dis4 cis
+  e,2 r4 cis'\glissando  
+  dis,8 dis8~dis dis dis4 cis
   \time 4/4
   fis,4_\markup { \italic {double time}} a b a
   b cis e fis
