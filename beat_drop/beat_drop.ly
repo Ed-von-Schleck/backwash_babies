@@ -300,7 +300,7 @@ backingOnePrechorusMusic = \relative c'' {
   dis dis e2
   
   r1
-  cis8 dis eis fis~fis2
+  cis8 dis f fis~fis2
   e4 e e r4
   dis dis e2
 }
