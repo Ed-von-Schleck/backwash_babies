@@ -186,7 +186,9 @@ It does not mat -- ter were_ I will go
 as~long as I can sing, and the_ _ winds still blow_ _, 
 
 It does not mat -- ter who I will be
-with the waves 'round feet, I will be hap -- py_ __ __
+with the waves 'round feet, there's no -- thing more I would need.
+
+I will be hap -- py_ __ __
 
 }
 
