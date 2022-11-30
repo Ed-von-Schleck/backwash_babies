@@ -1,5 +1,6 @@
 \version "2.16.2"
 
+
 \header {
   title = "Over the Sea"
   composer = "skudella (The Royal Backwash)"
@@ -31,10 +32,10 @@ R1
 \bar ":|."
 
 
-f1 c4. g8~g2 a1:m d4.:m e8~e2
-d1:m g1 a1:m f4. e8~e2
-f4. e8~e2 f1 d1:m7
-e1 e1:7
+%f1 c4. g8~g2 a1:m d4.:m e8~e2
+%d1:m g1 a1:m f4. e8~e2
+%f4. e8~e2 f1 d1:m7
+%e1 e1:7
 
 }
 
@@ -111,7 +112,7 @@ r2 e8 d c b~
 b4. (a8~a4)  r4
 r2 b8 c d e~
 e2. r4
-c8 c c d~d c c e~
+c8^\segno c c d~d c c e~
 e b~b c~c d c d
 c b~b a~a2
 r1
@@ -121,6 +122,7 @@ c b~b a~a2
 r1
 r2 \tuplet 3/2{d,4_\markup { \italic wistle  } e f}
 f8_\markup { \italic wistle  } f8 f gis~gis2
+r1
 
 
 }
@@ -167,7 +169,7 @@ leadWordsTwo = \lyricmode {
 If I stay on this side of the sea,
 I will ne -- ver be -- come, the man I long to be?
 If I stay on this side of the sea,
-will I e -- ver find_ _ _ peace and har -- mo -- ny
+will I e -- ver find_ _ _ peace and har -- mo -- ny?
 Or will I stum -- ble on_ _ and on
 ne -- ver sure if this is where I real -- ly be -- long
 And will It fin -- al -- ly turn out wrong
@@ -180,9 +182,14 @@ leadWordsThree = \lyricmode {
 If I stay with you here on the beach
 I will ne -- ver be_ _, the man I want to be.
 If I stay with you here on the sand, 
-I will ne -- ver be free, but I will un -- der -- stand
+I might ne -- ver be free, but I will un -- der -- stand
+It does not mat -- ter were_ I will go
+as~long as I can sing, and the_ _ winds still blow_ _, 
 
-That I'm am hap -- py
+It does not mat -- ter who I will be
+with the waves 'round feet, there's no -- thing more I would need.
+
+I will be hap -- py_ __ __
 
 }
 
@@ -233,6 +240,7 @@ f8 e8~e e~e2
 c'8_\markup { \italic wistle  } a8 c b~b2
 \tuplet 3/2{c4_\markup { \italic wistle  } a f} \tuplet 3/2{f4 gis b}
 c8_\markup { \italic wistle  } a8 c b~b2
+r1
 
 }
 
@@ -303,7 +311,7 @@ f8 f8~f e8~e2
 c'4. c8~c8 c8 c c 
 b8 b8~b b8~b8 b a g
 a4. e8~e4 a4
-f8 f8~f e8~e2
+f8 f8~f e8~e2-\markup {\italic "D.S. "}
 f8 f8 f e8~e2
 \tuplet3/2{f8 f f }f e8~e2
 r1
@@ -391,6 +399,7 @@ r1
       
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
+	\set Staff.shortInstrumentName = #"Bs."
         \set Staff.midiInstrument = #"electric bass (pick)"
         %\set Staff.midiInstrument = #"distorted guitar"
         \transpose c c { \global \derbassVerse }
