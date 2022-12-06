@@ -33,9 +33,9 @@ harmonies = \chordmode {
   
   
   c d:m e c 
-  g d:m b g
-  c fis g cis
-  a:sus2 fis c f
+  g d:m b g%e:m
+  d e:m fis d%g cis:5
+  a fis c f
   
 
 }
@@ -65,8 +65,8 @@ trumpettwoChorusMusic = \relative c'' {
 }
 
 leadMusicverse = \relative c''{
-\partial 4 d,8^\markup { \italic shuffled } a'~
-a a g g e4 d8 g~
+\partial 4 d,8^\markup { \italic shuffled (maybe even super-shuffled) } a'~
+\bar ".|:" a a g g e4 d8 g~
 g g fis fis e4 d8 e~
 e e8~e e~e e~e f8~
 f g f d e4 r8 a~
@@ -76,7 +76,7 @@ r a' f e r a f e
 f4 a8 f8~f d8 r a'~
 a a g g e4 d8 g~
 g g fis fis e4 d8 e~
-e e4 e e f8~
+e e8~e e~e e~e f8~
 f g f d e4 r8 a~
 a a g g e4 d8 g~
 g g fis fis e4 d8 r
@@ -110,7 +110,7 @@ leadMusicchorus = \relative c''{
   e4 e e e8 d
   e[ d e d e d c c]~
   c8 r8 r4 r2
-  R1*7
+  R1*7 \bar ":|."
   
 }
 
@@ -125,8 +125,10 @@ leadMusicBridge = \relative c''{
   b4 g a g
   r4 a2 g4
   fis2 r
-  g8[ fis g fis g fis g fis]
-  gis4 f dis cis
+  fis8[ f fis f fis f fis f]
+  %g8[ fis g fis g fis g fis]
+  a4 d, fis d
+  %gis4 f dis cis
   r4 a'2 e4
   fis2 r 
   g8[ fis g fis g fis g e] 
@@ -182,8 +184,22 @@ why don't you start to get up, act up, chang -- ing your spot
 
 leadWordsBridge = \lyricmode {
 \set stanza = "bridge"
-  Bridge
+  bla -- zing sun
+  loo -- ming through the hot streets full of 
+  spine -- less peo -- ple
+  
+  eve -- ry -- one
+  squints their ti -- red eye -- lids in the 
+  scar -- let day -- light
 
+  win -- ding paths 
+  gui -- ding you a ris -- ky way through
+  blin -- ding light -- ning
+  
+  bright at last
+  let's go down this ro -- cky road all 
+  dull and grin -- ning
+  
 }
 
 leadWordsTwo = \lyricmode { 
@@ -229,11 +245,20 @@ violinMusic = \relative c'' {
   r4
   R1*33
   
-  e8[ d e d e16 d c8 d c]
+  %e8 a,4 c8 e a,4 r8
+  %\tuplet 3/2 { e' d c } e4 \tuplet 3/2 { e8 c a } e' d
+  %e8 a,4 d8 e a,4 r8
+  %\transpose -1 {
+  %e8 a,4 d8 e8 a,4 d8 
+  %\tuplet 3/2 { e8 c a } e' a, \tuplet 3/2 { e'8 c a } e' d
+  %}
+  e8 d e d8 \tuplet 3/2 { e d c } d c
+  %\tuplet 3/2 { e d c } \tuplet 3/2 { e d c } \tuplet 3/2 { e d c } \tuplet 3/2 { e d c }
+  %e8 c e d e c e d
   e[ d e d c d e f]
-  a g a g a16 g e8 g f
+  a g a g \tuplet 3/2 { a g e } g f
   a[ g a g e g a c]
-  e8 d e d e16 d c8 d c
+  e8 d e d \tuplet 3/2 { e d c } d c
   e[ d e d c d e f]
   e,4 e e e8 d 
   e[ d e d e d c c]~
