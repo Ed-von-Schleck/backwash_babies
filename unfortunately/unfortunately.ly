@@ -1,42 +1,33 @@
 \version "2.16.2"
 
-\include "swing.ly"
+%\include "swing.ly"
 
 \header {
-  title = "Fire"
-  composer = "Timo Doll (The Royal Backwash)"
+  title = "Unfortunately"
+  composer = "Schlebbi (The Royal Backwash)"
 
 }
 
 global = {
-  \key c \major
+  \key e \minor
   \time 4/4
-  \tempo 4 = 168
+  \tempo 8 = 240
 }
 
 harmonies = \chordmode {
   
   \germanChords
-  r4
-  \repeat unfold 4 {
-    c1:6 a1:m6 f d:m7
-  }
-  \repeat unfold 2 {
-    c:sus2 g d a 
-  }
-  a
+  e1:m g2 a2:m e1:m a2:m g4 g4:7 e1:m g2 a2:m e2.:m e4:m7 a1:m  \break
+  \repeat volta 2 {e2.:m d4 g8 fis8 d8 e4:m a8:m g8 fis8} \break
+  e1:m g2 a2:m e1:m a2:m g4 g4:7 \break e1:m g2 a2:m e1:m a2:m g4 g4:7 
+  e1:m g2 a2:m e1:m a2:m g4 g4:7 e1:m g2 a2:m e1:m a2:m g4 g4:7 \break
   
-  e:m f a:m7/e c
-  e:m d:m7 c e:m7
-  e:m f d:m7 c
-  e:m d:m7 c e:m7
+  e1:m g2 a2:m e1:m a2:m g2 e1:m g2 a2:m e1:m g2 a2:m
   
-  
-  c d:m e c 
-  g d:m b g%e:m
-  d e:m fis d%g cis:5
-  a fis c f
-  
+  e2.:m d4 g8 fis8 d8 e4:m a8:m g8 fis8
+  e2.:m d4 g8 fis8 d8 e4:m a8:m g8 fis8
+  e2.:m d4 g8 fis8 d8 e4:m a8:m g8 fis8
+  e2.:m d4 g8 fis8 d8 e4:m a8:m g8 fis8
 
 }
 
@@ -65,145 +56,83 @@ trumpettwoChorusMusic = \relative c'' {
 }
 
 leadMusicverse = \relative c''{
-\partial 4 d,8^\markup { \italic shuffled (maybe even super-shuffled) } a'~
-\bar ".|:" a a g g e4 d8 g~
-g g fis fis e4 d8 e~
-e e8~e e~e e~e f8~
-f g f d e4 r8 a~
-a a g g e4 d8 g~
-g g fis fis e4 d8 r
-r a' f e r a f e
-f4 a8 f8~f d8 r a'~
-a a g g e4 d8 g~
-g g fis fis e4 d8 e~
-e e8~e e~e e~e f8~
-f g f d e4 r8 a~
-a a g g e4 d8 g~
-g g fis fis e4 d8 r
-r a' f e r e f a
-r4 e8 f a4. r8
+R1*10
+g4 e8 e8 r8 e8 e8 r8 
+g8 g8 g8 g8 a4 e8 e8 
+g8~ g16 e8. e8 e4 e8 e8 
+a8. a8. a8 g4-. e8 e8
+  g8 e8. e4~ e16 e8 e8 e8 
+  g8 g8 g8 g8 a4 e8 e8 
+  g4 e8 e4 r4 e8 
+  a8. a8. a8 g4 e8 e8 
+  g4 e8 e8 e4 e8 e8 
+  e4 e8 e8 a4 g8 a8 
+  e4 e8 e8 g8 e8 g8 e8 
+  a8 a8 a4 g4 a8 e8 r8 
+  e8 g8 e8 g8 e8 e8 e8 
+  g8. g8. a8 g4 e8 e8 
+  g8 e8 e8 e8 e4 e8 e8 
+  a4. a8 g4 fis8 fis8
 
 }
 
 leadMusicprechorus = \relative c'{
+g'8. fis8. fis4. e4~ e4 r4 g8. fis8. fis8~ fis4 e2 r4 r2 g8. fis8. fis8~ \break fis4 e2 r4 r2 g8. fis8. b8~ b1 r1 \break
 
-g'4 e d c 
-g'8[ g e e d d c c]
-r fis e d r fis e d 
-cis4 d e fis
-g4 e d c 
-g'8[ g e e d d c c]
-r fis e d r fis e d 
-r cis d e r cis d e
-r cis d e 
 
 }
 
 leadMusicchorus = \relative c''{
-  \partial 2 r d e d
-  e4 e e8 d c f~
-  f e8~e r r d8 e d 
-  e4 e e8 d c d~
-  d c~c r r d8 e d 
-  e4 e e8 d c f~
-  f e8~e d~d c~c r8
-  e4 e e e8 d
-  e[ d e d e d c c]~
-  c8 r8 r4 r2
-  R1*7 \bar ":|."
+r8 g8 g8 e8 g4 e4 b'8 a4 a4. g4 r8 b8 a8 a8 a8 g8 a8 g8 b4 d8 b2~ b8 r8 g8 a8 g8 a4 g4 b8 a4 a4.~ a8 g8 b8 a4 a4.~ a8 g8 b8 e,4 g2 r8
   
 }
 
 leadMusicBridge = \relative c''{
-  r4 g2 f4
-  e2 r2
-  e8[ dis e dis e dis e dis]
-  c'4 g e c
-  r4 g'2 f4
-  d2 r
-  fis8[ f fis f fis f fis f]
-  b4 g a g
-  r4 a2 g4
-  fis2 r
-  fis8[ f fis f fis f fis f]
-  %g8[ fis g fis g fis g fis]
-  a4 d, fis d
-  %gis4 f dis cis
-  r4 a'2 e4
-  fis2 r 
-  g8[ fis g fis g fis g e] 
-  f4 g a c
+
 
 }
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
-  The tide is gon -- na turn
-  the o -- ther hand will burn
-  the peo -- ple may -- be ne -- ver gon -- na learn
-  wel -- come to the show
-  make sure to take a pho -- to
-  there you go 
-  in front row
-  fee -- ling so- so
-  
-  linked up and a -- lone
-  the good ones o -- ver -- thrown
-  the dumb and stu -- pid dan -- cing on their own
-  liv -- ing for to -- day
-  is what I hear that they say 
-  to -- mor -- row
-  to -- mor -- row
-  we burn low
+  Not my style, you said, strip- ping of the dress, 
+  we are both such a mess but you coul- dn't care less,
+  this whole par- ty stinks, that's been your ver- dict from the start,
+  so you locked us in, till death do us part
+  I hold on to my drink while your legs are wrapped a- round my head
+  I am pan- ting, swea- ting, scrat- ches all down my back,
+  to drunk to say no, not to drunk to please you,
+  this is sure- ly a mis- take but at least it is be- tween 
   
 }
 
 leadWordsPrechorus = \lyricmode {
 \set stanza = "prechorus"
-vast and wi -- der
-it's your ev -- ry days de -- si -- re
-you want it
-you need it
-su -- per -- siz -- er
-Gas and ligh -- ter
-makes the world a litt -- le brigh -- ter
-you want it
-we need it
-go light it
-go light it
-go light it
+ me and yo- u me and yo- u me and yo- u me and you
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
-you're scree -- ming run in case of a fi -- re
-you shake your head when catch -- ing a li -- ar
-you frown and doubt while watch -- ing a world that's bur -- ning
-why don't you start to get up, act up, chang -- ing your spot
+Your love con- fused me all the ti- me, 
+  you touch my heart but leave a mess be- hind,
+  we twist and turn but fail to see,
+  we ain't no match, un- for- tuna- tely
 }
 
 leadWordsBridge = \lyricmode {
 \set stanza = "bridge"
-  bla -- zing sun
-  loo -- ming through the hot streets full of 
-  spine -- less peo -- ple
-  
-  eve -- ry -- one
-  squints their ti -- red eye -- lids in the 
-  scar -- let day -- light
 
-  win -- ding paths 
-  gui -- ding you a ris -- ky way through
-  blin -- ding light -- ning
-  
-  bright at last
-  let's go down this ro -- cky road all 
-  dull and grin -- ning
-  
 }
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
+Chase the thrill, a- gain, co- ver up the pain,
+  ev- ery use leaves a stain, a- gain and a- gai -n,
+  what a joy- ful fight, when ou- r bo- dies in- ter- twine,
+  but after ou- r games it's the lone- liest time
+  and I tried to pro- gress, quit the games, quit the lies, the a- buse,
+  un- for- tu- nate- ly boon and bane are fore- ver fused
+  Phoe- nix- 's sparks of love, new fee- lings for you,
+  I'm in love with a hag, but at least there is ma- gic 'tween
 }
 
 leadWordsThree = \lyricmode {
@@ -216,25 +145,7 @@ leadWordsFour = \lyricmode {
 
 }
 backingOneVerseMusic = \relative c'' {
-  r4
-  
-  r1
-  r2.. a8~
-  a g~g a~a g~g a~
-  a a c d c4 r4
-  r1
-  r1
-  r8 c c c r c c c
-  a4 a8 c~c a r4
-  
-  r1
-  r2.. a8~
-  a g~g a~a g~g a~
-  a a c d c4 r4
-  r1
-  r1
-  r8 c c c r c c c
-  r4 a8 a8 c4. r8
+
 }
 
 backingOneChorusMusic = \relative c'' {
@@ -242,9 +153,7 @@ backingOneChorusMusic = \relative c'' {
 }
 
 backingOnePrechorusMusic = \relative c'' {
-  r1 r1
-  r8 a c d r a c d
-  cis4 a cis e 
+
 }
 
 backingOneChorusWords = \lyricmode {
@@ -264,36 +173,28 @@ backingTwoChorusWords = \lyricmode {
 
 derbassVerse = \relative c {
   \clef bass
+  R1*8
+  \repeat volta 2 {e4 e8 e16 e16 e16 d16 d8 d8. fis16 g8 fis8 d8 e8~ e16 g16 a8 g8 fis8}
+  e,4 e'8 e,8-.~ e8 e8 e'8 e,8 g4 g'8 g,8 a4 a'8 a,8 e4 e'8 e,8-.~ e8 e8 e'8 e,8 a4 a'8 a,8 g4 g'8 g,8
+  R1*12
+  
+  e4 e'8 d8 b8 a8 fis8 e8 g8 b8 g'8 g,8 a8 e'8 a8 a,8
+  e4 e'8 d8 b8 a8 fis8 e8 a8 e'8 a8 a,8 g8 b8 g'8 g,8
+
+R1*4
+  
+  e'4 e8 e16 e16 e16 d16 d8 d8. fis16 g8 fis8 d8 e8~ e16 g16 a8 g8 fis8
+  
 }
 
 violinMusic = \relative c'' { 
-  r4
-  R1*33
-  
-  %e8 a,4 c8 e a,4 r8
-  %\tuplet 3/2 { e' d c } e4 \tuplet 3/2 { e8 c a } e' d
-  %e8 a,4 d8 e a,4 r8
-  %\transpose -1 {
-  %e8 a,4 d8 e8 a,4 d8 
-  %\tuplet 3/2 { e8 c a } e' a, \tuplet 3/2 { e'8 c a } e' d
-  %}
-  e8 d e d8 \tuplet 3/2 { e d c } d c
-  %\tuplet 3/2 { e d c } \tuplet 3/2 { e d c } \tuplet 3/2 { e d c } \tuplet 3/2 { e d c }
-  %e8 c e d e c e d
-  e[ d e d c d e f]
-  a g a g \tuplet 3/2 { a g e } g f
-  r g[ r g r g a c]
-  e8 d e d \tuplet 3/2 { e d c } d c
-  e[ d e d c d e f]
-  e,4 e e e8 d 
-  e[ d e d e d c c]~
-  c4 r4 r2
+
 
 
 }
 
 \score {
-  \tripletFeel 8 {
+ % \tripletFeel 8 {
   <<
     \new ChordNames {
       \set chordChanges = ##t
@@ -382,7 +283,7 @@ violinMusic = \relative c'' {
       % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
     >>
   >>
-  }
+  %}
   \midi {}
   \layout {
     \context {
