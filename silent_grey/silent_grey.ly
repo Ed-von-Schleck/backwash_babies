@@ -7,7 +7,7 @@
 global = {
   \key c \major
   \time 4/4
-  \tempo 4 = 130
+  \tempo 4 = 155
 }
 
 harmonies = \chordmode {
@@ -66,7 +66,7 @@ violinMusic = \relative c''' {
   gis4~gis8 a8~a4 b4
 }
 
-leadMusic = \relative c''
+leadMusic = \relative c'
 {
   \repeat volta 2{R1*4}
   \override TextSpanner.bound-details.left.text = "ad libitum."
@@ -108,7 +108,7 @@ leadMusic = \relative c''
   e1~
   e2 r2
   
-  e4. e,8 a4 c8 b8~
+  e'4. e,8 a4 c8 b8~
   b8 r8 r2 e8 g8
   f4 f4 f4 e8 c8~
   c8 r8 r2.
@@ -350,17 +350,17 @@ backingTwoWords = \lyricmode {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \transpose c f, { \global \harmonies }
+      \transpose c c { \global \harmonies }
     }
 
     \new Staff = "Staff_violin" {
       \set Staff.instrumentName = #"Violin"
-      \transpose c f, { \global \violinMusic }
+      \transpose c c { \global \violinMusic }
     }
     \new StaffGroup <<
       \new Staff = "lead" <<
 	\set Staff.instrumentName = #"Lead"
-	\new Voice = "lead" { << \transpose c f, { \global \leadMusic } >> }
+	\new Voice = "lead" { << \transpose c c { \global \leadMusic } >> }
       >>
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "lead" \leadWordsThree
@@ -375,8 +375,8 @@ backingTwoWords = \lyricmode {
       \new Staff = "backing" <<
 	%  \clef backingTwo
 	\set Staff.instrumentName = #"Backing"
-	\new Voice = "backingOnes" { \voiceOne << \transpose c f, { \global \backingOneMusic } >> }
-	\new Voice = "backingTwoes" { \voiceTwo << \transpose c f, { \global \backingTwoMusic } >> }
+	\new Voice = "backingOnes" { \voiceOne << \transpose c c { \global \backingOneMusic } >> }
+	\new Voice = "backingTwoes" { \voiceTwo << \transpose c c { \global \backingTwoMusic } >> }
 
       >>
       \new Lyrics \with { alignAboveContext = #"backing" }
