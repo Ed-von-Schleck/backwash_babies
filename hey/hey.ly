@@ -118,15 +118,21 @@ i might as well just spell out ev -- ry word
 it's bet -- ter than to spill out bro -- ken thoughts oh lord
 It goes i l o v e y o u
 my mouth feels numb and splat -- ters out a hey
-but in my head I'm 
+but in my head you're smit -- ten by my charms 
+se -- du -- cing you with in -- con -- clu -- sive ar -- tic -- les
+if on -- ly you had fal -- len for my help -- less -- ness dis -- tress
 }
 
 leadWordsTwo = \lyricmode { 
-
+hey 
+all the things I wan -- na do
+and wor -- ship you
+watch me go
+I say
 }
 
 leadWordsThree = \lyricmode {
-\set stanza = "3." 
+\set stanza = "2." 
 
 }
 
@@ -191,6 +197,17 @@ backingTwoChorusMusic = \relative c'' {
 }
 
 backingTwoChorusWords = \lyricmode {
+ _
+ _ _ _ _ _ _ _
+ _ _ _ _ _ _ _ _ _
+ _ _ _ _ _ _ _ _
+ _ _ _ _ _ _ 
+ hey
+ I wan -- na do
+ i -- do -- lize and wor -- ship you
+ watch me go 
+ I'm try -- ing
+ I'm try -- ing 
 }
 
 derbassVerse = \relative c {
@@ -257,9 +274,9 @@ violinMusic = \relative c' {
 	\set Staff.instrumentName = #"Lead"
 	\set Staff.shortInstrumentName = #"L."
         \set Staff.midiInstrument = #"voice oohs"
-        \new Voice = "leadprechorus" { << \transpose c c { \leadMusicprechorus } >> }
+        \new Voice = "leadprechorus" { << \transpose c c { \global \leadMusicprechorus } >> }
         \new Voice = "leadchorus" { << \transpose c c { \leadMusicchorus } >> }
-        \new Voice = "leadverse" { << \transpose c c { \global \leadMusicverse } >> }
+        \new Voice = "leadverse" { << \transpose c c { \leadMusicverse } >> }
         \new Voice = "leadbridge" { << \transpose c c { \leadMusicBridge } >> }
         %\new Voice = "leadoutro" { << \transpose a c' { \leadMusicchorus } >> }
       }
@@ -297,8 +314,8 @@ violinMusic = \relative c' {
       >>
       \new Lyrics \with { alignAboveContext = #"backing" }
       \lyricsto "backingOnes" \backingOneChorusWords
-      \new Lyrics \with { alignBelowContext = #"backing" }
-      \lyricsto "backingTwoes" \backingTwoChorusWords
+      \new Lyrics \with { alignAboveContext = #"backing" }
+      \lyricsto "backingOnes" \backingTwoChorusWords
       
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
