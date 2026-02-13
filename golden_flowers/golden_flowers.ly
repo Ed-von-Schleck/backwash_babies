@@ -290,7 +290,7 @@ choirPart = \new ChoirStaff <<
 
 \score {
   <<
-    \chordsPart
+    \transpose c f {\chordsPart}
     \choirPart
     \violinPart
     \guitarPart

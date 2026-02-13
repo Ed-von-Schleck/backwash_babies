@@ -214,7 +214,7 @@ choirPart = \new ChoirStaff <<
     }
   }
   \midi {
-    \tempo 4=130
+    \tempo 4=110
   }
 }
 

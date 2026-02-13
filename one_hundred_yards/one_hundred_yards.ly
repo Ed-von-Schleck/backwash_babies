@@ -99,6 +99,7 @@ leadGuitar = \relative c'' {
  g1
  R1*2
 }
+
 leadMusic = \relative c' {
  R1*8
  r4. d8 a'8 g8 f8 g8~
@@ -251,6 +252,7 @@ backingTwoWords = \lyricmode {
 	\set Staff.instrumentName = #"Lead"
 	\new Voice = "lead" { << \transpose c c { \global \leadMusic } >> }
       >>
+      \new Lyrics \lyricsto "Chorus" \lead_lyrics
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "lead" \leadWordsThree
       \new Lyrics \with { alignBelowContext = #"lead" }
